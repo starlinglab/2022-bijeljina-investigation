@@ -1,0 +1,51 @@
+{
+  "originalDate": "{{ original_date }}",
+  "description": "{{ description }}",
+  "assetCid": "{{ asset_cid }}",
+  "verification":
+  {
+    "verifiedBy":
+    {
+      "name": "Verified By",
+      "value": "Rolling Stone Editorial and Legal Teams"
+    },
+    "signingCertificate":
+    {
+      "name": "Signing Certificate",
+      "value": "Starling Lab Bijeljina Investigation"
+    }
+  },
+  "chainsOfTrust": [
+    {
+      "Rolling Stone": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-root-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-bijeljina-investigation.cert.pem"
+        }
+      ],
+      "Starling Lab": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-root-ca.cert.pem"
+        },
+        {
+          "name": "Intermediate Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-intermediate-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Starling Lab",
+          "file": "starling-lab-bijeljina-investigation.cert.pem"
+        }
+      ]
+    }
+  ]
+}
