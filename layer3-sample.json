@@ -1,6 +1,6 @@
 {
-  "description": "{{ description }}",
-  "assetCid": "{{ asset_cid }}",
+  "description": "Scan of photograph taken by Ron Haviv in Bijeljina, Bosnia, 1992 (Source: Haviv's Private Archive)",
+  "assetCid": "bafybeigfheaau27rao4lkchipu5zoq4liyhkbzrc2fvhyf6soj2262peou",
   "verification":
   {
     "verifiedBy":
@@ -49,51 +49,51 @@
   ],
   "assetDetails":
   {
-    "dimensions": "{{ data_file_dimensions }}",
-    "format": "{{ data_file_format }}"
+    "dimensions": "430x608",
+    "format": "image/jpeg"
   },
   "c2pa":
   {
-    "asset_file": "{{ data_file_name }}.ext",
-    "manifest_file": "{{ data_file_name }}-manifest.json"
+    "asset_file": "C049.jpg",
+    "manifest_file": "C049-manifest.json"
   },
-  "captureDate": "{{ capture_date }}",
-  "capturedBy": "{{ captured_by }}",
-  "location": "{{ city }}, {{ province_state }}, {{ country_name }}",
+  "captureDate": "February 20, 2022",
+  "capturedBy": "Starling Capture by Numbers Protocol",
+  "location": "City of New York, New York, United States",
   "registrationRecords":
   {
     "openTimestamps":
     {
-      "sha256": "{{ ots_sha256 }}",
-      "block": "{{ ots_block }}"
+      "sha256": "b961391ebfcde037ccf00fd4038ac5da21bd5e38e1b5721eff9d2f5e5b2a4c12",
+      "block": "739786"
     },
     "numbersProtocol":
     {
-      "tx": "{{ numbers_tx }}"
+      "tx": "0xa1542225163af47fcf7178cbbe3f131d706382c05c360cd9ed9fcbab76cf9df9"
     },
     "numbersProtocolAvalanche":
     {
-      "tx": "{{ avax_tx }}"
+      "tx": "0xcc53f73ce23be794fab7a7843a0e94d21650b1cb33d73338bfceafb3aa772065"
     },
     "iscn":
     {
-      "iscnId": "{{ iscn_id }}",
-      "tx": "{{ iscn_tx }}"
+      "iscnId": "iscn://likecoin-chain/zKklHgZMfKXzgJ0sdq6PDhitKKcQdpG7TpQ056r_foc/1",
+      "tx": "326660BADB46DF81A43A0FD58903DC45371EAB01EE58C4D04B4A3AE4BDE27FC6"
     }
   },
   "storageRecords":
   {
     "ipfs":
     {
-      "cid": "{{ ipfs_cid }}"
+      "cid": "bafybeigfheaau27rao4lkchipu5zoq4liyhkbzrc2fvhyf6soj2262peou"
     },
     "filecoin":
     {
-      "pieceCid": "{{ filecoin_piece_cid }}"
+      "pieceCid": "baga6ea4seaqeyq7ap7x22xyc6d7kqi424tab2tczrh5vgcoxoju66q6nznjqgja"
     },
     "storj":
     {
-      "path": "{{ storj_path }}"
+      "path": "jwwlss3g44lwvp5etxkxcn6oo6ya/newdemo/Big Buck Bunny Demo.mp4"
     }
   },
   "verifiedBy": [
@@ -116,26 +116,26 @@
   "attestations": [
     {
       "name": "Web Archive",
-      "value": "{{ cid_web_archive }}",
+      "value": "bafybeigfheaau27rao4lkchipu5zoq4liyhkbzrc2fvhyf6soj2262peou",
       "records":
       {
         "openTimestamps":
         {
-          "sha256": "{{ ots_sha256_web_archive }}",
-          "block": "{{ ots_block_web_archive }}"
+          "sha256": "b961391ebfcde037ccf00fd4038ac5da21bd5e38e1b5721eff9d2f5e5b2a4c12",
+          "block": "739786"
         },
         "numbersProtocol":
         {
-          "tx": "{{ numbers_tx_web_archive }}"
+          "tx": "0xa1542225163af47fcf7178cbbe3f131d706382c05c360cd9ed9fcbab76cf9df9"
         },
         "numbersProtocolAvalanche":
         {
-          "tx": "{{ avax_tx_web_archive }}"
+          "tx": "0xcc53f73ce23be794fab7a7843a0e94d21650b1cb33d73338bfceafb3aa772065"
         },
         "iscn":
         {
-          "iscnId": "{{ iscn_id_web_archive }}",
-          "tx": "{{ iscn_tx_web_archive }}"
+          "iscnId": "iscn://likecoin-chain/zKklHgZMfKXzgJ0sdq6PDhitKKcQdpG7TpQ056r_foc/1",
+          "tx": "326660BADB46DF81A43A0FD58903DC45371EAB01EE58C4D04B4A3AE4BDE27FC6"
         },
         "ipfs":
         {
@@ -143,7 +143,7 @@
         },
         "filecoin":
         {
-          "pieceCid": "{{ filecoin_piece_cid_web_archive }}"
+          "pieceCid": "baga6ea4seaqeyq7ap7x22xyc6d7kqi424tab2tczrh5vgcoxoju66q6nznjqgja"
         },
         "storj":
         {
@@ -153,38 +153,38 @@
     },
     {
       "name": "Caption",
-      "value": "{{ cid_caption }}",
+      "value": "bafybeigfheaau27rao4lkchipu5zoq4liyhkbzrc2fvhyf6soj2262peou",
       "records":
       {
         "openTimestamps":
         {
-          "sha256": "{{ ots_sha256_caption }}",
-          "block": "{{ ots_block_caption }}"
+          "sha256": "b961391ebfcde037ccf00fd4038ac5da21bd5e38e1b5721eff9d2f5e5b2a4c12",
+          "block": "739786"
         },
         "numbersProtocol":
         {
-          "tx": "{{ numbers_tx_caption }}"
+          "tx": "0xa1542225163af47fcf7178cbbe3f131d706382c05c360cd9ed9fcbab76cf9df9"
         },
         "numbersProtocolAvalanche":
         {
-          "tx": "{{ avax_tx_caption }}"
+          "tx": "0xcc53f73ce23be794fab7a7843a0e94d21650b1cb33d73338bfceafb3aa772065"
         },
         "iscn":
         {
-          "iscnId": "{{ iscn_id_caption }}",
-          "tx": "{{ iscn_tx_caption }}"
+          "iscnId": "iscn://likecoin-chain/zKklHgZMfKXzgJ0sdq6PDhitKKcQdpG7TpQ056r_foc/1",
+          "tx": "326660BADB46DF81A43A0FD58903DC45371EAB01EE58C4D04B4A3AE4BDE27FC6"
         },
         "ipfs":
         {
-          "cid": "{{ ipfs_cid_caption }}"
+          "cid": "bafybeigfheaau27rao4lkchipu5zoq4liyhkbzrc2fvhyf6soj2262peou"
         },
         "filecoin":
         {
-          "pieceCid": "{{ filecoin_piece_cid_caption }}"
+          "pieceCid": "baga6ea4seaqeyq7ap7x22xyc6d7kqi424tab2tczrh5vgcoxoju66q6nznjqgja"
         },
         "storj":
         {
-          "path": "{{ storj_path_caption }}"
+          "path": "jwwlss3g44lwvp5etxkxcn6oo6ya/newdemo/Big Buck Bunny Demo.mp4"
         }
       }
     }
