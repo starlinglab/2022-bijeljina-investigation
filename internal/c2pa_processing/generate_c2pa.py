@@ -82,8 +82,10 @@ def _generate_manifest_1(path_assets):
     path_manifest_1 = os.path.join(path_assets, "manifest_1")
     path_manifest_1_template = os.path.join(path_assets, "manifest_1_template.json")
     
-    for path_archive in os.scandir(path_archives):
-        _generate_manifest_1_src_from_archive(path_archive, path_manifest_1_template, path_manifest_1_src)
+    for archive in os.listdir(path_archives):
+        if archive.endswith(".zip"):
+            path_archive = os.path.join(path_archives, archive)
+            _generate_manifest_1_src_from_archive(path_archive, path_manifest_1_template, path_manifest_1_src)
 
     for filename in os.listdir(path_manifest_1_src):
         if filename.endswith(".jpg") or filename.endswith(".png"):
