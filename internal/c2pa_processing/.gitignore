@@ -1,2 +1,7 @@
-*.pem
+*.key.pem
 **/archives/*.zip
+**/archive-manifests/*.json
+**/c2pa_1_src/*.json
+**/c2pa_1_out/*.json
+*.jpg
+*.png
