@@ -4,7 +4,10 @@ This repository contains files to be included in the microsite.
 
 - `assets` contains C2PA-injected assets
 - `certs` contains X.509 document signing certificates for C2PA signing
-- `manifests` contains C2PA manifests as text files
+- `layer3` contains data backing the Layer 3 UI
+- `manifests` contains C2PA manifests as JSON files
+
+The files are generated following [these steps](internal/asset_processing/README.md).
 
 ## Block explorers
 

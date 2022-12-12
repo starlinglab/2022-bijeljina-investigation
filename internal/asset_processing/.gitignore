@@ -1,7 +1,9 @@
+.env
 *.key.pem
 **/archives/*.zip
-**/archive-manifests/*.json
+**/archive_manifests/*.json
 **/c2pa_1_src/*.json
 **/c2pa_1_out/*.json
+**/layer3_out/*.json
 *.jpg
 *.png

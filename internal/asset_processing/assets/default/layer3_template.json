@@ -1,0 +1,192 @@
+{
+  "description": "{{ description }}",
+  "assetCid": "{{ asset_cid }}",
+  "verification":
+  {
+    "verifiedBy":
+    {
+      "name": "Verified By",
+      "value": "Rolling Stone Editorial Team"
+    },
+    "signingCertificate":
+    {
+      "name": "Signing Certificate",
+      "value": "Starling Lab Bijeljina Investigation"
+    }
+  },
+  "chainsOfTrust": [
+    {
+      "Rolling Stone": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-root-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-bijeljina-investigation.cert.pem"
+        }
+      ],
+      "Starling Lab": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-root-ca.cert.pem"
+        },
+        {
+          "name": "Intermediate Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-intermediate-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Starling Lab",
+          "file": "starling-lab-bijeljina-investigation.cert.pem"
+        }
+      ]
+    }
+  ],
+  "assetDetails":
+  {
+    "dimensions": "{{ data_file_dimensions }}",
+    "format": "{{ data_file_format }}"
+  },
+  "c2pa":
+  {
+    "assetFile": "{{ data_file_name }}.ext",
+    "manifestFile": "{{ data_file_name }}-manifest.json"
+  },
+  "captureDate": "{{ capture_date }}",
+  "capturedBy": "{{ captured_by }}",
+  "location": "{{ city }}, {{ province_state }}, {{ country_name }}",
+  "registrationRecords":
+  {
+    "openTimestamps":
+    {
+      "sha256": "{{ ots_sha256 }}",
+      "block": "{{ ots_block }}"
+    },
+    "numbersProtocol":
+    {
+      "tx": "{{ numbers_tx }}"
+    },
+    "numbersProtocolAvalanche":
+    {
+      "tx": "{{ avax_tx }}"
+    },
+    "iscn":
+    {
+      "iscnId": "{{ iscn_id }}",
+      "tx": "{{ iscn_tx }}"
+    }
+  },
+  "storageRecords":
+  {
+    "ipfs":
+    {
+      "cid": "{{ ipfs_cid }}"
+    },
+    "filecoin":
+    {
+      "pieceCid": "{{ filecoin_piece_cid }}"
+    },
+    "storj":
+    {
+      "path": "{{ storj_path }}"
+    }
+  },
+  "verifiedBy": [
+    {
+      "name": "C2PA Claim 1: # TODO",
+      "value": "Starling Lab Bijeljina Investigation",
+      "file": "starling-lab-bijeljina-investigation.cert.pem"
+    },
+    {
+      "name": "C2PA Claim 2: # TODO",
+      "value": "Starling Lab Bijeljina Investigation",
+      "file": "starling-lab-bijeljina-investigation.cert.pem"
+    },
+    {
+      "name": "C2PA Claim 3: # TODO",
+      "value": "Adobe Photoshop",
+      "file": "adobe-photoshop.cert.pem"
+    }
+  ],
+  "attestations": [
+    {
+      "name": "Web Archive",
+      "value": "{{ cid_web_archive }}",
+      "records":
+      {
+        "openTimestamps":
+        {
+          "sha256": "{{ ots_sha256_web_archive }}",
+          "block": "{{ ots_block_web_archive }}"
+        },
+        "numbersProtocol":
+        {
+          "tx": "{{ numbers_tx_web_archive }}"
+        },
+        "numbersProtocolAvalanche":
+        {
+          "tx": "{{ avax_tx_web_archive }}"
+        },
+        "iscn":
+        {
+          "iscnId": "{{ iscn_id_web_archive }}",
+          "tx": "{{ iscn_tx_web_archive }}"
+        },
+        "ipfs":
+        {
+          "cid": null
+        },
+        "filecoin":
+        {
+          "pieceCid": "{{ filecoin_piece_cid_web_archive }}"
+        },
+        "storj":
+        {
+          "path": null
+        }
+      }
+    },
+    {
+      "name": "Caption",
+      "value": "{{ cid_caption }}",
+      "records":
+      {
+        "openTimestamps":
+        {
+          "sha256": "{{ ots_sha256_caption }}",
+          "block": "{{ ots_block_caption }}"
+        },
+        "numbersProtocol":
+        {
+          "tx": "{{ numbers_tx_caption }}"
+        },
+        "numbersProtocolAvalanche":
+        {
+          "tx": "{{ avax_tx_caption }}"
+        },
+        "iscn":
+        {
+          "iscnId": "{{ iscn_id_caption }}",
+          "tx": "{{ iscn_tx_caption }}"
+        },
+        "ipfs":
+        {
+          "cid": "{{ ipfs_cid_caption }}"
+        },
+        "filecoin":
+        {
+          "pieceCid": "{{ filecoin_piece_cid_caption }}"
+        },
+        "storj":
+        {
+          "path": "{{ storj_path_caption }}"
+        }
+      }
+    }
+  ]
+}
