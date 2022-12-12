@@ -188,7 +188,7 @@ def _generate_c2pa_1_out_from_src(archive_manifests, path_assets):
             _generate_c2pa_1_src_from_archive(archive_manifests, path_archive, path_c2pa_1_template, path_c2pa_1_src)
 
             # Uncomment to process just a single asset in the directory
-            # break
+            #break
 
     # Generate c2pa injected assets in path_c2pa_1_out
     for filename in os.listdir(path_c2pa_1_src):
