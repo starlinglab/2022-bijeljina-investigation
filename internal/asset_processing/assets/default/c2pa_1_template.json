@@ -1,6 +1,6 @@
 {
   "vendor": "starlinglab",
-  "claim_generator": "c2patool",
+  "claim_generator": "Starling Capture by Numbers Protocol",
   "alg": "es256",
   "private_key": "../../../keys/starling-lab-bijeljina-investigation.key.pem",
   "sign_cert": "../../../keys/starling-lab-bijeljina-investigation.cert.pem",

@@ -266,7 +266,7 @@ def _generate_layer3_out_from_src(archive_manifests, path_assets):
                     layer3["attestations"] = []
                     # TODO: layer3["attestations"].append(attestation)
 
-                    print(json.dumps(layer3, indent=2))
+                    # print(json.dumps(layer3, indent=2))
                     with open(os.path.join(path_layer3_out, f"{source_id}.json"), "w") as man:
                         json.dump(layer3, man)
 
