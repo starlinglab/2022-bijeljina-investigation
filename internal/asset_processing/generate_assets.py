@@ -287,7 +287,7 @@ def _generate_c2pa_1_out_from_src(archive_manifests, archive_manifests_related, 
             _generate_c2pa_1_src_from_archive(archive_manifests, archive_manifests_related, asset_info_ext, path_archive)
 
             # Uncomment to process just a single asset in the directory
-            break
+            # break
 
     # Generate c2pa injected assets in path_c2pa_1_out
     for filename in os.listdir(p_out_c2pa_1_src):
@@ -303,6 +303,8 @@ def _generate_c2pa_1_out_from_src(archive_manifests, archive_manifests_related, 
             if os.path.isfile(path_thumb):
                 p = subprocess.run([f"{p_c2patool}", f"{path_img}", "--manifest", f"{path_man}", "--thumb", f"{path_thumb}", "--output" , f"{path_out}", "--force"], capture_output=True)
             else:
+                if asset_info_ext.get(basename, {}).get("redaction") is not "None":
+                    raise Exception("Missing thumbnail for image that requires redaction")
                 p = subprocess.run([f"{p_c2patool}", f"{path_img}", "--manifest", f"{path_man}", "--output" , f"{path_out}", "--force"], capture_output=True)
             
             # Write detailed c2pa manifest out to file
