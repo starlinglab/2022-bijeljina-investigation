@@ -7,6 +7,7 @@ import os
 import re
 import shutil
 import subprocess
+import sys
 import tempfile
 import zipfile
 
@@ -40,7 +41,7 @@ p_in_zk_redacted = os.path.join(p_in, "zk_redacted")
 p_in_c2pa_publish = os.path.join(p_in, "c2pa_publish")
 
 # Paths to output files
-p_out = os.path.join(path_assets, "out")
+p_out = os.path.join(p_assets, "out")
 p_out_c2pa_1_src = os.path.join(p_out, "c2pa_1_src")
 p_out_c2pa_1_out = os.path.join(p_out, "c2pa_1_out")
 p_out_c2pa_2_zk_src = os.path.join(p_out, "c2pa_2_zk_src")
@@ -58,9 +59,9 @@ class ArchiveManifests():
         if hash in self.internal_cache:
             return self.internal_cache[hash]
         res = []
-        for filename in os.listdir(path_archive_manifests):
+        for filename in os.listdir(self.path_archive_manifests):
             if filename.endswith(".json"):
-                path_manifest = os.path.join(path_archive_manifests, filename)
+                path_manifest = os.path.join(self.path_archive_manifests, filename)
                 with open(path_manifest, "r") as f:
                     manifest = f.read()
                     if manifest.find(hash) != -1:
@@ -82,8 +83,8 @@ class ArchiveManifests():
 def _get_index_by_label(c2pa, label):
     return [i for i, o in enumerate(c2pa["assertions"]) if o["label"] == label][0]
 
-def _generate_c2pa_1_src_from_archive(archive_manifests, asset_info_ext, path_archive, path_c2pa_1_template, path_c2pa_1_src):
-    with open(path_c2pa_1_template, "r") as c2pa_1_template:
+def _generate_c2pa_1_src_from_archive(archive_manifests, asset_info_ext, path_archive):
+    with open(p_c2pa_1_template, "r") as c2pa_1_template:
         c2pa_1 = json.load(c2pa_1_template)
 
         with zipfile.ZipFile(path_archive) as zf:
@@ -104,6 +105,7 @@ def _generate_c2pa_1_src_from_archive(archive_manifests, asset_info_ext, path_ar
                     info_ext = asset_info_ext.get(source_id)
                     if info_ext is None:
                         raise Exception(f"Missing assetInfoExt for {source_id}")
+                    print(f"Processing {path_archive} archive containing {content_hash} asset (data_id={source_id})")
 
                     # Insert claim generator
                     c2pa_1["claim_generator"] = info_ext.get("claimGenerator")
@@ -120,7 +122,7 @@ def _generate_c2pa_1_src_from_archive(archive_manifests, asset_info_ext, path_ar
                     c2pa_1["assertions"][m]["data"]["actions"][n]["when"] = info_ext.get("captureDate")
 
                     # Insert c2pa.converted and c2pa.resized actions for ZK redaction assets
-                    if info_ext.get("redaction") is "ZK":
+                    if info_ext.get("redaction") == "ZK":
                         now = datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
                         c2pa_1["assertions"][m]["data"]["actions"].append({ "action": "c2pa.converted", "when": now })
                         c2pa_1["assertions"][m]["data"]["actions"].append({ "action": "c2pa.resized", "when": now })
@@ -169,7 +171,7 @@ def _generate_c2pa_1_src_from_archive(archive_manifests, asset_info_ext, path_ar
                     if source_id is None:
                         raise Exception("Missing sourceId")
                     ext = os.path.basename(filename).split(".")[1]
-                    with zf.open(filename) as zimg, open(os.path.join(path_c2pa_1_src, f"{source_id}.{ext}"), "wb") as img:
+                    with zf.open(filename) as zimg, open(os.path.join(p_out_c2pa_1_src, f"{source_id}.{ext}"), "wb") as img:
                         shutil.copyfileobj(zimg, img)
 
             # Insert authsign signatures of the archive
@@ -199,9 +201,10 @@ def _generate_c2pa_1_src_from_archive(archive_manifests, asset_info_ext, path_ar
                         tmp.close()
                         v = subprocess.run(["ots", "--bitcoin-node", f"{bitcoin_node_url}", "verify", "-d", f"{content_hash}", tmp.name], capture_output=True)
                         os.remove(tmp.name)
-                        res_line = v.stderr.decode("ascii").split("\n")[1]
-                        if res_line:
-                            res_match = re.search("^Success! Bitcoin block (\d{1,10})", res_line)
+                        lines = v.stderr.decode("ascii").split("\n")
+                        res = lines[len(lines)-2]
+                        if res:
+                            res_match = re.search("^Success! Bitcoin block (\d{1,10})", res)
                             if res_match:
                                 btc_block_no = res_match.group(1)
                                 if btc_block_no:
@@ -211,52 +214,48 @@ def _generate_c2pa_1_src_from_archive(archive_manifests, asset_info_ext, path_ar
                                         "sha256": content_hash,
                                         "block": btc_block_no
                                     }
+                                else:
+                                    raise Exception(f"Failed opentimestamps verify: {res}")
+                            else:
+                                raise Exception(f"Failed opentimestamps verify: {res}")
+                        else:
+                            raise Exception("Failed opentimestamps verify")
 
             # print(json.dumps(c2pa_1, indent=2))
-            with open(os.path.join(path_c2pa_1_src, f"{source_id}.json"), "w") as man:
+            with open(os.path.join(p_out_c2pa_1_src, f"{source_id}.json"), "w") as man:
                 json.dump(c2pa_1, man)
 
-def _generate_c2pa_1_out_from_src(archive_manifests, asset_info_ext, path_assets):
-    # path_archives = os.path.join(path_assets, "archives")
-    # path_c2pa_1_src = os.path.join(path_assets, "c2pa_1_src")
-    # path_c2pa_1_out = os.path.join(path_assets, "c2pa_1_out")
-    # path_c2pa_1_template = os.path.join(path_assets, "c2pa_1_template.json")
-    # path_layer3_template = os.path.join(path_assets, "layer3_template.json")
-    
+def _generate_c2pa_1_out_from_src(archive_manifests, asset_info_ext):
     # Generate intermediate files for c2pa injection
-    for archive in os.listdir(path_archives):
+    for archive in os.listdir(p_in_archives):
         if archive.endswith(".zip"):
-            path_archive = os.path.join(path_archives, archive)
-            _generate_c2pa_1_src_from_archive(archive_manifests, asset_info_ext, path_archive, path_c2pa_1_template, path_c2pa_1_src)
+            path_archive = os.path.join(p_in_archives, archive)
+            _generate_c2pa_1_src_from_archive(archive_manifests, asset_info_ext, path_archive)
 
             # Uncomment to process just a single asset in the directory
             break
 
     # Generate c2pa injected assets in path_c2pa_1_out
-    for filename in os.listdir(path_c2pa_1_src):
+    for filename in os.listdir(p_out_c2pa_1_src):
         if filename.endswith(".jpg") or filename.endswith(".png"):
             basename = os.path.basename(filename).split(".")[0]
             ext = os.path.basename(filename).split(".")[1]
 
-            path_out = os.path.join(path_c2pa_1_out, filename)
-            path_out_man = os.path.join(path_c2pa_1_out, f"{basename}-manifest.json")
-            path_img = os.path.join(path_c2pa_1_src, filename)
-            path_man = os.path.join(path_c2pa_1_src, f"{basename}.json")
-            path_thumb = os.path.join(path_c2pa_1_src, f"{basename}.thumb")
+            path_out = os.path.join(p_out_c2pa_1_out, filename)
+            path_out_man = os.path.join(p_out_c2pa_1_out, f"{basename}-manifest.json")
+            path_img = os.path.join(p_out_c2pa_1_src, filename)
+            path_man = os.path.join(p_out_c2pa_1_src, f"{basename}.json")
+            path_thumb = os.path.join(p_in_c2pa_thumbs, f"{basename}.png")
             if os.path.isfile(path_thumb):
-                p = subprocess.run([f"{path_c2patool}", f"{path_img}", "--manifest", f"{path_man}", "--thumb", f"{path_thumb}", "--output" , f"{path_out}", "--force"], capture_output=True)
+                p = subprocess.run([f"{p_c2patool}", f"{path_img}", "--manifest", f"{path_man}", "--thumb", f"{path_thumb}", "--output" , f"{path_out}", "--force"], capture_output=True)
             else:
-                p = subprocess.run([f"{path_c2patool}", f"{path_img}", "--manifest", f"{path_man}", "--output" , f"{path_out}", "--force"], capture_output=True)
+                p = subprocess.run([f"{p_c2patool}", f"{path_img}", "--manifest", f"{path_man}", "--output" , f"{path_out}", "--force"], capture_output=True)
             
             # Write detailed c2pa manifest out to file
             with open(path_out_man, "w") as f:
-                p = subprocess.run([f"{path_c2patool}", f"{path_out}", "--detailed"], stdout=f)
+                p = subprocess.run([f"{p_c2patool}", f"{path_out}", "--detailed"], stdout=f)
 
 def _generate_layer3_out_from_src(archive_manifests, asset_info_ext, path_assets):
-    # path_c2pa_1_src = os.path.join(path_assets, "c2pa_1_src")
-    # path_layer3_out = os.path.join(path_assets, "layer3_out")
-    # path_layer3_template = os.path.join(path_assets, "layer3_template.json")
-
     # Generate layer3 for assets in path_c2pa_1_src
     for filename in os.listdir(path_c2pa_1_src):
         if filename.endswith(".jpg") or filename.endswith(".png"):
@@ -327,7 +326,7 @@ def _generate_layer3_out_from_src(archive_manifests, asset_info_ext, path_assets
                         }
                         layer3["verifiedBy"].append(c2pa_1)
                     if info_ext.get("c2paManifest2"):
-                        if info_ext.get("c2paManifest2") is "ZK":
+                        if info_ext.get("c2paManifest2") == "ZK":
                             c2pa_2 = {
                                 "name": info_ext.get("c2paManifest2"),
                                 "value": "Starling Lab Bijeljina Investigation",
@@ -366,5 +365,10 @@ archive_manifests = ArchiveManifests(p_in_archive_manifests)
 
 with open(p_asset_info_ext, "r") as f:
     asset_info_ext = json.load(f)["assetInfoExt"]
-    _generate_c2pa_1_out_from_src(archive_manifests, asset_info_ext)
-    _generate_layer3_out_from_src(archive_manifests, asset_info_ext)
+    if len(sys.argv) > 1:
+        if  sys.argv[1] == "c2pa":
+            _generate_c2pa_1_out_from_src(archive_manifests, asset_info_ext)
+        if sys.argv[1] == "layer3":
+            _generate_layer3_out_from_src(archive_manifests, asset_info_ext)
+    else:
+        print("Specify option: [ c2pa layer3 ]")

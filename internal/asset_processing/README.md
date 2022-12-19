@@ -23,7 +23,7 @@ Then populate the following input folders:
 
 Generate `./asset_info_ext.json` from the asset spreadsheet containing editorial and other external info.
 
-Then run `python3 generate_assets.py` and find generated assets at `./out`:
+Then run `python3 generate_assets.py c2pa` and find generated assets at `./out`:
 
 - `./out/c2pa_1_src/`: intermediate files for C2PA Claim 1 injection
 - `./out/c2pa_1_out/`: C2PA assets with Claim 1 and C2PA manifests as JSON files
