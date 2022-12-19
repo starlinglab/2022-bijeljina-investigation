@@ -83,12 +83,84 @@ class ArchiveManifests():
 def _get_index_by_label(c2pa, label):
     return [i for i, o in enumerate(c2pa["assertions"]) if o["label"] == label][0]
 
-def _generate_c2pa_1_src_from_archive(archive_manifests, asset_info_ext, path_archive):
+def _fill_opentimestamps(archive_manifest, path_archives):
+    result = None
+    path_archive = os.path.join(path_archives, f"{archive_manifest['archive']['sha256']}.zip")
+    content_hash = archive_manifest["content"]["sha256"]
+    with zipfile.ZipFile(path_archive) as zf:
+        for filename in zf.namelist():
+            if re.match(f"proofs/{content_hash}\..*\.ots", filename):
+                f = zf.read(filename)
+                with tempfile.NamedTemporaryFile(delete=False) as tmp:
+                    tmp.write(f)
+                    tmp.close()
+                    v = subprocess.run(["ots", "--bitcoin-node", f"{bitcoin_node_url}", "verify", "-d", f"{content_hash}", tmp.name], capture_output=True)
+                    os.remove(tmp.name)
+                    lines = v.stderr.decode("ascii").split("\n")
+                    res = lines[len(lines)-2]
+                    if res:
+                        res_match = re.search("^Success! Bitcoin block (\d{1,10})", res)
+                        if res_match:
+                            btc_block_no = res_match.group(1)
+                            if btc_block_no:
+                                # Insert opentimestamps registration record
+                                result = archive_manifest
+                                result["registrationRecords"]["openTimestamps"] = {
+                                    "sha256": content_hash,
+                                    "block": btc_block_no
+                                }
+                            else:
+                                raise Exception(f"Failed opentimestamps verify: btc_block_no=None")
+                        else:
+                            raise Exception(f"Failed opentimestamps verify: res={res}")
+                    else:
+                        raise Exception("Failed opentimestamps verify: res=None")
+    if result is None:
+        raise Exception("Failed opentimestamps verify")
+    return result
+
+def _get_validated_signatures_from_archive(archive_manifest, path_archives):
+    result = None
+    path_archive = os.path.join(path_archives, f"{archive_manifest['archive']['sha256']}.zip")
+    content_hash = archive_manifest["content"]["sha256"]
+    with zipfile.ZipFile(path_archive) as zf:
+        for filename in zf.namelist():
+            if re.match(f"{content_hash}-meta-content\.json", filename):
+                f = zf.read(filename)
+                content_metadata = json.loads(f).get("contentMetadata")
+                result = content_metadata.get("validatedSignatures", [])
+    if result is None:
+        raise Exception("Failed to get validatedSignatures")
+    return result
+
+def _get_authsign_from_archive(archive_manifest, path_archives):
+    result = None
+    path_archive = os.path.join(path_archives, f"{archive_manifest['archive']['sha256']}.zip")
+    content_hash = archive_manifest["content"]["sha256"]
+    with zipfile.ZipFile(path_archive) as zf:
+        for filename in zf.namelist():
+            if re.match(f"proofs/{content_hash}\..*\.authsign", filename):
+                f = zf.read(filename)
+                # sig = json.load(f)
+                sig = json.loads(f.decode('unicode_escape').replace('"{', "{").replace('}"', "}")) # authsign signatures are encoded as strings due to a backend bug
+                sig_provider = sig.get("software")
+                sig_algo = "ecdsa-certificate-sig"
+                result = {
+                    "starling:provider": sig_provider,
+                    "starling:algorithm": sig_algo,
+                    "starling:custom": sig
+                }
+    if result is None:
+        raise Exception("Failed to get authsign")
+    return result
+
+def _generate_c2pa_1_src_from_archive(archive_manifests, archive_manifests_related, asset_info_ext, path_archive):
     with open(p_c2pa_1_template, "r") as c2pa_1_template:
         c2pa_1 = json.load(c2pa_1_template)
+        source_id = None
+        related_asset_cid = None
 
         with zipfile.ZipFile(path_archive) as zf:
-            source_id = None
             content_hash = None
             ext = None
 
@@ -100,13 +172,14 @@ def _generate_c2pa_1_src_from_archive(archive_manifests, asset_info_ext, path_ar
                     content_hash = os.path.basename(filename).split("-meta-content.json")[0]
                     content_metadata = json.loads(f).get("contentMetadata")
                     source_id = content_metadata.get("sourceId").get("value")
+                    related_asset_cid = content_metadata.get("relatedAssetCid")
                     if source_id is None:
                         raise Exception("Missing sourceId")
                     info_ext = asset_info_ext.get(source_id)
                     if info_ext is None:
                         raise Exception(f"Missing assetInfoExt for {source_id}")
-                    print(f"Processing {path_archive} archive containing {content_hash} asset (data_id={source_id})")
-
+                    print(f"{source_id}: processing archive [ archive.path={path_archive} ] containing asset [ content.sha256={content_hash} ]")
+                    
                     # Insert claim generator
                     c2pa_1["claim_generator"] = info_ext.get("claimGenerator")
 
@@ -138,15 +211,17 @@ def _generate_c2pa_1_src_from_archive(archive_manifests, asset_info_ext, path_ar
                     if info_ext.get("city"): location["Iptc4xmpExt:City"] = info_ext.get("city")
                     c2pa_1["assertions"][m]["data"]["Iptc4xmpExt:LocationCreated"] = location
 
-                    # Insert root of trust signatures
+                    # Insert identifier
                     m = _get_index_by_label(c2pa_1, "org.starlinglab.integrity")
                     content_id_starling_capture = content_metadata.get("private", {}).get("starlingCapture", {}).get("metadata", {}).get("proof", {}).get("hash")
                     if content_id_starling_capture:
                         c2pa_1["assertions"][m]["data"]["starling:identifier"] = content_id_starling_capture
                     else:
                         c2pa_1["assertions"][m]["data"]["starling:identifier"] = content_metadata.get("sourceId").get("value")
+
+                    # Insert signatures
                     c2pa_1["assertions"][m]["data"]["starling:signatures"] = []
-                    for sig in content_metadata.get("validatedSignatures"):
+                    for sig in content_metadata.get("validatedSignatures", []):
                         x = {}
                         if sig.get("provider"): x["starling:provider"] = sig.get("provider")
                         if sig.get("algorithm"): x["starling:algorithm"] = sig.get("algorithm")
@@ -156,12 +231,11 @@ def _generate_c2pa_1_src_from_archive(archive_manifests, asset_info_ext, path_ar
                         if sig.get("authenticatedMessageDescription"): x["starling:authenticatedMessageDescription"] = sig.get("authenticatedMessageDescription")
                         if sig.get("custom"): x["starling:custom"] = sig.get("custom")
                         c2pa_1["assertions"][m]["data"]["starling:signatures"].append(x)
-
-                    # TODO: Insert root of trust signatures of the source asset (only for images derived from a source such as WACZ or ProofMode)
+                    c2pa_1["assertions"][m]["data"]["starling:signatures"].append(_get_authsign_from_archive(archive_manifests.get_manifest(content_hash), p_in_archives))
 
                     # Insert archive manifests
                     c2pa_1["assertions"][m]["data"]["starling:archives"] = []
-                    manifest = archive_manifests.get_manifest(content_hash)
+                    manifest = _fill_opentimestamps(archive_manifests.get_manifest(content_hash), p_in_archives)
                     if manifest:
                         c2pa_1["assertions"][m]["data"]["starling:archives"].append(manifest)
 
@@ -174,63 +248,43 @@ def _generate_c2pa_1_src_from_archive(archive_manifests, asset_info_ext, path_ar
                     with zf.open(filename) as zimg, open(os.path.join(p_out_c2pa_1_src, f"{source_id}.{ext}"), "wb") as img:
                         shutil.copyfileobj(zimg, img)
 
-            # Insert authsign signatures of the archive
-            for filename in zf.namelist():
-                if filename.endswith(f"{content_hash}.{ext}.authsign"):
-                    f = zf.read(filename)
-                    # sig = json.load(f)
-                    sig = json.loads(f.decode('unicode_escape').replace('"{', "{").replace('}"', "}")) # authsign signatures are encoded as strings due to a backend bug
-                    sig_provider = sig.get("software")
-                    sig_algo = "ecdsa-certificate-sig"
-                    x = {
-                        "starling:provider": sig_provider,
-                        "starling:algorithm": sig_algo,
-                        "starling:custom": sig
-                    }
-                    m = _get_index_by_label(c2pa_1, "org.starlinglab.integrity")
-                    c2pa_1["assertions"][m]["data"]["starling:signatures"].append(x)
+            # Insert authenticity data from related assets (only for images derived from a source such as WACZ or ProofMode)
+            if related_asset_cid:
+                print(f"{source_id}: appending data from related archive [ archiveEncrypted.cid={related_asset_cid} ]")
+                related_manifest = _fill_opentimestamps(archive_manifests_related.get_manifest(related_asset_cid), p_in_archives_related)
+                if related_manifest is None:
+                    raise Exception("Missing related archive manifest")
 
-            # TODO: Insert authsign signatures of the source asset (only for images derived from a source such as WACZ or ProofMode)
+                # Insert signatures of the source archive                
+                m = _get_index_by_label(c2pa_1, "org.starlinglab.integrity")
+                c2pa_1["assertions"][m]["data"]["starling:signaturesRelated"] = []
+                for sig in _get_validated_signatures_from_archive(archive_manifests.get_manifest(related_asset_cid), p_in_archives_related):
+                    x = {}
+                    if sig.get("provider"): x["starling:provider"] = sig.get("provider")
+                    if sig.get("algorithm"): x["starling:algorithm"] = sig.get("algorithm")
+                    if sig.get("publicKey"): x["starling:publicKey"] = sig.get("publicKey")
+                    if sig.get("signature"): x["starling:signature"] = sig.get("signature")
+                    if sig.get("authenticatedMessage"): x["starling:authenticatedMessage"] = sig.get("authenticatedMessage")
+                    if sig.get("authenticatedMessageDescription"): x["starling:authenticatedMessageDescription"] = sig.get("authenticatedMessageDescription")
+                    if sig.get("custom"): x["starling:custom"] = sig.get("custom")
+                    c2pa_1["assertions"][m]["data"]["starling:signaturesRelated"].append(x)
+                c2pa_1["assertions"][m]["data"]["starling:signaturesRelated"].append(_get_authsign_from_archive(archive_manifests_related.get_manifest(related_asset_cid), p_in_archives_related))
 
-            # Insert opentimestamps registration record
-            for filename in zf.namelist():
-                if filename.endswith(f"{content_hash}.{ext}.ots"):
-                    f = zf.read(filename)
-                    with tempfile.NamedTemporaryFile(delete=False) as tmp:
-                        tmp.write(f)
-                        tmp.close()
-                        v = subprocess.run(["ots", "--bitcoin-node", f"{bitcoin_node_url}", "verify", "-d", f"{content_hash}", tmp.name], capture_output=True)
-                        os.remove(tmp.name)
-                        lines = v.stderr.decode("ascii").split("\n")
-                        res = lines[len(lines)-2]
-                        if res:
-                            res_match = re.search("^Success! Bitcoin block (\d{1,10})", res)
-                            if res_match:
-                                btc_block_no = res_match.group(1)
-                                if btc_block_no:
-                                    m = _get_index_by_label(c2pa_1, "org.starlinglab.integrity")
-                                    n = [i for i, o in enumerate(c2pa_1["assertions"][m]["data"]["starling:archives"]) if o["content"]["sha256"] == content_hash][0]
-                                    c2pa_1["assertions"][m]["data"]["starling:archives"][n]["registrationRecords"]["openTimestamps"] = {
-                                        "sha256": content_hash,
-                                        "block": btc_block_no
-                                    }
-                                else:
-                                    raise Exception(f"Failed opentimestamps verify: {res}")
-                            else:
-                                raise Exception(f"Failed opentimestamps verify: {res}")
-                        else:
-                            raise Exception("Failed opentimestamps verify")
+                # Insert archive manifests of the source archive
+                c2pa_1["assertions"][m]["data"]["starling:archivesRelated"] = []
+                c2pa_1["assertions"][m]["data"]["starling:archivesRelated"].append(related_manifest)
 
             # print(json.dumps(c2pa_1, indent=2))
             with open(os.path.join(p_out_c2pa_1_src, f"{source_id}.json"), "w") as man:
                 json.dump(c2pa_1, man)
 
-def _generate_c2pa_1_out_from_src(archive_manifests, asset_info_ext):
+def _generate_c2pa_1_out_from_src(archive_manifests, archive_manifests_related, asset_info_ext):
     # Generate intermediate files for c2pa injection
     for archive in os.listdir(p_in_archives):
-        if archive.endswith(".zip"):
+        if archive.endswith(".zip") and archive.startswith("e1cd2b256ffc33ea27d3f1776d3524b717000e585e79115fc93c841d6699d2b8"):
+        # if archive.endswith(".zip"):
             path_archive = os.path.join(p_in_archives, archive)
-            _generate_c2pa_1_src_from_archive(archive_manifests, asset_info_ext, path_archive)
+            _generate_c2pa_1_src_from_archive(archive_manifests, archive_manifests_related, asset_info_ext, path_archive)
 
             # Uncomment to process just a single asset in the directory
             break
@@ -255,7 +309,7 @@ def _generate_c2pa_1_out_from_src(archive_manifests, asset_info_ext):
             with open(path_out_man, "w") as f:
                 p = subprocess.run([f"{p_c2patool}", f"{path_out}", "--detailed"], stdout=f)
 
-def _generate_layer3_out_from_src(archive_manifests, asset_info_ext, path_assets):
+def _generate_layer3_out_from_src(archive_manifests, archive_manifests_related, asset_info_ext):
     # Generate layer3 for assets in path_c2pa_1_src
     for filename in os.listdir(path_c2pa_1_src):
         if filename.endswith(".jpg") or filename.endswith(".png"):
@@ -362,13 +416,14 @@ def _generate_layer3_out_from_src(archive_manifests, asset_info_ext, path_assets
 
 # Index archive manifests from path_archive_manifests
 archive_manifests = ArchiveManifests(p_in_archive_manifests)
+archive_manifests_related = ArchiveManifests(p_in_archive_manifests_related)
 
 with open(p_asset_info_ext, "r") as f:
     asset_info_ext = json.load(f)["assetInfoExt"]
     if len(sys.argv) > 1:
         if  sys.argv[1] == "c2pa":
-            _generate_c2pa_1_out_from_src(archive_manifests, asset_info_ext)
+            _generate_c2pa_1_out_from_src(archive_manifests, archive_manifests_related, asset_info_ext)
         if sys.argv[1] == "layer3":
-            _generate_layer3_out_from_src(archive_manifests, asset_info_ext)
+            _generate_layer3_out_from_src(archive_manifests, archive_manifests_related, asset_info_ext)
     else:
         print("Specify option: [ c2pa layer3 ]")

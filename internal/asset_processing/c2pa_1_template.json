@@ -84,6 +84,30 @@
         ],
         "starling:archives": [
           "{{ archiveManifests }}"
+        ],
+        "starling:signaturesRelated": [
+          {
+            "starling:provider": "{{ contentMetadataRelated.validatedSignatures[i].provider }}",
+            "starling:algorithm": "{{ contentMetadataRelated.validatedSignatures[i].algorithm }}",
+            "starling:publicKey": "{{ contentMetadataRelated.validatedSignatures[i].signature }}",
+            "starling:signature": "{{ contentMetadataRelated.validatedSignatures[i].publicKey }}",
+            "starling:authenticatedMessage": "{{ contentMetadataRelated.validatedSignatures[i].authenticatedMessage }}",
+            "starling:authenticatedMessageDescription": "{{ contentMetadataRelated.validatedSignatures[i].authenticatedMessageDescription }}"
+          },
+          {
+            "starling:provider": "{{ contentMetadataRelated.validatedSignatures[i].provider }}",
+            "starling:algorithm": "{{ contentMetadataRelated.validatedSignatures[i].algorithm }}",
+            "starling:publicKey": "{{ contentMetadataRelated.validatedSignatures[i].signature }}",
+            "starling:custom": "{{ contentMetadataRelated.validatedSignatures[i].custom }}"
+          },
+          {
+            "starling:provider": "{{ contentMetadataRelated.validatedSignatures[i].provider }}",
+            "starling:algorithm": "{{ contentMetadataRelated.validatedSignatures[i].algorithm }}",
+            "starling:custom": "{{ contentMetadataRelated.validatedSignatures[i].custom }}"
+          }
+        ],
+        "starling:archivesRelated": [
+          "{{ archiveManifestsRelated }}"
         ]
       }
     }
