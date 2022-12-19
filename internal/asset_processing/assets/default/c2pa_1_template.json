@@ -1,6 +1,6 @@
 {
   "vendor": "starlinglab",
-  "claim_generator": "Starling_Capture_by_Numbers_Protocol/1.0.1",
+  "claim_generator": "{{ assetInfoExt.claimGenerator }}",
   "alg": "es256",
   "private_key": "../../../keys/starling-lab-bijeljina-investigation.key.pem",
   "sign_cert": "../../../keys/starling-lab-bijeljina-investigation.cert.pem",
@@ -29,16 +29,38 @@
         "actions": [
           {
             "action": "c2pa.created",
-            "when": "{{ contentMetadata.dateCreated }}"
+            "when": "{{ assetInfoExt.captureDate }}"
           }
         ]
+      }
+    },
+    {
+      "label": "stds.iptc.photo-metadata",
+      "data":
+      {
+        "@context":
+        {
+          "Iptc4xmpExt": "http://iptc.org/std/Iptc4xmpExt/2008-02-29/",
+          "dc": "http://purl.org/dc/elements/1.1/"
+        },
+        "dc:creator": [
+          "{{ assetInfoExt.capturedBy }}"
+        ],
+        "dc:description": "{{ assetInfoExt.captionText }}",
+        "Iptc4xmpExt:LocationCreated":
+        {
+          "Iptc4xmpExt:CountryCode": "{{ assetInfoExt.countryCode }}",
+          "Iptc4xmpExt:CountryName": "{{ assetInfoExt.countryName }}",
+          "Iptc4xmpExt:ProvinceState": "{{ assetInfoExt.provinceState }}",
+          "Iptc4xmpExt:City": "{{ assetInfoExt.city }}"
+        }
       }
     },
     {
       "label": "org.starlinglab.integrity",
       "data":
       {
-        "starling:identifier": "{{ contentMetadata.sourceId.value }}",
+        "starling:identifier": "{{ rootOfTrustContentIdentifier }}",
         "starling:signatures": [
           {
             "starling:provider": "{{ contentMetadata.validatedSignatures[i].provider }}",
