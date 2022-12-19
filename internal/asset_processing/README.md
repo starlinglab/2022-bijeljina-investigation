@@ -1,3 +1,5 @@
+# # 2022 Bijeljina Investigation: Asset Processing
+
 Create `.env` in this directory and define the following:
 
 ```
@@ -5,21 +7,27 @@ BITCOIN_NODE_URL="http://<username>:<password>@<ip_address>:<port>"
 C2PATOOL_PATH="c2patool/<c2patool_binary>"
 ```
 
-Then populate the `archives` and `archive-manifests` folders with data from a collection. For example:
+Copy X.509 document signing certificate and private key for C2PA signing:
 
-```
-$ scp starling-prod-integrity:/mnt/integrity_store/starling/internal/starling-lab/bijeljina-investigation-haviv-scans/action-archive/*.zip assets/default/archives
-$ scp starling-prod-integrity:/mnt/integrity_store/starling/shared/starling-lab/bijeljina-investigation-haviv-scans/action-archive/*.json assets/default/archive-manifests
-```
+- `./key/starling-lab-bijeljina-investigation.cert.pem`: certificate used for C2PA signing
+- `./key/starling-lab-bijeljina-investigation.key.pem`: private key for C2PA signing (do not commit this file)
 
-If there are custom thumbnail files, add them to `c2pa_1_src` with file name matched to the asset for C2PA injection and extension `.thumb`. For example, `P204.thumb`.
+Then populate the following input folders:
 
-Then run `python3 generate_assets.py`.
+- `./in/archives/<sha256(archive).zip>`: unencrypted zip of archives
+- `./in/archive_manifests/<sha256(input_bundle).json>`: archive manifests of primary assets with a `data_id` shown in Layer 3 UI
+- `./in/archives_related/<sha256(archive).zip>`: unencrypted zip of related asset archives
+- `./in/archive_manifests_related/<sha256(input_bundle).json>`: archive manifests of related assets where primary assets are derived from
+- `./in/c2pa_thumbs/<data_id>.png`: custom thumbnails used for C2PA Claim 1 injection of selected assets
+- `./in/zk_redacted/<data_id>.png`: ZK redaction outputs to be used for C2PA Claim 2 injection of selected assets
 
-The script will take archives and metadata from `archives` and `archive-manifests`, and create:
+Generate `./asset_info_ext.json` from the asset spreadsheet containing editorial and other external info.
 
-1. `c2pa_1_src`: intermediate files for C2PA injection
-2. `c2pa_1_out`: C2PA-injected assets and C2PA manifests as JSON files
-3. `layer3_out`: data backing the Layer 3 UI
+Then run `python3 generate_assets.py` and find generated assets at `./out`:
 
-Inspect what is in `c2pa_1_out`, then copy the results over to the repository root's `assets`, `manifests`, and `layer3` folders.
+- `./out/c2pa_1_src/`: intermediate files for C2PA Claim 1 injection
+- `./out/c2pa_1_out/`: C2PA assets with Claim 1 and C2PA manifests as JSON files
+- `./out/c2pa_2_zk_src/`: intermediate files for C2PA Claim 2 injection (ZK-redacted assets only)
+- `./out/c2pa_2_zk_out/`: C2PA assets with Claim 2 and C2PA manifests as JSON files (ZK-redacted assets only)
+
+Before generating the data backing the Layer 3 UI, place the final C2PA assets that are to be published (e.g. after processing edits) in `./in/c2pa_publish`, then run `python3 generate_assets.py layer3` to find generated files at `./out/layer3_out/`.

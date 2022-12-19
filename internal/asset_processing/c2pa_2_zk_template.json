@@ -1,0 +1,28 @@
+{
+  "vendor": "starlinglab",
+  "claim_generator": "Zero_Knowledge_Proof",
+  "alg": "es256",
+  "private_key": "../../../keys/starling-lab-bijeljina-investigation.key.pem",
+  "sign_cert": "../../../keys/starling-lab-bijeljina-investigation.cert.pem",
+  "ta_url": "http://timestamp.digicert.com",
+  "assertions": [
+    {
+      "label": "c2pa.actions",
+      "data":
+      {
+        "actions": [
+          {
+            "action": "c2pa.edited",
+            "when": "{{ now }}",
+            "parameters":
+            {
+              "name": "zk_redaction",
+              "zkProofCid": "{{ assetInfoExt.zkProofCid }}",
+              "codeRepositoryCid": "bafybeiado55ziicfzgsn5qwv2i5jjnm7gynx2kuusyxpcl6zx6bfjhbjve"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

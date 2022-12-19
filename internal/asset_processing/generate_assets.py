@@ -14,15 +14,38 @@ import zipfile
 from PIL import JpegImagePlugin
 JpegImagePlugin._getmp = lambda x: None
 
+# Load .env
 dotenv.load_dotenv()
 bitcoin_node_url = os.environ.get("BITCOIN_NODE_URL")
 c2patool_path = os.environ.get("C2PATOOL_PATH")
 
-path_c2patool = os.path.abspath(c2patool_path)
-path_asset_info_ext = "asset_info_ext.json"
-path_default = "assets/default/"
-path_redaction_photoshop = "assets/redaction_photoshop/"
-path_redaction_zk = "assets/redaction_zk/"
+# Paths to working directory and binaries
+p_c2patool = os.path.abspath(c2patool_path)
+p_assets = "assets"
+
+# Paths to schema templates
+p_c2pa_1_template = "c2pa_1_template.json"
+p_c2pa_2_zk_template = "c2pa_2_zk_template.json"
+p_layer3_template = "layer3_template.json"
+
+# Paths to input files
+p_asset_info_ext = "asset_info_ext.json"
+p_in = os.path.join(p_assets, "in")
+p_in_archives = os.path.join(p_in, "archives")
+p_in_archive_manifests = os.path.join(p_in, "archive_manifests")
+p_in_archives_related = os.path.join(p_in, "archives_related")
+p_in_archive_manifests_related = os.path.join(p_in, "archive_manifests_related")
+p_in_c2pa_thumbs = os.path.join(p_in, "c2pa_thumbs")
+p_in_zk_redacted = os.path.join(p_in, "zk_redacted")
+p_in_c2pa_publish = os.path.join(p_in, "c2pa_publish")
+
+# Paths to output files
+p_out = os.path.join(path_assets, "out")
+p_out_c2pa_1_src = os.path.join(p_out, "c2pa_1_src")
+p_out_c2pa_1_out = os.path.join(p_out, "c2pa_1_out")
+p_out_c2pa_2_zk_src = os.path.join(p_out, "c2pa_2_zk_src")
+p_out_c2pa_2_zk_out = os.path.join(p_out, "c2pa_2_zk_out")
+p_out_layer3_out = os.path.join(p_out, "layer3_out")
 
 class ArchiveManifests():
     path_archive_manifests = None
@@ -194,11 +217,11 @@ def _generate_c2pa_1_src_from_archive(archive_manifests, asset_info_ext, path_ar
                 json.dump(c2pa_1, man)
 
 def _generate_c2pa_1_out_from_src(archive_manifests, asset_info_ext, path_assets):
-    path_archives = os.path.join(path_assets, "archives")
-    path_c2pa_1_src = os.path.join(path_assets, "c2pa_1_src")
-    path_c2pa_1_out = os.path.join(path_assets, "c2pa_1_out")
-    path_c2pa_1_template = os.path.join(path_assets, "c2pa_1_template.json")
-    path_layer3_template = os.path.join(path_assets, "layer3_template.json")
+    # path_archives = os.path.join(path_assets, "archives")
+    # path_c2pa_1_src = os.path.join(path_assets, "c2pa_1_src")
+    # path_c2pa_1_out = os.path.join(path_assets, "c2pa_1_out")
+    # path_c2pa_1_template = os.path.join(path_assets, "c2pa_1_template.json")
+    # path_layer3_template = os.path.join(path_assets, "layer3_template.json")
     
     # Generate intermediate files for c2pa injection
     for archive in os.listdir(path_archives):
@@ -230,9 +253,9 @@ def _generate_c2pa_1_out_from_src(archive_manifests, asset_info_ext, path_assets
                 p = subprocess.run([f"{path_c2patool}", f"{path_out}", "--detailed"], stdout=f)
 
 def _generate_layer3_out_from_src(archive_manifests, asset_info_ext, path_assets):
-    path_c2pa_1_src = os.path.join(path_assets, "c2pa_1_src")
-    path_layer3_out = os.path.join(path_assets, "layer3_out")
-    path_layer3_template = os.path.join(path_assets, "layer3_template.json")
+    # path_c2pa_1_src = os.path.join(path_assets, "c2pa_1_src")
+    # path_layer3_out = os.path.join(path_assets, "layer3_out")
+    # path_layer3_template = os.path.join(path_assets, "layer3_template.json")
 
     # Generate layer3 for assets in path_c2pa_1_src
     for filename in os.listdir(path_c2pa_1_src):
@@ -339,13 +362,9 @@ def _generate_layer3_out_from_src(archive_manifests, asset_info_ext, path_assets
 ###################
 
 # Index archive manifests from path_archive_manifests
-path_archive_manifests = os.path.join(path_default, "archive_manifests")
-archive_manifests = ArchiveManifests(path_archive_manifests)
-with open(path_asset_info_ext, "r") as f:
+archive_manifests = ArchiveManifests(p_in_archive_manifests)
+
+with open(p_asset_info_ext, "r") as f:
     asset_info_ext = json.load(f)["assetInfoExt"]
-
-_generate_c2pa_1_out_from_src(archive_manifests, asset_info_ext, path_default)
-_generate_layer3_out_from_src(archive_manifests, asset_info_ext, path_default)
-
-# _generate_c2pa_1_out_from_src(archive_manifests, path_redaction_photoshop)
-# _generate_c2pa_1_out_from_src(archive_manifests, path_redaction_zk)
+    _generate_c2pa_1_out_from_src(archive_manifests, asset_info_ext)
+    _generate_layer3_out_from_src(archive_manifests, asset_info_ext)

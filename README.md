@@ -1,8 +1,8 @@
-# 2022-bijeljina-investigation
+# 2022 Bijeljina Investigation
 
 This repository contains files to be included in the microsite.
 
-- `assets` contains C2PA-injected assets
+- `assets` contains C2PA-injected assets for publication
 - `certs` contains X.509 document signing certificates for C2PA signing
 - `layer3` contains data backing the Layer 3 UI
 - `manifests` contains C2PA manifests as JSON files
