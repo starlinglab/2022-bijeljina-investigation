@@ -1,7 +1,7 @@
 {
-  "active_manifest": "starlinglab:urn:uuid:f67f5584-0277-40f4-a085-9adebcc202aa",
+  "active_manifest": "starlinglab:urn:uuid:2539be69-3d4a-440a-9315-882aa9241a2c",
   "manifests": {
-    "starlinglab:urn:uuid:f67f5584-0277-40f4-a085-9adebcc202aa": {
+    "starlinglab:urn:uuid:2539be69-3d4a-440a-9315-882aa9241a2c": {
       "claim": {
         "alg": "sha256",
         "assertions": [
@@ -10,7 +10,7 @@
             "url": "self#jumbf=c2pa.assertions/c2pa.thumbnail.claim.jpeg"
           },
           {
-            "hash": "cwcVNy7KkdH5YRmRlDBzjbKfBV+Vwonb9xz5b9iZRAg=",
+            "hash": "Ja34yX035PG9cd/JLnpx2iw61k7m54XLHflriZdJ4W4=",
             "url": "self#jumbf=c2pa.assertions/stds.schema-org.CreativeWork"
           },
           {
@@ -18,26 +18,37 @@
             "url": "self#jumbf=c2pa.assertions/c2pa.actions"
           },
           {
-            "hash": "B4Iz23U0CIhZqv0glRfzXwa42Ah85tDuUyunWaNO0Bw=",
+            "hash": "7k0FxMfzLLS/E8qoCLPbR7HpdzKWe6dxlQAfPpSOu8k=",
             "url": "self#jumbf=c2pa.assertions/stds.iptc.photo-metadata"
           },
           {
-            "hash": "uN7sfXum8YLvKsvgZCtEx5EUsrsptda5zYorHHmx43Q=",
+            "hash": "i+gTJ4HP3saBHfcdBfn5m3XD0qKoid5WUXKmlNcmSbg=",
             "url": "self#jumbf=c2pa.assertions/org.starlinglab.integrity"
           },
           {
-            "hash": "hp09Yn+/mca/EsLGZ9YH0+uqwEiGmRnN0VTA5Q7ixTU=",
+            "hash": "T8MHPGrOHWlId4mzdbvfApA+DX+8km7SFne7umFe+tY=",
             "url": "self#jumbf=c2pa.assertions/c2pa.hash.data"
           }
         ],
         "claim_generator": "ArchiveWeb.page_by_Webrecorder c2patool/0.3.9 c2pa-rs/0.16.0",
         "dc:format": "image/png",
         "dc:title": "C049-1772.png",
-        "instanceID": "xmp:iid:2e677060-4120-4738-9479-2d8481cecdb5",
+        "instanceID": "xmp:iid:8bb86e21-14e8-4091-b733-a8f4cd6c98fe",
         "signature": "self#jumbf=c2pa.signature"
       },
       "assertion_store": {
-        "c2pa.thumbnail.claim.jpeg": "<omitted> len = 20549",
+        "c2pa.hash.data": {
+          "alg": "sha256",
+          "exclusions": [
+            {
+              "length": 70534,
+              "start": 33
+            }
+          ],
+          "hash": "vbr3PeaxrCou1RRshxzc/qUObddR+fMXO6+ckXyJ998=",
+          "name": "jumbf manifest",
+          "pad": "<omitted>"
+        },
         "c2pa.actions": {
           "actions": [
             {
@@ -46,18 +57,7 @@
             }
           ]
         },
-        "c2pa.hash.data": {
-          "alg": "sha256",
-          "exclusions": [
-            {
-              "length": 66960,
-              "start": 33
-            }
-          ],
-          "hash": "A7wjGqQcLATMDtr2lyN7IWBt+Canthyrxk0LAPTdsVI=",
-          "name": "jumbf manifest",
-          "pad": "<omitted>"
-        },
+        "c2pa.thumbnail.claim.jpeg": "<omitted> len = 20549",
         "stds.iptc.photo-metadata": {
           "@context": {
             "Iptc4xmpExt": "http://iptc.org/std/Iptc4xmpExt/2008-02-29/",
@@ -73,18 +73,6 @@
             "Webrecorder - ArchiveWeb.page / Authenticated Web Archive"
           ],
           "dc:description": "Page from a collection of Serbian State Security Service payroll logs from 1994 to 1995, obtained by the International Criminal Tribunal for the former Yugoslavia (ICTY) and found in the official United Nations online archive."
-        },
-        "stds.schema-org.CreativeWork": {
-          "@context": "https://schema.org",
-          "@type": "CreativeWork",
-          "author": [
-            {
-              "@type": "Organization",
-              "credential": [],
-              "identifier": "https://sfi.usc.edu/",
-              "name": "USC Shoah Foundation"
-            }
-          ]
         },
         "org.starlinglab.integrity": {
           "starling:archives": [
@@ -210,19 +198,31 @@
               "starling:provider": "authsigner 0.5.0"
             }
           ]
+        },
+        "stds.schema-org.CreativeWork": {
+          "@context": "https://schema.org",
+          "@type": "CreativeWork",
+          "author": [
+            {
+              "@type": "Organization",
+              "credential": [],
+              "identifier": "https://sfi.usc.edu/",
+              "name": "USC Shoah Foundation"
+            }
+          ]
         }
       },
       "signature": {
         "alg": "es256",
         "issuer": "Starling Lab",
-        "time": "2022-12-20T02:59:42+00:00"
+        "time": "2022-12-20T04:48:07+00:00"
       }
     }
   },
   "validation_status": [
     {
       "code": "claimSignature.validated",
-      "url": "self#jumbf=/c2pa/starlinglab:urn:uuid:f67f5584-0277-40f4-a085-9adebcc202aa/c2pa.signature",
+      "url": "self#jumbf=/c2pa/starlinglab:urn:uuid:2539be69-3d4a-440a-9315-882aa9241a2c/c2pa.signature",
       "explanation": "claim signature valid"
     },
     {
@@ -257,7 +257,7 @@
     },
     {
       "code": "assertion.dataHash.match",
-      "url": "self#jumbf=/c2pa/starlinglab:urn:uuid:f67f5584-0277-40f4-a085-9adebcc202aa/c2pa.assertions/c2pa.hash.data",
+      "url": "self#jumbf=/c2pa/starlinglab:urn:uuid:2539be69-3d4a-440a-9315-882aa9241a2c/c2pa.assertions/c2pa.hash.data",
       "explanation": "data hash valid"
     }
   ]

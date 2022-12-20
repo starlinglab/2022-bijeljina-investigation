@@ -1,7 +1,88 @@
 {
-  "active_manifest": "starlinglab:urn:uuid:791ea94a-7a09-4aac-bb40-7b8c9dbe9ae0",
+  "active_manifest": "starlinglab:urn:uuid:54095ff6-afec-476f-9009-906fe8f16707",
   "manifests": {
-    "starlinglab:urn:uuid:45b2832d-92b6-418a-9435-c29e309017bb": {
+    "starlinglab:urn:uuid:54095ff6-afec-476f-9009-906fe8f16707": {
+      "claim": {
+        "alg": "sha256",
+        "assertions": [
+          {
+            "hash": "HNaC6Kjav/sqM9M4CAqCd53wLq+2wYtpG9KD86UfQC4=",
+            "url": "self#jumbf=c2pa.assertions/c2pa.thumbnail.claim.jpeg"
+          },
+          {
+            "hash": "rbpffTjM+90cFwC7H1/sH5YA7OH1t3Pl0ganYLE2XIk=",
+            "url": "self#jumbf=c2pa.assertions/c2pa.thumbnail.ingredient.png"
+          },
+          {
+            "hash": "3n7KUC8NUmm67KcHkwnOUWAfDLjTVK9Y+LFHZRDD90o=",
+            "url": "self#jumbf=c2pa.assertions/c2pa.ingredient"
+          },
+          {
+            "hash": "BOb3bbIOiOV/AUIlcWUv/jz18c+Ieh89fR9RNKchQcY=",
+            "url": "self#jumbf=c2pa.assertions/c2pa.actions"
+          },
+          {
+            "hash": "3s4lhD7Jj2hqft+PX/SGNzFv+Tsdio1V4fBeUBaLKy8=",
+            "url": "self#jumbf=c2pa.assertions/c2pa.hash.data"
+          }
+        ],
+        "claim_generator": "Zero_Knowledge_Proof_Redaction c2patool/0.3.9 c2pa-rs/0.16.0",
+        "dc:format": "image/png",
+        "dc:title": "C049-0471.png",
+        "instanceID": "xmp:iid:0bdc2c3d-a3e8-4495-9692-6e809342d95c",
+        "signature": "self#jumbf=c2pa.signature"
+      },
+      "assertion_store": {
+        "c2pa.hash.data": {
+          "alg": "sha256",
+          "exclusions": [
+            {
+              "length": 227538,
+              "start": 33
+            }
+          ],
+          "hash": "AMWpfFM/j9XM6h99mVh+xoZjg9JTEXPxmmWtvkdsH6k=",
+          "name": "jumbf manifest",
+          "pad": "<omitted>"
+        },
+        "c2pa.ingredient": {
+          "c2pa_manifest": {
+            "alg": "sha256",
+            "hash": "ufLLXBm1F/IFt+tVCqk7O827bkVHUD7ZYfgWhM9xss0=",
+            "url": "self#jumbf=/c2pa/starlinglab:urn:uuid:ba7e3d8d-8769-4a6c-ae0e-8f26d98b6be8"
+          },
+          "dc:format": "image/png",
+          "dc:title": "C049-0471.png",
+          "instanceID": "xmp:iid:8394c7a2-4cbe-48fb-a440-e5a51e88053b",
+          "relationship": "parentOf",
+          "thumbnail": {
+            "hash": "rbpffTjM+90cFwC7H1/sH5YA7OH1t3Pl0ganYLE2XIk=",
+            "url": "self#jumbf=c2pa.assertions/c2pa.thumbnail.ingredient.png"
+          }
+        },
+        "c2pa.thumbnail.claim.jpeg": "<omitted> len = 70587",
+        "c2pa.thumbnail.ingredient.png": "<omitted> len = 43579",
+        "c2pa.actions": {
+          "actions": [
+            {
+              "action": "c2pa.edited",
+              "parameters": {
+                "codeRepositoryCid": "bafybeiado55ziicfzgsn5qwv2i5jjnm7gynx2kuusyxpcl6zx6bfjhbjve",
+                "name": "zk_redaction",
+                "zkProofCid": "bafybeictuhb7dnbj36iqt37bcnwcslq77jpk3u2ssywhsvjny2nx6wec4q"
+              },
+              "when": "2022-12-20T04:59:24Z"
+            }
+          ]
+        }
+      },
+      "signature": {
+        "alg": "es256",
+        "issuer": "Starling Lab",
+        "time": "2022-12-20T04:59:25+00:00"
+      }
+    },
+    "starlinglab:urn:uuid:ba7e3d8d-8769-4a6c-ae0e-8f26d98b6be8": {
       "claim": {
         "alg": "sha256",
         "assertions": [
@@ -10,33 +91,34 @@
             "url": "self#jumbf=c2pa.assertions/c2pa.thumbnail.claim.png"
           },
           {
-            "hash": "r+LnS0yv52KEBaxZEx56zU96raTdGZi9fHHwooCvAf4=",
+            "hash": "QRWgnLbqa8gDD27eKhoYiVV42+eZBquKhUQZyHeJdlI=",
             "url": "self#jumbf=c2pa.assertions/stds.schema-org.CreativeWork"
           },
           {
-            "hash": "5lazlUG7rw0vkh1VYkuj97p3kaEtOnXtPitQHV7fldw=",
+            "hash": "/1x3Q0F7N+o9ARa60l7qo5+YY6qJd2NQuPLTpB5yz8A=",
             "url": "self#jumbf=c2pa.assertions/c2pa.actions"
           },
           {
-            "hash": "c0sEIBVP0pgkHjWZRo/zU80/R9vhn+Ec7kyt7BuvQqQ=",
+            "hash": "2N+wRewtswExKka8mkdpWciXOtRr+xZMYIIga5gkaDg=",
             "url": "self#jumbf=c2pa.assertions/stds.iptc.photo-metadata"
           },
           {
-            "hash": "6rrlU56CzhjcPpEPW6HznpJ6juFpLGAtYDvMlSg48+4=",
+            "hash": "02yYSmTgSjHjdebh+tafuNFk2Vh5G+VKyArOKBBNLdo=",
             "url": "self#jumbf=c2pa.assertions/org.starlinglab.integrity"
           },
           {
-            "hash": "j5k4Hukl4sIGHUK94l1Du/1N4TpyGU2hfO9FSLpLo9s=",
+            "hash": "ufZAT22ooUPfnnIBMeTgLGRUHcyBP7moCP+lJwhhSOY=",
             "url": "self#jumbf=c2pa.assertions/c2pa.hash.data"
           }
         ],
         "claim_generator": "ArchiveWeb.page_by_Webrecorder c2patool/0.3.9 c2pa-rs/0.16.0",
         "dc:format": "image/png",
         "dc:title": "C049-0471.png",
-        "instanceID": "xmp:iid:b6e2acbe-019e-4d19-b250-d5e9160283e5",
+        "instanceID": "xmp:iid:63cffb75-ee67-4954-a19a-7e53075a0cfd",
         "signature": "self#jumbf=c2pa.signature"
       },
       "assertion_store": {
+        "c2pa.thumbnail.claim.png": "<omitted> len = 43579",
         "c2pa.actions": {
           "actions": [
             {
@@ -45,23 +127,39 @@
             },
             {
               "action": "c2pa.converted",
-              "when": "2022-12-20T02:59:21Z"
+              "when": "2022-12-20T04:47:47Z"
             },
             {
               "action": "c2pa.resized",
-              "when": "2022-12-20T02:59:21Z"
+              "when": "2022-12-20T04:47:47Z"
             }
           ]
+        },
+        "stds.iptc.photo-metadata": {
+          "@context": {
+            "Iptc4xmpExt": "http://iptc.org/std/Iptc4xmpExt/2008-02-29/",
+            "dc": "http://purl.org/dc/elements/1.1/"
+          },
+          "Iptc4xmpExt:LocationCreated": {
+            "Iptc4xmpExt:City": "Los Angeles",
+            "Iptc4xmpExt:CountryCode": "US",
+            "Iptc4xmpExt:CountryName": "United States",
+            "Iptc4xmpExt:ProvinceState": "CA"
+          },
+          "dc:creator": [
+            "Webrecorder - ArchiveWeb.page / Authenticated Web Archive"
+          ],
+          "dc:description": "Page from a collection of Serbian State Security Service payroll logs from 1994 to 1995, obtained by the International Criminal Tribunal for the former Yugoslavia (ICTY) and found in the official United Nations online archive."
         },
         "c2pa.hash.data": {
           "alg": "sha256",
           "exclusions": [
             {
-              "length": 90083,
+              "length": 93657,
               "start": 33
             }
           ],
-          "hash": "0vzrZTxT5+pWYTrsPBQ3rdQXNmWwCCEP2OK9hmIBJWA=",
+          "hash": "MrhVr6Y0Vbq9G23lRLW2gtJbrp0hNFdtt3AfNole0xM=",
           "name": "jumbf manifest",
           "pad": "<omitted>"
         },
@@ -190,23 +288,6 @@
             }
           ]
         },
-        "c2pa.thumbnail.claim.png": "<omitted> len = 43579",
-        "stds.iptc.photo-metadata": {
-          "@context": {
-            "Iptc4xmpExt": "http://iptc.org/std/Iptc4xmpExt/2008-02-29/",
-            "dc": "http://purl.org/dc/elements/1.1/"
-          },
-          "Iptc4xmpExt:LocationCreated": {
-            "Iptc4xmpExt:City": "Los Angeles",
-            "Iptc4xmpExt:CountryCode": "US",
-            "Iptc4xmpExt:CountryName": "United States",
-            "Iptc4xmpExt:ProvinceState": "CA"
-          },
-          "dc:creator": [
-            "Webrecorder - ArchiveWeb.page / Authenticated Web Archive"
-          ],
-          "dc:description": "Page from a collection of Serbian State Security Service payroll logs from 1994 to 1995, obtained by the International Criminal Tribunal for the former Yugoslavia (ICTY) and found in the official United Nations online archive."
-        },
         "stds.schema-org.CreativeWork": {
           "@context": "https://schema.org",
           "@type": "CreativeWork",
@@ -223,95 +304,14 @@
       "signature": {
         "alg": "es256",
         "issuer": "Starling Lab",
-        "time": "2022-12-20T03:10:47+00:00"
-      }
-    },
-    "starlinglab:urn:uuid:791ea94a-7a09-4aac-bb40-7b8c9dbe9ae0": {
-      "claim": {
-        "alg": "sha256",
-        "assertions": [
-          {
-            "hash": "HNaC6Kjav/sqM9M4CAqCd53wLq+2wYtpG9KD86UfQC4=",
-            "url": "self#jumbf=c2pa.assertions/c2pa.thumbnail.claim.jpeg"
-          },
-          {
-            "hash": "rbpffTjM+90cFwC7H1/sH5YA7OH1t3Pl0ganYLE2XIk=",
-            "url": "self#jumbf=c2pa.assertions/c2pa.thumbnail.ingredient.png"
-          },
-          {
-            "hash": "Qz2n4txWNp5wqn6ieeYCyFO5JpIzombSK6aWKL2ZZKY=",
-            "url": "self#jumbf=c2pa.assertions/c2pa.ingredient"
-          },
-          {
-            "hash": "0wPwkYKAzx7wA2miKgal1y+AUth/blZADlA2vbg2NlQ=",
-            "url": "self#jumbf=c2pa.assertions/c2pa.actions"
-          },
-          {
-            "hash": "/8kclspF4nTkz52/OpJheraHC7rsYdUiaB+44FQ6A4c=",
-            "url": "self#jumbf=c2pa.assertions/c2pa.hash.data"
-          }
-        ],
-        "claim_generator": "Zero_Knowledge_Proof_Redaction c2patool/0.3.9 c2pa-rs/0.16.0",
-        "dc:format": "image/png",
-        "dc:title": "C049-0471.png",
-        "instanceID": "xmp:iid:571034eb-b15f-4e9c-ba35-be3c3bdabd5d",
-        "signature": "self#jumbf=c2pa.signature"
-      },
-      "assertion_store": {
-        "c2pa.thumbnail.ingredient.png": "<omitted> len = 43579",
-        "c2pa.hash.data": {
-          "alg": "sha256",
-          "exclusions": [
-            {
-              "length": 220390,
-              "start": 33
-            }
-          ],
-          "hash": "k3MeCZ5+Bi9sddFdWg+pEodUvvAbLk6MxHuwEGcA6VM=",
-          "name": "jumbf manifest",
-          "pad": "<omitted>"
-        },
-        "c2pa.thumbnail.claim.jpeg": "<omitted> len = 70587",
-        "c2pa.ingredient": {
-          "c2pa_manifest": {
-            "alg": "sha256",
-            "hash": "6HMfh47zEjj+LNovvcOWnhZgMC10k4tSQxtKu27/Q/Q=",
-            "url": "self#jumbf=/c2pa/starlinglab:urn:uuid:45b2832d-92b6-418a-9435-c29e309017bb"
-          },
-          "dc:format": "image/png",
-          "dc:title": "C049-0471.png",
-          "instanceID": "xmp:iid:5cc1fc12-a3a2-4a2f-bc8f-5b90daf31975",
-          "relationship": "parentOf",
-          "thumbnail": {
-            "hash": "rbpffTjM+90cFwC7H1/sH5YA7OH1t3Pl0ganYLE2XIk=",
-            "url": "self#jumbf=c2pa.assertions/c2pa.thumbnail.ingredient.png"
-          }
-        },
-        "c2pa.actions": {
-          "actions": [
-            {
-              "action": "c2pa.edited",
-              "parameters": {
-                "codeRepositoryCid": "bafybeiado55ziicfzgsn5qwv2i5jjnm7gynx2kuusyxpcl6zx6bfjhbjve",
-                "name": "zk_redaction",
-                "zkProofCid": "bafybeictuhb7dnbj36iqt37bcnwcslq77jpk3u2ssywhsvjny2nx6wec4q"
-              },
-              "when": "2022-12-20T03:10:47Z"
-            }
-          ]
-        }
-      },
-      "signature": {
-        "alg": "es256",
-        "issuer": "Starling Lab",
-        "time": "2022-12-20T03:10:48+00:00"
+        "time": "2022-12-20T04:59:24+00:00"
       }
     }
   },
   "validation_status": [
     {
       "code": "claimSignature.validated",
-      "url": "self#jumbf=/c2pa/starlinglab:urn:uuid:791ea94a-7a09-4aac-bb40-7b8c9dbe9ae0/c2pa.signature",
+      "url": "self#jumbf=/c2pa/starlinglab:urn:uuid:54095ff6-afec-476f-9009-906fe8f16707/c2pa.signature",
       "explanation": "claim signature valid"
     },
     {
@@ -341,12 +341,12 @@
     },
     {
       "code": "assertion.dataHash.match",
-      "url": "self#jumbf=/c2pa/starlinglab:urn:uuid:791ea94a-7a09-4aac-bb40-7b8c9dbe9ae0/c2pa.assertions/c2pa.hash.data",
+      "url": "self#jumbf=/c2pa/starlinglab:urn:uuid:54095ff6-afec-476f-9009-906fe8f16707/c2pa.assertions/c2pa.hash.data",
       "explanation": "data hash valid"
     },
     {
       "code": "claimSignature.validated",
-      "url": "self#jumbf=/c2pa/starlinglab:urn:uuid:45b2832d-92b6-418a-9435-c29e309017bb/c2pa.signature",
+      "url": "self#jumbf=/c2pa/starlinglab:urn:uuid:ba7e3d8d-8769-4a6c-ae0e-8f26d98b6be8/c2pa.signature",
       "explanation": "claim signature valid"
     },
     {
