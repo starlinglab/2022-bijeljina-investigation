@@ -154,7 +154,7 @@ def _get_authsign_from_archive(archive_manifest, path_archives):
         raise Exception("Failed to get authsign")
     return result
 
-def _generate_c2pa_1_src_from_archive(archive_manifests, archive_manifests_related, asset_info_ext, path_archive):
+def _generate_c2pa_src_from_archive(archive_manifests, archive_manifests_related, asset_info_ext, path_archive):
     with open(p_c2pa_1_template, "r") as c2pa_1_template:
         c2pa_1 = json.load(c2pa_1_template)
         source_id = None
@@ -278,16 +278,14 @@ def _generate_c2pa_1_src_from_archive(archive_manifests, archive_manifests_relat
             with open(os.path.join(p_out_c2pa_1_src, f"{source_id}.json"), "w") as man:
                 json.dump(c2pa_1, man)
 
-def _generate_c2pa_1_out_from_src(archive_manifests, archive_manifests_related, asset_info_ext):
+def _generate_c2pa_out_from_src(archive_manifests, archive_manifests_related, asset_info_ext):
     # Generate intermediate files for c2pa injection
     for archive in os.listdir(p_in_archives):
-        if archive.endswith(".zip") and archive.startswith("e1cd2b256ffc33ea27d3f1776d3524b717000e585e79115fc93c841d6699d2b8"):
-        # if archive.endswith(".zip"):
+        # if archive.endswith(".zip") and archive.startswith("e1cd2b256ffc33ea27d3f1776d3524b717000e585e79115fc93c841d6699d2b8"): # archive with Photoshop redaction asset
+        # if archive.endswith(".zip") and archive.startswith("70351d224eaa94d2c4c8517c59b4c10e957cce2b01da87d269646633232cce7a"): # archive with ZK redaction asset
+        if archive.endswith(".zip"):
             path_archive = os.path.join(p_in_archives, archive)
-            _generate_c2pa_1_src_from_archive(archive_manifests, archive_manifests_related, asset_info_ext, path_archive)
-
-            # Uncomment to process just a single asset in the directory
-            # break
+            _generate_c2pa_src_from_archive(archive_manifests, archive_manifests_related, asset_info_ext, path_archive)
 
     # Generate c2pa injected assets in path_c2pa_1_out
     for filename in os.listdir(p_out_c2pa_1_src):
@@ -295,21 +293,62 @@ def _generate_c2pa_1_out_from_src(archive_manifests, archive_manifests_related, 
             basename = os.path.basename(filename).split(".")[0]
             ext = os.path.basename(filename).split(".")[1]
 
-            path_out = os.path.join(p_out_c2pa_1_out, filename)
-            path_out_man = os.path.join(p_out_c2pa_1_out, f"{basename}-manifest.json")
+            # Assets with one c2pa manifest
+            path_out_c2pa_1 = os.path.join(p_out_c2pa_1_out, filename)
+            path_out_c2pa_1_man = os.path.join(p_out_c2pa_1_out, f"{basename}-manifest.json")
+
+            # Assets with two c2pa manifests (only for ZK redaction assets)
+            path_out_c2pa_2_zk = os.path.join(p_out_c2pa_2_zk_out, filename)
+            path_out_c2pa_2_zk_man = os.path.join(p_out_c2pa_2_zk_out, f"{basename}-manifest.json")
+
+            # Inject c2pa manifests
+            redaction = asset_info_ext.get(basename, {}).get("redaction")
             path_img = os.path.join(p_out_c2pa_1_src, filename)
             path_man = os.path.join(p_out_c2pa_1_src, f"{basename}.json")
             path_thumb = os.path.join(p_in_c2pa_thumbs, f"{basename}.png")
-            if os.path.isfile(path_thumb):
-                p = subprocess.run([f"{p_c2patool}", f"{path_img}", "--manifest", f"{path_man}", "--thumb", f"{path_thumb}", "--output" , f"{path_out}", "--force"], capture_output=True)
-            else:
-                if asset_info_ext.get(basename, {}).get("redaction") is not "None":
+            path_zk_redacted = os.path.join(p_in_zk_redacted, f"{basename}.png")
+
+            if redaction == "None":
+                p = subprocess.run([f"{p_c2patool}", f"{path_img}", "--manifest", f"{path_man}", "--output" , f"{path_out_c2pa_1}", "--force"], capture_output=True)
+                with open(path_out_c2pa_1_man, "w") as f:
+                    p = subprocess.run([f"{p_c2patool}", f"{path_out_c2pa_1}", "--detailed"], stdout=f)
+            elif redaction == "Photoshop":
+                if os.path.isfile(path_thumb):
+                    p = subprocess.run([f"{p_c2patool}", f"{path_img}", "--manifest", f"{path_man}", "--thumb", f"{path_thumb}", "--output" , f"{path_out_c2pa_1}", "--force"], capture_output=True)
+                    with open(path_out_c2pa_1_man, "w") as f:
+                        p = subprocess.run([f"{p_c2patool}", f"{path_out_c2pa_1}", "--detailed"], stdout=f)
+                else:
                     raise Exception("Missing thumbnail for image that requires redaction")
-                p = subprocess.run([f"{p_c2patool}", f"{path_img}", "--manifest", f"{path_man}", "--output" , f"{path_out}", "--force"], capture_output=True)
-            
-            # Write detailed c2pa manifest out to file
-            with open(path_out_man, "w") as f:
-                p = subprocess.run([f"{p_c2patool}", f"{path_out}", "--detailed"], stdout=f)
+            elif redaction == "ZK":
+                if os.path.isfile(path_thumb):
+                    path_img_parent = os.path.join(p_out_c2pa_2_zk_src, filename)
+                    path_man_c2pa_2 = os.path.join(p_out_c2pa_2_zk_src, f"{basename}.json")
+
+                    # Inject c2pa_1
+                    p = subprocess.run([f"{p_c2patool}", f"{path_img}", "--manifest", f"{path_man}", "--thumb", f"{path_thumb}", "--output" , f"{path_img_parent}", "--force"], capture_output=True)
+
+                    # Generate c2pa_2
+                    with open(p_c2pa_2_zk_template, "r") as c2pa_2_zk_template:
+                        c2pa_2 = json.load(c2pa_2_zk_template)
+                        
+                        # Insert c2pa.created actions
+                        m = _get_index_by_label(c2pa_2, "c2pa.actions")
+                        n = [i for i, o in enumerate(c2pa_2["assertions"][m]["data"]["actions"]) if o["action"] == "c2pa.edited"][0]
+                        now = datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
+                        c2pa_2["assertions"][m]["data"]["actions"][n]["when"] = now
+                        c2pa_2["assertions"][m]["data"]["actions"][n]["parameters"]["zkProofCid"] = asset_info_ext.get(basename, {}).get("zkProofCid")
+
+                        # print(json.dumps(c2pa_2, indent=2))
+                        with open(path_man_c2pa_2, "w") as man:
+                            json.dump(c2pa_2, man)
+
+                        # Inject c2pa_2
+                        img_parent_name = f"{basename}.png" # The parent file is assumed at the same directory as the manifest and we cannot specific full path
+                        p = subprocess.run([f"{p_c2patool}", f"{path_zk_redacted}", "--manifest", f"{path_man_c2pa_2}", "--parent", f"{img_parent_name}", "--output" , f"{path_out_c2pa_2_zk}", "--force"], capture_output=True)
+                        with open(path_out_c2pa_2_zk_man, "w") as f:
+                            p = subprocess.run([f"{p_c2patool}", f"{path_out_c2pa_2_zk}", "--detailed"], stdout=f)
+                else:
+                    raise Exception("Missing thumbnail for image that requires redaction")
 
 def _generate_layer3_out_from_src(archive_manifests, archive_manifests_related, asset_info_ext):
     # Generate layer3 for assets in path_c2pa_1_src
@@ -424,7 +463,7 @@ with open(p_asset_info_ext, "r") as f:
     asset_info_ext = json.load(f)["assetInfoExt"]
     if len(sys.argv) > 1:
         if  sys.argv[1] == "c2pa":
-            _generate_c2pa_1_out_from_src(archive_manifests, archive_manifests_related, asset_info_ext)
+            _generate_c2pa_out_from_src(archive_manifests, archive_manifests_related, asset_info_ext)
         if sys.argv[1] == "layer3":
             _generate_layer3_out_from_src(archive_manifests, archive_manifests_related, asset_info_ext)
     else:
