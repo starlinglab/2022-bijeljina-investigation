@@ -1,4 +1,4 @@
-# # 2022 Bijeljina Investigation: Asset Processing
+# 2022 Bijeljina Investigation: Asset Processing
 
 Create `.env` in this directory and define the following:
 
