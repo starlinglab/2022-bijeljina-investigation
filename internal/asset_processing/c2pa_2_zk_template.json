@@ -1,6 +1,6 @@
 {
   "vendor": "starlinglab",
-  "claim_generator": "Zero_Knowledge_Proof",
+  "claim_generator": "Zero_Knowledge_Proof_Redaction",
   "alg": "es256",
   "private_key": "../../../keys/starling-lab-bijeljina-investigation.key.pem",
   "sign_cert": "../../../keys/starling-lab-bijeljina-investigation.cert.pem",

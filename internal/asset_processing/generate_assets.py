@@ -249,6 +249,9 @@ def _generate_c2pa_src_from_archive(archive_manifests, archive_manifests_related
                         shutil.copyfileobj(zimg, img)
 
             # Insert authenticity data from related assets (only for images derived from a source such as WACZ or ProofMode)
+            m = _get_index_by_label(c2pa_1, "org.starlinglab.integrity")
+            c2pa_1["assertions"][m]["data"]["starling:signaturesRelated"] = []
+            c2pa_1["assertions"][m]["data"]["starling:archivesRelated"] = []
             if related_asset_cid:
                 print(f"{source_id}: appending data from related archive [ archiveEncrypted.cid={related_asset_cid} ]")
                 related_manifest = _fill_opentimestamps(archive_manifests_related.get_manifest(related_asset_cid), p_in_archives_related)
@@ -256,8 +259,6 @@ def _generate_c2pa_src_from_archive(archive_manifests, archive_manifests_related
                     raise Exception("Missing related archive manifest")
 
                 # Insert signatures of the source archive                
-                m = _get_index_by_label(c2pa_1, "org.starlinglab.integrity")
-                c2pa_1["assertions"][m]["data"]["starling:signaturesRelated"] = []
                 for sig in _get_validated_signatures_from_archive(archive_manifests.get_manifest(related_asset_cid), p_in_archives_related):
                     x = {}
                     if sig.get("provider"): x["starling:provider"] = sig.get("provider")
@@ -271,7 +272,6 @@ def _generate_c2pa_src_from_archive(archive_manifests, archive_manifests_related
                 c2pa_1["assertions"][m]["data"]["starling:signaturesRelated"].append(_get_authsign_from_archive(archive_manifests_related.get_manifest(related_asset_cid), p_in_archives_related))
 
                 # Insert archive manifests of the source archive
-                c2pa_1["assertions"][m]["data"]["starling:archivesRelated"] = []
                 c2pa_1["assertions"][m]["data"]["starling:archivesRelated"].append(related_manifest)
 
             # print(json.dumps(c2pa_1, indent=2))
@@ -285,6 +285,7 @@ def _generate_c2pa_out_from_src(archive_manifests, archive_manifests_related, as
         # if archive.endswith(".zip") and archive.startswith("70351d224eaa94d2c4c8517c59b4c10e957cce2b01da87d269646633232cce7a"): # archive with ZK redaction asset
         if archive.endswith(".zip"):
             path_archive = os.path.join(p_in_archives, archive)
+            print(f"Inspecting archive [ archive.path={path_archive} ]")
             _generate_c2pa_src_from_archive(archive_manifests, archive_manifests_related, asset_info_ext, path_archive)
 
     # Generate c2pa injected assets in path_c2pa_1_out
@@ -309,25 +310,30 @@ def _generate_c2pa_out_from_src(archive_manifests, archive_manifests_related, as
             path_zk_redacted = os.path.join(p_in_zk_redacted, f"{basename}.png")
 
             if redaction == "None":
+                print(f"{basename}: injecting c2pa asset [ redaction={redaction} output={path_out_c2pa_1} ]")
                 p = subprocess.run([f"{p_c2patool}", f"{path_img}", "--manifest", f"{path_man}", "--output" , f"{path_out_c2pa_1}", "--force"], capture_output=True)
+                print(f"{basename}: dumping c2pa manifest [ redaction={redaction} output={path_out_c2pa_1_man} ]")
                 with open(path_out_c2pa_1_man, "w") as f:
                     p = subprocess.run([f"{p_c2patool}", f"{path_out_c2pa_1}", "--detailed"], stdout=f)
             elif redaction == "Photoshop":
+                print(f"{basename}: injecting c2pa asset [ redaction={redaction} output={path_out_c2pa_1} ]")
                 if os.path.isfile(path_thumb):
                     p = subprocess.run([f"{p_c2patool}", f"{path_img}", "--manifest", f"{path_man}", "--thumb", f"{path_thumb}", "--output" , f"{path_out_c2pa_1}", "--force"], capture_output=True)
+                    print(f"{basename}: dumping c2pa manifest [ redaction={redaction} output={path_out_c2pa_1_man} ]")
                     with open(path_out_c2pa_1_man, "w") as f:
                         p = subprocess.run([f"{p_c2patool}", f"{path_out_c2pa_1}", "--detailed"], stdout=f)
                 else:
                     raise Exception("Missing thumbnail for image that requires redaction")
             elif redaction == "ZK":
+                path_img_parent = os.path.join(p_out_c2pa_2_zk_src, filename)
+                path_man_c2pa_2 = os.path.join(p_out_c2pa_2_zk_src, f"{basename}.json")
+                print(f"{basename}: injecting c2pa asset (c2pa_1) [ redaction={redaction} output={path_img_parent} ]")
                 if os.path.isfile(path_thumb):
-                    path_img_parent = os.path.join(p_out_c2pa_2_zk_src, filename)
-                    path_man_c2pa_2 = os.path.join(p_out_c2pa_2_zk_src, f"{basename}.json")
-
                     # Inject c2pa_1
                     p = subprocess.run([f"{p_c2patool}", f"{path_img}", "--manifest", f"{path_man}", "--thumb", f"{path_thumb}", "--output" , f"{path_img_parent}", "--force"], capture_output=True)
 
                     # Generate c2pa_2
+                    print(f"{basename}: injecting c2pa asset (c2pa_2) [ redaction={redaction} output={path_out_c2pa_2_zk} ]")
                     with open(p_c2pa_2_zk_template, "r") as c2pa_2_zk_template:
                         c2pa_2 = json.load(c2pa_2_zk_template)
                         
@@ -345,6 +351,7 @@ def _generate_c2pa_out_from_src(archive_manifests, archive_manifests_related, as
                         # Inject c2pa_2
                         img_parent_name = f"{basename}.png" # The parent file is assumed at the same directory as the manifest and we cannot specific full path
                         p = subprocess.run([f"{p_c2patool}", f"{path_zk_redacted}", "--manifest", f"{path_man_c2pa_2}", "--parent", f"{img_parent_name}", "--output" , f"{path_out_c2pa_2_zk}", "--force"], capture_output=True)
+                        print(f"{basename}: dumping c2pa manifests (c2pa_1 c2pa_2) [ redaction={redaction} output={path_out_c2pa_2_zk_man} ]")
                         with open(path_out_c2pa_2_zk_man, "w") as f:
                             p = subprocess.run([f"{p_c2patool}", f"{path_out_c2pa_2_zk}", "--detailed"], stdout=f)
                 else:
