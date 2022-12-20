@@ -1,4 +1,4 @@
-# # 2022 Bijeljina Investigation: Asset Processing
+# 2022 Bijeljina Investigation: Asset Processing
 
 Create `.env` in this directory and define the following:
 
@@ -7,7 +7,7 @@ BITCOIN_NODE_URL="http://<username>:<password>@<ip_address>:<port>"
 C2PATOOL_PATH="c2patool/<c2patool_binary>"
 ```
 
-Copy X.509 document signing certificate and private key for C2PA signing:
+Copy X.509 document signing certificate (including any intermediate certificates before the Root CA) and private key for C2PA signing:
 
 - `./key/starling-lab-bijeljina-investigation.cert.pem`: certificate used for C2PA signing
 - `./key/starling-lab-bijeljina-investigation.key.pem`: private key for C2PA signing (do not commit this file)

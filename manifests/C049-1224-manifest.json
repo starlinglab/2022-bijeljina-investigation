@@ -1,7 +1,7 @@
 {
-  "active_manifest": "starlinglab:urn:uuid:0688674c-a20d-4eb3-9663-90fab69ab659",
+  "active_manifest": "starlinglab:urn:uuid:09325602-3f99-4d18-a875-b59c76ccc918",
   "manifests": {
-    "starlinglab:urn:uuid:0688674c-a20d-4eb3-9663-90fab69ab659": {
+    "starlinglab:urn:uuid:09325602-3f99-4d18-a875-b59c76ccc918": {
       "claim": {
         "alg": "sha256",
         "assertions": [
@@ -10,7 +10,7 @@
             "url": "self#jumbf=c2pa.assertions/c2pa.thumbnail.claim.jpeg"
           },
           {
-            "hash": "hKAOIdx9j1eg/63Z0M8sIp2al5sKVHelP8ngTtj51XA=",
+            "hash": "d5RjxzrrA4+kRrSqASMpC2QN4aKPz3IRSKs7mTAaL0w=",
             "url": "self#jumbf=c2pa.assertions/stds.schema-org.CreativeWork"
           },
           {
@@ -18,34 +18,25 @@
             "url": "self#jumbf=c2pa.assertions/c2pa.actions"
           },
           {
-            "hash": "4Xx4U8jepkUeh7ptTDCR0tQZ/W6B0hPKo76UaT6dHmo=",
+            "hash": "iVHpuASuWFxv4q8RZgsRavi/sSrzHOjrX4s/2vqlXR0=",
             "url": "self#jumbf=c2pa.assertions/stds.iptc.photo-metadata"
           },
           {
-            "hash": "zUxAucSzUHIhBUtgviso8YNb9oVHdhU6dxOgLU/7UBc=",
+            "hash": "Z1ZmAIWWQbD1wPqORt/HE3bHFQ/53LbC/Mgrrj87u3I=",
             "url": "self#jumbf=c2pa.assertions/org.starlinglab.integrity"
           },
           {
-            "hash": "mH1TUdFtlEGsozaFEfyi2MeMXZVUhLGhpD9gZ0kFC+Y=",
+            "hash": "rGXcPfLBW7TYQgZ5OepoPnz747p14f23bdfRRX42A7U=",
             "url": "self#jumbf=c2pa.assertions/c2pa.hash.data"
           }
         ],
         "claim_generator": "ArchiveWeb.page_by_Webrecorder c2patool/0.3.9 c2pa-rs/0.16.0",
         "dc:format": "image/png",
         "dc:title": "C049-1224.png",
-        "instanceID": "xmp:iid:c6697c14-be64-4c5c-9196-b53bd3498c35",
+        "instanceID": "xmp:iid:27097b70-68a0-4113-be20-b2fef809b903",
         "signature": "self#jumbf=c2pa.signature"
       },
       "assertion_store": {
-        "c2pa.thumbnail.claim.jpeg": "<omitted> len = 20962",
-        "c2pa.actions": {
-          "actions": [
-            {
-              "action": "c2pa.created",
-              "when": "2022-11-02T11:17:20.231Z"
-            }
-          ]
-        },
         "stds.schema-org.CreativeWork": {
           "@context": "https://schema.org",
           "@type": "CreativeWork",
@@ -183,6 +174,15 @@
             }
           ]
         },
+        "c2pa.thumbnail.claim.jpeg": "<omitted> len = 20962",
+        "c2pa.actions": {
+          "actions": [
+            {
+              "action": "c2pa.created",
+              "when": "2022-11-02T11:17:20.231Z"
+            }
+          ]
+        },
         "stds.iptc.photo-metadata": {
           "@context": {
             "Iptc4xmpExt": "http://iptc.org/std/Iptc4xmpExt/2008-02-29/",
@@ -203,11 +203,11 @@
           "alg": "sha256",
           "exclusions": [
             {
-              "length": 67373,
+              "length": 70947,
               "start": 33
             }
           ],
-          "hash": "95XUalJmUsnElqivXyR/b37HMY1MJjUtqJ21xglc/pc=",
+          "hash": "LgqTRPKoYdWZh5PeJEfLJO9ggUSuWkYyh+27xfJJENs=",
           "name": "jumbf manifest",
           "pad": "<omitted>"
         }
@@ -215,14 +215,14 @@
       "signature": {
         "alg": "es256",
         "issuer": "Starling Lab",
-        "time": "2022-12-20T03:13:41+00:00"
+        "time": "2022-12-20T05:02:13+00:00"
       }
     }
   },
   "validation_status": [
     {
       "code": "claimSignature.validated",
-      "url": "self#jumbf=/c2pa/starlinglab:urn:uuid:0688674c-a20d-4eb3-9663-90fab69ab659/c2pa.signature",
+      "url": "self#jumbf=/c2pa/starlinglab:urn:uuid:09325602-3f99-4d18-a875-b59c76ccc918/c2pa.signature",
       "explanation": "claim signature valid"
     },
     {
@@ -257,7 +257,7 @@
     },
     {
       "code": "assertion.dataHash.match",
-      "url": "self#jumbf=/c2pa/starlinglab:urn:uuid:0688674c-a20d-4eb3-9663-90fab69ab659/c2pa.assertions/c2pa.hash.data",
+      "url": "self#jumbf=/c2pa/starlinglab:urn:uuid:09325602-3f99-4d18-a875-b59c76ccc918/c2pa.assertions/c2pa.hash.data",
       "explanation": "data hash valid"
     }
   ]

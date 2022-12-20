@@ -1,7 +1,7 @@
 {
-  "active_manifest": "starlinglab:urn:uuid:9e41a5f7-f6ec-4282-8829-5a52389470cc",
+  "active_manifest": "starlinglab:urn:uuid:ff45f99c-9082-49be-9ce1-7e4326ccc0fb",
   "manifests": {
-    "starlinglab:urn:uuid:9e41a5f7-f6ec-4282-8829-5a52389470cc": {
+    "starlinglab:urn:uuid:ff45f99c-9082-49be-9ce1-7e4326ccc0fb": {
       "claim": {
         "alg": "sha256",
         "assertions": [
@@ -10,7 +10,7 @@
             "url": "self#jumbf=c2pa.assertions/c2pa.thumbnail.claim.jpeg"
           },
           {
-            "hash": "PcK8yArptQqZnpXye17Ez6bQrcClzPt3n+okJbmcx7A=",
+            "hash": "ULFKFj+9MKAcpTG/yrNQlCd4ezyXKqG/YPNsYTHp1oI=",
             "url": "self#jumbf=c2pa.assertions/stds.schema-org.CreativeWork"
           },
           {
@@ -18,25 +18,41 @@
             "url": "self#jumbf=c2pa.assertions/c2pa.actions"
           },
           {
-            "hash": "Tp9KgOaPhRQsn+4f1EivZ46u2qV7ZqNZ68asBggTGyA=",
+            "hash": "9m0cnD3csm+x4Jr6QXR0yvfULxCxe8LASavYGNC3Nnw=",
             "url": "self#jumbf=c2pa.assertions/stds.iptc.photo-metadata"
           },
           {
-            "hash": "SwtwommsYZzxuj1PBu8Oimroxn8TVGPm6zIc9Vctxs8=",
+            "hash": "ol+RNu2J0K39etkU41tP5qi7KacY3PInon44t3vQYPM=",
             "url": "self#jumbf=c2pa.assertions/org.starlinglab.integrity"
           },
           {
-            "hash": "7wMh6f1RxmkwmlgsvMbBCeu5Sheixtm3lDD2l5yIIT0=",
+            "hash": "E9DWZVLSKcgEL0SZPKArhuyk7Ok4oIWsyvLpfPcB6ts=",
             "url": "self#jumbf=c2pa.assertions/c2pa.hash.data"
           }
         ],
         "claim_generator": "ArchiveWeb.page_by_Webrecorder c2patool/0.3.9 c2pa-rs/0.16.0",
         "dc:format": "image/png",
         "dc:title": "C049-1701.png",
-        "instanceID": "xmp:iid:e50d7d73-9792-4cda-ae12-8679698535bd",
+        "instanceID": "xmp:iid:a6e3738f-9271-4394-b43d-824d05832e58",
         "signature": "self#jumbf=c2pa.signature"
       },
       "assertion_store": {
+        "stds.iptc.photo-metadata": {
+          "@context": {
+            "Iptc4xmpExt": "http://iptc.org/std/Iptc4xmpExt/2008-02-29/",
+            "dc": "http://purl.org/dc/elements/1.1/"
+          },
+          "Iptc4xmpExt:LocationCreated": {
+            "Iptc4xmpExt:City": "Los Angeles",
+            "Iptc4xmpExt:CountryCode": "US",
+            "Iptc4xmpExt:CountryName": "United States",
+            "Iptc4xmpExt:ProvinceState": "CA"
+          },
+          "dc:creator": [
+            "Webrecorder - ArchiveWeb.page / Authenticated Web Archive"
+          ],
+          "dc:description": "Page from a collection of Serbian State Security Service payroll logs from 1994 to 1995, obtained by the International Criminal Tribunal for the former Yugoslavia (ICTY) and found in the official United Nations online archive."
+        },
         "org.starlinglab.integrity": {
           "starling:archives": [
             {
@@ -162,22 +178,27 @@
             }
           ]
         },
-        "stds.iptc.photo-metadata": {
-          "@context": {
-            "Iptc4xmpExt": "http://iptc.org/std/Iptc4xmpExt/2008-02-29/",
-            "dc": "http://purl.org/dc/elements/1.1/"
-          },
-          "Iptc4xmpExt:LocationCreated": {
-            "Iptc4xmpExt:City": "Los Angeles",
-            "Iptc4xmpExt:CountryCode": "US",
-            "Iptc4xmpExt:CountryName": "United States",
-            "Iptc4xmpExt:ProvinceState": "CA"
-          },
-          "dc:creator": [
-            "Webrecorder - ArchiveWeb.page / Authenticated Web Archive"
-          ],
-          "dc:description": "Page from a collection of Serbian State Security Service payroll logs from 1994 to 1995, obtained by the International Criminal Tribunal for the former Yugoslavia (ICTY) and found in the official United Nations online archive."
+        "c2pa.actions": {
+          "actions": [
+            {
+              "action": "c2pa.created",
+              "when": "2022-11-02T11:17:20.231Z"
+            }
+          ]
         },
+        "c2pa.hash.data": {
+          "alg": "sha256",
+          "exclusions": [
+            {
+              "length": 73101,
+              "start": 33
+            }
+          ],
+          "hash": "CQilnqlueqt/RAfYYrqL1OsUBSelyS7AwrLEo4JyzNo=",
+          "name": "jumbf manifest",
+          "pad": "<omitted>"
+        },
+        "c2pa.thumbnail.claim.jpeg": "<omitted> len = 23116",
         "stds.schema-org.CreativeWork": {
           "@context": "https://schema.org",
           "@type": "CreativeWork",
@@ -189,40 +210,19 @@
               "name": "USC Shoah Foundation"
             }
           ]
-        },
-        "c2pa.hash.data": {
-          "alg": "sha256",
-          "exclusions": [
-            {
-              "length": 69527,
-              "start": 33
-            }
-          ],
-          "hash": "GY6KNe3OQfLP3qk7kWvtnExogrjrPjRzCDPbL5XtbgY=",
-          "name": "jumbf manifest",
-          "pad": "<omitted>"
-        },
-        "c2pa.actions": {
-          "actions": [
-            {
-              "action": "c2pa.created",
-              "when": "2022-11-02T11:17:20.231Z"
-            }
-          ]
-        },
-        "c2pa.thumbnail.claim.jpeg": "<omitted> len = 23116"
+        }
       },
       "signature": {
         "alg": "es256",
         "issuer": "Starling Lab",
-        "time": "2022-12-20T03:07:39+00:00"
+        "time": "2022-12-20T04:56:14+00:00"
       }
     }
   },
   "validation_status": [
     {
       "code": "claimSignature.validated",
-      "url": "self#jumbf=/c2pa/starlinglab:urn:uuid:9e41a5f7-f6ec-4282-8829-5a52389470cc/c2pa.signature",
+      "url": "self#jumbf=/c2pa/starlinglab:urn:uuid:ff45f99c-9082-49be-9ce1-7e4326ccc0fb/c2pa.signature",
       "explanation": "claim signature valid"
     },
     {
@@ -257,7 +257,7 @@
     },
     {
       "code": "assertion.dataHash.match",
-      "url": "self#jumbf=/c2pa/starlinglab:urn:uuid:9e41a5f7-f6ec-4282-8829-5a52389470cc/c2pa.assertions/c2pa.hash.data",
+      "url": "self#jumbf=/c2pa/starlinglab:urn:uuid:ff45f99c-9082-49be-9ce1-7e4326ccc0fb/c2pa.assertions/c2pa.hash.data",
       "explanation": "data hash valid"
     }
   ]

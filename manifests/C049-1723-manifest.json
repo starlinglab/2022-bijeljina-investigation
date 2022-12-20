@@ -1,7 +1,88 @@
 {
-  "active_manifest": "starlinglab:urn:uuid:dcb1aa19-cff5-45ba-abe4-c841c588a385",
+  "active_manifest": "starlinglab:urn:uuid:0f09e113-e0bf-4162-b8f5-cae914138005",
   "manifests": {
-    "starlinglab:urn:uuid:7dc081f2-1b48-4f3d-9a06-f8e29e1e25b4": {
+    "starlinglab:urn:uuid:0f09e113-e0bf-4162-b8f5-cae914138005": {
+      "claim": {
+        "alg": "sha256",
+        "assertions": [
+          {
+            "hash": "nNiQW60RgLkL0jeDTLKN//ncPfyeZk5UyYcDCVg1sxY=",
+            "url": "self#jumbf=c2pa.assertions/c2pa.thumbnail.claim.jpeg"
+          },
+          {
+            "hash": "ZFz8CYRM4aNQ5/82VptDEdyA15yuIyfx34VmZaX47UM=",
+            "url": "self#jumbf=c2pa.assertions/c2pa.thumbnail.ingredient.png"
+          },
+          {
+            "hash": "h442JPVvPSqr/Espcd+qmeX2AOSwYyxU5xf8ix5W8oI=",
+            "url": "self#jumbf=c2pa.assertions/c2pa.ingredient"
+          },
+          {
+            "hash": "oXroewkDBA4N6G9ExmyVeEGf4Dq7T5sok/rax3NVAmI=",
+            "url": "self#jumbf=c2pa.assertions/c2pa.actions"
+          },
+          {
+            "hash": "15qn9DRrE8d99Et//zU5MPNde1CIZ/FpUggvQqMoOQM=",
+            "url": "self#jumbf=c2pa.assertions/c2pa.hash.data"
+          }
+        ],
+        "claim_generator": "Zero_Knowledge_Proof_Redaction c2patool/0.3.9 c2pa-rs/0.16.0",
+        "dc:format": "image/png",
+        "dc:title": "C049-1723.png",
+        "instanceID": "xmp:iid:83c70ab6-6dfe-40d0-9b04-44dfd8f81324",
+        "signature": "self#jumbf=c2pa.signature"
+      },
+      "assertion_store": {
+        "c2pa.actions": {
+          "actions": [
+            {
+              "action": "c2pa.edited",
+              "parameters": {
+                "codeRepositoryCid": "bafybeiado55ziicfzgsn5qwv2i5jjnm7gynx2kuusyxpcl6zx6bfjhbjve",
+                "name": "zk_redaction",
+                "zkProofCid": "bafybeieeg6yg2aoat2qauhadsxilx6xvpklvfnkiirb6fokg3iupyisyii"
+              },
+              "when": "2022-12-20T04:59:03Z"
+            }
+          ]
+        },
+        "c2pa.hash.data": {
+          "alg": "sha256",
+          "exclusions": [
+            {
+              "length": 216913,
+              "start": 33
+            }
+          ],
+          "hash": "vbyWeVFvV950ceE2acXP4pzYXO6rbc6GMWSqkjNUO3o=",
+          "name": "jumbf manifest",
+          "pad": "<omitted>"
+        },
+        "c2pa.thumbnail.ingredient.png": "<omitted> len = 38036",
+        "c2pa.thumbnail.claim.jpeg": "<omitted> len = 71048",
+        "c2pa.ingredient": {
+          "c2pa_manifest": {
+            "alg": "sha256",
+            "hash": "Xr11g8Qt4ilx+r+SW+s1WeBR1z9DAl/a14rc2N0Xdvw=",
+            "url": "self#jumbf=/c2pa/starlinglab:urn:uuid:ab5eced5-d491-4aad-baac-f6a1cf360fdb"
+          },
+          "dc:format": "image/png",
+          "dc:title": "C049-1723.png",
+          "instanceID": "xmp:iid:db0cd349-dac0-4329-8b47-e6c14f250aa4",
+          "relationship": "parentOf",
+          "thumbnail": {
+            "hash": "ZFz8CYRM4aNQ5/82VptDEdyA15yuIyfx34VmZaX47UM=",
+            "url": "self#jumbf=c2pa.assertions/c2pa.thumbnail.ingredient.png"
+          }
+        }
+      },
+      "signature": {
+        "alg": "es256",
+        "issuer": "Starling Lab",
+        "time": "2022-12-20T04:59:04+00:00"
+      }
+    },
+    "starlinglab:urn:uuid:ab5eced5-d491-4aad-baac-f6a1cf360fdb": {
       "claim": {
         "alg": "sha256",
         "assertions": [
@@ -10,33 +91,34 @@
             "url": "self#jumbf=c2pa.assertions/c2pa.thumbnail.claim.png"
           },
           {
-            "hash": "FDebpA8ShdHp8wQGTMPElVjdWvrfzTgrq67GYfonLO4=",
+            "hash": "ojj0QNoT0rZl8nVriRU5KBLa4Dg4otpvn7sHY2+NfPg=",
             "url": "self#jumbf=c2pa.assertions/stds.schema-org.CreativeWork"
           },
           {
-            "hash": "HWPAZgt2M8UWC6/55fC0LlX3t3F+yZqRKRYRPDlyNv4=",
+            "hash": "dkmuJIZly/hk1x4es0zL+6a88bHcgIPo6Ts7otjO0XU=",
             "url": "self#jumbf=c2pa.assertions/c2pa.actions"
           },
           {
-            "hash": "cNQaZ7wR3Ai86wdQsa5Xp1+kKxJhuCRUg8prVdXV3+k=",
+            "hash": "gHKYUcF3ccbArIVrZbxIDO35VOQggCMROx0sHG0ppyk=",
             "url": "self#jumbf=c2pa.assertions/stds.iptc.photo-metadata"
           },
           {
-            "hash": "y1JoM3d+d85FcHSi6edoyf8wGL85PSlCCKr7EOeiLUY=",
+            "hash": "YON6Rd12wolh92k9x5RsjKmMudQVGS8T6R8QKK0TgS4=",
             "url": "self#jumbf=c2pa.assertions/org.starlinglab.integrity"
           },
           {
-            "hash": "TFbdDxK4ZcGP7BIs6wedLcMOvAZYo6C/UD3l7e6tnAM=",
+            "hash": "DReQDvv1+mAOTS0iWqtdSDJPMLPBOLX+EYGRmMFm5i0=",
             "url": "self#jumbf=c2pa.assertions/c2pa.hash.data"
           }
         ],
         "claim_generator": "ArchiveWeb.page_by_Webrecorder c2patool/0.3.9 c2pa-rs/0.16.0",
         "dc:format": "image/png",
         "dc:title": "C049-1723.png",
-        "instanceID": "xmp:iid:78bac4a6-a326-4c64-bdb7-df605a84f2cc",
+        "instanceID": "xmp:iid:e3a99bf1-9700-424c-b68e-0865b1e23c46",
         "signature": "self#jumbf=c2pa.signature"
       },
       "assertion_store": {
+        "c2pa.thumbnail.claim.png": "<omitted> len = 38036",
         "c2pa.actions": {
           "actions": [
             {
@@ -45,37 +127,13 @@
             },
             {
               "action": "c2pa.converted",
-              "when": "2022-12-20T02:59:25Z"
+              "when": "2022-12-20T04:47:51Z"
             },
             {
               "action": "c2pa.resized",
-              "when": "2022-12-20T02:59:25Z"
+              "when": "2022-12-20T04:47:51Z"
             }
           ]
-        },
-        "stds.schema-org.CreativeWork": {
-          "@context": "https://schema.org",
-          "@type": "CreativeWork",
-          "author": [
-            {
-              "@type": "Organization",
-              "credential": [],
-              "identifier": "https://sfi.usc.edu/",
-              "name": "USC Shoah Foundation"
-            }
-          ]
-        },
-        "c2pa.hash.data": {
-          "alg": "sha256",
-          "exclusions": [
-            {
-              "length": 84540,
-              "start": 33
-            }
-          ],
-          "hash": "9UI9P2CGCJ7CagfbiGLp8Ql23H5Oh7TbNMxLF92LNZw=",
-          "name": "jumbf manifest",
-          "pad": "<omitted>"
         },
         "stds.iptc.photo-metadata": {
           "@context": {
@@ -92,6 +150,18 @@
             "Webrecorder - ArchiveWeb.page / Authenticated Web Archive"
           ],
           "dc:description": "Page from a collection of Serbian State Security Service payroll logs from 1994 to 1995, obtained by the International Criminal Tribunal for the former Yugoslavia (ICTY) and found in the official United Nations online archive."
+        },
+        "stds.schema-org.CreativeWork": {
+          "@context": "https://schema.org",
+          "@type": "CreativeWork",
+          "author": [
+            {
+              "@type": "Organization",
+              "credential": [],
+              "identifier": "https://sfi.usc.edu/",
+              "name": "USC Shoah Foundation"
+            }
+          ]
         },
         "org.starlinglab.integrity": {
           "starling:archives": [
@@ -218,100 +288,30 @@
             }
           ]
         },
-        "c2pa.thumbnail.claim.png": "<omitted> len = 38036"
-      },
-      "signature": {
-        "alg": "es256",
-        "issuer": "Starling Lab",
-        "time": "2022-12-20T03:10:27+00:00"
-      }
-    },
-    "starlinglab:urn:uuid:dcb1aa19-cff5-45ba-abe4-c841c588a385": {
-      "claim": {
-        "alg": "sha256",
-        "assertions": [
-          {
-            "hash": "nNiQW60RgLkL0jeDTLKN//ncPfyeZk5UyYcDCVg1sxY=",
-            "url": "self#jumbf=c2pa.assertions/c2pa.thumbnail.claim.jpeg"
-          },
-          {
-            "hash": "ZFz8CYRM4aNQ5/82VptDEdyA15yuIyfx34VmZaX47UM=",
-            "url": "self#jumbf=c2pa.assertions/c2pa.thumbnail.ingredient.png"
-          },
-          {
-            "hash": "7JqpnMnajJKhk/jZ3ZpaBCd5edFbG+18eIlEBkokXMc=",
-            "url": "self#jumbf=c2pa.assertions/c2pa.ingredient"
-          },
-          {
-            "hash": "xKnuJQ++KbQ4E6Ti7nA3VLzOD0vjg7PdpNyCe7o2mAQ=",
-            "url": "self#jumbf=c2pa.assertions/c2pa.actions"
-          },
-          {
-            "hash": "Bv2sA2XgwWvJBis46tDVgH1KoSmt0DgCWqOJk1KApNg=",
-            "url": "self#jumbf=c2pa.assertions/c2pa.hash.data"
-          }
-        ],
-        "claim_generator": "Zero_Knowledge_Proof_Redaction c2patool/0.3.9 c2pa-rs/0.16.0",
-        "dc:format": "image/png",
-        "dc:title": "C049-1723.png",
-        "instanceID": "xmp:iid:93825636-2f42-44a1-b7a6-84eed4fc1e91",
-        "signature": "self#jumbf=c2pa.signature"
-      },
-      "assertion_store": {
-        "c2pa.thumbnail.ingredient.png": "<omitted> len = 38036",
-        "c2pa.actions": {
-          "actions": [
-            {
-              "action": "c2pa.edited",
-              "parameters": {
-                "codeRepositoryCid": "bafybeiado55ziicfzgsn5qwv2i5jjnm7gynx2kuusyxpcl6zx6bfjhbjve",
-                "name": "zk_redaction",
-                "zkProofCid": "bafybeieeg6yg2aoat2qauhadsxilx6xvpklvfnkiirb6fokg3iupyisyii"
-              },
-              "when": "2022-12-20T03:10:27Z"
-            }
-          ]
-        },
-        "c2pa.ingredient": {
-          "c2pa_manifest": {
-            "alg": "sha256",
-            "hash": "ztrpqgDdx3ILDmV8Mgrwtpb0oyK1i/0yM1NLzlFIqTs=",
-            "url": "self#jumbf=/c2pa/starlinglab:urn:uuid:7dc081f2-1b48-4f3d-9a06-f8e29e1e25b4"
-          },
-          "dc:format": "image/png",
-          "dc:title": "C049-1723.png",
-          "instanceID": "xmp:iid:1ce076d2-bbe1-489b-a83b-9e08b7ea410b",
-          "relationship": "parentOf",
-          "thumbnail": {
-            "hash": "ZFz8CYRM4aNQ5/82VptDEdyA15yuIyfx34VmZaX47UM=",
-            "url": "self#jumbf=c2pa.assertions/c2pa.thumbnail.ingredient.png"
-          }
-        },
         "c2pa.hash.data": {
           "alg": "sha256",
           "exclusions": [
             {
-              "length": 209765,
+              "length": 88114,
               "start": 33
             }
           ],
-          "hash": "tXF103PWOAwsf/tmjJgoP2vEQEepbS1jveN6BJWa9xU=",
+          "hash": "SbyyWQnHxWqP7hsiNgdJOFxb75az52rI/fUvzx1HkBs=",
           "name": "jumbf manifest",
           "pad": "<omitted>"
-        },
-        "c2pa.thumbnail.claim.jpeg": "<omitted> len = 71048"
+        }
       },
       "signature": {
         "alg": "es256",
         "issuer": "Starling Lab",
-        "time": "2022-12-20T03:10:27+00:00"
+        "time": "2022-12-20T04:59:03+00:00"
       }
     }
   },
   "validation_status": [
     {
       "code": "claimSignature.validated",
-      "url": "self#jumbf=/c2pa/starlinglab:urn:uuid:dcb1aa19-cff5-45ba-abe4-c841c588a385/c2pa.signature",
+      "url": "self#jumbf=/c2pa/starlinglab:urn:uuid:0f09e113-e0bf-4162-b8f5-cae914138005/c2pa.signature",
       "explanation": "claim signature valid"
     },
     {
@@ -341,12 +341,12 @@
     },
     {
       "code": "assertion.dataHash.match",
-      "url": "self#jumbf=/c2pa/starlinglab:urn:uuid:dcb1aa19-cff5-45ba-abe4-c841c588a385/c2pa.assertions/c2pa.hash.data",
+      "url": "self#jumbf=/c2pa/starlinglab:urn:uuid:0f09e113-e0bf-4162-b8f5-cae914138005/c2pa.assertions/c2pa.hash.data",
       "explanation": "data hash valid"
     },
     {
       "code": "claimSignature.validated",
-      "url": "self#jumbf=/c2pa/starlinglab:urn:uuid:7dc081f2-1b48-4f3d-9a06-f8e29e1e25b4/c2pa.signature",
+      "url": "self#jumbf=/c2pa/starlinglab:urn:uuid:ab5eced5-d491-4aad-baac-f6a1cf360fdb/c2pa.signature",
       "explanation": "claim signature valid"
     },
     {

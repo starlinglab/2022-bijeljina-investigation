@@ -1,7 +1,7 @@
 {
-  "active_manifest": "starlinglab:urn:uuid:4e499156-c9d1-4765-b66d-d88d0f889db1",
+  "active_manifest": "starlinglab:urn:uuid:69892231-437e-49ab-a9f0-f6be72c6094d",
   "manifests": {
-    "starlinglab:urn:uuid:4e499156-c9d1-4765-b66d-d88d0f889db1": {
+    "starlinglab:urn:uuid:69892231-437e-49ab-a9f0-f6be72c6094d": {
       "claim": {
         "alg": "sha256",
         "assertions": [
@@ -10,7 +10,7 @@
             "url": "self#jumbf=c2pa.assertions/c2pa.thumbnail.claim.jpeg"
           },
           {
-            "hash": "01jzSzE6mKhrQH+R+SvtqAKOh2sgpWMfqNgh8zDqjFw=",
+            "hash": "KUu8k5q1yRWxF9VfPR3PevXS3bmDgVGilQ8J4AGvd+8=",
             "url": "self#jumbf=c2pa.assertions/stds.schema-org.CreativeWork"
           },
           {
@@ -18,46 +18,25 @@
             "url": "self#jumbf=c2pa.assertions/c2pa.actions"
           },
           {
-            "hash": "MP8YbQMmgu7rvnP2zKySWXsl4KudFT7O7qv1J0+qPcU=",
+            "hash": "WNl/haZxY2OzsWwfTo2aBUiJ5YGvetUvgiMFDLH9SNY=",
             "url": "self#jumbf=c2pa.assertions/stds.iptc.photo-metadata"
           },
           {
-            "hash": "I5R35fXJn8yqrVQgO+xnDv4NSYikhfUiHUmrxjeJaB0=",
+            "hash": "WXehcCsLTzPL98w4sJpGM6eBD7c0dqEWeexzVGyH+sE=",
             "url": "self#jumbf=c2pa.assertions/org.starlinglab.integrity"
           },
           {
-            "hash": "Ir/W4wXxREZODESOA3eP59fCNvyuCBuCYYmt2m04NPw=",
+            "hash": "apximPcb3Rigtjq07VO/1aPTxkvLpEcTk/K/OFkCeCo=",
             "url": "self#jumbf=c2pa.assertions/c2pa.hash.data"
           }
         ],
         "claim_generator": "ArchiveWeb.page_by_Webrecorder c2patool/0.3.9 c2pa-rs/0.16.0",
         "dc:format": "image/png",
         "dc:title": "C049-1180.png",
-        "instanceID": "xmp:iid:fdb6fbec-e519-426c-bca6-9ab509757c48",
+        "instanceID": "xmp:iid:c4eb3460-f01f-4e38-ab51-d9a33efed607",
         "signature": "self#jumbf=c2pa.signature"
       },
       "assertion_store": {
-        "stds.schema-org.CreativeWork": {
-          "@context": "https://schema.org",
-          "@type": "CreativeWork",
-          "author": [
-            {
-              "@type": "Organization",
-              "credential": [],
-              "identifier": "https://sfi.usc.edu/",
-              "name": "USC Shoah Foundation"
-            }
-          ]
-        },
-        "c2pa.thumbnail.claim.jpeg": "<omitted> len = 22035",
-        "c2pa.actions": {
-          "actions": [
-            {
-              "action": "c2pa.created",
-              "when": "2022-11-02T11:17:20.231Z"
-            }
-          ]
-        },
         "org.starlinglab.integrity": {
           "starling:archives": [
             {
@@ -183,6 +162,39 @@
             }
           ]
         },
+        "stds.schema-org.CreativeWork": {
+          "@context": "https://schema.org",
+          "@type": "CreativeWork",
+          "author": [
+            {
+              "@type": "Organization",
+              "credential": [],
+              "identifier": "https://sfi.usc.edu/",
+              "name": "USC Shoah Foundation"
+            }
+          ]
+        },
+        "c2pa.hash.data": {
+          "alg": "sha256",
+          "exclusions": [
+            {
+              "length": 72020,
+              "start": 33
+            }
+          ],
+          "hash": "UbfyGp4cR3hBNHqTLS+JeUIG/J2P2Ajj8/9eNEeNNhE=",
+          "name": "jumbf manifest",
+          "pad": "<omitted>"
+        },
+        "c2pa.actions": {
+          "actions": [
+            {
+              "action": "c2pa.created",
+              "when": "2022-11-02T11:17:20.231Z"
+            }
+          ]
+        },
+        "c2pa.thumbnail.claim.jpeg": "<omitted> len = 22035",
         "stds.iptc.photo-metadata": {
           "@context": {
             "Iptc4xmpExt": "http://iptc.org/std/Iptc4xmpExt/2008-02-29/",
@@ -198,31 +210,19 @@
             "Webrecorder - ArchiveWeb.page / Authenticated Web Archive"
           ],
           "dc:description": "Page from a collection of Serbian State Security Service payroll logs from 1994 to 1995, obtained by the International Criminal Tribunal for the former Yugoslavia (ICTY) and found in the official United Nations online archive."
-        },
-        "c2pa.hash.data": {
-          "alg": "sha256",
-          "exclusions": [
-            {
-              "length": 68446,
-              "start": 33
-            }
-          ],
-          "hash": "9mXgYCgLyxVen2SGMaeNFo0BTcZskNCOO5mtFi3fk6w=",
-          "name": "jumbf manifest",
-          "pad": "<omitted>"
         }
       },
       "signature": {
         "alg": "es256",
         "issuer": "Starling Lab",
-        "time": "2022-12-20T03:12:25+00:00"
+        "time": "2022-12-20T05:01:00+00:00"
       }
     }
   },
   "validation_status": [
     {
       "code": "claimSignature.validated",
-      "url": "self#jumbf=/c2pa/starlinglab:urn:uuid:4e499156-c9d1-4765-b66d-d88d0f889db1/c2pa.signature",
+      "url": "self#jumbf=/c2pa/starlinglab:urn:uuid:69892231-437e-49ab-a9f0-f6be72c6094d/c2pa.signature",
       "explanation": "claim signature valid"
     },
     {
@@ -257,7 +257,7 @@
     },
     {
       "code": "assertion.dataHash.match",
-      "url": "self#jumbf=/c2pa/starlinglab:urn:uuid:4e499156-c9d1-4765-b66d-d88d0f889db1/c2pa.assertions/c2pa.hash.data",
+      "url": "self#jumbf=/c2pa/starlinglab:urn:uuid:69892231-437e-49ab-a9f0-f6be72c6094d/c2pa.assertions/c2pa.hash.data",
       "explanation": "data hash valid"
     }
   ]

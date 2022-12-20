@@ -1,7 +1,7 @@
 {
-  "active_manifest": "starlinglab:urn:uuid:a25c05d2-bb10-4105-8509-c71271ece131",
+  "active_manifest": "starlinglab:urn:uuid:53deed34-8e6f-4070-aec9-4aea2e5b9898",
   "manifests": {
-    "starlinglab:urn:uuid:a25c05d2-bb10-4105-8509-c71271ece131": {
+    "starlinglab:urn:uuid:53deed34-8e6f-4070-aec9-4aea2e5b9898": {
       "claim": {
         "alg": "sha256",
         "assertions": [
@@ -10,7 +10,7 @@
             "url": "self#jumbf=c2pa.assertions/c2pa.thumbnail.claim.jpeg"
           },
           {
-            "hash": "kffO5AFAGcvDchK3DeiVMRcVhgVP9d9QIgvSI5XuN0o=",
+            "hash": "WL/jFOllzud5W5JHFSAAt3TLLDgoIIV/7BIeoLITVxc=",
             "url": "self#jumbf=c2pa.assertions/stds.schema-org.CreativeWork"
           },
           {
@@ -18,41 +18,25 @@
             "url": "self#jumbf=c2pa.assertions/c2pa.actions"
           },
           {
-            "hash": "S01wobtZcCZBOh3mKkEU6XCSJ+WA4sKHwPKxezf0qgI=",
+            "hash": "Mh9rayQZaL9+McKUBlrYI69tLH45OUbPKz+Z3grGPLw=",
             "url": "self#jumbf=c2pa.assertions/stds.iptc.photo-metadata"
           },
           {
-            "hash": "w6XFlNAVBmtiGlkuBlIZ5Qb03RwZBVVsBUdAG5xJ34g=",
+            "hash": "tL0GA4qIe2LIiySUBIyoYE5Oh7M02xcpXrUlwylx3EI=",
             "url": "self#jumbf=c2pa.assertions/org.starlinglab.integrity"
           },
           {
-            "hash": "PNgC3qTBJDBNT6JiBykvtdhRtvc5CtqKkNLxgUvDbG8=",
+            "hash": "9zWSk8gAK8+tsx2zRy+P2oT4+xHvUpNgn5nhopmJ7pY=",
             "url": "self#jumbf=c2pa.assertions/c2pa.hash.data"
           }
         ],
         "claim_generator": "ArchiveWeb.page_by_Webrecorder c2patool/0.3.9 c2pa-rs/0.16.0",
         "dc:format": "image/png",
         "dc:title": "C049-0001.png",
-        "instanceID": "xmp:iid:dc3e8efc-f6e1-4170-9ded-17c6b95adf07",
+        "instanceID": "xmp:iid:c8c57838-55e9-496e-a85d-4ff5c308225b",
         "signature": "self#jumbf=c2pa.signature"
       },
       "assertion_store": {
-        "stds.iptc.photo-metadata": {
-          "@context": {
-            "Iptc4xmpExt": "http://iptc.org/std/Iptc4xmpExt/2008-02-29/",
-            "dc": "http://purl.org/dc/elements/1.1/"
-          },
-          "Iptc4xmpExt:LocationCreated": {
-            "Iptc4xmpExt:City": "Los Angeles",
-            "Iptc4xmpExt:CountryCode": "US",
-            "Iptc4xmpExt:CountryName": "United States",
-            "Iptc4xmpExt:ProvinceState": "CA"
-          },
-          "dc:creator": [
-            "Webrecorder - ArchiveWeb.page / Authenticated Web Archive"
-          ],
-          "dc:description": "Page from a collection of Serbian State Security Service payroll logs from 1994 to 1995, obtained by the International Criminal Tribunal for the former Yugoslavia (ICTY) and found in the official United Nations online archive."
-        },
         "org.starlinglab.integrity": {
           "starling:archives": [
             {
@@ -178,14 +162,35 @@
             }
           ]
         },
-        "c2pa.actions": {
-          "actions": [
+        "c2pa.hash.data": {
+          "alg": "sha256",
+          "exclusions": [
             {
-              "action": "c2pa.created",
-              "when": "2022-11-02T11:17:20.231Z"
+              "length": 62018,
+              "start": 33
             }
-          ]
+          ],
+          "hash": "IjLd0JvLsUVDQlnEba/bONAeBMdmDR3VUMSSF3oRRgs=",
+          "name": "jumbf manifest",
+          "pad": "<omitted>"
         },
+        "stds.iptc.photo-metadata": {
+          "@context": {
+            "Iptc4xmpExt": "http://iptc.org/std/Iptc4xmpExt/2008-02-29/",
+            "dc": "http://purl.org/dc/elements/1.1/"
+          },
+          "Iptc4xmpExt:LocationCreated": {
+            "Iptc4xmpExt:City": "Los Angeles",
+            "Iptc4xmpExt:CountryCode": "US",
+            "Iptc4xmpExt:CountryName": "United States",
+            "Iptc4xmpExt:ProvinceState": "CA"
+          },
+          "dc:creator": [
+            "Webrecorder - ArchiveWeb.page / Authenticated Web Archive"
+          ],
+          "dc:description": "Page from a collection of Serbian State Security Service payroll logs from 1994 to 1995, obtained by the International Criminal Tribunal for the former Yugoslavia (ICTY) and found in the official United Nations online archive."
+        },
+        "c2pa.thumbnail.claim.jpeg": "<omitted> len = 12033",
         "stds.schema-org.CreativeWork": {
           "@context": "https://schema.org",
           "@type": "CreativeWork",
@@ -198,31 +203,26 @@
             }
           ]
         },
-        "c2pa.thumbnail.claim.jpeg": "<omitted> len = 12033",
-        "c2pa.hash.data": {
-          "alg": "sha256",
-          "exclusions": [
+        "c2pa.actions": {
+          "actions": [
             {
-              "length": 58444,
-              "start": 33
+              "action": "c2pa.created",
+              "when": "2022-11-02T11:17:20.231Z"
             }
-          ],
-          "hash": "Tg5eo6fCLUm4yoPaSmcb/KC7S/TDFNd/Pkev7jDouMc=",
-          "name": "jumbf manifest",
-          "pad": "<omitted>"
+          ]
         }
       },
       "signature": {
         "alg": "es256",
         "issuer": "Starling Lab",
-        "time": "2022-12-20T03:09:30+00:00"
+        "time": "2022-12-20T04:58:06+00:00"
       }
     }
   },
   "validation_status": [
     {
       "code": "claimSignature.validated",
-      "url": "self#jumbf=/c2pa/starlinglab:urn:uuid:a25c05d2-bb10-4105-8509-c71271ece131/c2pa.signature",
+      "url": "self#jumbf=/c2pa/starlinglab:urn:uuid:53deed34-8e6f-4070-aec9-4aea2e5b9898/c2pa.signature",
       "explanation": "claim signature valid"
     },
     {
@@ -257,7 +257,7 @@
     },
     {
       "code": "assertion.dataHash.match",
-      "url": "self#jumbf=/c2pa/starlinglab:urn:uuid:a25c05d2-bb10-4105-8509-c71271ece131/c2pa.assertions/c2pa.hash.data",
+      "url": "self#jumbf=/c2pa/starlinglab:urn:uuid:53deed34-8e6f-4070-aec9-4aea2e5b9898/c2pa.assertions/c2pa.hash.data",
       "explanation": "data hash valid"
     }
   ]
