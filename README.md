@@ -20,6 +20,6 @@ The files are generated following [these steps](internal/asset_processing).
 
 | Preservation | Explorer                                                               |
 |:-------------|:-----------------------------------------------------------------------|
-| IPFS         | `https://ipfs.io/ipfs/<storageRecords:ipfsCid>`                        |
+| IPFS         | `https://w3s.link/ipfs/<storageRecords:ipfsCid>`                       |
 | Filecoin     | `https://filecoin.tools/<storageRecords:filecoin:pieceCid>`            |
 | Storj        | `https://link.storjshare.io/s/<URL_ENCODE(storageRecords:storj:path)>` |
