@@ -6,6 +6,8 @@ asset_info_ext.json
 **/in/archive_manifests/*
 **/in/archives_related/*
 **/in/archive_manifests_related/*
+**/in/archives_caption/*
+**/in/archive_manifests_caption/*
 **/in/c2pa_thumbs/*
 **/in/zk_redacted/*
 **/in/c2pa_publish/*
@@ -20,6 +22,8 @@ asset_info_ext.json
 !**/in/archive_manifests/.keep
 !**/in/archives_related/.keep
 !**/in/archive_manifests_related/.keep
+!**/in/archives_caption/.keep
+!**/in/archive_manifests_caption/.keep
 !**/in/c2pa_thumbs/.keep
 !**/in/zk_redacted/.keep
 !**/in/c2pa_publish/.keep
