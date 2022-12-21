@@ -1,1 +1,180 @@
-{"description": "Authenticated web archive of PDF from ICTY website (Page 1663 of 1994). Features Serbian State Security Service payroll logs as obtained and archived by ICTY investigators. Downloaded on 11/03/2022. Redacted with ZK proofs. Registered (4 protocols) / Preserved (1 protocol) / Verified (3 attestations).", "assetCid": "bafybeic2o7wkmvs4cbvm7atoz2ndkjdcciaelow3rd6bgdtoxzpv7hcmk4", "caption": {"captionText": "Page from a collection of Serbian State Security Service payroll logs from 1994 to 1995, obtained by the International Criminal Tribunal for the former Yugoslavia (ICTY) and found in the official United Nations online archive.", "originalUrl": "http://icr.icty.org/LegalRef/CMSDocStore/Public/English/Submission/NotIndexable/IT-03-69/MRA22591R0000401246.pdf"}, "chainsOfTrust": [{"Rolling Stone": [{"name": "Root Certificate Authority", "value": "Rolling Stone", "file": "rolling-stone-root-ca.cert.pem"}, {"name": "Signing Certificate", "value": "Rolling Stone", "file": "rolling-stone-bijeljina-investigation.cert.pem"}], "Starling Lab": [{"name": "Root Certificate Authority", "value": "Starling Lab", "file": "starling-lab-root-ca.cert.pem"}, {"name": "Intermediate Certificate Authority", "value": "Starling Lab", "file": "starling-lab-intermediate-ca.cert.pem"}, {"name": "Signing Certificate", "value": "Starling Lab", "file": "starling-lab-bijeljina-investigation.cert.pem"}]}], "assetDetails": {"dimensions": "430 x 608", "format": "image/png"}, "c2pa": {"assetFile": "C049-1663.png", "manifestFile": "C049-1663-manifest.json"}, "captureDate": "2022-11-02T11:17:20.231Z", "capturedBy": "Webrecorder - ArchiveWeb.page / Authenticated Web Archive", "location": "Los Angeles, CA, United States", "registrationRecords": {"openTimestamps": {"sha256": "2b3db99a8d5565b109dc135e00dc5ef0da5eaa783dbe06e9a01faa15eaddd12f", "block": "767817"}, "numbersProtocol": {"tx": "0xa70f83d301c2943bd4f1a1c26acbd26c2232440928f55df6e42a0226a24dd32c"}, "numbersProtocolAvalanche": {"tx": "0x472243edcef7ab1a95003bf6a53f8c70b4f34c2789df1b0c34e1be9ee79ebbd0"}, "iscn": {"iscnId": "iscn://likecoin-chain/2Gi8YkS1T3Lib6xW-Dv2XTqipxTAScHL4dheRP9Ae-g/1", "tx": "57C5C7FDAE149D3C279DDEE376C8D9C37DDDF3E8122C9F62CB2709F86FC56726"}}, "storageRecords": {"ipfs": {"cid": null}, "filecoin": {"pieceCid": "baga6ea4seaqfhl32tiwydchf45m5vjxlfszk2xk6budmsnlhpi3ooeqmivfsoiy"}, "storj": {"path": null}}, "verifiedBy": [{"name": "C2PA Claim 1: Authenticated web archive and screenshot created on 11/03/2022", "value": "Starling Lab Bijeljina Investigation", "file": "starling-lab-bijeljina-investigation.cert.pem"}, {"name": "C2PA Claim 2: Redact text with ZK Proof", "value": "Starling Lab Bijeljina Investigation", "file": "starling-lab-bijeljina-investigation.cert.pem"}], "attestations": [{"records": {"openTimestamps": {"sha256": "bf77406c33a8152cc4e2240534ee12d9bfb3501fd93a3a7bf666b6787af0d11f", "block": "767727"}, "numbersProtocol": {"tx": "0x791c371f118f7584696609aed16e85694d2ec10d3a75d3f7872d4cc3a62013f4"}, "numbersProtocolAvalanche": {"tx": "0xea1fb6489ca10627693dc982e3ca171851f4d6e7eee04cc9985f0cfa820a0d46"}, "iscn": {"iscnId": "iscn://likecoin-chain/LxB5KW_GC6UsJYysX6J8x3iIoUNK_doKiDv8jT-Zcas/1", "tx": "82E312B172F4C3311CB6A9008C74E20DDEF4F19BF2E06ACF1E10A5F2A8B8BE3C"}, "ipfs": {"cid": null}, "filecoin": {"pieceCid": "baga6ea4seaqeliwckrzxf3d5nazpolch5ayzrtwaxf7m25o5tyuspvyouf4l4kq"}, "storj": {"path": null}}, "name": "Web Archive", "value": "bafybeihqitr4uyft4cxyw74vzk5tnptosohkl7h64i2ekeszhjcuflofcq"}, {"records": {"openTimestamps": {"sha256": null, "block": null}, "numbersProtocol": {"tx": null}, "numbersProtocolAvalanche": {"tx": null}, "iscn": {"iscnId": null, "tx": null}, "ipfs": {"cid": "bafybeif2j6svtlrhkbsb5wmvy2zw6f5mksknhkhsfvouwawtzivniky7xm"}, "filecoin": {"pieceCid": null}, "storj": {"path": null}}, "name": "Redaction: Zero Knowledge Proof", "value": "bafybeif2j6svtlrhkbsb5wmvy2zw6f5mksknhkhsfvouwawtzivniky7xm"}, {"records": {"openTimestamps": {"sha256": "3d2e17d3749ec6824fb591d5400a1c09ea063e3cb854d44a2a60b96750729b32", "block": "768134"}, "numbersProtocol": {"tx": "0xe3b5b03c6031c518eb77b9d0f20ab22ec0bf371661525721dbab92dd0b80d648"}, "numbersProtocolAvalanche": {"tx": "0x0035ae81b8e0a1bce6e634a9459780d52b13a71d490764e263f769ad6b34d98c"}, "iscn": {"iscnId": "iscn://likecoin-chain/QBpXWXCtTa_pk1NhOv9Gu63xXOGQOpOoaUiGqfndgVo/1", "tx": "AEECBD9AFD91BDA69E1A0B6097F63AB705563D42CBC711FCF2C8A03481B5E68F"}, "ipfs": {"cid": "bafkreiderc3owyk2ogacvflfmrnmwzhbhcgnvkmqcts2a4t6j7xgycpmbq"}, "filecoin": {"pieceCid": "baga6ea4seaqfhl32tiwydchf45m5vjxlfszk2xk6budmsnlhpi3ooeqmivfsoiy"}, "storj": {"path": "jug7otopdwlv4iqekuql47ddchfa/2022-bijeljina-investigation-captions/6488b6eb615a71802a9565645acb64e1388cdaa99014e5a0727e4fee6c09ec0c.encrypted"}}, "name": "Caption", "value": "bafkreiderc3owyk2ogacvflfmrnmwzhbhcgnvkmqcts2a4t6j7xgycpmbq"}]}
+{
+  "description": "Authenticated web archive of PDF from ICTY website (Page 1663 of 1994). Features Serbian State Security Service payroll logs as obtained and archived by ICTY investigators. Downloaded on 11/03/2022. Redacted with ZK proofs. Registered (4 protocols) / Preserved (1 protocol) / Verified (3 attestations).",
+  "assetCid": "bafybeic2o7wkmvs4cbvm7atoz2ndkjdcciaelow3rd6bgdtoxzpv7hcmk4",
+  "caption": {
+    "captionText": "Page from a collection of Serbian State Security Service payroll logs from 1994 to 1995, obtained by the International Criminal Tribunal for the former Yugoslavia (ICTY) and found in the official United Nations online archive.",
+    "originalUrl": "http://icr.icty.org/LegalRef/CMSDocStore/Public/English/Submission/NotIndexable/IT-03-69/MRA22591R0000401246.pdf"
+  },
+  "chainsOfTrust": [
+    {
+      "Rolling Stone": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-root-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-bijeljina-investigation.cert.pem"
+        }
+      ],
+      "Starling Lab": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-root-ca.cert.pem"
+        },
+        {
+          "name": "Intermediate Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-intermediate-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Starling Lab",
+          "file": "starling-lab-bijeljina-investigation.cert.pem"
+        }
+      ]
+    }
+  ],
+  "assetDetails": {
+    "dimensions": "430 x 608",
+    "format": "image/png"
+  },
+  "c2pa": {
+    "assetFile": "C049-1663.png",
+    "manifestFile": "C049-1663-manifest.json"
+  },
+  "captureDate": "2022-11-02T11:17:20.231Z",
+  "capturedBy": "Webrecorder - ArchiveWeb.page / Authenticated Web Archive",
+  "location": "Los Angeles, CA, United States",
+  "registrationRecords": {
+    "openTimestamps": {
+      "sha256": "2b3db99a8d5565b109dc135e00dc5ef0da5eaa783dbe06e9a01faa15eaddd12f",
+      "block": "767817"
+    },
+    "numbersProtocol": {
+      "tx": "0xa70f83d301c2943bd4f1a1c26acbd26c2232440928f55df6e42a0226a24dd32c"
+    },
+    "numbersProtocolAvalanche": {
+      "tx": "0x472243edcef7ab1a95003bf6a53f8c70b4f34c2789df1b0c34e1be9ee79ebbd0"
+    },
+    "iscn": {
+      "iscnId": "iscn://likecoin-chain/2Gi8YkS1T3Lib6xW-Dv2XTqipxTAScHL4dheRP9Ae-g/1",
+      "tx": "57C5C7FDAE149D3C279DDEE376C8D9C37DDDF3E8122C9F62CB2709F86FC56726"
+    }
+  },
+  "storageRecords": {
+    "ipfs": {
+      "cid": null
+    },
+    "filecoin": {
+      "pieceCid": "baga6ea4seaqfhl32tiwydchf45m5vjxlfszk2xk6budmsnlhpi3ooeqmivfsoiy"
+    },
+    "storj": {
+      "path": null
+    }
+  },
+  "verifiedBy": [
+    {
+      "name": "C2PA Claim 1: Authenticated web archive and screenshot created on 11/03/2022",
+      "value": "Starling Lab Bijeljina Investigation",
+      "file": "starling-lab-bijeljina-investigation.cert.pem"
+    },
+    {
+      "name": "C2PA Claim 2: Redact text with ZK Proof",
+      "value": "Starling Lab Bijeljina Investigation",
+      "file": "starling-lab-bijeljina-investigation.cert.pem"
+    }
+  ],
+  "attestations": [
+    {
+      "records": {
+        "openTimestamps": {
+          "sha256": "bf77406c33a8152cc4e2240534ee12d9bfb3501fd93a3a7bf666b6787af0d11f",
+          "block": "767727"
+        },
+        "numbersProtocol": {
+          "tx": "0x791c371f118f7584696609aed16e85694d2ec10d3a75d3f7872d4cc3a62013f4"
+        },
+        "numbersProtocolAvalanche": {
+          "tx": "0xea1fb6489ca10627693dc982e3ca171851f4d6e7eee04cc9985f0cfa820a0d46"
+        },
+        "iscn": {
+          "iscnId": "iscn://likecoin-chain/LxB5KW_GC6UsJYysX6J8x3iIoUNK_doKiDv8jT-Zcas/1",
+          "tx": "82E312B172F4C3311CB6A9008C74E20DDEF4F19BF2E06ACF1E10A5F2A8B8BE3C"
+        },
+        "ipfs": {
+          "cid": null
+        },
+        "filecoin": {
+          "pieceCid": "baga6ea4seaqeliwckrzxf3d5nazpolch5ayzrtwaxf7m25o5tyuspvyouf4l4kq"
+        },
+        "storj": {
+          "path": null
+        }
+      },
+      "name": "Web Archive",
+      "value": "bafybeihqitr4uyft4cxyw74vzk5tnptosohkl7h64i2ekeszhjcuflofcq"
+    },
+    {
+      "records": {
+        "openTimestamps": {
+          "sha256": null,
+          "block": null
+        },
+        "numbersProtocol": {
+          "tx": null
+        },
+        "numbersProtocolAvalanche": {
+          "tx": null
+        },
+        "iscn": {
+          "iscnId": null,
+          "tx": null
+        },
+        "ipfs": {
+          "cid": "bafybeif2j6svtlrhkbsb5wmvy2zw6f5mksknhkhsfvouwawtzivniky7xm"
+        },
+        "filecoin": {
+          "pieceCid": null
+        },
+        "storj": {
+          "path": null
+        }
+      },
+      "name": "Redaction: Zero Knowledge Proof",
+      "value": "bafybeif2j6svtlrhkbsb5wmvy2zw6f5mksknhkhsfvouwawtzivniky7xm"
+    },
+    {
+      "records": {
+        "openTimestamps": {
+          "sha256": "3d2e17d3749ec6824fb591d5400a1c09ea063e3cb854d44a2a60b96750729b32",
+          "block": "768134"
+        },
+        "numbersProtocol": {
+          "tx": "0xe3b5b03c6031c518eb77b9d0f20ab22ec0bf371661525721dbab92dd0b80d648"
+        },
+        "numbersProtocolAvalanche": {
+          "tx": "0x0035ae81b8e0a1bce6e634a9459780d52b13a71d490764e263f769ad6b34d98c"
+        },
+        "iscn": {
+          "iscnId": "iscn://likecoin-chain/QBpXWXCtTa_pk1NhOv9Gu63xXOGQOpOoaUiGqfndgVo/1",
+          "tx": "AEECBD9AFD91BDA69E1A0B6097F63AB705563D42CBC711FCF2C8A03481B5E68F"
+        },
+        "ipfs": {
+          "cid": "bafkreiderc3owyk2ogacvflfmrnmwzhbhcgnvkmqcts2a4t6j7xgycpmbq"
+        },
+        "filecoin": {
+          "pieceCid": "baga6ea4seaqfhl32tiwydchf45m5vjxlfszk2xk6budmsnlhpi3ooeqmivfsoiy"
+        },
+        "storj": {
+          "path": "jug7otopdwlv4iqekuql47ddchfa/2022-bijeljina-investigation-captions/6488b6eb615a71802a9565645acb64e1388cdaa99014e5a0727e4fee6c09ec0c.encrypted"
+        }
+      },
+      "name": "Caption",
+      "value": "bafkreiderc3owyk2ogacvflfmrnmwzhbhcgnvkmqcts2a4t6j7xgycpmbq"
+    }
+  ]
+}

@@ -580,7 +580,7 @@ def _generate_layer3_out_from_src(archive_manifests_caption, asset_info_ext):
 
                     # Output layer3 json
                     with open(os.path.join(p_out_layer3_out, f"{source_id}.json"), "w") as man:
-                        json.dump(layer3, man)
+                        json.dump(layer3, man, indent=2)
 
                     # Output c2pa manifest chain of final image
                     path_out_c2pa_man = os.path.join(p_out_layer3_out, f"{source_id}-manifest.json")
