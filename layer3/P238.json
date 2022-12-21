@@ -1,0 +1,117 @@
+{
+  "description": "Authenticated photograph taken on February 21, 2022, in Serbia. Features graffiti referring to Ratko Mladi\u0107. Registered (4 protocols) / Preserved (1 protocols) / Verified (1 attestation).",
+  "assetCid": "bafybeih7rh5yqchkintggub5pwh546z5t6nhuxzjpgufouwqwcl43a6jmm",
+  "caption": {
+    "captionText": "Graffiti in Belgrade, Serbia, in February 2022 referring to Ratko Mladi\u0107, a.k.a. \"the Butcher of Bosnia.\" (Jorgen Samso/USC Shoah Foundation)",
+    "originalUrl": null
+  },
+  "chainsOfTrust": [
+    {
+      "Rolling Stone": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-root-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-bijeljina-investigation.cert.pem"
+        }
+      ],
+      "Starling Lab": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-root-ca.cert.pem"
+        },
+        {
+          "name": "Intermediate Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-intermediate-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Starling Lab",
+          "file": "starling-lab-bijeljina-investigation.cert.pem"
+        }
+      ]
+    }
+  ],
+  "assetDetails": {
+    "dimensions": "8192 x 5464",
+    "format": "image/jpeg"
+  },
+  "c2pa": {
+    "assetFile": "P238.jpg",
+    "manifestFile": "P238-manifest.json"
+  },
+  "captureDate": "2022-02-20T23:05:34.303Z",
+  "capturedBy": "Starling Capture / Authenticated Photograph",
+  "location": "Belgrade, Belgrade, Serbia",
+  "registrationRecords": {
+    "openTimestamps": {
+      "sha256": "eadd79c27050fcc33126d59bddc8a14c0f93b887bbfa28be554f55106efbce2a",
+      "block": "767727"
+    },
+    "numbersProtocol": {
+      "tx": "0x70ef86ed76125aab5a98de677037e29335da0b5c591d3615518b20b7ba3643e2"
+    },
+    "numbersProtocolAvalanche": {
+      "tx": "0xbfbb327b272affeb5f416405b39198103967bd65a07b66e0c8dd8a02d652a5c2"
+    },
+    "iscn": {
+      "iscnId": "iscn://likecoin-chain/ibhG-QkNWEG7WrrQTFe8dNtgUNrpFrtuXG42Ce_t80M/1",
+      "tx": "80EB1D507A808D44452FC6049734513019ED7AD1D7A8D610D39DB8EDEB1CF8B9"
+    }
+  },
+  "storageRecords": {
+    "ipfs": {
+      "cid": null
+    },
+    "filecoin": {
+      "pieceCid": "baga6ea4seaqpiffpyptzhgi4dqajreaptszblhncs33jbcanbkezodtrj6z2ena"
+    },
+    "storj": {
+      "path": null
+    }
+  },
+  "verifiedBy": [
+    {
+      "name": "C2PA Claim 1: Authenticated photo taken with Starling Capture and Canon EOS R5 on 2/21/2022",
+      "value": "Starling Lab Bijeljina Investigation",
+      "file": "starling-lab-bijeljina-investigation.cert.pem"
+    }
+  ],
+  "attestations": [
+    {
+      "records": {
+        "openTimestamps": {
+          "sha256": "5e9d3589f8dad53b977819a32f34008f2bc0e2e1bf228539d1fb06c7977f6758",
+          "block": "768134"
+        },
+        "numbersProtocol": {
+          "tx": "0xdb208324a93a308b6811aa1c597bb3427be0d2636cf066c4a483b88b22b47bc5"
+        },
+        "numbersProtocolAvalanche": {
+          "tx": "0x58ed9199e5867c96d09ffd139850450d210f73fcc6d7f03f09e5fcb9abea6404"
+        },
+        "iscn": {
+          "iscnId": "iscn://likecoin-chain/1z1i-IoAUpmqCFSZ1uGfWHRjBajDEvyzormuRvZYYDE/1",
+          "tx": "916A7FCCBFDEF11B2FDF811BC693631AA7F89E557E10F43C03CE12BBB92A647A"
+        },
+        "ipfs": {
+          "cid": "bafkreidmoxc2y3jcqm7vfp5hfyd74xl5dz6ahhyr5ulsni4dhr2tocrpea"
+        },
+        "filecoin": {
+          "pieceCid": "baga6ea4seaqfhl32tiwydchf45m5vjxlfszk2xk6budmsnlhpi3ooeqmivfsoiy"
+        },
+        "storj": {
+          "path": "jug7otopdwlv4iqekuql47ddchfa/2022-bijeljina-investigation-captions/6c75c5ac6d22833f52bfa72e07fe5d7d1e7c039f11ed1726a3833c75370a2f20.encrypted"
+        }
+      },
+      "name": "Caption",
+      "value": "bafkreidmoxc2y3jcqm7vfp5hfyd74xl5dz6ahhyr5ulsni4dhr2tocrpea"
+    }
+  ]
+}

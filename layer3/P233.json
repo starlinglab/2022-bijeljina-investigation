@@ -1,0 +1,117 @@
+{
+  "description": "Authenticated download of a photo from the Haviv Private Archive. Photograph originally taken by Ron Haviv on April 2, 1992. Registered (4 protocols) / Preserved (1 protocols) / Verified (1 attestation).",
+  "assetCid": "bafybeicccsliw4zjsqx4ysfxgyt66ovutwaugq6ual7ws23sar65giuio4",
+  "caption": {
+    "captionText": "Members of Arkan's Tigers in Bijeljina on April 2, 1992. (Ron Haviv/VII/Redux)",
+    "originalUrl": null
+  },
+  "chainsOfTrust": [
+    {
+      "Rolling Stone": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-root-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-bijeljina-investigation.cert.pem"
+        }
+      ],
+      "Starling Lab": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-root-ca.cert.pem"
+        },
+        {
+          "name": "Intermediate Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-intermediate-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Starling Lab",
+          "file": "starling-lab-bijeljina-investigation.cert.pem"
+        }
+      ]
+    }
+  ],
+  "assetDetails": {
+    "dimensions": "530 x 354",
+    "format": "image/png"
+  },
+  "c2pa": {
+    "assetFile": "P233.png",
+    "manifestFile": "P233-manifest.json"
+  },
+  "captureDate": "2022-12-16T10:17:45.856Z",
+  "capturedBy": "Haviv Private Archive / Photographs",
+  "location": "New York, NY, United States",
+  "registrationRecords": {
+    "openTimestamps": {
+      "sha256": "1819c18cce02a7fa84ef8c6cb5451b1704016fb01b2584dccf3ac04b576c3877",
+      "block": "767727"
+    },
+    "numbersProtocol": {
+      "tx": "0xe63e0d3287d32cb6614558e09c674ac18cadbc08e20079b3b64529ae41addc14"
+    },
+    "numbersProtocolAvalanche": {
+      "tx": "0xdfbd13b942a9206129cf7230ae5d23b9a17b5d66d76a451e405f4147c3f475d3"
+    },
+    "iscn": {
+      "iscnId": "iscn://likecoin-chain/f4pDFn59ou9DbBcuvj-wWnJNpYKz4eJ-zRH1U4VEdt4/1",
+      "tx": "C0502E81C9C84D8441187220BE17F52510B9860A477E0D87C572D3DE969B11B4"
+    }
+  },
+  "storageRecords": {
+    "ipfs": {
+      "cid": null
+    },
+    "filecoin": {
+      "pieceCid": "baga6ea4seaqfhl32tiwydchf45m5vjxlfszk2xk6budmsnlhpi3ooeqmivfsoiy"
+    },
+    "storj": {
+      "path": null
+    }
+  },
+  "verifiedBy": [
+    {
+      "name": "C2PA Claim 1: Authenticated download of photograph from the Haviv Private Archive",
+      "value": "Starling Lab Bijeljina Investigation",
+      "file": "starling-lab-bijeljina-investigation.cert.pem"
+    }
+  ],
+  "attestations": [
+    {
+      "records": {
+        "openTimestamps": {
+          "sha256": "90ac2dfac0500cc028296273eff91c097564dc5ebd1e56a4239bb6126248c683",
+          "block": "768134"
+        },
+        "numbersProtocol": {
+          "tx": "0xa2905fa7ae043e4140b82c2cbd3d41f9df20f292efb9c64125d6cd277e5dd3e5"
+        },
+        "numbersProtocolAvalanche": {
+          "tx": "0xd5e0730b70a06b81216e95ccaa78f2e88204384724d13f1313abde0af640bc85"
+        },
+        "iscn": {
+          "iscnId": "iscn://likecoin-chain/X9BqSWHolo3yXsJOlKMGa7b5JjnOU5Kjv7ON8Omm5WE/1",
+          "tx": "150684A0D999458B888560313CD3BEDA0D502FEA1358791698D05AEDA0DA180C"
+        },
+        "ipfs": {
+          "cid": "bafkreihdy3bjtftzpvv7l3afmxn7e3ymb5t2fxv4kskywuicixj6soe664"
+        },
+        "filecoin": {
+          "pieceCid": "baga6ea4seaqfhl32tiwydchf45m5vjxlfszk2xk6budmsnlhpi3ooeqmivfsoiy"
+        },
+        "storj": {
+          "path": "jug7otopdwlv4iqekuql47ddchfa/2022-bijeljina-investigation-captions/e3c6c29996797d6bf5ec0565dbf26f0c0f67a2debc54958b510245d3e9389ef7.encrypted"
+        }
+      },
+      "name": "Caption",
+      "value": "bafkreihdy3bjtftzpvv7l3afmxn7e3ymb5t2fxv4kskywuicixj6soe664"
+    }
+  ]
+}
