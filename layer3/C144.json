@@ -1,0 +1,151 @@
+{
+  "description": "Authenticated web archive of Facebook post by \"Misa Misa\" on November 4, 2019. Features undated photograph. Captured on November 2, 2022. Cropped / Registered (4 protocols) / Preserved (1 protocol) / Verified (2 attestations).",
+  "assetCid": "bafybeif2kgnxms5xvm3b6x3ckxeek4hlg77znh4itzu3altlvbbqtk4e4q",
+  "caption": {
+    "captionText": "The Facebook profile image of \"Misa Misa\" depicts a young uniformed man standing in front of a Center for Special Training of Volunteers in Erdut, Croatia.",
+    "originalUrl": null
+  },
+  "chainsOfTrust": [
+    {
+      "Rolling Stone": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-root-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-bijeljina-investigation.cert.pem"
+        }
+      ],
+      "Starling Lab": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-root-ca.cert.pem"
+        },
+        {
+          "name": "Intermediate Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-intermediate-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Starling Lab",
+          "file": "starling-lab-bijeljina-investigation.cert.pem"
+        }
+      ]
+    }
+  ],
+  "assetDetails": {
+    "dimensions": "1200 x 986",
+    "format": "image/png"
+  },
+  "c2pa": {
+    "assetFile": "C144.png",
+    "manifestFile": "C144-manifest.json"
+  },
+  "captureDate": "2022-11-02T09:42:00.000Z",
+  "capturedBy": "Webrecorder - ArchiveWeb.page / Authenticated Web Archive",
+  "location": "Los Angeles, CA, United States",
+  "registrationRecords": {
+    "openTimestamps": {
+      "sha256": "213feb883dbc24296d49322ebaf5284dfa504218aec419cf31f2a9a87d80ecc2",
+      "block": "767727"
+    },
+    "numbersProtocol": {
+      "tx": "0x27a2a6fb0be90f8ddd0837caf7d1677f2f1ad59c81d32965abe4c8cf7b9cbf91"
+    },
+    "numbersProtocolAvalanche": {
+      "tx": "0x3610ff5876cb2d402fc121265f770debae3cc6d1915857ebab52839aafee3f79"
+    },
+    "iscn": {
+      "iscnId": "iscn://likecoin-chain/37Wpfj-3H3pYJxRqlZEQZzzAAGhT6RzDLaBSAr7Ak4A/1",
+      "tx": "0F2C0EFB8BF5FD089D080328D1569CE324629D89FF3EE7C2DB8B713585C86146"
+    }
+  },
+  "storageRecords": {
+    "ipfs": {
+      "cid": null
+    },
+    "filecoin": {
+      "pieceCid": "baga6ea4seaqfhl32tiwydchf45m5vjxlfszk2xk6budmsnlhpi3ooeqmivfsoiy"
+    },
+    "storj": {
+      "path": null
+    }
+  },
+  "verifiedBy": [
+    {
+      "name": "C2PA Claim 1: Authenticated web archive and screenshot created on 11/2/2022",
+      "value": "Starling Lab Bijeljina Investigation",
+      "file": "starling-lab-bijeljina-investigation.cert.pem"
+    },
+    {
+      "name": "C2PA Claim 2: Crop and Resize with Adobe Photoshop",
+      "value": "Adobe Photoshop",
+      "file": "adobe-photoshop.cert.pem"
+    }
+  ],
+  "attestations": [
+    {
+      "records": {
+        "openTimestamps": {
+          "sha256": "fd3e753988ad16ebd577cf0f3792e1365d3049ad95901a19ba6933390561f649",
+          "block": "767727"
+        },
+        "numbersProtocol": {
+          "tx": "0xcc8b6f656c3d568409cc206d4feb374cd0d9c79fbe081818184ece1016b785c1"
+        },
+        "numbersProtocolAvalanche": {
+          "tx": "0x58f49275dfeaf14a93526aa003d633c7b589eb5dba75fdec1c24963e0009eace"
+        },
+        "iscn": {
+          "iscnId": "iscn://likecoin-chain/SiRyc6sxTAIZcp81nwPJ7ldOSIoxfqFPL5w4hkktRMo/1",
+          "tx": "8943BA26259F975B581025D7814B4F7976F8A2BC0F5F8DA8B600D4E9E36BE234"
+        },
+        "ipfs": {
+          "cid": null
+        },
+        "filecoin": {
+          "pieceCid": "baga6ea4seaqpiffpyptzhgi4dqajreaptszblhncs33jbcanbkezodtrj6z2ena"
+        },
+        "storj": {
+          "path": null
+        }
+      },
+      "name": "Web Archive",
+      "value": "bafybeicdw6ja6ndbbizydse4aqlkwvntctjer2eyysa5nrizupnhhecliq"
+    },
+    {
+      "records": {
+        "openTimestamps": {
+          "sha256": "1bc198c46bcae7ccc2efc3b94ff29bd3d2109b2d7fe07363a916b120e0b63f7a",
+          "block": "768134"
+        },
+        "numbersProtocol": {
+          "tx": "0xa7190c7b5e528b121c088045b4d8777678691e743d22511a5ec9b1cb9fd957fd"
+        },
+        "numbersProtocolAvalanche": {
+          "tx": "0xee71c89ca93976450fed1e51f5b85a1b595e9fbc304898569f3bf10f0ae9d463"
+        },
+        "iscn": {
+          "iscnId": "iscn://likecoin-chain/dZLLpEuhqOvPKBxJ51oFKDJzjxWl16SwvOikVrMZszo/1",
+          "tx": "E0621C045015B54C5EE3CEB3B57B4A7C3DA4804434586F52C58F23D8A4F37B8C"
+        },
+        "ipfs": {
+          "cid": "bafkreigsm7oiyifycl7njl3ilgtiiovcz7pbv5namvxoc2vj3kygbbw2pi"
+        },
+        "filecoin": {
+          "pieceCid": "baga6ea4seaqfhl32tiwydchf45m5vjxlfszk2xk6budmsnlhpi3ooeqmivfsoiy"
+        },
+        "storj": {
+          "path": "jug7otopdwlv4iqekuql47ddchfa/2022-bijeljina-investigation-captions/d267dc8c20b812fed4af6859a6843aa2cfde1af5a0656ee16aa9dab06086da7a.encrypted"
+        }
+      },
+      "name": "Caption",
+      "value": "bafkreigsm7oiyifycl7njl3ilgtiiovcz7pbv5namvxoc2vj3kygbbw2pi"
+    }
+  ]
+}

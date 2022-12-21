@@ -1,0 +1,156 @@
+{
+  "description": "Authenticated web archive of Twitter post from July 16, 2021, featuring video of Ron Haviv being interviewed by Charlie Rose in 2001. Captured on November 1, 2022. Redacted and Cropped / Registered (4 protocols) / Preserved (1 protocol) / Verified (2 attestations).",
+  "assetCid": "bafybeiefxqlb2voecopfm66hcobc3xb6oca4h7sb6wbz7wfwzflrot45jq",
+  "caption": {
+    "captionText": "A Twitter post from 2021 implies that Adobe Photoshop could have been used on Haviv's work in Bijeljina.",
+    "originalUrl": null
+  },
+  "chainsOfTrust": [
+    {
+      "Rolling Stone": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-root-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-bijeljina-investigation.cert.pem"
+        }
+      ],
+      "Starling Lab": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-root-ca.cert.pem"
+        },
+        {
+          "name": "Intermediate Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-intermediate-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Starling Lab",
+          "file": "starling-lab-bijeljina-investigation.cert.pem"
+        }
+      ]
+    }
+  ],
+  "assetDetails": {
+    "dimensions": "1179 x 1446",
+    "format": "image/png"
+  },
+  "c2pa": {
+    "assetFile": "C060.png",
+    "manifestFile": "C060-manifest.json"
+  },
+  "captureDate": "2022-10-31T13:28:00.000Z",
+  "capturedBy": "Webrecorder - ArchiveWeb.page / Authenticated Web Archive",
+  "location": "Los Angeles, CA, United States",
+  "registrationRecords": {
+    "openTimestamps": {
+      "sha256": "6ea4c864bfbbab7711a60c88b114b4f806f661108b791239bbf46c18f3f36467",
+      "block": "767727"
+    },
+    "numbersProtocol": {
+      "tx": "0xeb8cc0b0f93ca4c11e105dd600ba62ac73a508890784e8ade870fb441d1b864b"
+    },
+    "numbersProtocolAvalanche": {
+      "tx": "0x845f0517612d587093ffa44724b6f487c24623ec03be79472ca553b68f028959"
+    },
+    "iscn": {
+      "iscnId": "iscn://likecoin-chain/D4Xe8a9eifUdEVPR7CqUYggIsrWjxeodIMFD8WtqbBc/1",
+      "tx": "0623C6D5C12B64A54561432503A43DA1033CDC512B77A4AFC80A50219ED71F59"
+    }
+  },
+  "storageRecords": {
+    "ipfs": {
+      "cid": null
+    },
+    "filecoin": {
+      "pieceCid": "baga6ea4seaqfhl32tiwydchf45m5vjxlfszk2xk6budmsnlhpi3ooeqmivfsoiy"
+    },
+    "storj": {
+      "path": null
+    }
+  },
+  "verifiedBy": [
+    {
+      "name": "C2PA Claim 1: Authenticated web archive and screenshot created on 11/1/2022",
+      "value": "Starling Lab Bijeljina Investigation",
+      "file": "starling-lab-bijeljina-investigation.cert.pem"
+    },
+    {
+      "name": "C2PA Claim 2: Redact faces, names/handles, and text with Adobe Photoshop",
+      "value": "Adobe Photoshop",
+      "file": "adobe-photoshop.cert.pem"
+    },
+    {
+      "name": "C2PA Claim 3: Crop and Resize with Adobe Photoshop",
+      "value": "Adobe Photoshop",
+      "file": "adobe-photoshop.cert.pem"
+    }
+  ],
+  "attestations": [
+    {
+      "records": {
+        "openTimestamps": {
+          "sha256": "4cbd43445f028fc92a38be2fd4f872e155b1ae23e0a88c1f4bc9e6e7b643dc4a",
+          "block": "767727"
+        },
+        "numbersProtocol": {
+          "tx": "0x76db5831d2c8672f17dc04a34b5e7caafa4444c37ece5c612e2debbbb5d30f44"
+        },
+        "numbersProtocolAvalanche": {
+          "tx": "0xf6cf2c0dd78a836f67a146bf7050a71367a031c30afdc91cf0753e0c905222a2"
+        },
+        "iscn": {
+          "iscnId": "iscn://likecoin-chain/AdYsy1pysGWBtRShRiuLK6Ety7Byt6HkKy1DCebc0qQ/1",
+          "tx": "A72E96DF43BDAD1D92C1F66B4645826724E3115394F55204BCE2340BB25AFBEF"
+        },
+        "ipfs": {
+          "cid": null
+        },
+        "filecoin": {
+          "pieceCid": "baga6ea4seaqeliwckrzxf3d5nazpolch5ayzrtwaxf7m25o5tyuspvyouf4l4kq"
+        },
+        "storj": {
+          "path": null
+        }
+      },
+      "name": "Web Archive",
+      "value": "bafybeidu3eylklwbqacivows72msppd6bdp6n4gwy7oboog5z6kgtclcii"
+    },
+    {
+      "records": {
+        "openTimestamps": {
+          "sha256": "213377648832b1eba72ce7bed0d11bc41d2ae957fe664defad8515ec2b74c038",
+          "block": "768134"
+        },
+        "numbersProtocol": {
+          "tx": "0xd550d73f53638228fe79bb94fe9d9ecd18b068c5b9f0aa336b1ca3f01403ed71"
+        },
+        "numbersProtocolAvalanche": {
+          "tx": "0x608af8ddfd158f0e4c7fbc4e7141994d98992f442a752d16b676e0e0c4d1f02b"
+        },
+        "iscn": {
+          "iscnId": "iscn://likecoin-chain/bMI1-uwhGqt7a5gInHh0CHKXjUb2xM95yYEuI3dQk7A/1",
+          "tx": "6B3A1FA64433E175EAD583EFAEF1D443A04E97DDC2F4245F7435178546E2207A"
+        },
+        "ipfs": {
+          "cid": "bafkreibfwechfc7k3g2n7mevarpc27rkq5krkc3rrtquumnzdt3nscghgi"
+        },
+        "filecoin": {
+          "pieceCid": "baga6ea4seaqfhl32tiwydchf45m5vjxlfszk2xk6budmsnlhpi3ooeqmivfsoiy"
+        },
+        "storj": {
+          "path": "jug7otopdwlv4iqekuql47ddchfa/2022-bijeljina-investigation-captions/25b104728bead9b4dfb095045e2d7e2a8755150b718ce14a31b91cf6d908c732.encrypted"
+        }
+      },
+      "name": "Caption",
+      "value": "bafkreibfwechfc7k3g2n7mevarpc27rkq5krkc3rrtquumnzdt3nscghgi"
+    }
+  ]
+}

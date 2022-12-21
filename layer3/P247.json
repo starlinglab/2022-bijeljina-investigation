@@ -1,0 +1,127 @@
+{
+  "description": "Authenticated download from Redux Archive of a photograph taken by Ron Haviv in Irpin, Ukraine in March 2022. Color Corrected / Registered (4 protocols) / Preserved (3 protocols) / Verified (1 attestation).",
+  "assetCid": "bafybeibfjpgjgy3iq5gbptnuti6jquffomixu7xostgk3atawamsclvu6q",
+  "caption": {
+    "captionText": "Civilian killed on the streets of Irpin, Ukraine, in 2022. (Ron Haviv/VII/Redux)",
+    "originalUrl": null
+  },
+  "chainsOfTrust": [
+    {
+      "Rolling Stone": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-root-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-bijeljina-investigation.cert.pem"
+        }
+      ],
+      "Starling Lab": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-root-ca.cert.pem"
+        },
+        {
+          "name": "Intermediate Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-intermediate-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Starling Lab",
+          "file": "starling-lab-bijeljina-investigation.cert.pem"
+        }
+      ]
+    }
+  ],
+  "assetDetails": {
+    "dimensions": "1500 x 1000",
+    "format": "image/jpeg"
+  },
+  "c2pa": {
+    "assetFile": "P247.jpg",
+    "manifestFile": "P247-manifest.json"
+  },
+  "captureDate": "2022-12-16T09:49:52.493Z",
+  "capturedBy": "Licensed Wire Photo",
+  "location": "Los Angeles, CA, United States",
+  "registrationRecords": {
+    "openTimestamps": {
+      "sha256": "61661a6c3aebb026bbf4f8cfd040153ff869ca301187ab4324e6f5d40e0a07c2",
+      "block": "767727"
+    },
+    "numbersProtocol": {
+      "tx": "0xcb2c278a1745de31e275d73f664916bdfd424c38b42223aafc49835f3f055019"
+    },
+    "numbersProtocolAvalanche": {
+      "tx": "0xddd0b449705e963eeb8f34b1e404a8f913ec13e11e743f57607d4e71647171ad"
+    },
+    "iscn": {
+      "iscnId": "iscn://likecoin-chain/A0TJOfhjDDzFd4VajcF_OoRly6copVNUtzqk8qXHi3Y/1",
+      "tx": "1DDB73E1F2CEB7813B96834A23365FFCEF399561B522517BE5604C3AC784470B"
+    }
+  },
+  "storageRecords": {
+    "ipfs": {
+      "cid": "bafybeibfjpgjgy3iq5gbptnuti6jquffomixu7xostgk3atawamsclvu6q"
+    },
+    "filecoin": {
+      "pieceCid": "baga6ea4seaqfhl32tiwydchf45m5vjxlfszk2xk6budmsnlhpi3ooeqmivfsoiy"
+    },
+    "storj": {
+      "path": "jxtsknqc6gmrx46nyigdji5yhlzq/2022-bijeljina-investigation-wire-photos/cbed0384c579180124b999f96e92b3590c382fbcc861ed811c66e50045f55582.encrypted"
+    }
+  },
+  "verifiedBy": [
+    {
+      "name": "C2PA Claim 1: Authenticated download of photograph from Redux Archive",
+      "value": "Starling Lab Bijeljina Investigation",
+      "file": "starling-lab-bijeljina-investigation.cert.pem"
+    },
+    {
+      "name": "C2PA Claim 2: Resize with Adobe Photoshop",
+      "value": "Adobe Photoshop",
+      "file": "adobe-photoshop.cert.pem"
+    },
+    {
+      "name": "C2PA Claim 3: Sharpen with Adobe Photoshop",
+      "value": "Adobe Photoshop",
+      "file": "adobe-photoshop.cert.pem"
+    }
+  ],
+  "attestations": [
+    {
+      "records": {
+        "openTimestamps": {
+          "sha256": "e233d429fd01a6826a019c0d40fcfd54d9d9b6827073b5651cbddc27bb96ee64",
+          "block": "768134"
+        },
+        "numbersProtocol": {
+          "tx": "0xc9380166d1997f5285e7ff468bdecb97e35bdf1bdcc3f9199ec3756c021e3d81"
+        },
+        "numbersProtocolAvalanche": {
+          "tx": "0xd907399f488056c17fb7039b80149d21b19da218251bcda94a3b3b93536a35a1"
+        },
+        "iscn": {
+          "iscnId": "iscn://likecoin-chain/anwWIl6pTaVqSiFZHSfhnFOR92ZvMoDaUGWivkpA6TE/1",
+          "tx": "AD8311C0EFB350C8950BFDCC7146B082BFD5C4EA998291055C0C5F51A2FABB4C"
+        },
+        "ipfs": {
+          "cid": "bafkreihpzb4arjyuslm37xpqkisq6tqqvyughhlmu4exm7qm75gqf5mtre"
+        },
+        "filecoin": {
+          "pieceCid": "baga6ea4seaqfhl32tiwydchf45m5vjxlfszk2xk6budmsnlhpi3ooeqmivfsoiy"
+        },
+        "storj": {
+          "path": "jug7otopdwlv4iqekuql47ddchfa/2022-bijeljina-investigation-captions/efc87808a71492d9bfddf052250f4e10ae28639d6ca709767e0cff4d02f59389.encrypted"
+        }
+      },
+      "name": "Caption",
+      "value": "bafkreihpzb4arjyuslm37xpqkisq6tqqvyughhlmu4exm7qm75gqf5mtre"
+    }
+  ]
+}

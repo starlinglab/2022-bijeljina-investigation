@@ -1,0 +1,151 @@
+{
+  "description": "Authenticated web archive of Wikipedia entry on the Bijeljina massacre. Captured on November 1, 2022. Cropped / Registered (4 protocols) / Preserved (1 protocol) / Verified (2 attestations).",
+  "assetCid": "bafybeigvpq4qz4z3eje2m3snrnjsz62e27pfoc4wgwm5ggbq7roe7xlkbe",
+  "caption": {
+    "captionText": "The Wikipedia entry titled \"Bijeljina massacre\" features Haviv's famous photo, as seen in 2022.",
+    "originalUrl": "https://en.wikipedia.org/wiki/Bijeljina_massacre"
+  },
+  "chainsOfTrust": [
+    {
+      "Rolling Stone": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-root-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-bijeljina-investigation.cert.pem"
+        }
+      ],
+      "Starling Lab": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-root-ca.cert.pem"
+        },
+        {
+          "name": "Intermediate Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-intermediate-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Starling Lab",
+          "file": "starling-lab-bijeljina-investigation.cert.pem"
+        }
+      ]
+    }
+  ],
+  "assetDetails": {
+    "dimensions": "660 x 697",
+    "format": "image/png"
+  },
+  "c2pa": {
+    "assetFile": "C053.png",
+    "manifestFile": "C053-manifest.json"
+  },
+  "captureDate": "2022-10-31T13:28:00.000Z",
+  "capturedBy": "Webrecorder - ArchiveWeb.page / Authenticated Web Archive",
+  "location": "Los Angeles, CA, United States",
+  "registrationRecords": {
+    "openTimestamps": {
+      "sha256": "2bac7e78a54edd49d7faf03a7a0b72e7e52f0b67931f4ce66247172911b84101",
+      "block": "767727"
+    },
+    "numbersProtocol": {
+      "tx": "0x66cf2da423ac8c9968effbc88c49a260f031a5fe08e556c8b52ad893268a4665"
+    },
+    "numbersProtocolAvalanche": {
+      "tx": "0x20720b8778ade357b93c8d88a527bc5c6873a375c4aef22dc9dbafbf81633da0"
+    },
+    "iscn": {
+      "iscnId": "iscn://likecoin-chain/tE3PY_6mEbPKdaluDjRZTbSCM1W3pxCURNDoJPZ5tHA/1",
+      "tx": "C769D0695157251380148978F99629FD434AD2882A84ED0C01DA47AAB187BD51"
+    }
+  },
+  "storageRecords": {
+    "ipfs": {
+      "cid": null
+    },
+    "filecoin": {
+      "pieceCid": "baga6ea4seaqfhl32tiwydchf45m5vjxlfszk2xk6budmsnlhpi3ooeqmivfsoiy"
+    },
+    "storj": {
+      "path": null
+    }
+  },
+  "verifiedBy": [
+    {
+      "name": "C2PA Claim 1: Authenticated web archive and screenshot created on 11/1/2022",
+      "value": "Starling Lab Bijeljina Investigation",
+      "file": "starling-lab-bijeljina-investigation.cert.pem"
+    },
+    {
+      "name": "C2PA Claim 2: Crop and Resize with Adobe Photoshop",
+      "value": "Adobe Photoshop",
+      "file": "adobe-photoshop.cert.pem"
+    }
+  ],
+  "attestations": [
+    {
+      "records": {
+        "openTimestamps": {
+          "sha256": "4cbd43445f028fc92a38be2fd4f872e155b1ae23e0a88c1f4bc9e6e7b643dc4a",
+          "block": "767727"
+        },
+        "numbersProtocol": {
+          "tx": "0x76db5831d2c8672f17dc04a34b5e7caafa4444c37ece5c612e2debbbb5d30f44"
+        },
+        "numbersProtocolAvalanche": {
+          "tx": "0xf6cf2c0dd78a836f67a146bf7050a71367a031c30afdc91cf0753e0c905222a2"
+        },
+        "iscn": {
+          "iscnId": "iscn://likecoin-chain/AdYsy1pysGWBtRShRiuLK6Ety7Byt6HkKy1DCebc0qQ/1",
+          "tx": "A72E96DF43BDAD1D92C1F66B4645826724E3115394F55204BCE2340BB25AFBEF"
+        },
+        "ipfs": {
+          "cid": null
+        },
+        "filecoin": {
+          "pieceCid": "baga6ea4seaqeliwckrzxf3d5nazpolch5ayzrtwaxf7m25o5tyuspvyouf4l4kq"
+        },
+        "storj": {
+          "path": null
+        }
+      },
+      "name": "Web Archive",
+      "value": "bafybeidu3eylklwbqacivows72msppd6bdp6n4gwy7oboog5z6kgtclcii"
+    },
+    {
+      "records": {
+        "openTimestamps": {
+          "sha256": "6c7a67dfb18593dd622ad69b4453f5d3260e39edae4bed25b0ddd828ddff5e58",
+          "block": "768134"
+        },
+        "numbersProtocol": {
+          "tx": "0x310881f761ceafc4c7c40090ffa5fda2a786403f0bd428c64b0f3fe296f58abf"
+        },
+        "numbersProtocolAvalanche": {
+          "tx": "0x91deda4dbe384570b704d977decd7c47b78ef5dfae558bc05fd465bef129fc15"
+        },
+        "iscn": {
+          "iscnId": "iscn://likecoin-chain/9XD1h9jpb1JZfxr8_Y5mvjGtfjmEcXulNDeRiRXqhs8/1",
+          "tx": "FE221B298CB27CAF367C3DE2308E08D64FFDF5534A2928AA1042B414AEEB3A7D"
+        },
+        "ipfs": {
+          "cid": "bafkreih46xeibp5rotkbs4zcqqmrbgs7s6lub267efqmai6kpfrkyq7saq"
+        },
+        "filecoin": {
+          "pieceCid": "baga6ea4seaqfhl32tiwydchf45m5vjxlfszk2xk6budmsnlhpi3ooeqmivfsoiy"
+        },
+        "storj": {
+          "path": "jug7otopdwlv4iqekuql47ddchfa/2022-bijeljina-investigation-captions/fcf5c880bfb174d41973228419109a5f979740ebdf2160c023ca7962ac43f204.encrypted"
+        }
+      },
+      "name": "Caption",
+      "value": "bafkreih46xeibp5rotkbs4zcqqmrbgs7s6lub267efqmai6kpfrkyq7saq"
+    }
+  ]
+}

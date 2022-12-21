@@ -1,0 +1,127 @@
+{
+  "description": "Authenticated download of a photo from the Haviv Private Archive. Photograph originally taken by Ron Haviv on April 2, 1992. Color Corrected and Cropped / Registered (4 protocols) / Preserved (1 protocol) / Verified (1 attestation).",
+  "assetCid": "bafybeiac7yuaydtrkt6de6ir55enqznpzhospb3jntef3rlkznz6y47r7e",
+  "caption": {
+    "captionText": "A member of Arkan's Tigers, who appears similar to more recent photos taken of Sr\u0111an Golubovi\u0107, leans over a hospital bed in Bijeljina on April 2, 1992. (Ron Haviv/VII/Redux)",
+    "originalUrl": null
+  },
+  "chainsOfTrust": [
+    {
+      "Rolling Stone": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-root-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-bijeljina-investigation.cert.pem"
+        }
+      ],
+      "Starling Lab": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-root-ca.cert.pem"
+        },
+        {
+          "name": "Intermediate Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-intermediate-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Starling Lab",
+          "file": "starling-lab-bijeljina-investigation.cert.pem"
+        }
+      ]
+    }
+  ],
+  "assetDetails": {
+    "dimensions": "1085 x 572",
+    "format": "image/jpeg"
+  },
+  "c2pa": {
+    "assetFile": "P210.jpg",
+    "manifestFile": "P210-manifest.json"
+  },
+  "captureDate": "2022-12-16T10:17:45.922Z",
+  "capturedBy": "Haviv Private Archive / Photographs",
+  "location": "New York, NY, United States",
+  "registrationRecords": {
+    "openTimestamps": {
+      "sha256": "b55fa2a2f09b448b1d3fc87455231d50453650bdfe9bf7c588bd79abe3d89edb",
+      "block": "767727"
+    },
+    "numbersProtocol": {
+      "tx": "0xc02b025158a5b81d365d1f3c7a69efba346b8ccfbbc7152853c3742f0d8ab3ed"
+    },
+    "numbersProtocolAvalanche": {
+      "tx": "0x70ebe9122bfb63054976042eec88c0ef45cd79dd2111e69f6d5df524672ff3b3"
+    },
+    "iscn": {
+      "iscnId": "iscn://likecoin-chain/nmFl0pj_jeQWRZuGL8PPoxdF_n3u_bR8SRXqhLBnUDQ/1",
+      "tx": "E5411F4038E5CBE766DCACEBCD7682DCAD0759670DC1E4628B74CEC845D12818"
+    }
+  },
+  "storageRecords": {
+    "ipfs": {
+      "cid": null
+    },
+    "filecoin": {
+      "pieceCid": "baga6ea4seaqfhl32tiwydchf45m5vjxlfszk2xk6budmsnlhpi3ooeqmivfsoiy"
+    },
+    "storj": {
+      "path": null
+    }
+  },
+  "verifiedBy": [
+    {
+      "name": "C2PA Claim 1: Authenticated download of photograph from the Haviv Private Archive",
+      "value": "Starling Lab Bijeljina Investigation",
+      "file": "starling-lab-bijeljina-investigation.cert.pem"
+    },
+    {
+      "name": "C2PA Claim 2: Crop and Resize with Adobe Photoshop",
+      "value": "Adobe Photoshop",
+      "file": "adobe-photoshop.cert.pem"
+    },
+    {
+      "name": "C2PA Claim 3: Sharpen with Adobe Photoshop",
+      "value": "Adobe Photoshop",
+      "file": "adobe-photoshop.cert.pem"
+    }
+  ],
+  "attestations": [
+    {
+      "records": {
+        "openTimestamps": {
+          "sha256": "088736121cccb30b5caaa0cd0009fbfd805ed91a53308ff5c7113c63347b123c",
+          "block": "768134"
+        },
+        "numbersProtocol": {
+          "tx": "0xfe63ca781eb7e3ee7c3fcb0287ee3a635734bf0d82caa6c1060c18945e8d8a3b"
+        },
+        "numbersProtocolAvalanche": {
+          "tx": "0x7bcf8d95d75d0cc8f51aaf5e71433f014da022385d7e3271821b4b3b954c3bfe"
+        },
+        "iscn": {
+          "iscnId": "iscn://likecoin-chain/3o7dO99JhHOX_Dafatm3oQ0HeSLJlJeFELZAvrIFGFo/1",
+          "tx": "7178B73DBE6A4F6AE8B471AA0DB0E2C839E9F98A89499A16A5AA0405FA48D846"
+        },
+        "ipfs": {
+          "cid": "bafkreib35yu44xiutxjhblqesctngoqr7fi6yp7sb7f5ndygps7fssbhvm"
+        },
+        "filecoin": {
+          "pieceCid": "baga6ea4seaqfhl32tiwydchf45m5vjxlfszk2xk6budmsnlhpi3ooeqmivfsoiy"
+        },
+        "storj": {
+          "path": "jug7otopdwlv4iqekuql47ddchfa/2022-bijeljina-investigation-captions/3bee29ce5d149dd270ae0490a6d33a11f951ec3ff20fcbd68f067cbe594827ab.encrypted"
+        }
+      },
+      "name": "Caption",
+      "value": "bafkreib35yu44xiutxjhblqesctngoqr7fi6yp7sb7f5ndygps7fssbhvm"
+    }
+  ]
+}

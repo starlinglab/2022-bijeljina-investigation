@@ -1,0 +1,156 @@
+{
+  "description": "Authenticated web archive of Facebook post by Mladen Sara\u0107 on October 14, 2019. Features undated photograph. Captured on October 31, 2022. Redacted and Cropped / Registered (4 protocols) / Preserved (1 protocol) / Verified (2 attestations).",
+  "assetCid": "bafybeigj3u4z2b7gq2tpgeao4itx4t4gcln5vvm5z7xid4npwbsr52muwq",
+  "caption": {
+    "captionText": "A Facebook photo of Mladen Sara\u0107 posted in 2019.",
+    "originalUrl": null
+  },
+  "chainsOfTrust": [
+    {
+      "Rolling Stone": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-root-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-bijeljina-investigation.cert.pem"
+        }
+      ],
+      "Starling Lab": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-root-ca.cert.pem"
+        },
+        {
+          "name": "Intermediate Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-intermediate-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Starling Lab",
+          "file": "starling-lab-bijeljina-investigation.cert.pem"
+        }
+      ]
+    }
+  ],
+  "assetDetails": {
+    "dimensions": "1152 x 1149",
+    "format": "image/png"
+  },
+  "c2pa": {
+    "assetFile": "C045.png",
+    "manifestFile": "C045-manifest.json"
+  },
+  "captureDate": "2022-10-31T08:00:00.000Z",
+  "capturedBy": "Webrecorder - ArchiveWeb.page / Authenticated Web Archive",
+  "location": "Los Angeles, CA, United States",
+  "registrationRecords": {
+    "openTimestamps": {
+      "sha256": "4b7ed258a8fd5fa73206345ba6e78221a312b9a3db5d761c33419b509e03842f",
+      "block": "767727"
+    },
+    "numbersProtocol": {
+      "tx": "0x80c7096ed172425e1cf8d343cf817d30144bd95266f2f12838879fa282f0e949"
+    },
+    "numbersProtocolAvalanche": {
+      "tx": "0xb0399a00b13388170ca91fcd963d2f4ba7ad29ea6c276802a9deafdbb4724a21"
+    },
+    "iscn": {
+      "iscnId": "iscn://likecoin-chain/WO85yl-hmD4jTBtf6mrP9pDTLvMNJ5iuwPORB4gRMbg/1",
+      "tx": "0F146D5AA1720954EAC3F4052F1FB6BD0DBE62E12D976D06F11BA79771F64A47"
+    }
+  },
+  "storageRecords": {
+    "ipfs": {
+      "cid": null
+    },
+    "filecoin": {
+      "pieceCid": "baga6ea4seaqfhl32tiwydchf45m5vjxlfszk2xk6budmsnlhpi3ooeqmivfsoiy"
+    },
+    "storj": {
+      "path": null
+    }
+  },
+  "verifiedBy": [
+    {
+      "name": "C2PA Claim 1: Authenticated web archive and screenshot created on 10/31/2022",
+      "value": "Starling Lab Bijeljina Investigation",
+      "file": "starling-lab-bijeljina-investigation.cert.pem"
+    },
+    {
+      "name": "C2PA Claim 2: Redact faces, names/handles, and text with Adobe Photoshop",
+      "value": "Adobe Photoshop",
+      "file": "adobe-photoshop.cert.pem"
+    },
+    {
+      "name": "C2PA Claim 3: Crop and Resize with Adobe Photoshop",
+      "value": "Adobe Photoshop",
+      "file": "adobe-photoshop.cert.pem"
+    }
+  ],
+  "attestations": [
+    {
+      "records": {
+        "openTimestamps": {
+          "sha256": "b692cf5b5009f4b309f047d8220cd1cd6fe1cd252324c7dba50c65d2b44a4db5",
+          "block": "767727"
+        },
+        "numbersProtocol": {
+          "tx": "0xa103caf0f102f878487efdead185c7c628dd82551b22fde5504405da29266920"
+        },
+        "numbersProtocolAvalanche": {
+          "tx": "0xb59c113d41601a06a09ddf1bed122d5a016549da543bc881700c65d748a9a596"
+        },
+        "iscn": {
+          "iscnId": "iscn://likecoin-chain/I6Y5eiPnSu7wU8fQIWN6GxwUPjBftEB3qhAXLJrYFAk/1",
+          "tx": "96CC2F1486C2DF2394277D4DFEC6D0FD613A8A31CCF5A9E88D419BF7A498533B"
+        },
+        "ipfs": {
+          "cid": null
+        },
+        "filecoin": {
+          "pieceCid": "baga6ea4seaqnnts5zk47oxigys5eyo3szuug3e4o3vpmiq22p2rwm2gxttn7gei"
+        },
+        "storj": {
+          "path": null
+        }
+      },
+      "name": "Web Archive",
+      "value": "bafybeigptlspcqixymsqvajeslp4xzyrpry73ffne5z45tm3cfmydgl2ua"
+    },
+    {
+      "records": {
+        "openTimestamps": {
+          "sha256": "ed173426d0f0631ae69d5b142024dd0c686427cc23a83de066fa5dd3e720521a",
+          "block": "768134"
+        },
+        "numbersProtocol": {
+          "tx": "0x096b8cefc4ab669c1c4c2c635bf58bb25ee918c819d99bf68baf78b0536b95f9"
+        },
+        "numbersProtocolAvalanche": {
+          "tx": "0x460772c832150699d6ba7f2d1e9f2998cb79e10cdb1d80b28128812ee4ecba2a"
+        },
+        "iscn": {
+          "iscnId": "iscn://likecoin-chain/H_T2MD__poudDE8JfBDykH0urGd_kjuLNBc-6-scYXE/1",
+          "tx": "8169305090ED0F9EE4FD29D541A7B15D813B81572DA4B3AE6C2C28DDE2F556A7"
+        },
+        "ipfs": {
+          "cid": "bafkreifgjfkt4fho2wtnjanrthjasfixn4aqwgk3pswz33k6sigx5q6qry"
+        },
+        "filecoin": {
+          "pieceCid": "baga6ea4seaqfhl32tiwydchf45m5vjxlfszk2xk6budmsnlhpi3ooeqmivfsoiy"
+        },
+        "storj": {
+          "path": "jug7otopdwlv4iqekuql47ddchfa/2022-bijeljina-investigation-captions/a649553e14eed5a6d481b199d20915176f010b195b7cad9ded5e920d7ec3d08e.encrypted"
+        }
+      },
+      "name": "Caption",
+      "value": "bafkreifgjfkt4fho2wtnjanrthjasfixn4aqwgk3pswz33k6sigx5q6qry"
+    }
+  ]
+}

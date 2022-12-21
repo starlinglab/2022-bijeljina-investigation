@@ -1,0 +1,151 @@
+{
+  "description": "Authenticated web archive of Danas article published in 2020. Captured on November 2, 2022. Cropped / Registered (4 protocols) / Preserved (1 protocol) / Verified (2 attestations).",
+  "assetCid": "bafybeih5amg6kqufxsrmoer4p2xrf5dx6zl7622napgoc7dpw6q6v6eivq",
+  "caption": {
+    "captionText": "Coverage in Danas about Haviv being interviewed by Serbian war-crimes prosecutors in 2020 includes the image he took.",
+    "originalUrl": "https://www.danas.rs/vesti/drustvo/suocavanje/ron-haviv-ispitan-o-arkanovim-tigrovima/"
+  },
+  "chainsOfTrust": [
+    {
+      "Rolling Stone": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-root-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-bijeljina-investigation.cert.pem"
+        }
+      ],
+      "Starling Lab": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-root-ca.cert.pem"
+        },
+        {
+          "name": "Intermediate Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-intermediate-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Starling Lab",
+          "file": "starling-lab-bijeljina-investigation.cert.pem"
+        }
+      ]
+    }
+  ],
+  "assetDetails": {
+    "dimensions": "1200 x 1241",
+    "format": "image/png"
+  },
+  "c2pa": {
+    "assetFile": "C057.png",
+    "manifestFile": "C057-manifest.json"
+  },
+  "captureDate": "2022-11-02T09:42:00.000Z",
+  "capturedBy": "Webrecorder - ArchiveWeb.page / Authenticated Web Archive",
+  "location": "Los Angeles, CA, United States",
+  "registrationRecords": {
+    "openTimestamps": {
+      "sha256": "11cae8d1299883296dde6d6c0d49bd4a512435b30236861669a4263f92d80f37",
+      "block": "767727"
+    },
+    "numbersProtocol": {
+      "tx": "0x57e73896b645da3ef99dc5d5abcf0545c3bc496e6d4b990a4cbaea32f977494c"
+    },
+    "numbersProtocolAvalanche": {
+      "tx": "0xdf36540b558b2704aa47e6c72c504a774c1f3148301621e2d9739047397342d4"
+    },
+    "iscn": {
+      "iscnId": "iscn://likecoin-chain/LAl99pV71ymyDbcuz8QGKt4qzN_GItNqMKmMgG-cbsU/1",
+      "tx": "AABBC79F7A9585C9A2F7C1E568F939146BE76544CC9165DA85C1D3F2097C23A7"
+    }
+  },
+  "storageRecords": {
+    "ipfs": {
+      "cid": null
+    },
+    "filecoin": {
+      "pieceCid": "baga6ea4seaqfhl32tiwydchf45m5vjxlfszk2xk6budmsnlhpi3ooeqmivfsoiy"
+    },
+    "storj": {
+      "path": null
+    }
+  },
+  "verifiedBy": [
+    {
+      "name": "C2PA Claim 1: Authenticated web archive and screenshot created on 11/2/2022",
+      "value": "Starling Lab Bijeljina Investigation",
+      "file": "starling-lab-bijeljina-investigation.cert.pem"
+    },
+    {
+      "name": "C2PA Claim 2: Crop and Resize with Adobe Photoshop",
+      "value": "Adobe Photoshop",
+      "file": "adobe-photoshop.cert.pem"
+    }
+  ],
+  "attestations": [
+    {
+      "records": {
+        "openTimestamps": {
+          "sha256": "fd3e753988ad16ebd577cf0f3792e1365d3049ad95901a19ba6933390561f649",
+          "block": "767727"
+        },
+        "numbersProtocol": {
+          "tx": "0xcc8b6f656c3d568409cc206d4feb374cd0d9c79fbe081818184ece1016b785c1"
+        },
+        "numbersProtocolAvalanche": {
+          "tx": "0x58f49275dfeaf14a93526aa003d633c7b589eb5dba75fdec1c24963e0009eace"
+        },
+        "iscn": {
+          "iscnId": "iscn://likecoin-chain/SiRyc6sxTAIZcp81nwPJ7ldOSIoxfqFPL5w4hkktRMo/1",
+          "tx": "8943BA26259F975B581025D7814B4F7976F8A2BC0F5F8DA8B600D4E9E36BE234"
+        },
+        "ipfs": {
+          "cid": null
+        },
+        "filecoin": {
+          "pieceCid": "baga6ea4seaqpiffpyptzhgi4dqajreaptszblhncs33jbcanbkezodtrj6z2ena"
+        },
+        "storj": {
+          "path": null
+        }
+      },
+      "name": "Web Archive",
+      "value": "bafybeicdw6ja6ndbbizydse4aqlkwvntctjer2eyysa5nrizupnhhecliq"
+    },
+    {
+      "records": {
+        "openTimestamps": {
+          "sha256": "eeca421e78ec5b9b011ff645b0980ee75b165713260a9e3dd31077da2805489a",
+          "block": "768134"
+        },
+        "numbersProtocol": {
+          "tx": "0x02458aa0098444b297b77294257189cb6683d05eeacafd2fe4837f76a00985bf"
+        },
+        "numbersProtocolAvalanche": {
+          "tx": "0x0bf49cbb59632d375b3b1d4a7e02615238f251e97ea98d4ae8fb787cdbfab505"
+        },
+        "iscn": {
+          "iscnId": "iscn://likecoin-chain/ZuQilVW6rGvf24yIiGe7rQ5a09_qekpWTkQRp1FK6kQ/1",
+          "tx": "E718776F48BEAD075ABE3CD29974AF165E22B2D4516BB66D58AA8805E637E94E"
+        },
+        "ipfs": {
+          "cid": "bafkreig5dzgpqu22ps3lakklosk3z2pnihkbzl5jrm7ikszlgfxsrevfne"
+        },
+        "filecoin": {
+          "pieceCid": "baga6ea4seaqfhl32tiwydchf45m5vjxlfszk2xk6budmsnlhpi3ooeqmivfsoiy"
+        },
+        "storj": {
+          "path": "jug7otopdwlv4iqekuql47ddchfa/2022-bijeljina-investigation-captions/dd1e4cf8535a7cb6b0294b7495bce9ed41d41cafa98b3e854b2b316f2892a569.encrypted"
+        }
+      },
+      "name": "Caption",
+      "value": "bafkreig5dzgpqu22ps3lakklosk3z2pnihkbzl5jrm7ikszlgfxsrevfne"
+    }
+  ]
+}

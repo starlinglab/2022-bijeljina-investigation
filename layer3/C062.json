@@ -1,0 +1,156 @@
+{
+  "description": "Authenticated web archive of Daily Maverick article published in 2021. Captured on October 31, 2022. Redacted and Cropped / Registered (4 protocols) / Preserved (1 protocol) / Verified (2 attestations).",
+  "assetCid": "bafybeicsb2zqu56vy663q4c3zrs56tjiggtfu7oyusrrhmadvd5fmbhbvu",
+  "caption": {
+    "captionText": "Coverage in South Africa's Daily Maverick in 2021 about Dobrosav Gavri\u0107's extradition fight.",
+    "originalUrl": "https://www.dailymaverick.co.za/article/2021-02-10-a-jailed-serbian-assassins-10-year-battle-against-extradition-from-sa-and-his-failed-bids-for-freedom/"
+  },
+  "chainsOfTrust": [
+    {
+      "Rolling Stone": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-root-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-bijeljina-investigation.cert.pem"
+        }
+      ],
+      "Starling Lab": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-root-ca.cert.pem"
+        },
+        {
+          "name": "Intermediate Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-intermediate-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Starling Lab",
+          "file": "starling-lab-bijeljina-investigation.cert.pem"
+        }
+      ]
+    }
+  ],
+  "assetDetails": {
+    "dimensions": "1200 x 714",
+    "format": "image/png"
+  },
+  "c2pa": {
+    "assetFile": "C062.png",
+    "manifestFile": "C062-manifest.json"
+  },
+  "captureDate": "2022-10-31T08:00:00.000Z",
+  "capturedBy": "Webrecorder - ArchiveWeb.page / Authenticated Web Archive",
+  "location": "Los Angeles, CA, United States",
+  "registrationRecords": {
+    "openTimestamps": {
+      "sha256": "0dd6dc17c3aa81a9a5579680d440b8719034dd87deb0cc9673c27bd69c55d0d6",
+      "block": "767727"
+    },
+    "numbersProtocol": {
+      "tx": "0x5d0f77230f36b44249315f577dfeccac8a94a6c1ba8ef61004f8aed88b403e85"
+    },
+    "numbersProtocolAvalanche": {
+      "tx": "0x54ac43e23901779d998527c889a56ea4a2932eba262378c76b0831446177f3b6"
+    },
+    "iscn": {
+      "iscnId": "iscn://likecoin-chain/XSGnIPdtwCCHL1nDa2SJMP-RsyTjtA4GFbZeg_HzMuo/1",
+      "tx": "24F1C89464C825459FED6D9F8A44C4E19084C7CA0162334D545C47BAFDC34104"
+    }
+  },
+  "storageRecords": {
+    "ipfs": {
+      "cid": null
+    },
+    "filecoin": {
+      "pieceCid": "baga6ea4seaqfhl32tiwydchf45m5vjxlfszk2xk6budmsnlhpi3ooeqmivfsoiy"
+    },
+    "storj": {
+      "path": null
+    }
+  },
+  "verifiedBy": [
+    {
+      "name": "C2PA Claim 1: Authenticated web archive and screenshot created on 10/31/2022",
+      "value": "Starling Lab Bijeljina Investigation",
+      "file": "starling-lab-bijeljina-investigation.cert.pem"
+    },
+    {
+      "name": "C2PA Claim 2: Redact faces, names/handles, and text with Adobe Photoshop",
+      "value": "Adobe Photoshop",
+      "file": "adobe-photoshop.cert.pem"
+    },
+    {
+      "name": "C2PA Claim 3: Crop and Resize with Adobe Photoshop",
+      "value": "Adobe Photoshop",
+      "file": "adobe-photoshop.cert.pem"
+    }
+  ],
+  "attestations": [
+    {
+      "records": {
+        "openTimestamps": {
+          "sha256": "b692cf5b5009f4b309f047d8220cd1cd6fe1cd252324c7dba50c65d2b44a4db5",
+          "block": "767727"
+        },
+        "numbersProtocol": {
+          "tx": "0xa103caf0f102f878487efdead185c7c628dd82551b22fde5504405da29266920"
+        },
+        "numbersProtocolAvalanche": {
+          "tx": "0xb59c113d41601a06a09ddf1bed122d5a016549da543bc881700c65d748a9a596"
+        },
+        "iscn": {
+          "iscnId": "iscn://likecoin-chain/I6Y5eiPnSu7wU8fQIWN6GxwUPjBftEB3qhAXLJrYFAk/1",
+          "tx": "96CC2F1486C2DF2394277D4DFEC6D0FD613A8A31CCF5A9E88D419BF7A498533B"
+        },
+        "ipfs": {
+          "cid": null
+        },
+        "filecoin": {
+          "pieceCid": "baga6ea4seaqnnts5zk47oxigys5eyo3szuug3e4o3vpmiq22p2rwm2gxttn7gei"
+        },
+        "storj": {
+          "path": null
+        }
+      },
+      "name": "Web Archive",
+      "value": "bafybeigptlspcqixymsqvajeslp4xzyrpry73ffne5z45tm3cfmydgl2ua"
+    },
+    {
+      "records": {
+        "openTimestamps": {
+          "sha256": "318b0aa9b2b6632f64bb70eea6cea415fcbc6ffb6dbc029a7333716426300aa3",
+          "block": "768134"
+        },
+        "numbersProtocol": {
+          "tx": "0x250f3f16e47c7ca1bdc3ad624f82a9f8eec42148fb8fc48ee51070c6fe88473c"
+        },
+        "numbersProtocolAvalanche": {
+          "tx": "0x4d4da2d2baaa839caf08fa3d002bceca3940d7d23c2df577e129110f1861074b"
+        },
+        "iscn": {
+          "iscnId": "iscn://likecoin-chain/5RIxrqP5RHduBxlIvJVFpBZ-W6BgWUCla-XDaZ9u-c8/1",
+          "tx": "CFEC90CCAE203494E19BBE8B8BE13D0198466F01F55DF55EB5EE87C7CB1DBFE3"
+        },
+        "ipfs": {
+          "cid": "bafkreie4eexugmn74z24v7wrtykwhrkgw2iuqewiaj53t3kgeg3fpzb2ey"
+        },
+        "filecoin": {
+          "pieceCid": "baga6ea4seaqfhl32tiwydchf45m5vjxlfszk2xk6budmsnlhpi3ooeqmivfsoiy"
+        },
+        "storj": {
+          "path": "jug7otopdwlv4iqekuql47ddchfa/2022-bijeljina-investigation-captions/9c212f4331bfe675cafed19e1563c546b6914812c8027bb9ed4621b657e43a26.encrypted"
+        }
+      },
+      "name": "Caption",
+      "value": "bafkreie4eexugmn74z24v7wrtykwhrkgw2iuqewiaj53t3kgeg3fpzb2ey"
+    }
+  ]
+}

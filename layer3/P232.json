@@ -1,0 +1,117 @@
+{
+  "description": "Authenticated download from Reuters Wire Services of a wire photo from a \"Ceca\" concert in Skopje, originally photographed by Ognen Teofilovski and published by Reuters in 2010. Registered (4 protocols) / Preserved (3 protocols) / Verified (1 attestation).",
+  "assetCid": "bafybeiayhvc42t4iobgu7twip4aaqmjoqc3mfgbflybug254htzkqyczrm",
+  "caption": {
+    "captionText": "Svetlana Ra\u017enatovi\u0107, known as Ceca, performs during a concert in Skopje, in what is now North Macedonia, on Nov. 26, 2010. (Ognen Teofilovski/Reuters/Alamy)",
+    "originalUrl": null
+  },
+  "chainsOfTrust": [
+    {
+      "Rolling Stone": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-root-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-bijeljina-investigation.cert.pem"
+        }
+      ],
+      "Starling Lab": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-root-ca.cert.pem"
+        },
+        {
+          "name": "Intermediate Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-intermediate-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Starling Lab",
+          "file": "starling-lab-bijeljina-investigation.cert.pem"
+        }
+      ]
+    }
+  ],
+  "assetDetails": {
+    "dimensions": "2200 x 1480",
+    "format": "image/jpeg"
+  },
+  "c2pa": {
+    "assetFile": "P232.jpg",
+    "manifestFile": "P232-manifest.json"
+  },
+  "captureDate": "2022-12-16T09:49:52.413Z",
+  "capturedBy": "Licensed Wire Photo",
+  "location": "Los Angeles, CA, United States",
+  "registrationRecords": {
+    "openTimestamps": {
+      "sha256": "fab0514bc0f9ad6b1dc6886257949583578aac0662edfa41d981bc169de5632a",
+      "block": "767727"
+    },
+    "numbersProtocol": {
+      "tx": "0x8b5622fbc6ef82d8490625270c531ce31fa18de7f668a64bd270f1765cd4d396"
+    },
+    "numbersProtocolAvalanche": {
+      "tx": "0x4599190e14ed7d6b9676114400f941285a419eb8e225b79cd4062c0488cae0d7"
+    },
+    "iscn": {
+      "iscnId": "iscn://likecoin-chain/PG01Bor1939UfVdB-cl04kzga5Eh1Q79gbw-PoPqHAI/1",
+      "tx": "28525E6606066179A0BE05C210C87A31C62C3E01687954D5713FBE4FDA63982D"
+    }
+  },
+  "storageRecords": {
+    "ipfs": {
+      "cid": "bafybeiayhvc42t4iobgu7twip4aaqmjoqc3mfgbflybug254htzkqyczrm"
+    },
+    "filecoin": {
+      "pieceCid": "baga6ea4seaqfhl32tiwydchf45m5vjxlfszk2xk6budmsnlhpi3ooeqmivfsoiy"
+    },
+    "storj": {
+      "path": "jxtsknqc6gmrx46nyigdji5yhlzq/2022-bijeljina-investigation-wire-photos/2ec5e092bf0eecb6e1e37fb36f54aa4c0a6e9a0c0c60f5fda5adf759907e9af6.encrypted"
+    }
+  },
+  "verifiedBy": [
+    {
+      "name": "C2PA Claim 1: Authenticated download of photograph from Reuters Wire Services",
+      "value": "Starling Lab Bijeljina Investigation",
+      "file": "starling-lab-bijeljina-investigation.cert.pem"
+    }
+  ],
+  "attestations": [
+    {
+      "records": {
+        "openTimestamps": {
+          "sha256": "f6bb2b16c9007d722965f05f9d9168e0203a82548fe179bd04c89ea6489f554b",
+          "block": "768134"
+        },
+        "numbersProtocol": {
+          "tx": "0x9e3cd0e8a93c576620f02f842f3c6f9a119308314b030bba8eea863452d4f15e"
+        },
+        "numbersProtocolAvalanche": {
+          "tx": "0x9dd44bf94caffb05c0ff78a251938b3960aa8772b62bd4e7c8061839d820f7d0"
+        },
+        "iscn": {
+          "iscnId": "iscn://likecoin-chain/YzH35aLVzoHu-RS6ilY_5TCCPOl8YQ_hwy4NaegUv6Y/1",
+          "tx": "D4D610B19BC776B9D7C6C57F2FC0E60CD132159514E10C273545C1BB65858970"
+        },
+        "ipfs": {
+          "cid": "bafkreigenrxd3ghkhj76mmzbt6x25kk6jugrp6whctpy7aj4niqww7xarq"
+        },
+        "filecoin": {
+          "pieceCid": "baga6ea4seaqfhl32tiwydchf45m5vjxlfszk2xk6budmsnlhpi3ooeqmivfsoiy"
+        },
+        "storj": {
+          "path": "jug7otopdwlv4iqekuql47ddchfa/2022-bijeljina-investigation-captions/c46c6e3d98ea3a7fe633219fafaea95e4d0d17fac714df8f813c6a216b7ee08c.encrypted"
+        }
+      },
+      "name": "Caption",
+      "value": "bafkreigenrxd3ghkhj76mmzbt6x25kk6jugrp6whctpy7aj4niqww7xarq"
+    }
+  ]
+}

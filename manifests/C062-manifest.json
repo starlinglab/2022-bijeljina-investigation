@@ -1,0 +1,599 @@
+{
+  "active_manifest": "adobe:urn:uuid:99c202f6-857a-4045-9ad2-b68c2aabd838",
+  "manifests": {
+    "adobe:urn:uuid:dce2c865-2aa2-4f4f-a6f0-1077f3caaf9c": {
+      "claim": {
+        "alg": "sha256",
+        "assertions": [
+          {
+            "hash": "J+uTYwaEbeTJj0jjTyGBIJ6J4AdFmALGZgQPKTzILnM=",
+            "url": "self#jumbf=c2pa.assertions/c2pa.thumbnail.claim.png"
+          },
+          {
+            "hash": "hxUueLE9/PcjoLWhsd+bG50zmk93sHmfDrgYABoYod8=",
+            "url": "self#jumbf=c2pa.assertions/c2pa.thumbnail.ingredient.png"
+          },
+          {
+            "hash": "GC9l4oYj3FZBRVRulf4kxWSFv8L9gBibnIJjo7/Tq+Y=",
+            "url": "self#jumbf=c2pa.assertions/c2pa.ingredient"
+          },
+          {
+            "hash": "yQmsr1rPbx7PR4ruMG8OrvZeOdITfa9EI0P2Du3DJDI=",
+            "url": "self#jumbf=c2pa.assertions/adobe.dictionary"
+          },
+          {
+            "hash": "XXFErZnOENau8PvYPDHFOW/lkqbseDa0WsZ02tmqLn4=",
+            "url": "self#jumbf=c2pa.assertions/stds.schema-org.CreativeWork"
+          },
+          {
+            "hash": "Dlo372ophnCsctjTra5G6ZJynxyF6J/USFuVAktzUxs=",
+            "url": "self#jumbf=c2pa.assertions/c2pa.actions"
+          },
+          {
+            "hash": "Vk7yMGqPYpzLvkr+L8QfWe+zmi1u5fI3uVEYcP2SZkY=",
+            "url": "self#jumbf=c2pa.assertions/c2pa.hash.data"
+          }
+        ],
+        "claim_generator": "Adobe_Photoshop/24.0.0 (build 20221013.r.59 3a3d761; mac) cai-helper/0.4.12 c2pa-rs/0.14.0",
+        "dc:format": "image/png",
+        "dc:title": "C062.png",
+        "instanceID": "xmp:iid:14882a28-52b2-4d1d-ad64-ecc002e9f007",
+        "signature": "self#jumbf=c2pa.signature"
+      },
+      "assertion_store": {
+        "c2pa.thumbnail.ingredient.png": "<omitted> len = 58397",
+        "stds.schema-org.CreativeWork": {
+          "@context": "https://schema.org",
+          "@type": "CreativeWork",
+          "author": [
+            {
+              "@type": "Person",
+              "credential": [
+                {
+                  "alg": "sha256",
+                  "hash": "YgIKpvo6AwTA2yF9tRNCmKDH1TIJdrMtvbJc26WKrE4=",
+                  "url": "self#jumbf=/c2pa/adobe:urn:uuid:dce2c865-2aa2-4f4f-a6f0-1077f3caaf9c/c2pa.credentials/did:adobe:f8bd805d918b6196019c4777c14b49a4ea3bd63a8b3a787b3ea007c70d1db32ae"
+                }
+              ],
+              "identifier": "did:adobe:f8bd805d918b6196019c4777c14b49a4ea3bd63a8b3a787b3ea007c70d1db32ae",
+              "name": "Starling Lab"
+            }
+          ]
+        },
+        "c2pa.thumbnail.claim.png": "<omitted> len = 537913",
+        "adobe.dictionary": {
+          "url": "https://cai-assertions.adobe.com/photoshop/dictionary.json"
+        },
+        "c2pa.ingredient": {
+          "c2pa_manifest": {
+            "alg": "sha256",
+            "hash": "zNyyQXkPtaF48dBdmkrw7as2884vbsIuWLcKQkIDjRU=",
+            "url": "self#jumbf=/c2pa/starlinglab:urn:uuid:918b9d04-df32-4507-950b-b7234597cd85"
+          },
+          "dc:format": "image/png",
+          "dc:title": "C062.png",
+          "documentID": "xmp:iid:504db368-d7c2-4dde-95fe-d607f845db76",
+          "instanceID": "xmp:iid:504db368-d7c2-4dde-95fe-d607f845db76",
+          "metadata": {
+            "dateTime": "2022-12-21T08:22:35.849Z"
+          },
+          "relationship": "parentOf",
+          "thumbnail": {
+            "hash": "hxUueLE9/PcjoLWhsd+bG50zmk93sHmfDrgYABoYod8=",
+            "url": "self#jumbf=c2pa.assertions/c2pa.thumbnail.ingredient.png"
+          }
+        },
+        "c2pa.actions": {
+          "actions": [
+            {
+              "action": "c2pa.edited",
+              "parameters": {
+                "name": "open"
+              }
+            },
+            {
+              "action": "c2pa.edited",
+              "parameters": {
+                "name": "gaussian_blur"
+              }
+            }
+          ],
+          "metadata": {
+            "dateTime": "2022-12-21T08:22:35.834Z",
+            "reviewRatings": []
+          }
+        },
+        "c2pa.hash.data": {
+          "alg": "sha256",
+          "exclusions": [
+            {
+              "length": 718538,
+              "start": 33
+            }
+          ],
+          "hash": "mrAXg+knXVzatIDRDW1DSQn64O8ks+WfflrPSohx80A=",
+          "name": "jumbf manifest",
+          "pad": "<omitted>"
+        }
+      },
+      "credential_store": [
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1"
+          ],
+          "credentialSubject": {
+            "id": "did:adobe:f8bd805d918b6196019c4777c14b49a4ea3bd63a8b3a787b3ea007c70d1db32ae",
+            "name": "Starling Lab"
+          },
+          "proof": {
+            "created": "2022-12-21T01:49:44.868276479Z",
+            "jws": "f1f24a6d62855549ce0f15acee7011323d5d021be00c973eb83c44a2e3e4490a3c050bf7b9a9da77d34dece7d5521d771b70aa3a695192411e45bcae988697502",
+            "proofPurpose": "assertionMethod",
+            "type": "Ed25519Signature2018",
+            "verificationMethod": "did:adobe:f8bd805d918b6196019c4777c14b49a4ea3bd63a8b3a787b3ea007c70d1db32ae"
+          },
+          "type": [
+            "VerifiableCredential"
+          ]
+        }
+      ],
+      "signature": {
+        "alg": "ps256",
+        "issuer": "Adobe Inc.",
+        "time": "2022-12-21T08:23:14+00:00"
+      }
+    },
+    "starlinglab:urn:uuid:918b9d04-df32-4507-950b-b7234597cd85": {
+      "claim": {
+        "alg": "sha256",
+        "assertions": [
+          {
+            "hash": "B11UaS9832TbyyqvDUbeFnHcR4HPoKaEfhkxvr5R3xU=",
+            "url": "self#jumbf=c2pa.assertions/c2pa.thumbnail.claim.png"
+          },
+          {
+            "hash": "AEESaccP8sYp13Yq97pQ/oGdtK8wf6+KdARAXBtMAmA=",
+            "url": "self#jumbf=c2pa.assertions/stds.schema-org.CreativeWork"
+          },
+          {
+            "hash": "EZvUYLqWSciI/hqjdeiMm1gPA5MTm8YrNUYZK86qXTE=",
+            "url": "self#jumbf=c2pa.assertions/c2pa.actions"
+          },
+          {
+            "hash": "+ao9K7lvGfCPkx+J2LhFjcA2XYpEl0d6mtLHxyR5+3U=",
+            "url": "self#jumbf=c2pa.assertions/stds.iptc.photo-metadata"
+          },
+          {
+            "hash": "UE3zk3XlLufc5CjOtMTjJKLVo5dqNL00tIwFFMEtwKo=",
+            "url": "self#jumbf=c2pa.assertions/org.starlinglab.integrity"
+          },
+          {
+            "hash": "vUqE14CSdj++ARyy8pKV/yMYprp/mKZ07Hg7+CCDyL4=",
+            "url": "self#jumbf=c2pa.assertions/c2pa.hash.data"
+          }
+        ],
+        "claim_generator": "ArchiveWeb.page_by_Webrecorder c2patool/0.3.9 c2pa-rs/0.16.0",
+        "dc:format": "image/png",
+        "dc:title": "C062.png",
+        "instanceID": "xmp:iid:5ad344ad-9658-4031-bbc0-111facc0ce77",
+        "signature": "self#jumbf=c2pa.signature"
+      },
+      "assertion_store": {
+        "org.starlinglab.integrity": {
+          "starling:archives": [
+            {
+              "archive": {
+                "cid": "bafybeig2m74svysyrhenmfsbmwoizjcl2sn3au6q7tv2hfhwpk6fnm7mku",
+                "md5": "20b21018a01d230652dd3deb4d4b6eb7",
+                "sha256": "5da6e0139dc64578e38a24e73f84f12e694c71a786471c4cf0b8ba46507b6fc7"
+              },
+              "archiveEncrypted": {
+                "cid": "bafybeicsb2zqu56vy663q4c3zrs56tjiggtfu7oyusrrhmadvd5fmbhbvu",
+                "md5": "60428cb88300715bd8eaca534a45539d",
+                "sha256": "5fea35bad4a0a788a23aa77e1ec6d30ba5ba923e0611e48846df384e645515e3"
+              },
+              "content": {
+                "cid": "bafybeibw3jtxo3jgad2nrc7ramj6fksttmcoaxcd7aoonzo3axqtcwdqki",
+                "md5": "90045c93337a358fb13e27e0fee629dd",
+                "sha256": "0dd6dc17c3aa81a9a5579680d440b8719034dd87deb0cc9673c27bd69c55d0d6"
+              },
+              "inputBundle": {
+                "sha256": "376d6bb9a6d4cafb9ac9b60c74cb8e0a5955183062661a09d5471b947ab9f9e3"
+              },
+              "registrationRecords": {
+                "iscn": {
+                  "iscnId": "iscn://likecoin-chain/XSGnIPdtwCCHL1nDa2SJMP-RsyTjtA4GFbZeg_HzMuo/1",
+                  "txHash": "24F1C89464C825459FED6D9F8A44C4E19084C7CA0162334D545C47BAFDC34104"
+                },
+                "numbersProtocol": {
+                  "assetCid": "bafybeicsb2zqu56vy663q4c3zrs56tjiggtfu7oyusrrhmadvd5fmbhbvu",
+                  "assetTreeCid": "bafkreihakc4a24pn6m7q7hol7fari4a5hibqvxpjypak6p6udosb32qro4",
+                  "avalancheTxHash": "0x54ac43e23901779d998527c889a56ea4a2932eba262378c76b0831446177f3b6",
+                  "numbersTxHash": "0x5d0f77230f36b44249315f577dfeccac8a94a6c1ba8ef61004f8aed88b403e85"
+                },
+                "openTimestamps": {
+                  "block": "767727",
+                  "sha256": "0dd6dc17c3aa81a9a5579680d440b8719034dd87deb0cc9673c27bd69c55d0d6"
+                }
+              },
+              "sourceId": {
+                "key": "data_id",
+                "value": "C062"
+              }
+            }
+          ],
+          "starling:archivesRelated": [
+            {
+              "archive": {
+                "cid": "bafybeigrfguq2ay2bz4n6fimemykldvxf3mtsu3z5z5qkuyfdmedpkzjjq",
+                "md5": "c56658605f9bc8d5d9987da340e63280",
+                "sha256": "d1febc5c356c7006c2a5326a5130ca2a04150e637862b42d0f31088bc76066d1"
+              },
+              "archiveEncrypted": {
+                "cid": "bafybeigptlspcqixymsqvajeslp4xzyrpry73ffne5z45tm3cfmydgl2ua",
+                "md5": "1d2d67a0e6352453929b5b9e66a7ecbd",
+                "sha256": "40f3948a80cefb50b810598d0369913249c047d999f6e528dae02975cd9171c7"
+              },
+              "content": {
+                "cid": "bafybeib67qmkhaurydn6dhgmsqcsr732ddwzdoqg5b5jfh544wyug5nqd4",
+                "md5": "a0fd7f8eea6aa955b64c0f9ac7bfa902",
+                "sha256": "b692cf5b5009f4b309f047d8220cd1cd6fe1cd252324c7dba50c65d2b44a4db5"
+              },
+              "inputBundle": {
+                "sha256": "6d6ab2781abf5da9468ba2db2ff754717345015eb7dc4262fcbf9fb1cbd579c9"
+              },
+              "registrationRecords": {
+                "iscn": {
+                  "iscnId": "iscn://likecoin-chain/I6Y5eiPnSu7wU8fQIWN6GxwUPjBftEB3qhAXLJrYFAk/1",
+                  "txHash": "96CC2F1486C2DF2394277D4DFEC6D0FD613A8A31CCF5A9E88D419BF7A498533B"
+                },
+                "numbersProtocol": {
+                  "assetCid": "bafybeigptlspcqixymsqvajeslp4xzyrpry73ffne5z45tm3cfmydgl2ua",
+                  "assetTreeCid": "bafkreiaqwnfs65wefaat3bf6idb6dkptgotmvfe76zqgu53hdp7otrt4ue",
+                  "avalancheTxHash": "0xb59c113d41601a06a09ddf1bed122d5a016549da543bc881700c65d748a9a596",
+                  "numbersTxHash": "0xa103caf0f102f878487efdead185c7c628dd82551b22fde5504405da29266920"
+                },
+                "openTimestamps": {
+                  "block": "767727",
+                  "sha256": "b692cf5b5009f4b309f047d8220cd1cd6fe1cd252324c7dba50c65d2b44a4db5"
+                }
+              }
+            }
+          ],
+          "starling:identifier": "C062",
+          "starling:signatures": [
+            {
+              "starling:algorithm": "ecdsa-certificate-sig",
+              "starling:custom": {
+                "created": "2022-12-16T23:33:39Z",
+                "domain": "authsign.starlinglab.org",
+                "domainCert": "-----BEGIN CERTIFICATE-----\nMIIEbDCCA1SgAwIBAgISA40Dh8hZZzAHsFDmvS6h/Jm/MA0GCSqGSIb3DQEBCwUA\nMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD\nEwJSMzAeFw0yMjEyMTIxNzA4NDJaFw0yMzAzMTIxNzA4NDFaMCMxITAfBgNVBAMT\nGGF1dGhzaWduLnN0YXJsaW5nbGFiLm9yZzBZMBMGByqGSM49AgEGCCqGSM49AwEH\nA0IABNixu5ILMnAuwQF6gJma5bj4z48PMw1jWB5EyCx5olTa+56g6sSkiNxfNgEJ\nJJe1OrIZWNsh5I87kiliNGkqBZSjggJUMIICUDAOBgNVHQ8BAf8EBAMCB4AwHQYD\nVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwHQYDVR0O\nBBYEFDTeOkq/QLJZwjt9KB7DZZU6FQzvMB8GA1UdIwQYMBaAFBQusxe3WFbLrlAJ\nQOYfr52LFMLGMFUGCCsGAQUFBwEBBEkwRzAhBggrBgEFBQcwAYYVaHR0cDovL3Iz\nLm8ubGVuY3Iub3JnMCIGCCsGAQUFBzAChhZodHRwOi8vcjMuaS5sZW5jci5vcmcv\nMCMGA1UdEQQcMBqCGGF1dGhzaWduLnN0YXJsaW5nbGFiLm9yZzBMBgNVHSAERTBD\nMAgGBmeBDAECATA3BgsrBgEEAYLfEwEBATAoMCYGCCsGAQUFBwIBFhpodHRwOi8v\nY3BzLmxldHNlbmNyeXB0Lm9yZzCCAQUGCisGAQQB1nkCBAIEgfYEgfMA8QB2AHoy\njFTYty22IOo44FIe6YQWcDIThU070ivBOlejUutSAAABhQeGVgEAAAQDAEcwRQIh\nAJtnZiuibJNk+74na7HsVe3nf3sTFANky2spOl5jN6uZAiB9Ylq4QkjcgYzMfn5A\nQMDxNh3lX2BqDk5uDpfsX4AIlAB3AK33vvp8/xDIi509nB4+GGq0Zyldz7EMJMqF\nhjTr3IKKAAABhQeGWIIAAAQDAEgwRgIhAMtVaIr9M4ux2juOyrru8WoXmheum+Mq\nQ1og+Ts0/KxfAiEA3h2HZAihzilUK+Oxv09brznrHlIQXWFe3yq7dHQNUcAwDQYJ\nKoZIhvcNAQELBQADggEBAJ/aYuKjjHcCSPqGZ1+CU09UMPwpFG944qMG7vWidDAD\nMD8psZ7FlXgAipgore3Jybr3ozPG9+nRnXaNSSi4gHP8K2F4X4pWKyqXCGApmI9H\nkY37P04eSQf+SXxLh12xigqTNzwHNHK8Fk/Y77hyaoBEKnAy0d/7ys44+3OwhtnD\nFdXQI9NZclcxF7oxOtNOqU2uHrp5hmW/3DvE3eW4OE3/Fi2eQLFQJHkJdVIL3s8F\nlFFyFb6giDkPNT6HHirKyF8q4gxPnX8adQPyhFNSuIwUfKf4Tt6z+NvAcOAwqFTg\nvKmv1AYv8tJy+ivK20uw+E000kgtAKcPsgNX6DSoZ0A=\n-----END CERTIFICATE-----\n\n-----BEGIN CERTIFICATE-----\nMIIFFjCCAv6gAwIBAgIRAJErCErPDBinU/bWLiWnX1owDQYJKoZIhvcNAQELBQAw\nTzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh\ncmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMjAwOTA0MDAwMDAw\nWhcNMjUwOTE1MTYwMDAwWjAyMQswCQYDVQQGEwJVUzEWMBQGA1UEChMNTGV0J3Mg\nRW5jcnlwdDELMAkGA1UEAxMCUjMwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK\nAoIBAQC7AhUozPaglNMPEuyNVZLD+ILxmaZ6QoinXSaqtSu5xUyxr45r+XXIo9cP\nR5QUVTVXjJ6oojkZ9YI8QqlObvU7wy7bjcCwXPNZOOftz2nwWgsbvsCUJCWH+jdx\nsxPnHKzhm+/b5DtFUkWWqcFTzjTIUu61ru2P3mBw4qVUq7ZtDpelQDRrK9O8Zutm\nNHz6a4uPVymZ+DAXXbpyb/uBxa3Shlg9F8fnCbvxK/eG3MHacV3URuPMrSXBiLxg\nZ3Vms/EY96Jc5lP/Ooi2R6X/ExjqmAl3P51T+c8B5fWmcBcUr2Ok/5mzk53cU6cG\n/kiFHaFpriV1uxPMUgP17VGhi9sVAgMBAAGjggEIMIIBBDAOBgNVHQ8BAf8EBAMC\nAYYwHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMBMBIGA1UdEwEB/wQIMAYB\nAf8CAQAwHQYDVR0OBBYEFBQusxe3WFbLrlAJQOYfr52LFMLGMB8GA1UdIwQYMBaA\nFHm0WeZ7tuXkAXOACIjIGlj26ZtuMDIGCCsGAQUFBwEBBCYwJDAiBggrBgEFBQcw\nAoYWaHR0cDovL3gxLmkubGVuY3Iub3JnLzAnBgNVHR8EIDAeMBygGqAYhhZodHRw\nOi8veDEuYy5sZW5jci5vcmcvMCIGA1UdIAQbMBkwCAYGZ4EMAQIBMA0GCysGAQQB\ngt8TAQEBMA0GCSqGSIb3DQEBCwUAA4ICAQCFyk5HPqP3hUSFvNVneLKYY611TR6W\nPTNlclQtgaDqw+34IL9fzLdwALduO/ZelN7kIJ+m74uyA+eitRY8kc607TkC53wl\nikfmZW4/RvTZ8M6UK+5UzhK8jCdLuMGYL6KvzXGRSgi3yLgjewQtCPkIVz6D2QQz\nCkcheAmCJ8MqyJu5zlzyZMjAvnnAT45tRAxekrsu94sQ4egdRCnbWSDtY7kh+BIm\nlJNXoB1lBMEKIq4QDUOXoRgffuDghje1WrG9ML+Hbisq/yFOGwXD9RiX8F6sw6W4\navAuvDszue5L3sz85K+EC4Y/wFVDNvZo4TYXao6Z0f+lQKc0t8DQYzk1OXVu8rp2\nyJMC6alLbBfODALZvYH7n7do1AZls4I9d1P4jnkDrQoxB3UqQ9hVl3LEKQ73xF1O\nyK5GhDDX8oVfGKF5u+decIsH4YaTw7mP3GFxJSqv3+0lUFJoi5Lc5da149p90Ids\nhCExroL1+7mryIkXPeFM5TgO9r0rvZaBFOvV2z0gp35Z0+L4WPlbuEjN/lxPFin+\nHlUjr8gRsI3qfJOQFy/9rKIJR0Y/8Omwt/8oTWgy1mdeHmmjk7j1nYsvC9JSQ6Zv\nMldlTTKB3zhThV1+XWYp6rjd5JW1zbVWEkLNxE7GJThEUG3szgBVGP7pSWTUTsqX\nnLRbwHOoq7hHwg==\n-----END CERTIFICATE-----\n\n-----BEGIN CERTIFICATE-----\nMIIFYDCCBEigAwIBAgIQQAF3ITfU6UK47naqPGQKtzANBgkqhkiG9w0BAQsFADA/\nMSQwIgYDVQQKExtEaWdpdGFsIFNpZ25hdHVyZSBUcnVzdCBDby4xFzAVBgNVBAMT\nDkRTVCBSb290IENBIFgzMB4XDTIxMDEyMDE5MTQwM1oXDTI0MDkzMDE4MTQwM1ow\nTzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh\ncmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwggIiMA0GCSqGSIb3DQEB\nAQUAA4ICDwAwggIKAoICAQCt6CRz9BQ385ueK1coHIe+3LffOJCMbjzmV6B493XC\nov71am72AE8o295ohmxEk7axY/0UEmu/H9LqMZshftEzPLpI9d1537O4/xLxIZpL\nwYqGcWlKZmZsj348cL+tKSIG8+TA5oCu4kuPt5l+lAOf00eXfJlII1PoOK5PCm+D\nLtFJV4yAdLbaL9A4jXsDcCEbdfIwPPqPrt3aY6vrFk/CjhFLfs8L6P+1dy70sntK\n4EwSJQxwjQMpoOFTJOwT2e4ZvxCzSow/iaNhUd6shweU9GNx7C7ib1uYgeGJXDR5\nbHbvO5BieebbpJovJsXQEOEO3tkQjhb7t/eo98flAgeYjzYIlefiN5YNNnWe+w5y\nsR2bvAP5SQXYgd0FtCrWQemsAXaVCg/Y39W9Eh81LygXbNKYwagJZHduRze6zqxZ\nXmidf3LWicUGQSk+WT7dJvUkyRGnWqNMQB9GoZm1pzpRboY7nn1ypxIFeFntPlF4\nFQsDj43QLwWyPntKHEtzBRL8xurgUBN8Q5N0s8p0544fAQjQMNRbcTa0B7rBMDBc\nSLeCO5imfWCKoqMpgsy6vYMEG6KDA0Gh1gXxG8K28Kh8hjtGqEgqiNx2mna/H2ql\nPRmP6zjzZN7IKw0KKP/32+IVQtQi0Cdd4Xn+GOdwiK1O5tmLOsbdJ1Fu/7xk9TND\nTwIDAQABo4IBRjCCAUIwDwYDVR0TAQH/BAUwAwEB/zAOBgNVHQ8BAf8EBAMCAQYw\nSwYIKwYBBQUHAQEEPzA9MDsGCCsGAQUFBzAChi9odHRwOi8vYXBwcy5pZGVudHJ1\nc3QuY29tL3Jvb3RzL2RzdHJvb3RjYXgzLnA3YzAfBgNVHSMEGDAWgBTEp7Gkeyxx\n+tvhS5B1/8QVYIWJEDBUBgNVHSAETTBLMAgGBmeBDAECATA/BgsrBgEEAYLfEwEB\nATAwMC4GCCsGAQUFBwIBFiJodHRwOi8vY3BzLnJvb3QteDEubGV0c2VuY3J5cHQu\nb3JnMDwGA1UdHwQ1MDMwMaAvoC2GK2h0dHA6Ly9jcmwuaWRlbnRydXN0LmNvbS9E\nU1RST09UQ0FYM0NSTC5jcmwwHQYDVR0OBBYEFHm0WeZ7tuXkAXOACIjIGlj26Ztu\nMA0GCSqGSIb3DQEBCwUAA4IBAQAKcwBslm7/DlLQrt2M51oGrS+o44+/yQoDFVDC\n5WxCu2+b9LRPwkSICHXM6webFGJueN7sJ7o5XPWioW5WlHAQU7G75K/QosMrAdSW\n9MUgNTP52GE24HGNtLi1qoJFlcDyqSMo59ahy2cI2qBDLKobkx/J3vWraV0T9VuG\nWCLKTVXkcGdtwlfFRjlBz4pYg1htmf5X6DYO8A4jqv2Il9DjXA6USbW1FzXSLr9O\nhe8Y4IWS6wY7bCkjCWDcRQJMEhg76fsO3txE+FiYruq9RUWhiF1myv4Q6W+CyBFC\nDfvp7OOGAN6dEOM4+qR9sdjoSYKEBpsr6GtPAQw4dy753ec5\n-----END CERTIFICATE-----\n",
+                "hash": "0dd6dc17c3aa81a9a5579680d440b8719034dd87deb0cc9673c27bd69c55d0d6",
+                "signature": "MEQCID+NcF46X29zayc7fp+XBQHZR4S5npBKYkzUht0EQfg2AiAjjZ2Ge9wnj6pTzhIiur2ONI90LL22JIQivKpOtMndag==",
+                "software": "authsigner 0.5.0",
+                "timeSignature": "MIIFRDADAgEAMIIFOwYJKoZIhvcNAQcCoIIFLDCCBSgCAQMxDzANBglghkgBZQMEAgMFADCCAYIGCyqGSIb3DQEJEAEEoIIBcQSCAW0wggFpAgEBBgQqAwQBMC8wCwYJYIZIAWUDBAIBBCCywE3gxJRQqziNB7BHT2X2V3Vc21pC59Y1VGXBbIFNdgIEArnEUhgPMjAyMjEyMTYyMzMzMzlaAQH/oIIBEaSCAQ0wggEJMREwDwYDVQQKEwhGcmVlIFRTQTEMMAoGA1UECxMDVFNBMXYwdAYDVQQNE21UaGlzIGNlcnRpZmljYXRlIGRpZ2l0YWxseSBzaWducyBkb2N1bWVudHMgYW5kIHRpbWUgc3RhbXAgcmVxdWVzdHMgbWFkZSB1c2luZyB0aGUgZnJlZXRzYS5vcmcgb25saW5lIHNlcnZpY2VzMRgwFgYDVQQDEw93d3cuZnJlZXRzYS5vcmcxIjAgBgkqhkiG9w0BCQEWE2J1c2lsZXphc0BnbWFpbC5jb20xEjAQBgNVBAcTCVd1ZXJ6YnVyZzELMAkGA1UEBhMCREUxDzANBgNVBAgTBkJheWVybjGCA4owggOGAgEBMIGjMIGVMREwDwYDVQQKEwhGcmVlIFRTQTEQMA4GA1UECxMHUm9vdCBDQTEYMBYGA1UEAxMPd3d3LmZyZWV0c2Eub3JnMSIwIAYJKoZIhvcNAQkBFhNidXNpbGV6YXNAZ21haWwuY29tMRIwEAYDVQQHEwlXdWVyemJ1cmcxDzANBgNVBAgTBkJheWVybjELMAkGA1UEBhMCREUCCQDB6YYWDajpgjANBglghkgBZQMEAgMFAKCBuDAaBgkqhkiG9w0BCQMxDQYLKoZIhvcNAQkQAQQwHAYJKoZIhvcNAQkFMQ8XDTIyMTIxNjIzMzMzOVowKwYLKoZIhvcNAQkQAgwxHDAaMBgwFgQUkW2j2GDsyoLjS8WdF5Pn6WiHXxQwTwYJKoZIhvcNAQkEMUIEQJvDHm6ZsOCUD8Cyy035e4cPMKaiwfm8oAHgKiqe9CiXNbXSDAP2QphZLbkjLWa37aZ3W3NrsrgSiNAZMq6xhFAwDQYJKoZIhvcNAQEBBQAEggIAYNUe7ejhaWr/mLxroDwS+aywJNnrpFYwPeNSHFK/2vpwUwDZV3ALBelLm8L11flOzd/hA7CYScRx/rWGl4o5x5qC6av2/iwogQmeSc2gErb1p7C45o2T52j1S2uVt7utkHL9/HXy9nriFsFI+Vfg/OtVhZXA37qOG7WXA0gD0ZMPaXWj73MaGaPoeOIss0YVMZivi/LCIyG6rF3gpX5dAPoErtLl1mOSIFjceD3c/4PzhLFKPvOCojCyvH/A6XFiFs1RB6GDqwiVuRuJEhqU5lmF8ITIMqK+XVmnVbe59vIusGYzLv/ep5xW/NPUkvZyimfQhDTIRcNcghnyixozRmbzAdQetAK/W5RULK5fo0VIQ+jH6IC7LtE760cBxhp/nhwI551zJw4w00fFouXl6k607hOYjD7TXPpoEy7T5ch6g9cSUERV7JCw/wfuFa06KfFJFxSYD3J8a/FCEa08yvTUqOMIThC+Ppt5iUrD3lhroK2+lwep8k2Yh3kr4yg+zVZx3rrHzYGGwnZBGqxVTk4x3wN9erUWmayBMMZaDTm2GNzpkwaR6wCp4wp6RGm/TUgTb6HU9i18eGky5DXiTMwhrOINvNhv0DnuKPm4Z63ip6C+PIYl5iLVZw0ks6bNjvz8Xevo+xT6cIsvdQkPLpZfPgsZngsptqwRQHK1UPI=",
+                "timestampCert": "-----BEGIN CERTIFICATE-----\nMIIIATCCBemgAwIBAgIJAMHphhYNqOmCMA0GCSqGSIb3DQEBDQUAMIGVMREwDwYD\nVQQKEwhGcmVlIFRTQTEQMA4GA1UECxMHUm9vdCBDQTEYMBYGA1UEAxMPd3d3LmZy\nZWV0c2Eub3JnMSIwIAYJKoZIhvcNAQkBFhNidXNpbGV6YXNAZ21haWwuY29tMRIw\nEAYDVQQHEwlXdWVyemJ1cmcxDzANBgNVBAgTBkJheWVybjELMAkGA1UEBhMCREUw\nHhcNMTYwMzEzMDE1NzM5WhcNMjYwMzExMDE1NzM5WjCCAQkxETAPBgNVBAoTCEZy\nZWUgVFNBMQwwCgYDVQQLEwNUU0ExdjB0BgNVBA0TbVRoaXMgY2VydGlmaWNhdGUg\nZGlnaXRhbGx5IHNpZ25zIGRvY3VtZW50cyBhbmQgdGltZSBzdGFtcCByZXF1ZXN0\ncyBtYWRlIHVzaW5nIHRoZSBmcmVldHNhLm9yZyBvbmxpbmUgc2VydmljZXMxGDAW\nBgNVBAMTD3d3dy5mcmVldHNhLm9yZzEiMCAGCSqGSIb3DQEJARYTYnVzaWxlemFz\nQGdtYWlsLmNvbTESMBAGA1UEBxMJV3VlcnpidXJnMQswCQYDVQQGEwJERTEPMA0G\nA1UECBMGQmF5ZXJuMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAtZEE\njE5IbzTp3Ahif8I3UWIjaYS4LLEwvv9RfPw4+EvOXGWodNqyYhrgvOfjNWPg7ek0\n/V+IIxWfB4SICCJ0YMHtiCYXBvQoEzQ1nfu4G9E1P8F5YQrxqMjIZdwA6iOzqJvm\nvQO6hansgn1gVlkF4i1qWE7ROArhUCgM7jl+mKAS84BGQAeGJEO8B3y5X0Ia8xcS\n2Wg8223/uvPIululZq5SPUWdYXc0bU2EDieIa3wBxbiQ14ouJ7uo3S+aKBLhV9Yv\nkhxlliVIBp3Nt9Bt4YHeDpVw1m+HIgzii2KKtVkG8+4MIQ9wUej0hYr4uaktCeRq\n8tnLpb/PrRaM32BEkaSwZgOxFMr3Ax8GXn7u+lPFdfNJDAWdLjLdx2rE1MTHEGg7\nl/0b5ZG8YQVRhtiPmgORswe2+R7ZVNqjb5rNah4Uqi5K3xdGS1TbGNu2/+MAgCRl\nRzcENs5Od7rl3m/g8/nW5/++tGHnlOkvsJUfiq5hpBLM6bIQdGNci+MnrhoPa0pk\nbrD4RjvGO/hFUwQ10Z6AJRHsn2bDSWlS2L7LabCqTUxB9gUV/n3LuJMZzdpZumrq\nS+POrnGOb8tszX25/FC7FbEvNmWwqjByicLm3UsRHOSLotnv21prmlBgaTNPs09v\nx64zDws0IIqsgN8yZv3ZBGWHa6LLiY2VBTFbbnsCAwEAAaOCAdswggHXMAkGA1Ud\nEwQCMAAwHQYDVR0OBBYEFG52C3tOT5zhYMptLOknoqKUs3c3MB8GA1UdIwQYMBaA\nFPpVDYw0ZlFDTPfns6dsla965qSXMAsGA1UdDwQEAwIGwDAWBgNVHSUBAf8EDDAK\nBggrBgEFBQcDCDBjBggrBgEFBQcBAQRXMFUwKgYIKwYBBQUHMAKGHmh0dHA6Ly93\nd3cuZnJlZXRzYS5vcmcvdHNhLmNydDAnBggrBgEFBQcwAYYbaHR0cDovL3d3dy5m\ncmVldHNhLm9yZzoyNTYwMDcGA1UdHwQwMC4wLKAqoCiGJmh0dHA6Ly93d3cuZnJl\nZXRzYS5vcmcvY3JsL3Jvb3RfY2EuY3JsMIHGBgNVHSAEgb4wgbswgbgGAQAwgbIw\nMwYIKwYBBQUHAgEWJ2h0dHA6Ly93d3cuZnJlZXRzYS5vcmcvZnJlZXRzYV9jcHMu\naHRtbDAyBggrBgEFBQcCARYmaHR0cDovL3d3dy5mcmVldHNhLm9yZy9mcmVldHNh\nX2Nwcy5wZGYwRwYIKwYBBQUHAgIwOxo5RnJlZVRTQSB0cnVzdGVkIHRpbWVzdGFt\ncGluZyBTb2Z0d2FyZSBhcyBhIFNlcnZpY2UgKFNhYVMpMA0GCSqGSIb3DQEBDQUA\nA4ICAQClyUTixvrAoU2TCn/QoLFytB/BSDw+lXxoorzZuXZPGpUBYf1yRy1Bpe7S\nd3hiA7VCIkD7OibN4XYIe2+xAR30zBniVxqkoFEQlmXpTEb1C9Kt7mrEE34lGyWj\nnavaRRUV2P+eByCejsILeHT34aDt58AJN/6EozT4syZc7S2O2d9hOWWDZ3/rOCwe\n47I+bqXwXfMN57n4kAXSUmb2EvOci09tq6bXv7rBljK5Bjcyn1Km8GahDkPqqB+E\nmmxf4/6LXqIydfaH8gUuUC6mwwdipmjM4Hhx3Y6X4xW7qSniVYmXegoxLOlsUQax\nQ3x3nys2GxgoiPPuiiNDdPoGPpVhkmJ/fEMQc5ZdEmCSjroAnoA0Ka4yTPlvBCNU\n83vKWv3cefeTRqs4i/x58B3JhhJU6mzBKZQQdrg9IFVvO+UTJoN/KHb3gzs3Dnw9\nQQUjgn1PU0AMciGNdSKf8QxviJOpo6HAxCu0yJjBPfQcf2VztPxWUVlxphCnsNKF\nfIIlqfsgTqzsouiXGqGvh4hqKuPHL+CgquhCmAp3vvFrkhFUWAkNmCtZRmA3ZOda\nCtPRFFS5mG9ni5q2r+hJcDOuOr/U60O3vJ3uaIFZSeZIFYKoLnhSd/IoIQfv45Ag\nDgUIrLjqguolBSdvPJ2io9O0rTi7+IQr2jb8JEgpH1WNwC3R4A==\n-----END CERTIFICATE-----\n-----BEGIN CERTIFICATE-----\nMIIH/zCCBeegAwIBAgIJAMHphhYNqOmAMA0GCSqGSIb3DQEBDQUAMIGVMREwDwYD\nVQQKEwhGcmVlIFRTQTEQMA4GA1UECxMHUm9vdCBDQTEYMBYGA1UEAxMPd3d3LmZy\nZWV0c2Eub3JnMSIwIAYJKoZIhvcNAQkBFhNidXNpbGV6YXNAZ21haWwuY29tMRIw\nEAYDVQQHEwlXdWVyemJ1cmcxDzANBgNVBAgTBkJheWVybjELMAkGA1UEBhMCREUw\nHhcNMTYwMzEzMDE1MjEzWhcNNDEwMzA3MDE1MjEzWjCBlTERMA8GA1UEChMIRnJl\nZSBUU0ExEDAOBgNVBAsTB1Jvb3QgQ0ExGDAWBgNVBAMTD3d3dy5mcmVldHNhLm9y\nZzEiMCAGCSqGSIb3DQEJARYTYnVzaWxlemFzQGdtYWlsLmNvbTESMBAGA1UEBxMJ\nV3VlcnpidXJnMQ8wDQYDVQQIEwZCYXllcm4xCzAJBgNVBAYTAkRFMIICIjANBgkq\nhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAtgKODjAy8REQ2WTNqUudAnjhlCrpE6ql\nmQfNppeTmVvZrH4zutn+NwTaHAGpjSGv4/WRpZ1wZ3BRZ5mPUBZyLgq0YrIfQ5Fx\n0s/MRZPzc1r3lKWrMR9sAQx4mN4z11xFEO529L0dFJjPF9MD8Gpd2feWzGyptlel\nb+PqT+++fOa2oY0+NaMM7l/xcNHPOaMz0/2olk0i22hbKeVhvokPCqhFhzsuhKsm\nq4Of/o+t6dI7sx5h0nPMm4gGSRhfq+z6BTRgCrqQG2FOLoVFgt6iIm/BnNffUr7V\nDYd3zZmIwFOj/H3DKHoGik/xK3E82YA2ZulVOFRW/zj4ApjPa5OFbpIkd0pmzxzd\nEcL479hSA9dFiyVmSxPtY5ze1P+BE9bMU1PScpRzw8MHFXxyKqW13Qv7LWw4sbk3\nSciB7GACbQiVGzgkvXG6y85HOuvWNvC5GLSiyP9GlPB0V68tbxz4JVTRdw/Xn/XT\nFNzRBM3cq8lBOAVt/PAX5+uFcv1S9wFE8YjaBfWCP1jdBil+c4e+0tdywT2oJmYB\nBF/kEt1wmGwMmHunNEuQNzh1FtJY54hbUfiWi38mASE7xMtMhfj/C4SvapiDN837\ngYaPfs8x3KZxbX7C3YAsFnJinlwAUss1fdKar8Q/YVs7H/nU4c4Ixxxz4f67fcVq\nM2ITKentbCMCAwEAAaOCAk4wggJKMAwGA1UdEwQFMAMBAf8wDgYDVR0PAQH/BAQD\nAgHGMB0GA1UdDgQWBBT6VQ2MNGZRQ0z357OnbJWveuaklzCBygYDVR0jBIHCMIG/\ngBT6VQ2MNGZRQ0z357OnbJWveuakl6GBm6SBmDCBlTERMA8GA1UEChMIRnJlZSBU\nU0ExEDAOBgNVBAsTB1Jvb3QgQ0ExGDAWBgNVBAMTD3d3dy5mcmVldHNhLm9yZzEi\nMCAGCSqGSIb3DQEJARYTYnVzaWxlemFzQGdtYWlsLmNvbTESMBAGA1UEBxMJV3Vl\ncnpidXJnMQ8wDQYDVQQIEwZCYXllcm4xCzAJBgNVBAYTAkRFggkAwemGFg2o6YAw\nMwYDVR0fBCwwKjAooCagJIYiaHR0cDovL3d3dy5mcmVldHNhLm9yZy9yb290X2Nh\nLmNybDCBzwYDVR0gBIHHMIHEMIHBBgorBgEEAYHyJAEBMIGyMDMGCCsGAQUFBwIB\nFidodHRwOi8vd3d3LmZyZWV0c2Eub3JnL2ZyZWV0c2FfY3BzLmh0bWwwMgYIKwYB\nBQUHAgEWJmh0dHA6Ly93d3cuZnJlZXRzYS5vcmcvZnJlZXRzYV9jcHMucGRmMEcG\nCCsGAQUFBwICMDsaOUZyZWVUU0EgdHJ1c3RlZCB0aW1lc3RhbXBpbmcgU29mdHdh\ncmUgYXMgYSBTZXJ2aWNlIChTYWFTKTA3BggrBgEFBQcBAQQrMCkwJwYIKwYBBQUH\nMAGGG2h0dHA6Ly93d3cuZnJlZXRzYS5vcmc6MjU2MDANBgkqhkiG9w0BAQ0FAAOC\nAgEAaK9+v5OFYu9M6ztYC+L69sw1omdyli89lZAfpWMMh9CRmJhM6KBqM/ipwoLt\nnxyxGsbCPhcQjuTvzm+ylN6VwTMmIlVyVSLKYZcdSjt/eCUN+41K7sD7GVmxZBAF\nILnBDmTGJmLkrU0KuuIpj8lI/E6Z6NnmuP2+RAQSHsfBQi6sssnXMo4HOW5gtPO7\ngDrUpVXID++1P4XndkoKn7Svw5n0zS9fv1hxBcYIHPPQUze2u30bAQt0n0iIyRLz\naWuhtpAtd7ffwEbASgzB7E+NGF4tpV37e8KiA2xiGSRqT5ndu28fgpOY87gD3ArZ\nDctZvvTCfHdAS5kEO3gnGGeZEVLDmfEsv8TGJa3AljVa5E40IQDsUXpQLi8G+UC4\n1DWZu8EVT4rnYaCw1VX7ShOR1PNCCvjb8S8tfdudd9zhU3gEB0rxdeTy1tVbNLXW\n99y90xcwr1ZIDUwM/xQ/noO8FRhm0LoPC73Ef+J4ZBdrvWwauF3zJe33d4ibxEcb\n8/pz5WzFkeixYM2nsHhqHsBKw7JPouKNXRnl5IAE1eFmqDyC7G/VT7OF669xM6hb\nUt5G21JE4cNK6NNucS+fzg1JPX0+3VhsYZjj7D5uljRvQXrJ8iHgr/M6j2oLHvTA\nI2MLdq2qjZFDOCXsxBxJpbmLGBx9ow6ZerlUxzws2AWv2pk=\n-----END CERTIFICATE-----\n",
+                "version": "0.1.0"
+              },
+              "starling:provider": "authsigner 0.5.0"
+            }
+          ],
+          "starling:signaturesRelated": [
+            {
+              "starling:algorithm": "ecdsa-key-sig",
+              "starling:authenticatedMessage": "sha256:8cf177d6a6bc9393ab10715cf4961dfd724f43aa120a42230694710192fcec1a",
+              "starling:authenticatedMessageDescription": "The hash of datapackage.json in the WACZ file",
+              "starling:provider": "Webrecorder ArchiveWeb.page 0.8.3, using warcio.js 1.5.1",
+              "starling:publicKey": "MHYwEAYHKoZIzj0CAQYFK4EEACIDYgAE3BN+jDimLPksVcM4zgT2/0tTAVMcjtgiwJkC2i2YlWh35TUQN2bnBLjxLIde+zHeVmqj+6HHuSNxWOadpp4tmwDVK7jyA8KuP5jUb/++24uzLTxsa4DGDGzSqHABNt8u",
+              "starling:signature": "jgrfBKQrJdlUBCoXqEsOdX2k4om0RGQdZkY5yGl3UedMOkDZ7iFn2QBXFCclS6oIpl5k5t0PDEDWxQ0u+UYIdKIjBHkhDCnsLGie4UEk0JLUTmeSfknsMUrUwCulP09H"
+            },
+            {
+              "starling:algorithm": "ecdsa-certificate-sig",
+              "starling:custom": {
+                "created": "2022-12-16T22:31:51Z",
+                "domain": "authsign.starlinglab.org",
+                "domainCert": "-----BEGIN CERTIFICATE-----\nMIIEbDCCA1SgAwIBAgISA40Dh8hZZzAHsFDmvS6h/Jm/MA0GCSqGSIb3DQEBCwUA\nMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD\nEwJSMzAeFw0yMjEyMTIxNzA4NDJaFw0yMzAzMTIxNzA4NDFaMCMxITAfBgNVBAMT\nGGF1dGhzaWduLnN0YXJsaW5nbGFiLm9yZzBZMBMGByqGSM49AgEGCCqGSM49AwEH\nA0IABNixu5ILMnAuwQF6gJma5bj4z48PMw1jWB5EyCx5olTa+56g6sSkiNxfNgEJ\nJJe1OrIZWNsh5I87kiliNGkqBZSjggJUMIICUDAOBgNVHQ8BAf8EBAMCB4AwHQYD\nVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwHQYDVR0O\nBBYEFDTeOkq/QLJZwjt9KB7DZZU6FQzvMB8GA1UdIwQYMBaAFBQusxe3WFbLrlAJ\nQOYfr52LFMLGMFUGCCsGAQUFBwEBBEkwRzAhBggrBgEFBQcwAYYVaHR0cDovL3Iz\nLm8ubGVuY3Iub3JnMCIGCCsGAQUFBzAChhZodHRwOi8vcjMuaS5sZW5jci5vcmcv\nMCMGA1UdEQQcMBqCGGF1dGhzaWduLnN0YXJsaW5nbGFiLm9yZzBMBgNVHSAERTBD\nMAgGBmeBDAECATA3BgsrBgEEAYLfEwEBATAoMCYGCCsGAQUFBwIBFhpodHRwOi8v\nY3BzLmxldHNlbmNyeXB0Lm9yZzCCAQUGCisGAQQB1nkCBAIEgfYEgfMA8QB2AHoy\njFTYty22IOo44FIe6YQWcDIThU070ivBOlejUutSAAABhQeGVgEAAAQDAEcwRQIh\nAJtnZiuibJNk+74na7HsVe3nf3sTFANky2spOl5jN6uZAiB9Ylq4QkjcgYzMfn5A\nQMDxNh3lX2BqDk5uDpfsX4AIlAB3AK33vvp8/xDIi509nB4+GGq0Zyldz7EMJMqF\nhjTr3IKKAAABhQeGWIIAAAQDAEgwRgIhAMtVaIr9M4ux2juOyrru8WoXmheum+Mq\nQ1og+Ts0/KxfAiEA3h2HZAihzilUK+Oxv09brznrHlIQXWFe3yq7dHQNUcAwDQYJ\nKoZIhvcNAQELBQADggEBAJ/aYuKjjHcCSPqGZ1+CU09UMPwpFG944qMG7vWidDAD\nMD8psZ7FlXgAipgore3Jybr3ozPG9+nRnXaNSSi4gHP8K2F4X4pWKyqXCGApmI9H\nkY37P04eSQf+SXxLh12xigqTNzwHNHK8Fk/Y77hyaoBEKnAy0d/7ys44+3OwhtnD\nFdXQI9NZclcxF7oxOtNOqU2uHrp5hmW/3DvE3eW4OE3/Fi2eQLFQJHkJdVIL3s8F\nlFFyFb6giDkPNT6HHirKyF8q4gxPnX8adQPyhFNSuIwUfKf4Tt6z+NvAcOAwqFTg\nvKmv1AYv8tJy+ivK20uw+E000kgtAKcPsgNX6DSoZ0A=\n-----END CERTIFICATE-----\n\n-----BEGIN CERTIFICATE-----\nMIIFFjCCAv6gAwIBAgIRAJErCErPDBinU/bWLiWnX1owDQYJKoZIhvcNAQELBQAw\nTzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh\ncmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMjAwOTA0MDAwMDAw\nWhcNMjUwOTE1MTYwMDAwWjAyMQswCQYDVQQGEwJVUzEWMBQGA1UEChMNTGV0J3Mg\nRW5jcnlwdDELMAkGA1UEAxMCUjMwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK\nAoIBAQC7AhUozPaglNMPEuyNVZLD+ILxmaZ6QoinXSaqtSu5xUyxr45r+XXIo9cP\nR5QUVTVXjJ6oojkZ9YI8QqlObvU7wy7bjcCwXPNZOOftz2nwWgsbvsCUJCWH+jdx\nsxPnHKzhm+/b5DtFUkWWqcFTzjTIUu61ru2P3mBw4qVUq7ZtDpelQDRrK9O8Zutm\nNHz6a4uPVymZ+DAXXbpyb/uBxa3Shlg9F8fnCbvxK/eG3MHacV3URuPMrSXBiLxg\nZ3Vms/EY96Jc5lP/Ooi2R6X/ExjqmAl3P51T+c8B5fWmcBcUr2Ok/5mzk53cU6cG\n/kiFHaFpriV1uxPMUgP17VGhi9sVAgMBAAGjggEIMIIBBDAOBgNVHQ8BAf8EBAMC\nAYYwHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMBMBIGA1UdEwEB/wQIMAYB\nAf8CAQAwHQYDVR0OBBYEFBQusxe3WFbLrlAJQOYfr52LFMLGMB8GA1UdIwQYMBaA\nFHm0WeZ7tuXkAXOACIjIGlj26ZtuMDIGCCsGAQUFBwEBBCYwJDAiBggrBgEFBQcw\nAoYWaHR0cDovL3gxLmkubGVuY3Iub3JnLzAnBgNVHR8EIDAeMBygGqAYhhZodHRw\nOi8veDEuYy5sZW5jci5vcmcvMCIGA1UdIAQbMBkwCAYGZ4EMAQIBMA0GCysGAQQB\ngt8TAQEBMA0GCSqGSIb3DQEBCwUAA4ICAQCFyk5HPqP3hUSFvNVneLKYY611TR6W\nPTNlclQtgaDqw+34IL9fzLdwALduO/ZelN7kIJ+m74uyA+eitRY8kc607TkC53wl\nikfmZW4/RvTZ8M6UK+5UzhK8jCdLuMGYL6KvzXGRSgi3yLgjewQtCPkIVz6D2QQz\nCkcheAmCJ8MqyJu5zlzyZMjAvnnAT45tRAxekrsu94sQ4egdRCnbWSDtY7kh+BIm\nlJNXoB1lBMEKIq4QDUOXoRgffuDghje1WrG9ML+Hbisq/yFOGwXD9RiX8F6sw6W4\navAuvDszue5L3sz85K+EC4Y/wFVDNvZo4TYXao6Z0f+lQKc0t8DQYzk1OXVu8rp2\nyJMC6alLbBfODALZvYH7n7do1AZls4I9d1P4jnkDrQoxB3UqQ9hVl3LEKQ73xF1O\nyK5GhDDX8oVfGKF5u+decIsH4YaTw7mP3GFxJSqv3+0lUFJoi5Lc5da149p90Ids\nhCExroL1+7mryIkXPeFM5TgO9r0rvZaBFOvV2z0gp35Z0+L4WPlbuEjN/lxPFin+\nHlUjr8gRsI3qfJOQFy/9rKIJR0Y/8Omwt/8oTWgy1mdeHmmjk7j1nYsvC9JSQ6Zv\nMldlTTKB3zhThV1+XWYp6rjd5JW1zbVWEkLNxE7GJThEUG3szgBVGP7pSWTUTsqX\nnLRbwHOoq7hHwg==\n-----END CERTIFICATE-----\n\n-----BEGIN CERTIFICATE-----\nMIIFYDCCBEigAwIBAgIQQAF3ITfU6UK47naqPGQKtzANBgkqhkiG9w0BAQsFADA/\nMSQwIgYDVQQKExtEaWdpdGFsIFNpZ25hdHVyZSBUcnVzdCBDby4xFzAVBgNVBAMT\nDkRTVCBSb290IENBIFgzMB4XDTIxMDEyMDE5MTQwM1oXDTI0MDkzMDE4MTQwM1ow\nTzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh\ncmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwggIiMA0GCSqGSIb3DQEB\nAQUAA4ICDwAwggIKAoICAQCt6CRz9BQ385ueK1coHIe+3LffOJCMbjzmV6B493XC\nov71am72AE8o295ohmxEk7axY/0UEmu/H9LqMZshftEzPLpI9d1537O4/xLxIZpL\nwYqGcWlKZmZsj348cL+tKSIG8+TA5oCu4kuPt5l+lAOf00eXfJlII1PoOK5PCm+D\nLtFJV4yAdLbaL9A4jXsDcCEbdfIwPPqPrt3aY6vrFk/CjhFLfs8L6P+1dy70sntK\n4EwSJQxwjQMpoOFTJOwT2e4ZvxCzSow/iaNhUd6shweU9GNx7C7ib1uYgeGJXDR5\nbHbvO5BieebbpJovJsXQEOEO3tkQjhb7t/eo98flAgeYjzYIlefiN5YNNnWe+w5y\nsR2bvAP5SQXYgd0FtCrWQemsAXaVCg/Y39W9Eh81LygXbNKYwagJZHduRze6zqxZ\nXmidf3LWicUGQSk+WT7dJvUkyRGnWqNMQB9GoZm1pzpRboY7nn1ypxIFeFntPlF4\nFQsDj43QLwWyPntKHEtzBRL8xurgUBN8Q5N0s8p0544fAQjQMNRbcTa0B7rBMDBc\nSLeCO5imfWCKoqMpgsy6vYMEG6KDA0Gh1gXxG8K28Kh8hjtGqEgqiNx2mna/H2ql\nPRmP6zjzZN7IKw0KKP/32+IVQtQi0Cdd4Xn+GOdwiK1O5tmLOsbdJ1Fu/7xk9TND\nTwIDAQABo4IBRjCCAUIwDwYDVR0TAQH/BAUwAwEB/zAOBgNVHQ8BAf8EBAMCAQYw\nSwYIKwYBBQUHAQEEPzA9MDsGCCsGAQUFBzAChi9odHRwOi8vYXBwcy5pZGVudHJ1\nc3QuY29tL3Jvb3RzL2RzdHJvb3RjYXgzLnA3YzAfBgNVHSMEGDAWgBTEp7Gkeyxx\n+tvhS5B1/8QVYIWJEDBUBgNVHSAETTBLMAgGBmeBDAECATA/BgsrBgEEAYLfEwEB\nATAwMC4GCCsGAQUFBwIBFiJodHRwOi8vY3BzLnJvb3QteDEubGV0c2VuY3J5cHQu\nb3JnMDwGA1UdHwQ1MDMwMaAvoC2GK2h0dHA6Ly9jcmwuaWRlbnRydXN0LmNvbS9E\nU1RST09UQ0FYM0NSTC5jcmwwHQYDVR0OBBYEFHm0WeZ7tuXkAXOACIjIGlj26Ztu\nMA0GCSqGSIb3DQEBCwUAA4IBAQAKcwBslm7/DlLQrt2M51oGrS+o44+/yQoDFVDC\n5WxCu2+b9LRPwkSICHXM6webFGJueN7sJ7o5XPWioW5WlHAQU7G75K/QosMrAdSW\n9MUgNTP52GE24HGNtLi1qoJFlcDyqSMo59ahy2cI2qBDLKobkx/J3vWraV0T9VuG\nWCLKTVXkcGdtwlfFRjlBz4pYg1htmf5X6DYO8A4jqv2Il9DjXA6USbW1FzXSLr9O\nhe8Y4IWS6wY7bCkjCWDcRQJMEhg76fsO3txE+FiYruq9RUWhiF1myv4Q6W+CyBFC\nDfvp7OOGAN6dEOM4+qR9sdjoSYKEBpsr6GtPAQw4dy753ec5\n-----END CERTIFICATE-----\n",
+                "hash": "b692cf5b5009f4b309f047d8220cd1cd6fe1cd252324c7dba50c65d2b44a4db5",
+                "signature": "MEYCIQCGEVGITS/LYYqDIZSFb05Dhon8VGxTDpXNC7NFjwR9rQIhAN/AfWThOOooHYF+e3txA9VY3m2uqrzgyJvJAIhYLiEz",
+                "software": "authsigner 0.5.0",
+                "timeSignature": "MIIFRDADAgEAMIIFOwYJKoZIhvcNAQcCoIIFLDCCBSgCAQMxDzANBglghkgBZQMEAgMFADCCAYIGCyqGSIb3DQEJEAEEoIIBcQSCAW0wggFpAgEBBgQqAwQBMC8wCwYJYIZIAWUDBAIBBCA0+XfGTxujoYSyfAAU7KyJ2F7kGrKOJvJt5kcZIpFAiwIEArm4JRgPMjAyMjEyMTYyMjMxNTFaAQH/oIIBEaSCAQ0wggEJMREwDwYDVQQKEwhGcmVlIFRTQTEMMAoGA1UECxMDVFNBMXYwdAYDVQQNE21UaGlzIGNlcnRpZmljYXRlIGRpZ2l0YWxseSBzaWducyBkb2N1bWVudHMgYW5kIHRpbWUgc3RhbXAgcmVxdWVzdHMgbWFkZSB1c2luZyB0aGUgZnJlZXRzYS5vcmcgb25saW5lIHNlcnZpY2VzMRgwFgYDVQQDEw93d3cuZnJlZXRzYS5vcmcxIjAgBgkqhkiG9w0BCQEWE2J1c2lsZXphc0BnbWFpbC5jb20xEjAQBgNVBAcTCVd1ZXJ6YnVyZzELMAkGA1UEBhMCREUxDzANBgNVBAgTBkJheWVybjGCA4owggOGAgEBMIGjMIGVMREwDwYDVQQKEwhGcmVlIFRTQTEQMA4GA1UECxMHUm9vdCBDQTEYMBYGA1UEAxMPd3d3LmZyZWV0c2Eub3JnMSIwIAYJKoZIhvcNAQkBFhNidXNpbGV6YXNAZ21haWwuY29tMRIwEAYDVQQHEwlXdWVyemJ1cmcxDzANBgNVBAgTBkJheWVybjELMAkGA1UEBhMCREUCCQDB6YYWDajpgjANBglghkgBZQMEAgMFAKCBuDAaBgkqhkiG9w0BCQMxDQYLKoZIhvcNAQkQAQQwHAYJKoZIhvcNAQkFMQ8XDTIyMTIxNjIyMzE1MVowKwYLKoZIhvcNAQkQAgwxHDAaMBgwFgQUkW2j2GDsyoLjS8WdF5Pn6WiHXxQwTwYJKoZIhvcNAQkEMUIEQIpT5AIbvws21t4pcWuM5RxkEw90tZqlClf85axUmbTldpymJJvWS2kGhDxxg1naCdoguX9KQMJRQaOoJkwrbYQwDQYJKoZIhvcNAQEBBQAEggIAT4vNF7UcSrggHrU+oDXKybxsQ3EVd6S4+psmrjSBn17DqIo2igVK2ddENlaTvja5GGdESwZu4onV+ahnQYLUoyDsN57M25Jsd+LkSNX7yqlrVWOxbe8vo+eDT+zR9ZB1J6tGCnL0dJ/Vj9sm8P3DrSHDfV1DvsXLvEGaEc6Wb1cjpIaD1is5yXN3l2KK76+EJLTYY1+kec2QdNup/X0/693LssTuoQpOBpDqVeBegozvnJIKDhzVYs+SqRXtUr56VZq+4E9ZhvCKUfRs7aM9JYtNY8Mdt1HYbiWNV5nrmhyAq28LWSx7nRQYpvuL9RO04b6/rrO7Da27+VFzBiDDm7Nva/tPxudXyW2A2XWDlUzkJHn2vWKrtrJyoKRv8SZq0rh4V+g5OuT4JYgICwy4fu3NyClAQ1fJq+upBh3pUW2FT+34r57LhlV5WyvUWhmN0I/DbgDRmSjl1wA4iVi5tVnq+LyKuzybRLNPGkAbCbL2D9CX3RpZrNlD5IEmf72DAMFm7QturSseiM1fCcSQaTEzD/93/wsJI7J3k8GCgKCZmvVH342HdpXOwTEQmjYWyUJ3BVdexKj5gTdnrW78E+sqk/U0KeenLkaWYwSjYcklAxjTlD1FKqi13JMoR4UcmLNMs6IF79U7kI7q1ukOvneqLQOhjqhk96eNW4lBpGY=",
+                "timestampCert": "-----BEGIN CERTIFICATE-----\nMIIIATCCBemgAwIBAgIJAMHphhYNqOmCMA0GCSqGSIb3DQEBDQUAMIGVMREwDwYD\nVQQKEwhGcmVlIFRTQTEQMA4GA1UECxMHUm9vdCBDQTEYMBYGA1UEAxMPd3d3LmZy\nZWV0c2Eub3JnMSIwIAYJKoZIhvcNAQkBFhNidXNpbGV6YXNAZ21haWwuY29tMRIw\nEAYDVQQHEwlXdWVyemJ1cmcxDzANBgNVBAgTBkJheWVybjELMAkGA1UEBhMCREUw\nHhcNMTYwMzEzMDE1NzM5WhcNMjYwMzExMDE1NzM5WjCCAQkxETAPBgNVBAoTCEZy\nZWUgVFNBMQwwCgYDVQQLEwNUU0ExdjB0BgNVBA0TbVRoaXMgY2VydGlmaWNhdGUg\nZGlnaXRhbGx5IHNpZ25zIGRvY3VtZW50cyBhbmQgdGltZSBzdGFtcCByZXF1ZXN0\ncyBtYWRlIHVzaW5nIHRoZSBmcmVldHNhLm9yZyBvbmxpbmUgc2VydmljZXMxGDAW\nBgNVBAMTD3d3dy5mcmVldHNhLm9yZzEiMCAGCSqGSIb3DQEJARYTYnVzaWxlemFz\nQGdtYWlsLmNvbTESMBAGA1UEBxMJV3VlcnpidXJnMQswCQYDVQQGEwJERTEPMA0G\nA1UECBMGQmF5ZXJuMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAtZEE\njE5IbzTp3Ahif8I3UWIjaYS4LLEwvv9RfPw4+EvOXGWodNqyYhrgvOfjNWPg7ek0\n/V+IIxWfB4SICCJ0YMHtiCYXBvQoEzQ1nfu4G9E1P8F5YQrxqMjIZdwA6iOzqJvm\nvQO6hansgn1gVlkF4i1qWE7ROArhUCgM7jl+mKAS84BGQAeGJEO8B3y5X0Ia8xcS\n2Wg8223/uvPIululZq5SPUWdYXc0bU2EDieIa3wBxbiQ14ouJ7uo3S+aKBLhV9Yv\nkhxlliVIBp3Nt9Bt4YHeDpVw1m+HIgzii2KKtVkG8+4MIQ9wUej0hYr4uaktCeRq\n8tnLpb/PrRaM32BEkaSwZgOxFMr3Ax8GXn7u+lPFdfNJDAWdLjLdx2rE1MTHEGg7\nl/0b5ZG8YQVRhtiPmgORswe2+R7ZVNqjb5rNah4Uqi5K3xdGS1TbGNu2/+MAgCRl\nRzcENs5Od7rl3m/g8/nW5/++tGHnlOkvsJUfiq5hpBLM6bIQdGNci+MnrhoPa0pk\nbrD4RjvGO/hFUwQ10Z6AJRHsn2bDSWlS2L7LabCqTUxB9gUV/n3LuJMZzdpZumrq\nS+POrnGOb8tszX25/FC7FbEvNmWwqjByicLm3UsRHOSLotnv21prmlBgaTNPs09v\nx64zDws0IIqsgN8yZv3ZBGWHa6LLiY2VBTFbbnsCAwEAAaOCAdswggHXMAkGA1Ud\nEwQCMAAwHQYDVR0OBBYEFG52C3tOT5zhYMptLOknoqKUs3c3MB8GA1UdIwQYMBaA\nFPpVDYw0ZlFDTPfns6dsla965qSXMAsGA1UdDwQEAwIGwDAWBgNVHSUBAf8EDDAK\nBggrBgEFBQcDCDBjBggrBgEFBQcBAQRXMFUwKgYIKwYBBQUHMAKGHmh0dHA6Ly93\nd3cuZnJlZXRzYS5vcmcvdHNhLmNydDAnBggrBgEFBQcwAYYbaHR0cDovL3d3dy5m\ncmVldHNhLm9yZzoyNTYwMDcGA1UdHwQwMC4wLKAqoCiGJmh0dHA6Ly93d3cuZnJl\nZXRzYS5vcmcvY3JsL3Jvb3RfY2EuY3JsMIHGBgNVHSAEgb4wgbswgbgGAQAwgbIw\nMwYIKwYBBQUHAgEWJ2h0dHA6Ly93d3cuZnJlZXRzYS5vcmcvZnJlZXRzYV9jcHMu\naHRtbDAyBggrBgEFBQcCARYmaHR0cDovL3d3dy5mcmVldHNhLm9yZy9mcmVldHNh\nX2Nwcy5wZGYwRwYIKwYBBQUHAgIwOxo5RnJlZVRTQSB0cnVzdGVkIHRpbWVzdGFt\ncGluZyBTb2Z0d2FyZSBhcyBhIFNlcnZpY2UgKFNhYVMpMA0GCSqGSIb3DQEBDQUA\nA4ICAQClyUTixvrAoU2TCn/QoLFytB/BSDw+lXxoorzZuXZPGpUBYf1yRy1Bpe7S\nd3hiA7VCIkD7OibN4XYIe2+xAR30zBniVxqkoFEQlmXpTEb1C9Kt7mrEE34lGyWj\nnavaRRUV2P+eByCejsILeHT34aDt58AJN/6EozT4syZc7S2O2d9hOWWDZ3/rOCwe\n47I+bqXwXfMN57n4kAXSUmb2EvOci09tq6bXv7rBljK5Bjcyn1Km8GahDkPqqB+E\nmmxf4/6LXqIydfaH8gUuUC6mwwdipmjM4Hhx3Y6X4xW7qSniVYmXegoxLOlsUQax\nQ3x3nys2GxgoiPPuiiNDdPoGPpVhkmJ/fEMQc5ZdEmCSjroAnoA0Ka4yTPlvBCNU\n83vKWv3cefeTRqs4i/x58B3JhhJU6mzBKZQQdrg9IFVvO+UTJoN/KHb3gzs3Dnw9\nQQUjgn1PU0AMciGNdSKf8QxviJOpo6HAxCu0yJjBPfQcf2VztPxWUVlxphCnsNKF\nfIIlqfsgTqzsouiXGqGvh4hqKuPHL+CgquhCmAp3vvFrkhFUWAkNmCtZRmA3ZOda\nCtPRFFS5mG9ni5q2r+hJcDOuOr/U60O3vJ3uaIFZSeZIFYKoLnhSd/IoIQfv45Ag\nDgUIrLjqguolBSdvPJ2io9O0rTi7+IQr2jb8JEgpH1WNwC3R4A==\n-----END CERTIFICATE-----\n-----BEGIN CERTIFICATE-----\nMIIH/zCCBeegAwIBAgIJAMHphhYNqOmAMA0GCSqGSIb3DQEBDQUAMIGVMREwDwYD\nVQQKEwhGcmVlIFRTQTEQMA4GA1UECxMHUm9vdCBDQTEYMBYGA1UEAxMPd3d3LmZy\nZWV0c2Eub3JnMSIwIAYJKoZIhvcNAQkBFhNidXNpbGV6YXNAZ21haWwuY29tMRIw\nEAYDVQQHEwlXdWVyemJ1cmcxDzANBgNVBAgTBkJheWVybjELMAkGA1UEBhMCREUw\nHhcNMTYwMzEzMDE1MjEzWhcNNDEwMzA3MDE1MjEzWjCBlTERMA8GA1UEChMIRnJl\nZSBUU0ExEDAOBgNVBAsTB1Jvb3QgQ0ExGDAWBgNVBAMTD3d3dy5mcmVldHNhLm9y\nZzEiMCAGCSqGSIb3DQEJARYTYnVzaWxlemFzQGdtYWlsLmNvbTESMBAGA1UEBxMJ\nV3VlcnpidXJnMQ8wDQYDVQQIEwZCYXllcm4xCzAJBgNVBAYTAkRFMIICIjANBgkq\nhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAtgKODjAy8REQ2WTNqUudAnjhlCrpE6ql\nmQfNppeTmVvZrH4zutn+NwTaHAGpjSGv4/WRpZ1wZ3BRZ5mPUBZyLgq0YrIfQ5Fx\n0s/MRZPzc1r3lKWrMR9sAQx4mN4z11xFEO529L0dFJjPF9MD8Gpd2feWzGyptlel\nb+PqT+++fOa2oY0+NaMM7l/xcNHPOaMz0/2olk0i22hbKeVhvokPCqhFhzsuhKsm\nq4Of/o+t6dI7sx5h0nPMm4gGSRhfq+z6BTRgCrqQG2FOLoVFgt6iIm/BnNffUr7V\nDYd3zZmIwFOj/H3DKHoGik/xK3E82YA2ZulVOFRW/zj4ApjPa5OFbpIkd0pmzxzd\nEcL479hSA9dFiyVmSxPtY5ze1P+BE9bMU1PScpRzw8MHFXxyKqW13Qv7LWw4sbk3\nSciB7GACbQiVGzgkvXG6y85HOuvWNvC5GLSiyP9GlPB0V68tbxz4JVTRdw/Xn/XT\nFNzRBM3cq8lBOAVt/PAX5+uFcv1S9wFE8YjaBfWCP1jdBil+c4e+0tdywT2oJmYB\nBF/kEt1wmGwMmHunNEuQNzh1FtJY54hbUfiWi38mASE7xMtMhfj/C4SvapiDN837\ngYaPfs8x3KZxbX7C3YAsFnJinlwAUss1fdKar8Q/YVs7H/nU4c4Ixxxz4f67fcVq\nM2ITKentbCMCAwEAAaOCAk4wggJKMAwGA1UdEwQFMAMBAf8wDgYDVR0PAQH/BAQD\nAgHGMB0GA1UdDgQWBBT6VQ2MNGZRQ0z357OnbJWveuaklzCBygYDVR0jBIHCMIG/\ngBT6VQ2MNGZRQ0z357OnbJWveuakl6GBm6SBmDCBlTERMA8GA1UEChMIRnJlZSBU\nU0ExEDAOBgNVBAsTB1Jvb3QgQ0ExGDAWBgNVBAMTD3d3dy5mcmVldHNhLm9yZzEi\nMCAGCSqGSIb3DQEJARYTYnVzaWxlemFzQGdtYWlsLmNvbTESMBAGA1UEBxMJV3Vl\ncnpidXJnMQ8wDQYDVQQIEwZCYXllcm4xCzAJBgNVBAYTAkRFggkAwemGFg2o6YAw\nMwYDVR0fBCwwKjAooCagJIYiaHR0cDovL3d3dy5mcmVldHNhLm9yZy9yb290X2Nh\nLmNybDCBzwYDVR0gBIHHMIHEMIHBBgorBgEEAYHyJAEBMIGyMDMGCCsGAQUFBwIB\nFidodHRwOi8vd3d3LmZyZWV0c2Eub3JnL2ZyZWV0c2FfY3BzLmh0bWwwMgYIKwYB\nBQUHAgEWJmh0dHA6Ly93d3cuZnJlZXRzYS5vcmcvZnJlZXRzYV9jcHMucGRmMEcG\nCCsGAQUFBwICMDsaOUZyZWVUU0EgdHJ1c3RlZCB0aW1lc3RhbXBpbmcgU29mdHdh\ncmUgYXMgYSBTZXJ2aWNlIChTYWFTKTA3BggrBgEFBQcBAQQrMCkwJwYIKwYBBQUH\nMAGGG2h0dHA6Ly93d3cuZnJlZXRzYS5vcmc6MjU2MDANBgkqhkiG9w0BAQ0FAAOC\nAgEAaK9+v5OFYu9M6ztYC+L69sw1omdyli89lZAfpWMMh9CRmJhM6KBqM/ipwoLt\nnxyxGsbCPhcQjuTvzm+ylN6VwTMmIlVyVSLKYZcdSjt/eCUN+41K7sD7GVmxZBAF\nILnBDmTGJmLkrU0KuuIpj8lI/E6Z6NnmuP2+RAQSHsfBQi6sssnXMo4HOW5gtPO7\ngDrUpVXID++1P4XndkoKn7Svw5n0zS9fv1hxBcYIHPPQUze2u30bAQt0n0iIyRLz\naWuhtpAtd7ffwEbASgzB7E+NGF4tpV37e8KiA2xiGSRqT5ndu28fgpOY87gD3ArZ\nDctZvvTCfHdAS5kEO3gnGGeZEVLDmfEsv8TGJa3AljVa5E40IQDsUXpQLi8G+UC4\n1DWZu8EVT4rnYaCw1VX7ShOR1PNCCvjb8S8tfdudd9zhU3gEB0rxdeTy1tVbNLXW\n99y90xcwr1ZIDUwM/xQ/noO8FRhm0LoPC73Ef+J4ZBdrvWwauF3zJe33d4ibxEcb\n8/pz5WzFkeixYM2nsHhqHsBKw7JPouKNXRnl5IAE1eFmqDyC7G/VT7OF669xM6hb\nUt5G21JE4cNK6NNucS+fzg1JPX0+3VhsYZjj7D5uljRvQXrJ8iHgr/M6j2oLHvTA\nI2MLdq2qjZFDOCXsxBxJpbmLGBx9ow6ZerlUxzws2AWv2pk=\n-----END CERTIFICATE-----\n",
+                "version": "0.1.0"
+              },
+              "starling:provider": "authsigner 0.5.0"
+            }
+          ]
+        },
+        "c2pa.hash.data": {
+          "alg": "sha256",
+          "exclusions": [
+            {
+              "length": 108231,
+              "start": 33
+            }
+          ],
+          "hash": "oxLBbp0OTU9vjAaAK0MYS+Mfq0j7GS6GljGimN0saqM=",
+          "name": "jumbf manifest",
+          "pad": "<omitted>"
+        },
+        "c2pa.actions": {
+          "actions": [
+            {
+              "action": "c2pa.created",
+              "when": "2022-10-31T08:00:00.000Z"
+            }
+          ]
+        },
+        "c2pa.thumbnail.claim.png": "<omitted> len = 58397",
+        "stds.schema-org.CreativeWork": {
+          "@context": "https://schema.org",
+          "@type": "CreativeWork",
+          "author": [
+            {
+              "@type": "Organization",
+              "credential": [],
+              "identifier": "https://sfi.usc.edu/",
+              "name": "USC Shoah Foundation"
+            }
+          ]
+        },
+        "stds.iptc.photo-metadata": {
+          "@context": {
+            "Iptc4xmpExt": "http://iptc.org/std/Iptc4xmpExt/2008-02-29/",
+            "dc": "http://purl.org/dc/elements/1.1/"
+          },
+          "Iptc4xmpExt:LocationCreated": {
+            "Iptc4xmpExt:City": "Los Angeles",
+            "Iptc4xmpExt:CountryCode": "US",
+            "Iptc4xmpExt:CountryName": "United States",
+            "Iptc4xmpExt:ProvinceState": "CA"
+          },
+          "dc:creator": [
+            "Webrecorder - ArchiveWeb.page / Authenticated Web Archive"
+          ],
+          "dc:description": "Coverage in South Africa's Daily Maverick in 2021 about Dobrosav Gavrić's extradition fight."
+        }
+      },
+      "signature": {
+        "alg": "es256",
+        "issuer": "Starling Lab",
+        "time": "2022-12-21T08:12:47+00:00"
+      }
+    },
+    "adobe:urn:uuid:99c202f6-857a-4045-9ad2-b68c2aabd838": {
+      "claim": {
+        "alg": "sha256",
+        "assertions": [
+          {
+            "hash": "0T2gScS7REKrDXySsLy1yBYrSExigBskWyW7tgjRuYc=",
+            "url": "self#jumbf=c2pa.assertions/c2pa.thumbnail.claim.png"
+          },
+          {
+            "hash": "9wjBmUy/ODWmjzdk7vBUnkpyAp2dBaDjFAz+xvWRG7o=",
+            "url": "self#jumbf=c2pa.assertions/c2pa.thumbnail.ingredient.png"
+          },
+          {
+            "hash": "iLj3zSAlhICTizWhb7Tf9e7kNoNyv3ocJyklUVk3xH4=",
+            "url": "self#jumbf=c2pa.assertions/c2pa.ingredient"
+          },
+          {
+            "hash": "9lX/aMA6A8dNufBhmouQ/TQjYLhjDRLPkqnTIwoz+4E=",
+            "url": "self#jumbf=c2pa.assertions/adobe.dictionary"
+          },
+          {
+            "hash": "afhTG7vPc+7Zq4RgA5I4XD/N2qrU2MgOecCorEoNy8k=",
+            "url": "self#jumbf=c2pa.assertions/stds.schema-org.CreativeWork"
+          },
+          {
+            "hash": "3mm8Et+KaYUUXt4gSwm0Qm1aTA/I/lU0r4btGkKtQkI=",
+            "url": "self#jumbf=c2pa.assertions/c2pa.actions"
+          },
+          {
+            "hash": "a5mYE94aEzIH73lozULp2lcbMtznOjx60nACVpRjBtA=",
+            "url": "self#jumbf=c2pa.assertions/c2pa.hash.data"
+          }
+        ],
+        "claim_generator": "Adobe_Photoshop/24.0.0 (build 20221013.r.59 3a3d761; mac) cai-helper/0.4.12 c2pa-rs/0.14.0",
+        "dc:format": "image/png",
+        "dc:title": "C062.png",
+        "instanceID": "xmp:iid:edc7e915-ede0-409b-a78a-a082d58afb87",
+        "signature": "self#jumbf=c2pa.signature"
+      },
+      "assertion_store": {
+        "c2pa.hash.data": {
+          "alg": "sha256",
+          "exclusions": [
+            {
+              "length": 1759870,
+              "start": 33
+            }
+          ],
+          "hash": "x39EerfVE3q0uSeum6kE0QSWArHf7yexaAlmupludyk=",
+          "name": "jumbf manifest",
+          "pad": "<omitted>"
+        },
+        "c2pa.ingredient": {
+          "c2pa_manifest": {
+            "alg": "sha256",
+            "hash": "3oPbuqq/AhojZiY6dqAYELJgMMDwbWhg3zzTdvVY/IM=",
+            "url": "self#jumbf=/c2pa/adobe:urn:uuid:dce2c865-2aa2-4f4f-a6f0-1077f3caaf9c"
+          },
+          "dc:format": "image/png",
+          "dc:title": "C062.png",
+          "documentID": "xmp:iid:17eba62e-a160-4f41-84a1-d4796161c26f",
+          "instanceID": "xmp:iid:17eba62e-a160-4f41-84a1-d4796161c26f",
+          "metadata": {
+            "dateTime": "2022-12-21T08:23:44.017Z"
+          },
+          "relationship": "parentOf",
+          "thumbnail": {
+            "hash": "9wjBmUy/ODWmjzdk7vBUnkpyAp2dBaDjFAz+xvWRG7o=",
+            "url": "self#jumbf=c2pa.assertions/c2pa.thumbnail.ingredient.png"
+          }
+        },
+        "c2pa.thumbnail.claim.png": "<omitted> len = 489389",
+        "stds.schema-org.CreativeWork": {
+          "@context": "https://schema.org",
+          "@type": "CreativeWork",
+          "author": [
+            {
+              "@type": "Person",
+              "credential": [
+                {
+                  "alg": "sha256",
+                  "hash": "YgIKpvo6AwTA2yF9tRNCmKDH1TIJdrMtvbJc26WKrE4=",
+                  "url": "self#jumbf=/c2pa/adobe:urn:uuid:99c202f6-857a-4045-9ad2-b68c2aabd838/c2pa.credentials/did:adobe:f8bd805d918b6196019c4777c14b49a4ea3bd63a8b3a787b3ea007c70d1db32ae"
+                }
+              ],
+              "identifier": "did:adobe:f8bd805d918b6196019c4777c14b49a4ea3bd63a8b3a787b3ea007c70d1db32ae",
+              "name": "Starling Lab"
+            }
+          ]
+        },
+        "c2pa.thumbnail.ingredient.png": "<omitted> len = 537913",
+        "adobe.dictionary": {
+          "url": "https://cai-assertions.adobe.com/photoshop/dictionary.json"
+        },
+        "c2pa.actions": {
+          "actions": [
+            {
+              "action": "c2pa.edited",
+              "parameters": {
+                "name": "open"
+              }
+            },
+            {
+              "action": "c2pa.edited",
+              "parameters": {
+                "name": "crop"
+              }
+            },
+            {
+              "action": "c2pa.edited",
+              "parameters": {
+                "name": "image_size"
+              }
+            }
+          ],
+          "metadata": {
+            "dateTime": "2022-12-21T08:23:43.995Z",
+            "reviewRatings": []
+          }
+        }
+      },
+      "credential_store": [
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1"
+          ],
+          "credentialSubject": {
+            "id": "did:adobe:f8bd805d918b6196019c4777c14b49a4ea3bd63a8b3a787b3ea007c70d1db32ae",
+            "name": "Starling Lab"
+          },
+          "proof": {
+            "created": "2022-12-21T01:49:44.868276479Z",
+            "jws": "f1f24a6d62855549ce0f15acee7011323d5d021be00c973eb83c44a2e3e4490a3c050bf7b9a9da77d34dece7d5521d771b70aa3a695192411e45bcae988697502",
+            "proofPurpose": "assertionMethod",
+            "type": "Ed25519Signature2018",
+            "verificationMethod": "did:adobe:f8bd805d918b6196019c4777c14b49a4ea3bd63a8b3a787b3ea007c70d1db32ae"
+          },
+          "type": [
+            "VerifiableCredential"
+          ]
+        }
+      ],
+      "signature": {
+        "alg": "ps256",
+        "issuer": "Adobe Inc.",
+        "time": "2022-12-21T08:24:31+00:00"
+      }
+    }
+  },
+  "validation_status": [
+    {
+      "code": "claimSignature.validated",
+      "url": "self#jumbf=/c2pa/adobe:urn:uuid:99c202f6-857a-4045-9ad2-b68c2aabd838/c2pa.signature",
+      "explanation": "claim signature valid"
+    },
+    {
+      "code": "assertion.hashedURI.match",
+      "url": "self#jumbf=c2pa.assertions/c2pa.thumbnail.claim.png",
+      "explanation": "hashed uri matched: self#jumbf=c2pa.assertions/c2pa.thumbnail.claim.png"
+    },
+    {
+      "code": "assertion.hashedURI.match",
+      "url": "self#jumbf=c2pa.assertions/c2pa.thumbnail.ingredient.png",
+      "explanation": "hashed uri matched: self#jumbf=c2pa.assertions/c2pa.thumbnail.ingredient.png"
+    },
+    {
+      "code": "assertion.hashedURI.match",
+      "url": "self#jumbf=c2pa.assertions/c2pa.ingredient",
+      "explanation": "hashed uri matched: self#jumbf=c2pa.assertions/c2pa.ingredient"
+    },
+    {
+      "code": "assertion.hashedURI.match",
+      "url": "self#jumbf=c2pa.assertions/adobe.dictionary",
+      "explanation": "hashed uri matched: self#jumbf=c2pa.assertions/adobe.dictionary"
+    },
+    {
+      "code": "assertion.hashedURI.match",
+      "url": "self#jumbf=c2pa.assertions/stds.schema-org.CreativeWork",
+      "explanation": "hashed uri matched: self#jumbf=c2pa.assertions/stds.schema-org.CreativeWork"
+    },
+    {
+      "code": "assertion.hashedURI.match",
+      "url": "self#jumbf=c2pa.assertions/c2pa.actions",
+      "explanation": "hashed uri matched: self#jumbf=c2pa.assertions/c2pa.actions"
+    },
+    {
+      "code": "assertion.hashedURI.match",
+      "url": "self#jumbf=c2pa.assertions/c2pa.hash.data",
+      "explanation": "hashed uri matched: self#jumbf=c2pa.assertions/c2pa.hash.data"
+    },
+    {
+      "code": "assertion.dataHash.match",
+      "url": "self#jumbf=/c2pa/adobe:urn:uuid:99c202f6-857a-4045-9ad2-b68c2aabd838/c2pa.assertions/c2pa.hash.data",
+      "explanation": "data hash valid"
+    },
+    {
+      "code": "claimSignature.validated",
+      "url": "self#jumbf=/c2pa/adobe:urn:uuid:dce2c865-2aa2-4f4f-a6f0-1077f3caaf9c/c2pa.signature",
+      "explanation": "claim signature valid"
+    },
+    {
+      "code": "assertion.hashedURI.match",
+      "url": "self#jumbf=c2pa.assertions/c2pa.thumbnail.claim.png",
+      "explanation": "hashed uri matched: self#jumbf=c2pa.assertions/c2pa.thumbnail.claim.png"
+    },
+    {
+      "code": "assertion.hashedURI.match",
+      "url": "self#jumbf=c2pa.assertions/c2pa.thumbnail.ingredient.png",
+      "explanation": "hashed uri matched: self#jumbf=c2pa.assertions/c2pa.thumbnail.ingredient.png"
+    },
+    {
+      "code": "assertion.hashedURI.match",
+      "url": "self#jumbf=c2pa.assertions/c2pa.ingredient",
+      "explanation": "hashed uri matched: self#jumbf=c2pa.assertions/c2pa.ingredient"
+    },
+    {
+      "code": "assertion.hashedURI.match",
+      "url": "self#jumbf=c2pa.assertions/adobe.dictionary",
+      "explanation": "hashed uri matched: self#jumbf=c2pa.assertions/adobe.dictionary"
+    },
+    {
+      "code": "assertion.hashedURI.match",
+      "url": "self#jumbf=c2pa.assertions/stds.schema-org.CreativeWork",
+      "explanation": "hashed uri matched: self#jumbf=c2pa.assertions/stds.schema-org.CreativeWork"
+    },
+    {
+      "code": "assertion.hashedURI.match",
+      "url": "self#jumbf=c2pa.assertions/c2pa.actions",
+      "explanation": "hashed uri matched: self#jumbf=c2pa.assertions/c2pa.actions"
+    },
+    {
+      "code": "assertion.hashedURI.match",
+      "url": "self#jumbf=c2pa.assertions/c2pa.hash.data",
+      "explanation": "hashed uri matched: self#jumbf=c2pa.assertions/c2pa.hash.data"
+    }
+  ]
+}

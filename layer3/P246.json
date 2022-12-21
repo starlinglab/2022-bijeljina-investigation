@@ -1,0 +1,122 @@
+{
+  "description": "Authenticated photograph taken on February 21, 2022, in Serbia. Features graffiti referring to Ratko Mladi\u0107. Cropped / Registered (4 protocols) / Preserved (1 protocol) / Verified (1 attestation).",
+  "assetCid": "bafybeigbsjen2qo5guxtppo5xtjwemdnf5zadz5tgvmdlg72m5nn2tkxaa",
+  "caption": {
+    "captionText": "Graffiti in Belgrade, Serbia, in February 2022 referring to Ratko Mladi\u0107, a.k.a. \"the Butcher of Bosnia.\" (Jorgen Samso/USC Shoah Foundation)",
+    "originalUrl": null
+  },
+  "chainsOfTrust": [
+    {
+      "Rolling Stone": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-root-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-bijeljina-investigation.cert.pem"
+        }
+      ],
+      "Starling Lab": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-root-ca.cert.pem"
+        },
+        {
+          "name": "Intermediate Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-intermediate-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Starling Lab",
+          "file": "starling-lab-bijeljina-investigation.cert.pem"
+        }
+      ]
+    }
+  ],
+  "assetDetails": {
+    "dimensions": "1500 x 1000",
+    "format": "image/jpeg"
+  },
+  "c2pa": {
+    "assetFile": "P246.jpg",
+    "manifestFile": "P246-manifest.json"
+  },
+  "captureDate": "2022-02-20T23:06:02.373Z",
+  "capturedBy": "Starling Capture / Authenticated Photograph",
+  "location": "Belgrade, Belgrade, Serbia",
+  "registrationRecords": {
+    "openTimestamps": {
+      "sha256": "55bda6ed15f9c93cefc2c9c4c8b7b908d4adec77baa6222d58fb111e4c472d80",
+      "block": "767727"
+    },
+    "numbersProtocol": {
+      "tx": "0x45601793154570a2830c6f3f8c7c0a08c1de811ef55bf7b7546d57d1657d173f"
+    },
+    "numbersProtocolAvalanche": {
+      "tx": "0x8caf2995cb36836b8919a544019080c84474d326d796312f7f1f46cd0b76b85f"
+    },
+    "iscn": {
+      "iscnId": "iscn://likecoin-chain/_cSbSvO2Ov7ePd4nr90ibnP4wJ5--qal2Ts2oJ1Tbsc/1",
+      "tx": "F170505122FB63D06E899E49A0820CEE33A30E9148B6D05A5C70594D9B0143DB"
+    }
+  },
+  "storageRecords": {
+    "ipfs": {
+      "cid": null
+    },
+    "filecoin": {
+      "pieceCid": "baga6ea4seaqpiffpyptzhgi4dqajreaptszblhncs33jbcanbkezodtrj6z2ena"
+    },
+    "storj": {
+      "path": null
+    }
+  },
+  "verifiedBy": [
+    {
+      "name": "C2PA Claim 1: Authenticated photo taken with Starling Capture and Canon EOS R5 on 2/21/2022",
+      "value": "Starling Lab Bijeljina Investigation",
+      "file": "starling-lab-bijeljina-investigation.cert.pem"
+    },
+    {
+      "name": "C2PA Claim 2: Crop and Resize with Adobe Photoshop",
+      "value": "Adobe Photoshop",
+      "file": "adobe-photoshop.cert.pem"
+    }
+  ],
+  "attestations": [
+    {
+      "records": {
+        "openTimestamps": {
+          "sha256": "5e9d3589f8dad53b977819a32f34008f2bc0e2e1bf228539d1fb06c7977f6758",
+          "block": "768134"
+        },
+        "numbersProtocol": {
+          "tx": "0x1bbf67fefa76c20791dec044cc8c4c1641128b00c1a3e97e45a2d59bcc633b1d"
+        },
+        "numbersProtocolAvalanche": {
+          "tx": "0xf8eac1568fd026c05328e5e79e5ded95027af268942dd27f4c91adaa92500b6c"
+        },
+        "iscn": {
+          "iscnId": "iscn://likecoin-chain/DJuW28WfURr9jkp2aXoTAjnd8OmA6AADa2fKEWH3YwE/1",
+          "tx": "012E91E70565B0EDEDE349878B1E9D0C9EF8100C20F2A20B9EFFE1768E221679"
+        },
+        "ipfs": {
+          "cid": "bafkreiasx7wimevc4r2dwnfovlyxpuvloodvemdvhkchzh365ozdxdmihm"
+        },
+        "filecoin": {
+          "pieceCid": "baga6ea4seaqfhl32tiwydchf45m5vjxlfszk2xk6budmsnlhpi3ooeqmivfsoiy"
+        },
+        "storj": {
+          "path": "jug7otopdwlv4iqekuql47ddchfa/2022-bijeljina-investigation-captions/12bfec8612a2e4743b34aeaaf177d2ab73875230753a847c9f7eebb23b8d883b.encrypted"
+        }
+      },
+      "name": "Caption",
+      "value": "bafkreiasx7wimevc4r2dwnfovlyxpuvloodvemdvhkchzh365ozdxdmihm"
+    }
+  ]
+}

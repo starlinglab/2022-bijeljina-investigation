@@ -1,0 +1,127 @@
+{
+  "description": "Authenticated scan taken on April 27, 2022. Photograph originally taken by Ron Haviv on April 2, 1992. Color Corrected and Cropped / Registered (4 protocols) / Preserved (3 protocols) / Verified (1 attestation).",
+  "assetCid": "bafybeiefk637wfph7di3fupxstkdiztftvbt5u4gwae5xls3kaaj6l7hp4",
+  "caption": {
+    "captionText": "Blood stains from civilians gunned down in Bijeljina on April 2, 1992. (Ron Haviv/VII/Redux)",
+    "originalUrl": null
+  },
+  "chainsOfTrust": [
+    {
+      "Rolling Stone": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-root-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-bijeljina-investigation.cert.pem"
+        }
+      ],
+      "Starling Lab": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-root-ca.cert.pem"
+        },
+        {
+          "name": "Intermediate Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-intermediate-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Starling Lab",
+          "file": "starling-lab-bijeljina-investigation.cert.pem"
+        }
+      ]
+    }
+  ],
+  "assetDetails": {
+    "dimensions": "1500 x 1000",
+    "format": "image/jpeg"
+  },
+  "c2pa": {
+    "assetFile": "P218.jpg",
+    "manifestFile": "P218-manifest.json"
+  },
+  "captureDate": "2022-04-27T10:33:39.767Z",
+  "capturedBy": "Starling Capture / Authenticated Scan",
+  "location": "New York, NY, United States",
+  "registrationRecords": {
+    "openTimestamps": {
+      "sha256": "837477a2677640ea1f2de669044d32f8d21ebbd7a97b6a5f9f4f1afa05d150ff",
+      "block": "767705"
+    },
+    "numbersProtocol": {
+      "tx": "0x9e538875b8b791e48fcfe9b17350a03d374bc37cb3d1086700c5064f2e5a545c"
+    },
+    "numbersProtocolAvalanche": {
+      "tx": "0x8b12425ec761540c18d07ce2923fc3eda743ab2408ce61c89d84a4b7f2376a7d"
+    },
+    "iscn": {
+      "iscnId": "iscn://likecoin-chain/uLyEG1CXQY_U3t00vmAlf4sxQx7Yo7uGexoWzMtntXo/1",
+      "tx": "AA43561417E9827748F5D6D9CEE2259F30755AA6752D51A543B04B3466F71CFC"
+    }
+  },
+  "storageRecords": {
+    "ipfs": {
+      "cid": "bafybeiefk637wfph7di3fupxstkdiztftvbt5u4gwae5xls3kaaj6l7hp4"
+    },
+    "filecoin": {
+      "pieceCid": "baga6ea4seaqpiffpyptzhgi4dqajreaptszblhncs33jbcanbkezodtrj6z2ena"
+    },
+    "storj": {
+      "path": "jxjv7yufe4zsungupn3qufl2mnta/2022-bijeljina-investigation-haviv-scans/d61934b666895d0f10123fa52ebe0de10aa6b4e2cba61604ff476733db2be16b.encrypted"
+    }
+  },
+  "verifiedBy": [
+    {
+      "name": "C2PA Claim 1: Authenticated scan taken with Starling Capture and Canon R5 on 4/27/2022",
+      "value": "Starling Lab Bijeljina Investigation",
+      "file": "starling-lab-bijeljina-investigation.cert.pem"
+    },
+    {
+      "name": "C2PA Claim 2: Crop and Resize with Adobe Photoshop",
+      "value": "Adobe Photoshop",
+      "file": "adobe-photoshop.cert.pem"
+    },
+    {
+      "name": "C2PA Claim 3: Sharpen with Adobe Photoshop",
+      "value": "Adobe Photoshop",
+      "file": "adobe-photoshop.cert.pem"
+    }
+  ],
+  "attestations": [
+    {
+      "records": {
+        "openTimestamps": {
+          "sha256": "38783c678d49eaae26134611a4b11a79259503d6b4b936b70b0b5868a7b2e8f4",
+          "block": "768134"
+        },
+        "numbersProtocol": {
+          "tx": "0x7be61289ef5399828ac0ffaec03c8b36e4aa53871f054fe2f3bbcf15e465d3d0"
+        },
+        "numbersProtocolAvalanche": {
+          "tx": "0x13ca27e71df73d1627587e41a25f890e29bf1299446a87a5502c00939ea7acd2"
+        },
+        "iscn": {
+          "iscnId": "iscn://likecoin-chain/bNj7w2k5De1PAcVqiIJs7DwEGN9K95Cnrbg19wPFC_s/1",
+          "tx": "23248594A8E92F6249D0EDBB5EBC0845AC601C08DAC3E9C2072D3CF1A546AE07"
+        },
+        "ipfs": {
+          "cid": "bafkreiaddbomz6o2gvmhuyfii62n4enq4bsrcwabu3axk2qf6wfvfh6tlq"
+        },
+        "filecoin": {
+          "pieceCid": "baga6ea4seaqfhl32tiwydchf45m5vjxlfszk2xk6budmsnlhpi3ooeqmivfsoiy"
+        },
+        "storj": {
+          "path": "jug7otopdwlv4iqekuql47ddchfa/2022-bijeljina-investigation-captions/03185cccf9da35587a60a847b4de11b0e065115801a6c1756a05f58b529fd35c.encrypted"
+        }
+      },
+      "name": "Caption",
+      "value": "bafkreiaddbomz6o2gvmhuyfii62n4enq4bsrcwabu3axk2qf6wfvfh6tlq"
+    }
+  ]
+}

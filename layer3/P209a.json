@@ -1,0 +1,117 @@
+{
+  "description": "Authenticated photograph of D\u017eenita Mulabdi\u0107 taken in Bosnia on February 20, 2022. Registered (4 protocols) / Preserved (1 protocol) / Verified (1 attestation).",
+  "assetCid": "bafybeicxxercswoisgb5hueyr2r23k26vaedcdms6idewnmoxj6hs6ygra",
+  "caption": {
+    "captionText": "D\u017eenita Mulabdi\u0107 holds her wedding ring and the wedding ring of her late husband, Muhamed, killed in Bijeljina in April 1992. She blames Arkan's Tigers for his death. (Jorgen Samso/USC Shoah Foundation)",
+    "originalUrl": null
+  },
+  "chainsOfTrust": [
+    {
+      "Rolling Stone": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-root-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-bijeljina-investigation.cert.pem"
+        }
+      ],
+      "Starling Lab": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-root-ca.cert.pem"
+        },
+        {
+          "name": "Intermediate Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-intermediate-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Starling Lab",
+          "file": "starling-lab-bijeljina-investigation.cert.pem"
+        }
+      ]
+    }
+  ],
+  "assetDetails": {
+    "dimensions": "8192 x 5464",
+    "format": "image/jpeg"
+  },
+  "c2pa": {
+    "assetFile": "P209a.jpg",
+    "manifestFile": "P209a-manifest.json"
+  },
+  "captureDate": "2022-02-20T00:05:54.843Z",
+  "capturedBy": "Starling Capture / Authenticated Photograph",
+  "location": "Bosnia",
+  "registrationRecords": {
+    "openTimestamps": {
+      "sha256": "5fe88f1914ea4a5eaef788a8aa2ab925413d8d9519953676ebc053f267f4e4d6",
+      "block": "767727"
+    },
+    "numbersProtocol": {
+      "tx": "0x2d19355850a0aaa95f99004a842e1120c870afd25207c1b91a5041e8ca17abfe"
+    },
+    "numbersProtocolAvalanche": {
+      "tx": "0x75c5f3f4688cc13fd02f2751501c425ebd8ab9b77687ef2363ba625b32ab79db"
+    },
+    "iscn": {
+      "iscnId": "iscn://likecoin-chain/w7E8I0Cwyv0ukw0YG7XgvH5EN4uXGh91QsiYT8DFsCs/1",
+      "tx": "F36AFA6805448E877CBC047FED1D0F2772318E56D7D8FA63A714A8494A52A672"
+    }
+  },
+  "storageRecords": {
+    "ipfs": {
+      "cid": null
+    },
+    "filecoin": {
+      "pieceCid": "baga6ea4seaqpiffpyptzhgi4dqajreaptszblhncs33jbcanbkezodtrj6z2ena"
+    },
+    "storj": {
+      "path": null
+    }
+  },
+  "verifiedBy": [
+    {
+      "name": "C2PA Claim 1: Authenticated photo with Starling Capture and Canon EOS R5 on 2/20/2022",
+      "value": "Starling Lab Bijeljina Investigation",
+      "file": "starling-lab-bijeljina-investigation.cert.pem"
+    }
+  ],
+  "attestations": [
+    {
+      "records": {
+        "openTimestamps": {
+          "sha256": "95f060db1c49e599311be17007be33d3fbd320fee941e7b1cc1f58d55b28cae5",
+          "block": "768134"
+        },
+        "numbersProtocol": {
+          "tx": "0xe6da1a2d6d451650952431f4c6160668985780c43d56159c1549623ca10e9e75"
+        },
+        "numbersProtocolAvalanche": {
+          "tx": "0xcd49e25c3a6cc0b1721bb35d87a28a648e7ed91d79e731aca81c9883dc86b925"
+        },
+        "iscn": {
+          "iscnId": "iscn://likecoin-chain/5R25pGO2AeEeinIj0Su0ku7JsGtcObm805gzQPYHWIg/1",
+          "tx": "789CABFF5CF3A7749211711EFFBC722D199F8BD068A5F7991C378608D1F3504F"
+        },
+        "ipfs": {
+          "cid": "bafkreieommpzwusjduqvc7mbinomz5twtvjbmq3o7bo27cablmmnvfbq7e"
+        },
+        "filecoin": {
+          "pieceCid": "baga6ea4seaqfhl32tiwydchf45m5vjxlfszk2xk6budmsnlhpi3ooeqmivfsoiy"
+        },
+        "storj": {
+          "path": "jug7otopdwlv4iqekuql47ddchfa/2022-bijeljina-investigation-captions/8e631f9b52491d21517d81435cccf6769d5216436ef85daf88015b18da9430f9.encrypted"
+        }
+      },
+      "name": "Caption",
+      "value": "bafkreieommpzwusjduqvc7mbinomz5twtvjbmq3o7bo27cablmmnvfbq7e"
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "description": "Authenticated photograph taken on February 20, 2022, in Bosnia. Features a page of magazine as saved by D\u017eenita Mulabdi\u0107. Color Corrected and Cropped. Registered (4 protocols) / Preserved (1 protocol) / Verified (1 attestation).",
+  "assetCid": "bafybeicplon576fe2l2dmm3r37gdirqhxbcnpwpx3pnjq2fbn3xhxlfane",
+  "caption": {
+    "captionText": "In Bosnia, D\u017eenita Mulabdi\u0107 keeps this page torn from a German magazine that she first saw in a doctor's office in the early 1990s. (Jorgen Samso/USC Shoah Foundation)",
+    "originalUrl": null
+  },
+  "chainsOfTrust": [
+    {
+      "Rolling Stone": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-root-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-bijeljina-investigation.cert.pem"
+        }
+      ],
+      "Starling Lab": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-root-ca.cert.pem"
+        },
+        {
+          "name": "Intermediate Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-intermediate-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Starling Lab",
+          "file": "starling-lab-bijeljina-investigation.cert.pem"
+        }
+      ]
+    }
+  ],
+  "assetDetails": {
+    "dimensions": "1000 x 1366",
+    "format": "image/jpeg"
+  },
+  "c2pa": {
+    "assetFile": "P245.jpg",
+    "manifestFile": "P245-manifest.json"
+  },
+  "captureDate": "2022-02-19T23:47:50.081Z",
+  "capturedBy": "Starling Capture / Authenticated Photograph",
+  "location": "Bosnia",
+  "registrationRecords": {
+    "openTimestamps": {
+      "sha256": "f3d5813794d8aa9c01cd88e4ff2cbd04024445918cba9e8b84574341ca1ebe1a",
+      "block": "767727"
+    },
+    "numbersProtocol": {
+      "tx": "0x8920e89d4094b27296b0beb60730d54b0778e15050218c89e2164bfa595080cc"
+    },
+    "numbersProtocolAvalanche": {
+      "tx": "0x552ba4b4ec4a182b3431e4d151cc74913127ba6ae0afb7eb4997008696a34b0d"
+    },
+    "iscn": {
+      "iscnId": "iscn://likecoin-chain/h4RKb5lHBX4e2pYNvN8CVHHcFR-LSe6E6bFNMtDf_Q0/1",
+      "tx": "323ADACB90FDA0D9BD5DE6FFD96A3BF62CEC94C3A8F8CE5077EE361F1682863F"
+    }
+  },
+  "storageRecords": {
+    "ipfs": {
+      "cid": null
+    },
+    "filecoin": {
+      "pieceCid": "baga6ea4seaqpiffpyptzhgi4dqajreaptszblhncs33jbcanbkezodtrj6z2ena"
+    },
+    "storj": {
+      "path": null
+    }
+  },
+  "verifiedBy": [
+    {
+      "name": "C2PA Claim 1: Authenticated photo taken with Starling Capture and Canon EOS R5 on 2/20/2022",
+      "value": "Starling Lab Bijeljina Investigation",
+      "file": "starling-lab-bijeljina-investigation.cert.pem"
+    },
+    {
+      "name": "C2PA Claim 2: Crop and Resize with Adobe Photoshop",
+      "value": "Adobe Photoshop",
+      "file": "adobe-photoshop.cert.pem"
+    },
+    {
+      "name": "C2PA Claim 3: Sharpen with Adobe Photoshop",
+      "value": "Adobe Photoshop",
+      "file": "adobe-photoshop.cert.pem"
+    }
+  ],
+  "attestations": [
+    {
+      "records": {
+        "openTimestamps": {
+          "sha256": "df4c391d600cc1ac4a70b7ee98263555b29e5ca385b6731f580a16d0c9f34b08",
+          "block": "768154"
+        },
+        "numbersProtocol": {
+          "tx": "0x0068e82a330a0348ec6ca1f1cbb6e9f2ee6081a63cd4e777b4e131651ac15c15"
+        },
+        "numbersProtocolAvalanche": {
+          "tx": "0xd91e604b3ae8f01505d2bf18053a0eed8299edb35064a800ad8f858296bc420e"
+        },
+        "iscn": {
+          "iscnId": "iscn://likecoin-chain/Eck_3X6hDZUDQF3060t2mS0-nVqzg5oKdU5yxxd-jUg/1",
+          "tx": "A22218ED15D152669FC599F50D5662EB1DD6245BBC751EF6E019346BDAECCE0A"
+        },
+        "ipfs": {
+          "cid": "bafkreidr26mhfth5uwx3vms7elrudx5fiqiy2ve4g6zgu43gqedygronfy"
+        },
+        "filecoin": {
+          "pieceCid": "baga6ea4seaqfhl32tiwydchf45m5vjxlfszk2xk6budmsnlhpi3ooeqmivfsoiy"
+        },
+        "storj": {
+          "path": "jug7otopdwlv4iqekuql47ddchfa/2022-bijeljina-investigation-captions/71d79872ccfda5afbab25f22e341dfa544118d549c37b26a736681078345cd2e.encrypted"
+        }
+      },
+      "name": "Caption",
+      "value": "bafkreidr26mhfth5uwx3vms7elrudx5fiqiy2ve4g6zgu43gqedygronfy"
+    }
+  ]
+}

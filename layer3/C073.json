@@ -1,0 +1,151 @@
+{
+  "description": "Authenticated web archive of Mondo article published in 2021. Captured on October 31, 2022. Cropped / Registered (4 protocols) / Preserved (1 protocol) / Verified (2 attestations).",
+  "assetCid": "bafybeibycyfeid4etijfwp7dxwe2ptmfkdyu4yxytjjw5k6orkxzdyitdu",
+  "caption": {
+    "captionText": "A 2021 article in Serbia's Mondo appears to show Mile Dragutinovi\u0107 with Svetlana Ra\u017enatovi\u0107 (Ceca), Arkan's widow.",
+    "originalUrl": "https://mondo.rs/Zabava/Zvezde-i-tracevi/a1331484/Svetlana-Ceca-Raznatovic-Jelena-Karleusa-sudjenje.html"
+  },
+  "chainsOfTrust": [
+    {
+      "Rolling Stone": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-root-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-bijeljina-investigation.cert.pem"
+        }
+      ],
+      "Starling Lab": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-root-ca.cert.pem"
+        },
+        {
+          "name": "Intermediate Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-intermediate-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Starling Lab",
+          "file": "starling-lab-bijeljina-investigation.cert.pem"
+        }
+      ]
+    }
+  ],
+  "assetDetails": {
+    "dimensions": "1200 x 865",
+    "format": "image/png"
+  },
+  "c2pa": {
+    "assetFile": "C073.png",
+    "manifestFile": "C073-manifest.json"
+  },
+  "captureDate": "2022-10-31T08:00:00.000Z",
+  "capturedBy": "Webrecorder - ArchiveWeb.page / Authenticated Web Archive",
+  "location": "Los Angeles, CA, United States",
+  "registrationRecords": {
+    "openTimestamps": {
+      "sha256": "f7ce395e31aa7c53e9955c4e23712c82bff65760a0ac7d281a4ed65751279d21",
+      "block": "767727"
+    },
+    "numbersProtocol": {
+      "tx": "0x267f09a431cfc5ffe5ba1c5cb9b9c1bd855a727b8d2f03adc43fbf6c0335dc6d"
+    },
+    "numbersProtocolAvalanche": {
+      "tx": "0x89a8a74090a1fa1fff62e99c84de0b249e5ae2ed874a6d5ce53a0cd18dad3346"
+    },
+    "iscn": {
+      "iscnId": "iscn://likecoin-chain/OT--mjhL5IsJojgmk03rKu7KNW_mnVUD2ITXuayH9ao/1",
+      "tx": "4530F442A1BA3E30AF32016C5C7C81F5B109C18BFAC4CEDBEDF27F9FC529F966"
+    }
+  },
+  "storageRecords": {
+    "ipfs": {
+      "cid": null
+    },
+    "filecoin": {
+      "pieceCid": "baga6ea4seaqfhl32tiwydchf45m5vjxlfszk2xk6budmsnlhpi3ooeqmivfsoiy"
+    },
+    "storj": {
+      "path": null
+    }
+  },
+  "verifiedBy": [
+    {
+      "name": "C2PA Claim 1: Authenticated web archive and screenshot created on 10/31/2022",
+      "value": "Starling Lab Bijeljina Investigation",
+      "file": "starling-lab-bijeljina-investigation.cert.pem"
+    },
+    {
+      "name": "C2PA Claim 2: Crop and Resize with Adobe Photoshop",
+      "value": "Adobe Photoshop",
+      "file": "adobe-photoshop.cert.pem"
+    }
+  ],
+  "attestations": [
+    {
+      "records": {
+        "openTimestamps": {
+          "sha256": "b692cf5b5009f4b309f047d8220cd1cd6fe1cd252324c7dba50c65d2b44a4db5",
+          "block": "767727"
+        },
+        "numbersProtocol": {
+          "tx": "0xa103caf0f102f878487efdead185c7c628dd82551b22fde5504405da29266920"
+        },
+        "numbersProtocolAvalanche": {
+          "tx": "0xb59c113d41601a06a09ddf1bed122d5a016549da543bc881700c65d748a9a596"
+        },
+        "iscn": {
+          "iscnId": "iscn://likecoin-chain/I6Y5eiPnSu7wU8fQIWN6GxwUPjBftEB3qhAXLJrYFAk/1",
+          "tx": "96CC2F1486C2DF2394277D4DFEC6D0FD613A8A31CCF5A9E88D419BF7A498533B"
+        },
+        "ipfs": {
+          "cid": null
+        },
+        "filecoin": {
+          "pieceCid": "baga6ea4seaqnnts5zk47oxigys5eyo3szuug3e4o3vpmiq22p2rwm2gxttn7gei"
+        },
+        "storj": {
+          "path": null
+        }
+      },
+      "name": "Web Archive",
+      "value": "bafybeigptlspcqixymsqvajeslp4xzyrpry73ffne5z45tm3cfmydgl2ua"
+    },
+    {
+      "records": {
+        "openTimestamps": {
+          "sha256": "28c5c45b2ccd439c9db2cbe5d46aa3280161b1c7ee1169d515ffb441fb728d5c",
+          "block": "768134"
+        },
+        "numbersProtocol": {
+          "tx": "0x020bc468adf06a59dd97ef35411f2b47de6e014316999530e33d4feddc770784"
+        },
+        "numbersProtocolAvalanche": {
+          "tx": "0xdba0e5ed0fbfca7c095c6d629a5bb81eb5f08efdaeb65ea78097032eff1109c9"
+        },
+        "iscn": {
+          "iscnId": "iscn://likecoin-chain/MnNgzUgOqXe8XVPgk1qciTb2eLf_3lVg748xeIdP7_0/1",
+          "tx": "7B282FAA265B15F6168CD053A5B01A0B3BBF57385EE1A313D25DE05FB7622E3F"
+        },
+        "ipfs": {
+          "cid": "bafkreieegjcfa6ondyob4oqluywfmxsfes4x6kssklk65jbgc73vp5uijm"
+        },
+        "filecoin": {
+          "pieceCid": "baga6ea4seaqfhl32tiwydchf45m5vjxlfszk2xk6budmsnlhpi3ooeqmivfsoiy"
+        },
+        "storj": {
+          "path": "jug7otopdwlv4iqekuql47ddchfa/2022-bijeljina-investigation-captions/8432445079cd1e1c1e3a0ba62c565e4524b97f2a5252d5eea42617f757f6884b.encrypted"
+        }
+      },
+      "name": "Caption",
+      "value": "bafkreieegjcfa6ondyob4oqluywfmxsfes4x6kssklk65jbgc73vp5uijm"
+    }
+  ]
+}

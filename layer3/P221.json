@@ -1,0 +1,117 @@
+{
+  "description": "Authenticated download from Reuters Wire Services of photo from Arkan's funeral, originally published by Reuters in January 2000. Registered (4 protocols) / Preserved (3 protocols) / Verified (1 attestation).",
+  "assetCid": "bafybeibuohe6gbhangbxahnby5l32g6bzqcf6y4lk54xixvx6r5ow4eu3m",
+  "caption": {
+    "captionText": "Members of Arkan's Tigers carry Arkan's coffin at his funeral in Belgrade, Serbia, on Jan. 20, 2000. (Reuters/Alamy)",
+    "originalUrl": null
+  },
+  "chainsOfTrust": [
+    {
+      "Rolling Stone": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-root-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-bijeljina-investigation.cert.pem"
+        }
+      ],
+      "Starling Lab": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-root-ca.cert.pem"
+        },
+        {
+          "name": "Intermediate Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-intermediate-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Starling Lab",
+          "file": "starling-lab-bijeljina-investigation.cert.pem"
+        }
+      ]
+    }
+  ],
+  "assetDetails": {
+    "dimensions": "2048 x 1462",
+    "format": "image/jpeg"
+  },
+  "c2pa": {
+    "assetFile": "P221.jpg",
+    "manifestFile": "P221-manifest.json"
+  },
+  "captureDate": "2022-12-16T09:49:52.393Z",
+  "capturedBy": "Licensed Wire Photo",
+  "location": "Los Angeles, CA, United States",
+  "registrationRecords": {
+    "openTimestamps": {
+      "sha256": "060252c6424f49d001ee42c11ce6f875d5a50959ef1e228e545dc6735106b9c0",
+      "block": "767727"
+    },
+    "numbersProtocol": {
+      "tx": "0x9d4ab687c77dd61f7b5ec99cd0e7f3bfed68a9a28a87aa99b0d34e5c1e69b643"
+    },
+    "numbersProtocolAvalanche": {
+      "tx": "0x3489fffe8e08320ddff13bb10170e8a58a4469ba282d796ee0f00219fc143c91"
+    },
+    "iscn": {
+      "iscnId": "iscn://likecoin-chain/EyBrco2RH9dYrd-drSJnhjRw_-vzYgVRm_OWumhJsME/1",
+      "tx": "ED8D42D0CCD1EEF6D41408EA69C94FB6C83BD5D60DB7248D10460C76CB59F0E1"
+    }
+  },
+  "storageRecords": {
+    "ipfs": {
+      "cid": "bafybeibuohe6gbhangbxahnby5l32g6bzqcf6y4lk54xixvx6r5ow4eu3m"
+    },
+    "filecoin": {
+      "pieceCid": "baga6ea4seaqfhl32tiwydchf45m5vjxlfszk2xk6budmsnlhpi3ooeqmivfsoiy"
+    },
+    "storj": {
+      "path": "jxtsknqc6gmrx46nyigdji5yhlzq/2022-bijeljina-investigation-wire-photos/bdea99203f810abfd29c41f05f2ef87f55e1780868c3a327c350354805992710.encrypted"
+    }
+  },
+  "verifiedBy": [
+    {
+      "name": "C2PA Claim 1: Authenticated download of photograph from Reuters Wire Services",
+      "value": "Starling Lab Bijeljina Investigation",
+      "file": "starling-lab-bijeljina-investigation.cert.pem"
+    }
+  ],
+  "attestations": [
+    {
+      "records": {
+        "openTimestamps": {
+          "sha256": "5455b186bc39b3e81114cb9dcdd22a20b5f6ea3732e66a7c7236ac38abb2d18e",
+          "block": "768134"
+        },
+        "numbersProtocol": {
+          "tx": "0xf617720e2ac201e0311be4e1cf91277d8f3fdb66dd20da0773a02e7193097d84"
+        },
+        "numbersProtocolAvalanche": {
+          "tx": "0xa2b954da5ffb7cfb69d9ac70f68e247e4c58455c824968e80db8db99dd1fb80d"
+        },
+        "iscn": {
+          "iscnId": "iscn://likecoin-chain/qxYaWZ3wJyaNCCzf6AzN8W9sGkdwAs_OOsbB-_CY7L8/1",
+          "tx": "1CF983C70A2B495155C632079F0221FAD341C6710C1A04F5433CDFD56F24A34D"
+        },
+        "ipfs": {
+          "cid": "bafkreieuuat76vs6etgknonsiifsafxsexcvgyhx47p3qhoid24t7dd2wm"
+        },
+        "filecoin": {
+          "pieceCid": "baga6ea4seaqfhl32tiwydchf45m5vjxlfszk2xk6budmsnlhpi3ooeqmivfsoiy"
+        },
+        "storj": {
+          "path": "jug7otopdwlv4iqekuql47ddchfa/2022-bijeljina-investigation-captions/94a027ff565e24cca6b9b2420b2016f225c55360f7e7dfb81dc81eb93f8c7ab3.encrypted"
+        }
+      },
+      "name": "Caption",
+      "value": "bafkreieuuat76vs6etgknonsiifsafxsexcvgyhx47p3qhoid24t7dd2wm"
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "active_manifest": "adobe:urn:uuid:713c6ac9-6a5c-4ddf-a834-cc308610f4fd",
+  "manifests": {
+    "adobe:urn:uuid:713c6ac9-6a5c-4ddf-a834-cc308610f4fd": {
+      "claim": {
+        "alg": "sha256",
+        "assertions": [
+          {
+            "hash": "TBRNv0D2UggdoX/JyryLXT2NvaIEthUt3VhYvWR0RNg=",
+            "url": "self#jumbf=c2pa.assertions/c2pa.thumbnail.claim.png"
+          },
+          {
+            "hash": "lTUJA9jecZAdn7/XKIT+Xn2icTEA7Grx7nBDnDlkh4c=",
+            "url": "self#jumbf=c2pa.assertions/c2pa.thumbnail.ingredient.png"
+          },
+          {
+            "hash": "qkE0IhpQrEs3NvQTB/xIxSg9s+uvo+aJ5knKew20EUo=",
+            "url": "self#jumbf=c2pa.assertions/c2pa.ingredient"
+          },
+          {
+            "hash": "ollMU2xOSOO9miUHi+sXTfdiux2JVgLOLDhnLkXLI1s=",
+            "url": "self#jumbf=c2pa.assertions/adobe.dictionary"
+          },
+          {
+            "hash": "ZhT0CZFyS2+Rp2mSVs+xxANAFIS2G2IT9c7jf5++HnA=",
+            "url": "self#jumbf=c2pa.assertions/stds.schema-org.CreativeWork"
+          },
+          {
+            "hash": "Wo/PbwcQU85UnSyb+JM5XFhpoRcVV/GXrjjxXcMszaY=",
+            "url": "self#jumbf=c2pa.assertions/c2pa.actions"
+          },
+          {
+            "hash": "5aXd8le5srhD3y1t380gAHNSLblkpEb+Jrn7A9OH/kM=",
+            "url": "self#jumbf=c2pa.assertions/c2pa.hash.data"
+          }
+        ],
+        "claim_generator": "Adobe_Photoshop/24.0.0 (build 20221013.r.59 3a3d761; mac) cai-helper/0.4.12 c2pa-rs/0.14.0",
+        "dc:format": "image/png",
+        "dc:title": "C068.png",
+        "instanceID": "xmp:iid:74674ba7-bcb9-4925-9d21-65c9a9677abc",
+        "signature": "self#jumbf=c2pa.signature"
+      },
+      "assertion_store": {
+        "c2pa.thumbnail.ingredient.png": "<omitted> len = 461386",
+        "c2pa.ingredient": {
+          "dc:format": "image/png",
+          "dc:title": "C068.png",
+          "documentID": "xmp:iid:8bf1ab23-d17e-40a0-9811-c5a8a3f196d3",
+          "instanceID": "xmp:iid:8bf1ab23-d17e-40a0-9811-c5a8a3f196d3",
+          "metadata": {
+            "dateTime": "2022-12-21T03:47:35.248Z"
+          },
+          "relationship": "parentOf",
+          "thumbnail": {
+            "hash": "lTUJA9jecZAdn7/XKIT+Xn2icTEA7Grx7nBDnDlkh4c=",
+            "url": "self#jumbf=c2pa.assertions/c2pa.thumbnail.ingredient.png"
+          }
+        },
+        "stds.schema-org.CreativeWork": {
+          "@context": "https://schema.org",
+          "@type": "CreativeWork",
+          "author": [
+            {
+              "@type": "Person",
+              "credential": [
+                {
+                  "alg": "sha256",
+                  "hash": "YgIKpvo6AwTA2yF9tRNCmKDH1TIJdrMtvbJc26WKrE4=",
+                  "url": "self#jumbf=/c2pa/adobe:urn:uuid:713c6ac9-6a5c-4ddf-a834-cc308610f4fd/c2pa.credentials/did:adobe:f8bd805d918b6196019c4777c14b49a4ea3bd63a8b3a787b3ea007c70d1db32ae"
+                }
+              ],
+              "identifier": "did:adobe:f8bd805d918b6196019c4777c14b49a4ea3bd63a8b3a787b3ea007c70d1db32ae",
+              "name": "Starling Lab"
+            }
+          ]
+        },
+        "c2pa.actions": {
+          "actions": [
+            {
+              "action": "c2pa.edited",
+              "parameters": {
+                "name": "open"
+              }
+            },
+            {
+              "action": "c2pa.edited",
+              "parameters": {
+                "name": "crop"
+              }
+            },
+            {
+              "action": "c2pa.edited",
+              "parameters": {
+                "name": "image_size"
+              }
+            }
+          ],
+          "metadata": {
+            "dateTime": "2022-12-21T03:47:35.232Z",
+            "reviewRatings": []
+          }
+        },
+        "c2pa.hash.data": {
+          "alg": "sha256",
+          "exclusions": [
+            {
+              "length": 1565917,
+              "start": 33
+            }
+          ],
+          "hash": "t0+Bx7i1h4k5+KJXwar2tLRhg9eDhsCbBD9/4T4XNjM=",
+          "name": "jumbf manifest",
+          "pad": "<omitted>"
+        },
+        "adobe.dictionary": {
+          "url": "https://cai-assertions.adobe.com/photoshop/dictionary.json"
+        },
+        "c2pa.thumbnail.claim.png": "<omitted> len = 1090590"
+      },
+      "credential_store": [
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1"
+          ],
+          "credentialSubject": {
+            "id": "did:adobe:f8bd805d918b6196019c4777c14b49a4ea3bd63a8b3a787b3ea007c70d1db32ae",
+            "name": "Starling Lab"
+          },
+          "proof": {
+            "created": "2022-12-21T01:49:44.868276479Z",
+            "jws": "f1f24a6d62855549ce0f15acee7011323d5d021be00c973eb83c44a2e3e4490a3c050bf7b9a9da77d34dece7d5521d771b70aa3a695192411e45bcae988697502",
+            "proofPurpose": "assertionMethod",
+            "type": "Ed25519Signature2018",
+            "verificationMethod": "did:adobe:f8bd805d918b6196019c4777c14b49a4ea3bd63a8b3a787b3ea007c70d1db32ae"
+          },
+          "type": [
+            "VerifiableCredential"
+          ]
+        }
+      ],
+      "signature": {
+        "alg": "ps256",
+        "issuer": "Adobe Inc.",
+        "time": "2022-12-21T03:49:07+00:00"
+      }
+    }
+  },
+  "validation_status": [
+    {
+      "code": "claimSignature.validated",
+      "url": "self#jumbf=/c2pa/adobe:urn:uuid:713c6ac9-6a5c-4ddf-a834-cc308610f4fd/c2pa.signature",
+      "explanation": "claim signature valid"
+    },
+    {
+      "code": "assertion.hashedURI.match",
+      "url": "self#jumbf=c2pa.assertions/c2pa.thumbnail.claim.png",
+      "explanation": "hashed uri matched: self#jumbf=c2pa.assertions/c2pa.thumbnail.claim.png"
+    },
+    {
+      "code": "assertion.hashedURI.match",
+      "url": "self#jumbf=c2pa.assertions/c2pa.thumbnail.ingredient.png",
+      "explanation": "hashed uri matched: self#jumbf=c2pa.assertions/c2pa.thumbnail.ingredient.png"
+    },
+    {
+      "code": "assertion.hashedURI.match",
+      "url": "self#jumbf=c2pa.assertions/c2pa.ingredient",
+      "explanation": "hashed uri matched: self#jumbf=c2pa.assertions/c2pa.ingredient"
+    },
+    {
+      "code": "assertion.hashedURI.match",
+      "url": "self#jumbf=c2pa.assertions/adobe.dictionary",
+      "explanation": "hashed uri matched: self#jumbf=c2pa.assertions/adobe.dictionary"
+    },
+    {
+      "code": "assertion.hashedURI.match",
+      "url": "self#jumbf=c2pa.assertions/stds.schema-org.CreativeWork",
+      "explanation": "hashed uri matched: self#jumbf=c2pa.assertions/stds.schema-org.CreativeWork"
+    },
+    {
+      "code": "assertion.hashedURI.match",
+      "url": "self#jumbf=c2pa.assertions/c2pa.actions",
+      "explanation": "hashed uri matched: self#jumbf=c2pa.assertions/c2pa.actions"
+    },
+    {
+      "code": "assertion.hashedURI.match",
+      "url": "self#jumbf=c2pa.assertions/c2pa.hash.data",
+      "explanation": "hashed uri matched: self#jumbf=c2pa.assertions/c2pa.hash.data"
+    },
+    {
+      "code": "assertion.dataHash.match",
+      "url": "self#jumbf=/c2pa/adobe:urn:uuid:713c6ac9-6a5c-4ddf-a834-cc308610f4fd/c2pa.assertions/c2pa.hash.data",
+      "explanation": "data hash valid"
+    }
+  ]
+}

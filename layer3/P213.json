@@ -1,0 +1,122 @@
+{
+  "description": "Authenticated download of a photo from the Haviv Private Archive. Photograph originally taken by Ron Haviv on April 2, 1992. Cropped / Registered (4 protocols) / Preserved (1 protocol) / Verified (1 attestation).",
+  "assetCid": "bafybeibyebngf67q6zln3yuiacncy5k5lxenvwdx6koochypdngbwx5zra",
+  "caption": {
+    "captionText": "A member of Arkan's Tigers in a Bijeljina hospital on April 2, 1992. (Ron Haviv/VII/Redux)",
+    "originalUrl": null
+  },
+  "chainsOfTrust": [
+    {
+      "Rolling Stone": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-root-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-bijeljina-investigation.cert.pem"
+        }
+      ],
+      "Starling Lab": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-root-ca.cert.pem"
+        },
+        {
+          "name": "Intermediate Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-intermediate-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Starling Lab",
+          "file": "starling-lab-bijeljina-investigation.cert.pem"
+        }
+      ]
+    }
+  ],
+  "assetDetails": {
+    "dimensions": "1109 x 751",
+    "format": "image/jpeg"
+  },
+  "c2pa": {
+    "assetFile": "P213.jpg",
+    "manifestFile": "P213-manifest.json"
+  },
+  "captureDate": "2022-12-16T10:17:45.873Z",
+  "capturedBy": "Haviv Private Archive / Photographs",
+  "location": "New York, NY, United States",
+  "registrationRecords": {
+    "openTimestamps": {
+      "sha256": "aa49d2805d67ae3cc2ecdab818acbb3bc7bf2a737cc57c6e63e3e7c22c7fcc03",
+      "block": "767727"
+    },
+    "numbersProtocol": {
+      "tx": "0x8bd22ef397c06f5a6c7e378f1b64c0aa5a7120f02e34a48bcf59d4a45ac69215"
+    },
+    "numbersProtocolAvalanche": {
+      "tx": "0x1dab1621e25d6f77dc606298b77594ed7ef62fe987c709e16dcc585843af2c94"
+    },
+    "iscn": {
+      "iscnId": "iscn://likecoin-chain/KiP_Z_GS1hz8_bBP4vwl3Z9mRJwXb0cAohPo-tV7VDI/1",
+      "tx": "AB0AC235D1C51487DB7061831CD34F9A224EACA216491E92C9F6717D6807B22E"
+    }
+  },
+  "storageRecords": {
+    "ipfs": {
+      "cid": null
+    },
+    "filecoin": {
+      "pieceCid": "baga6ea4seaqfhl32tiwydchf45m5vjxlfszk2xk6budmsnlhpi3ooeqmivfsoiy"
+    },
+    "storj": {
+      "path": null
+    }
+  },
+  "verifiedBy": [
+    {
+      "name": "C2PA Claim 1: Authenticated download of photograph from the Haviv Private Archive",
+      "value": "Starling Lab Bijeljina Investigation",
+      "file": "starling-lab-bijeljina-investigation.cert.pem"
+    },
+    {
+      "name": "C2PA Claim 2: Crop and Resize with Adobe Photoshop",
+      "value": "Adobe Photoshop",
+      "file": "adobe-photoshop.cert.pem"
+    }
+  ],
+  "attestations": [
+    {
+      "records": {
+        "openTimestamps": {
+          "sha256": "a88a3b1efda7b21e539d5e9dcf278df10415a66c1392e39410bb60466139615f",
+          "block": "768134"
+        },
+        "numbersProtocol": {
+          "tx": "0xebf0abc6a6845d242dc2f1b09c811bbb497d138b89345024b628dfe64a57bfb0"
+        },
+        "numbersProtocolAvalanche": {
+          "tx": "0xa3d50d0945a3d259395f4c22444dfa2223f204ee704dbb846c200632b14210d8"
+        },
+        "iscn": {
+          "iscnId": "iscn://likecoin-chain/xSC9rqZpd21vS7rAf1HDOnXDOETNUn8tYoD7eoU2D9s/1",
+          "tx": "7F187D700DB82DC88EC5C10E3BED37F1DB40E38DFC32501E0C625EAF4FBAED43"
+        },
+        "ipfs": {
+          "cid": "bafkreifghbsifdjxaajit5pyactwni6ucovkzirqizc6tdhypq3twuy2zu"
+        },
+        "filecoin": {
+          "pieceCid": "baga6ea4seaqfhl32tiwydchf45m5vjxlfszk2xk6budmsnlhpi3ooeqmivfsoiy"
+        },
+        "storj": {
+          "path": "jug7otopdwlv4iqekuql47ddchfa/2022-bijeljina-investigation-captions/a63864828d37001289f5f800a766a3d413aaaca2304645e98cf87c373b531acd.encrypted"
+        }
+      },
+      "name": "Caption",
+      "value": "bafkreifghbsifdjxaajit5pyactwni6ucovkzirqizc6tdhypq3twuy2zu"
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "description": "Authenticated web archive of Balkan Insight article published in 2017. Captured on November 1, 2022. Cropped / Registered (4 protocols) / Preserved (1 protocol) / Verified (2 attestations).",
+  "assetCid": "bafybeigvutd7f3onjtokxz6wojecrxmtdphwnqejv5iaw3dlwicdkvmivu",
+  "caption": {
+    "captionText": "An article from Balkan Insight (Balkan Investigative Reporting Network) in 2017 features Haviv's raised-boot photo.",
+    "originalUrl": "https://balkaninsight.com/2017/01/23/capturing-the-image-of-ethnic-cleansing-in-bosnia-01-19-2017/"
+  },
+  "chainsOfTrust": [
+    {
+      "Rolling Stone": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-root-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-bijeljina-investigation.cert.pem"
+        }
+      ],
+      "Starling Lab": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-root-ca.cert.pem"
+        },
+        {
+          "name": "Intermediate Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-intermediate-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Starling Lab",
+          "file": "starling-lab-bijeljina-investigation.cert.pem"
+        }
+      ]
+    }
+  ],
+  "assetDetails": {
+    "dimensions": "1200 x 1456",
+    "format": "image/png"
+  },
+  "c2pa": {
+    "assetFile": "C054.png",
+    "manifestFile": "C054-manifest.json"
+  },
+  "captureDate": "2022-10-31T13:28:00.000Z",
+  "capturedBy": "Webrecorder - ArchiveWeb.page / Authenticated Web Archive",
+  "location": "Los Angeles, CA, United States",
+  "registrationRecords": {
+    "openTimestamps": {
+      "sha256": "4daac1df18aa6f069796b9ed16b974278cd36aac3f8d5c4f3029222a37514633",
+      "block": "767727"
+    },
+    "numbersProtocol": {
+      "tx": "0x676fa41672e2101fd3aeb4db1fd924e4c81b9cb14bd77119ac131aaef685dfb1"
+    },
+    "numbersProtocolAvalanche": {
+      "tx": "0x0db5602279e1e634c74d0d223aeee412cff1110c7ee535870cc02de0485a74cb"
+    },
+    "iscn": {
+      "iscnId": "iscn://likecoin-chain/vIET7hKvzjNWYXLwUw-nmboNwwupNz3G23FcihyioR8/1",
+      "tx": "20A213FB5B62E923D5B31466F9DB1CA7956BDDCF77FC6888AE7E1C2D83D7A36C"
+    }
+  },
+  "storageRecords": {
+    "ipfs": {
+      "cid": null
+    },
+    "filecoin": {
+      "pieceCid": "baga6ea4seaqfhl32tiwydchf45m5vjxlfszk2xk6budmsnlhpi3ooeqmivfsoiy"
+    },
+    "storj": {
+      "path": null
+    }
+  },
+  "verifiedBy": [
+    {
+      "name": "C2PA Claim 1: Authenticated web archive and screenshot created on 11/1/2022",
+      "value": "Starling Lab Bijeljina Investigation",
+      "file": "starling-lab-bijeljina-investigation.cert.pem"
+    },
+    {
+      "name": "C2PA Claim 2: Crop and Resize with Adobe Photoshop",
+      "value": "Adobe Photoshop",
+      "file": "adobe-photoshop.cert.pem"
+    }
+  ],
+  "attestations": [
+    {
+      "records": {
+        "openTimestamps": {
+          "sha256": "4cbd43445f028fc92a38be2fd4f872e155b1ae23e0a88c1f4bc9e6e7b643dc4a",
+          "block": "767727"
+        },
+        "numbersProtocol": {
+          "tx": "0x76db5831d2c8672f17dc04a34b5e7caafa4444c37ece5c612e2debbbb5d30f44"
+        },
+        "numbersProtocolAvalanche": {
+          "tx": "0xf6cf2c0dd78a836f67a146bf7050a71367a031c30afdc91cf0753e0c905222a2"
+        },
+        "iscn": {
+          "iscnId": "iscn://likecoin-chain/AdYsy1pysGWBtRShRiuLK6Ety7Byt6HkKy1DCebc0qQ/1",
+          "tx": "A72E96DF43BDAD1D92C1F66B4645826724E3115394F55204BCE2340BB25AFBEF"
+        },
+        "ipfs": {
+          "cid": null
+        },
+        "filecoin": {
+          "pieceCid": "baga6ea4seaqeliwckrzxf3d5nazpolch5ayzrtwaxf7m25o5tyuspvyouf4l4kq"
+        },
+        "storj": {
+          "path": null
+        }
+      },
+      "name": "Web Archive",
+      "value": "bafybeidu3eylklwbqacivows72msppd6bdp6n4gwy7oboog5z6kgtclcii"
+    },
+    {
+      "records": {
+        "openTimestamps": {
+          "sha256": "abf0c494f61ec95e22ff3c5c4173a50ae5449fb91fcce76f59812982de665680",
+          "block": "768134"
+        },
+        "numbersProtocol": {
+          "tx": "0xca631a33d909e7d3717fede9a8abba031b3763eecf14df019c92be51261556a8"
+        },
+        "numbersProtocolAvalanche": {
+          "tx": "0x8f628377378a4a5b88f3bb5097a62fcb59b238f9845e698290ecbbce2df468d3"
+        },
+        "iscn": {
+          "iscnId": "iscn://likecoin-chain/iKO2BKDbqZZl5JhxnGp08xd4e69PHXFsUGbra0jeZOc/1",
+          "tx": "E32FE1522473DB8FF8404ECAFC49877A71EC4A18B3F369C07B2ABDF109AD106D"
+        },
+        "ipfs": {
+          "cid": "bafkreicpen4wedv2wh3w5jxaqng6akxzm3c6soxbxzy345hlcziweyhtwi"
+        },
+        "filecoin": {
+          "pieceCid": "baga6ea4seaqfhl32tiwydchf45m5vjxlfszk2xk6budmsnlhpi3ooeqmivfsoiy"
+        },
+        "storj": {
+          "path": "jug7otopdwlv4iqekuql47ddchfa/2022-bijeljina-investigation-captions/4f2379620ebab1f76ea6e0834de02af966c5e93ae1be71be74eb16516260f3b2.encrypted"
+        }
+      },
+      "name": "Caption",
+      "value": "bafkreicpen4wedv2wh3w5jxaqng6akxzm3c6soxbxzy345hlcziweyhtwi"
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "description": "Authenticated photograph using Proofmode taken on November 27, 2022, in Novi Sad, Serbia. Features Sr\u0111an Golubovi\u0107, a.k.a. DJ Max. / Registered (4 protocols) / Preserved (1 protocol) / Verified (2 attestations).",
+  "assetCid": "bafybeiebw7ejvtmvytevmgsntniheirao4tum4oftehfltnjgetileyzh4",
+  "caption": {
+    "captionText": "Sr\u0111an Golubovi\u0107, a.k.a. DJ Max, performs at a venue in Novi Sad, Serbia, in November 2022. (USC Shoah Foundation)",
+    "originalUrl": null
+  },
+  "chainsOfTrust": [
+    {
+      "Rolling Stone": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-root-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-bijeljina-investigation.cert.pem"
+        }
+      ],
+      "Starling Lab": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-root-ca.cert.pem"
+        },
+        {
+          "name": "Intermediate Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-intermediate-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Starling Lab",
+          "file": "starling-lab-bijeljina-investigation.cert.pem"
+        }
+      ]
+    }
+  ],
+  "assetDetails": {
+    "dimensions": "1500 x 2000",
+    "format": "image/jpeg"
+  },
+  "c2pa": {
+    "assetFile": "P237.jpg",
+    "manifestFile": "P237-manifest.json"
+  },
+  "captureDate": "2022-11-26T11:16:50.000Z",
+  "capturedBy": "ProofMode / Authenticated Media",
+  "location": "Novi Sad, Vojvodina, Serbia",
+  "registrationRecords": {
+    "openTimestamps": {
+      "sha256": "1bf75edce325449f0d2628d761e91b41c56c6369807d136fa0d97fc85027883b",
+      "block": "767727"
+    },
+    "numbersProtocol": {
+      "tx": "0x07f0f10fa0bc0f99d26d2be727fbfbadfd36eea675cd60ce257005d7ba8df3d4"
+    },
+    "numbersProtocolAvalanche": {
+      "tx": "0xad252936e464f5401b216dcee9ecf3f5adb2556f93aa09b082c300f4e352d71c"
+    },
+    "iscn": {
+      "iscnId": "iscn://likecoin-chain/rkcZEWMOvkgl_DKT2I7snnp1vCK2UkkkuAAYJbZfkDU/1",
+      "tx": "E3336427C7D27BC65D5EB1234A8FB5B9907C3FA804A86575D6034E0024054C06"
+    }
+  },
+  "storageRecords": {
+    "ipfs": {
+      "cid": null
+    },
+    "filecoin": {
+      "pieceCid": "baga6ea4seaqfhl32tiwydchf45m5vjxlfszk2xk6budmsnlhpi3ooeqmivfsoiy"
+    },
+    "storj": {
+      "path": null
+    }
+  },
+  "verifiedBy": [
+    {
+      "name": "C2PA Claim 1: Authenticated photo taken using ProofMode on11/27/2022",
+      "value": "Starling Lab Bijeljina Investigation",
+      "file": "starling-lab-bijeljina-investigation.cert.pem"
+    },
+    {
+      "name": "C2PA Claim 2: Resize with Adobe Photoshop",
+      "value": "Adobe Photoshop",
+      "file": "adobe-photoshop.cert.pem"
+    }
+  ],
+  "attestations": [
+    {
+      "records": {
+        "openTimestamps": {
+          "sha256": "af8b6df750ab05682262342281056f8ece84f346007ea713e4c541f053998924",
+          "block": "767727"
+        },
+        "numbersProtocol": {
+          "tx": "0xdd1c1786031e16048fe9e83cddfc36b8eb1422f005ecd4d3b713894a01298215"
+        },
+        "numbersProtocolAvalanche": {
+          "tx": "0x867211b3c4d70c5ce3fd5bd53f6259bf7a9a53502503f83caf95770997c77259"
+        },
+        "iscn": {
+          "iscnId": "iscn://likecoin-chain/gkl2TS94C89Ba4iBYcdH9_P9Jf4bs-DabWju9yy2RAs/1",
+          "tx": "DCE279BBFA0874AED002A05BECFC7C64676DECC98485BB5E566F777AC4883D41"
+        },
+        "ipfs": {
+          "cid": null
+        },
+        "filecoin": {
+          "pieceCid": "baga6ea4seaqfhl32tiwydchf45m5vjxlfszk2xk6budmsnlhpi3ooeqmivfsoiy"
+        },
+        "storj": {
+          "path": null
+        }
+      },
+      "name": "ProofMode Archive",
+      "value": "bafybeiammmch45qv4usoa4afqt3dr3ldvlwqurkncz5diibgblrzrk7no4"
+    },
+    {
+      "records": {
+        "openTimestamps": {
+          "sha256": "944735d0e712d01a4cb755b19e22738b2860d543505383ca371ef826af4137b7",
+          "block": "768134"
+        },
+        "numbersProtocol": {
+          "tx": "0x4de94a1a4f47bd116f9e59c6f993619286e53010350584761e21f69d510ce1f8"
+        },
+        "numbersProtocolAvalanche": {
+          "tx": "0xc5144819a2dd493495f7251ee6b6bf8b9fed55bbbe227212fec100b58cf91856"
+        },
+        "iscn": {
+          "iscnId": "iscn://likecoin-chain/PdkTtHMoDIB2l-vDxvhoHIwazpOSoEU1h6GydYfYC6c/1",
+          "tx": "3B3A4C6587D2DAB3CDA91655D642F59205447F77BB9A47F76C4D9D7038C0C3A3"
+        },
+        "ipfs": {
+          "cid": "bafkreiaeerg6czzlmezhtxzkoj2ykpznuem744dfhewo56csh3apjl62ty"
+        },
+        "filecoin": {
+          "pieceCid": "baga6ea4seaqfhl32tiwydchf45m5vjxlfszk2xk6budmsnlhpi3ooeqmivfsoiy"
+        },
+        "storj": {
+          "path": "jug7otopdwlv4iqekuql47ddchfa/2022-bijeljina-investigation-captions/04244de1672b613279df2a7275853f2da119fe7065392ceef8523ec0f4afda9e.encrypted"
+        }
+      },
+      "name": "Caption",
+      "value": "bafkreiaeerg6czzlmezhtxzkoj2ykpznuem744dfhewo56csh3apjl62ty"
+    }
+  ]
+}

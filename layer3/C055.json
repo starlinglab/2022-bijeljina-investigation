@@ -1,0 +1,151 @@
+{
+  "description": "Authenticated web archive of Washington Post opinion piece by Ron Haviv published in 2015. Captured on November 1, 2022. Cropped / Registered (4 protocols) / Preserved (1 protocol) / Verified (2 attestations).",
+  "assetCid": "bafybeie4vu6oce2jq7tyrlzdo567af2g2w5llkt4aworggrzkwanctak6q",
+  "caption": {
+    "captionText": "Haviv's photo atop his 2015 opinion piece in The Washington Post.",
+    "originalUrl": "https://www.washingtonpost.com/opinions/the-photographers-choice-bystander-or-upstander/2015/04/10/4a582e8a-dfa7-11e4-a500-1c5bb1d8ff6a_story.html"
+  },
+  "chainsOfTrust": [
+    {
+      "Rolling Stone": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-root-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-bijeljina-investigation.cert.pem"
+        }
+      ],
+      "Starling Lab": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-root-ca.cert.pem"
+        },
+        {
+          "name": "Intermediate Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-intermediate-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Starling Lab",
+          "file": "starling-lab-bijeljina-investigation.cert.pem"
+        }
+      ]
+    }
+  ],
+  "assetDetails": {
+    "dimensions": "1200 x 1147",
+    "format": "image/png"
+  },
+  "c2pa": {
+    "assetFile": "C055.png",
+    "manifestFile": "C055-manifest.json"
+  },
+  "captureDate": "2022-10-31T13:28:00.000Z",
+  "capturedBy": "Webrecorder - ArchiveWeb.page / Authenticated Web Archive",
+  "location": "Los Angeles, CA, United States",
+  "registrationRecords": {
+    "openTimestamps": {
+      "sha256": "1e7cc5d17afc16736fbb97ab91b62cc827fbdbac3420b9506504eeda162e705d",
+      "block": "767727"
+    },
+    "numbersProtocol": {
+      "tx": "0xba592436c9e4176056b534fbc0b9776736afbc8cf8d3e6b5b79b4ca0bc2dce24"
+    },
+    "numbersProtocolAvalanche": {
+      "tx": "0x831a11d6ed38c291cbc09a09163b49386ab3d80d8703cbe5d3bc6b342f68e2f8"
+    },
+    "iscn": {
+      "iscnId": "iscn://likecoin-chain/3ME0fW2v2r9cxs5zzyQ-U8x5LE1EUPXPWW_it6jr2-8/1",
+      "tx": "D2637F1E5E34F1EBF8D2DD4FBBD36E824CA1302218FDF443266E59BA19816208"
+    }
+  },
+  "storageRecords": {
+    "ipfs": {
+      "cid": null
+    },
+    "filecoin": {
+      "pieceCid": "baga6ea4seaqfhl32tiwydchf45m5vjxlfszk2xk6budmsnlhpi3ooeqmivfsoiy"
+    },
+    "storj": {
+      "path": null
+    }
+  },
+  "verifiedBy": [
+    {
+      "name": "C2PA Claim 1: Authenticated web archive and screenshot created on 11/1/2022",
+      "value": "Starling Lab Bijeljina Investigation",
+      "file": "starling-lab-bijeljina-investigation.cert.pem"
+    },
+    {
+      "name": "C2PA Claim 2: Crop and Resize with Adobe Photoshop",
+      "value": "Adobe Photoshop",
+      "file": "adobe-photoshop.cert.pem"
+    }
+  ],
+  "attestations": [
+    {
+      "records": {
+        "openTimestamps": {
+          "sha256": "4cbd43445f028fc92a38be2fd4f872e155b1ae23e0a88c1f4bc9e6e7b643dc4a",
+          "block": "767727"
+        },
+        "numbersProtocol": {
+          "tx": "0x76db5831d2c8672f17dc04a34b5e7caafa4444c37ece5c612e2debbbb5d30f44"
+        },
+        "numbersProtocolAvalanche": {
+          "tx": "0xf6cf2c0dd78a836f67a146bf7050a71367a031c30afdc91cf0753e0c905222a2"
+        },
+        "iscn": {
+          "iscnId": "iscn://likecoin-chain/AdYsy1pysGWBtRShRiuLK6Ety7Byt6HkKy1DCebc0qQ/1",
+          "tx": "A72E96DF43BDAD1D92C1F66B4645826724E3115394F55204BCE2340BB25AFBEF"
+        },
+        "ipfs": {
+          "cid": null
+        },
+        "filecoin": {
+          "pieceCid": "baga6ea4seaqeliwckrzxf3d5nazpolch5ayzrtwaxf7m25o5tyuspvyouf4l4kq"
+        },
+        "storj": {
+          "path": null
+        }
+      },
+      "name": "Web Archive",
+      "value": "bafybeidu3eylklwbqacivows72msppd6bdp6n4gwy7oboog5z6kgtclcii"
+    },
+    {
+      "records": {
+        "openTimestamps": {
+          "sha256": "01b85d1e20d03a9c737b48c2cb87a1560310d1436cf72229f097c54a0dda9dd0",
+          "block": "768134"
+        },
+        "numbersProtocol": {
+          "tx": "0xada53a0682c0d6cca0ac40e840b7a8ee53c2f3fe98bcf03d59d51ada4d0fafe0"
+        },
+        "numbersProtocolAvalanche": {
+          "tx": "0x69006db47decd224bd30f74adc183a6ab2feedc1e12ab72252767a3763ffd726"
+        },
+        "iscn": {
+          "iscnId": "iscn://likecoin-chain/lRUmPeMBEZFRBQ1Gblsj-QhgGXFSB5RN5K6TQuw50Z4/1",
+          "tx": "DBA8420402D3577AC235DF7A5BAE329FAD27C10290111F21A840922DFFA29A9E"
+        },
+        "ipfs": {
+          "cid": "bafkreih34nrv2x232rtmibe2jo2nxa5tl4lwac3xn6r3ibiykpo52cmiaa"
+        },
+        "filecoin": {
+          "pieceCid": "baga6ea4seaqfhl32tiwydchf45m5vjxlfszk2xk6budmsnlhpi3ooeqmivfsoiy"
+        },
+        "storj": {
+          "path": "jug7otopdwlv4iqekuql47ddchfa/2022-bijeljina-investigation-captions/fbe3635d5f5bd466c4049a4bb4db83b35f17600b776fa3b4051853dddd098800.encrypted"
+        }
+      },
+      "name": "Caption",
+      "value": "bafkreih34nrv2x232rtmibe2jo2nxa5tl4lwac3xn6r3ibiykpo52cmiaa"
+    }
+  ]
+}

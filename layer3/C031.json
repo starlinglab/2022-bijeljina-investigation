@@ -1,0 +1,151 @@
+{
+  "description": "Authenticated web archive of INTERPOL website page featuring result from a Red Notice search for Ranko Momi\u0107. Captured on November 1, 2022. Cropped / Registered (4 protocols) / Preserved (1 protocol) / Verified (2 attestations).",
+  "assetCid": "bafybeifdqiw552twljpegzrab5hsdgrzim37sae2dachg7ovqoyof4egqq",
+  "caption": {
+    "captionText": "Ranko Momi\u0107 on INTERPOL's website in 2022 on their Red Notice list.",
+    "originalUrl": "https://www.interpol.int/How-we-work/Notices/View-Red-Notices?fbclid=IwAR38AX6f9NM0gJHGnH3B0POA2vVU1nifEED0BnGIxrNRA0U7pFYmxuiecDI#2015-32272"
+  },
+  "chainsOfTrust": [
+    {
+      "Rolling Stone": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-root-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-bijeljina-investigation.cert.pem"
+        }
+      ],
+      "Starling Lab": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-root-ca.cert.pem"
+        },
+        {
+          "name": "Intermediate Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-intermediate-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Starling Lab",
+          "file": "starling-lab-bijeljina-investigation.cert.pem"
+        }
+      ]
+    }
+  ],
+  "assetDetails": {
+    "dimensions": "1527 x 822",
+    "format": "image/png"
+  },
+  "c2pa": {
+    "assetFile": "C031.png",
+    "manifestFile": "C031-manifest.json"
+  },
+  "captureDate": "2022-10-31T13:28:00.000Z",
+  "capturedBy": "Webrecorder - ArchiveWeb.page / Authenticated Web Archive",
+  "location": "Los Angeles, CA, United States",
+  "registrationRecords": {
+    "openTimestamps": {
+      "sha256": "7122e124aeb3941c7c362ca66390a11cfd6f201b9cd036bfca0485ee8af04f21",
+      "block": "767727"
+    },
+    "numbersProtocol": {
+      "tx": "0xe0e90faa2ec601307f52466210c7d73723aebb440745e26b551be3458f4f2aa8"
+    },
+    "numbersProtocolAvalanche": {
+      "tx": "0xe0e517b3f10e3e82c017675520b60fd1d0290766d85e5378554150d9cceabda2"
+    },
+    "iscn": {
+      "iscnId": "iscn://likecoin-chain/rCieFIGgqN2ysH5qF0dnc_rDRiEjtO3L6PtauFIwwJc/1",
+      "tx": "087A3FD20BD828BB23625319845957B8CEBEAA890B776E7E01277F78877D6AF2"
+    }
+  },
+  "storageRecords": {
+    "ipfs": {
+      "cid": null
+    },
+    "filecoin": {
+      "pieceCid": "baga6ea4seaqfhl32tiwydchf45m5vjxlfszk2xk6budmsnlhpi3ooeqmivfsoiy"
+    },
+    "storj": {
+      "path": null
+    }
+  },
+  "verifiedBy": [
+    {
+      "name": "C2PA Claim 1: Authenticated web archive and screenshot created on 11/1/2022",
+      "value": "Starling Lab Bijeljina Investigation",
+      "file": "starling-lab-bijeljina-investigation.cert.pem"
+    },
+    {
+      "name": "C2PA Claim 2: Crop and Resize with Adobe Photoshop",
+      "value": "Adobe Photoshop",
+      "file": "adobe-photoshop.cert.pem"
+    }
+  ],
+  "attestations": [
+    {
+      "records": {
+        "openTimestamps": {
+          "sha256": "4cbd43445f028fc92a38be2fd4f872e155b1ae23e0a88c1f4bc9e6e7b643dc4a",
+          "block": "767727"
+        },
+        "numbersProtocol": {
+          "tx": "0x76db5831d2c8672f17dc04a34b5e7caafa4444c37ece5c612e2debbbb5d30f44"
+        },
+        "numbersProtocolAvalanche": {
+          "tx": "0xf6cf2c0dd78a836f67a146bf7050a71367a031c30afdc91cf0753e0c905222a2"
+        },
+        "iscn": {
+          "iscnId": "iscn://likecoin-chain/AdYsy1pysGWBtRShRiuLK6Ety7Byt6HkKy1DCebc0qQ/1",
+          "tx": "A72E96DF43BDAD1D92C1F66B4645826724E3115394F55204BCE2340BB25AFBEF"
+        },
+        "ipfs": {
+          "cid": null
+        },
+        "filecoin": {
+          "pieceCid": "baga6ea4seaqeliwckrzxf3d5nazpolch5ayzrtwaxf7m25o5tyuspvyouf4l4kq"
+        },
+        "storj": {
+          "path": null
+        }
+      },
+      "name": "Web Archive",
+      "value": "bafybeidu3eylklwbqacivows72msppd6bdp6n4gwy7oboog5z6kgtclcii"
+    },
+    {
+      "records": {
+        "openTimestamps": {
+          "sha256": "4fd951db92f7a663b899159497e29373c41ccf69b61f09cf979ea04606101257",
+          "block": "768134"
+        },
+        "numbersProtocol": {
+          "tx": "0x183e7574572306f70298e141561cdb079fd1b11907bef761047b2fe49f55cdf0"
+        },
+        "numbersProtocolAvalanche": {
+          "tx": "0x0360b880c515f941c08a6fc687072c3599d0617dbe86a4ca1a64d1f9c2ee27a9"
+        },
+        "iscn": {
+          "iscnId": "iscn://likecoin-chain/_eyTijWkfrvp38qQ9E-lp-R9OPe8ICIbEuzaZM-BG7c/1",
+          "tx": "FED9217A6855763CF70701126E67E0B44B87174C2CFD640936B4EB67A2B1C572"
+        },
+        "ipfs": {
+          "cid": "bafkreihsr4pefsvh73vitnnfod2ib5yvlkrlvotnfmt3bwu72gp3mfurji"
+        },
+        "filecoin": {
+          "pieceCid": "baga6ea4seaqfhl32tiwydchf45m5vjxlfszk2xk6budmsnlhpi3ooeqmivfsoiy"
+        },
+        "storj": {
+          "path": "jug7otopdwlv4iqekuql47ddchfa/2022-bijeljina-investigation-captions/f28f1e42caa7feea89b5a570f480f7155aa2baba6d2b27b0da9fd19fb616914a.encrypted"
+        }
+      },
+      "name": "Caption",
+      "value": "bafkreihsr4pefsvh73vitnnfod2ib5yvlkrlvotnfmt3bwu72gp3mfurji"
+    }
+  ]
+}

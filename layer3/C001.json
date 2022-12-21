@@ -1,0 +1,156 @@
+{
+  "description": "Authenticated web archive of an Xperiment Facebook post, with flier promoting a DJ Max performance in August 2020. Captured on October 31, 2022. Redacted and Cropped / Registered (4 protocols) / Preserved (1 protocol) / Verified (2 attestations).",
+  "assetCid": "bafybeiac6bhnv5zklctrvwu33drzewu5hi6o2f2jji3swpt5tejb5qk6xa",
+  "caption": {
+    "captionText": "A flier from Xperiment's Facebook page promoting an event in August 2020 featuring Sr\u0111an Golubovi\u0107, a.k.a. DJ Max.",
+    "originalUrl": null
+  },
+  "chainsOfTrust": [
+    {
+      "Rolling Stone": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-root-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-bijeljina-investigation.cert.pem"
+        }
+      ],
+      "Starling Lab": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-root-ca.cert.pem"
+        },
+        {
+          "name": "Intermediate Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-intermediate-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Starling Lab",
+          "file": "starling-lab-bijeljina-investigation.cert.pem"
+        }
+      ]
+    }
+  ],
+  "assetDetails": {
+    "dimensions": "1200 x 1000",
+    "format": "image/png"
+  },
+  "c2pa": {
+    "assetFile": "C001.png",
+    "manifestFile": "C001-manifest.json"
+  },
+  "captureDate": "2022-10-31T08:00:00.000Z",
+  "capturedBy": "Webrecorder - ArchiveWeb.page / Authenticated Web Archive",
+  "location": "Los Angeles, CA, United States",
+  "registrationRecords": {
+    "openTimestamps": {
+      "sha256": "8304e566b04a0a652908323e1348a73228929b518d438f1df1e4c53d58cd296e",
+      "block": "767727"
+    },
+    "numbersProtocol": {
+      "tx": "0xb67ded28f998e5ce71c2fb782d907eec55eb31efdd51825abf724116422c6d83"
+    },
+    "numbersProtocolAvalanche": {
+      "tx": "0x3601e07d7491f8875cb1f3cdd51ade66570680351eadd6b60e3da6d08e49cc65"
+    },
+    "iscn": {
+      "iscnId": "iscn://likecoin-chain/YRSsJ2UGAktxk-_k-eTQ0zSPB0-wAPxzKxjutxFfYLY/1",
+      "tx": "22C165B34E1188DD6E45695A7BA493AFB5FCA79E48585F0831CAEC3EF9246F71"
+    }
+  },
+  "storageRecords": {
+    "ipfs": {
+      "cid": null
+    },
+    "filecoin": {
+      "pieceCid": "baga6ea4seaqfhl32tiwydchf45m5vjxlfszk2xk6budmsnlhpi3ooeqmivfsoiy"
+    },
+    "storj": {
+      "path": null
+    }
+  },
+  "verifiedBy": [
+    {
+      "name": "C2PA Claim 1: Authenticated web archive and screenshot created on 10/31/2022",
+      "value": "Starling Lab Bijeljina Investigation",
+      "file": "starling-lab-bijeljina-investigation.cert.pem"
+    },
+    {
+      "name": "C2PA Claim 2: Redact faces, names/handles, and text with Adobe Photoshop",
+      "value": "Adobe Photoshop",
+      "file": "adobe-photoshop.cert.pem"
+    },
+    {
+      "name": "C2PA Claim 3: Crop and Resize with Adobe Photoshop",
+      "value": "Adobe Photoshop",
+      "file": "adobe-photoshop.cert.pem"
+    }
+  ],
+  "attestations": [
+    {
+      "records": {
+        "openTimestamps": {
+          "sha256": "b692cf5b5009f4b309f047d8220cd1cd6fe1cd252324c7dba50c65d2b44a4db5",
+          "block": "767727"
+        },
+        "numbersProtocol": {
+          "tx": "0xa103caf0f102f878487efdead185c7c628dd82551b22fde5504405da29266920"
+        },
+        "numbersProtocolAvalanche": {
+          "tx": "0xb59c113d41601a06a09ddf1bed122d5a016549da543bc881700c65d748a9a596"
+        },
+        "iscn": {
+          "iscnId": "iscn://likecoin-chain/I6Y5eiPnSu7wU8fQIWN6GxwUPjBftEB3qhAXLJrYFAk/1",
+          "tx": "96CC2F1486C2DF2394277D4DFEC6D0FD613A8A31CCF5A9E88D419BF7A498533B"
+        },
+        "ipfs": {
+          "cid": null
+        },
+        "filecoin": {
+          "pieceCid": "baga6ea4seaqnnts5zk47oxigys5eyo3szuug3e4o3vpmiq22p2rwm2gxttn7gei"
+        },
+        "storj": {
+          "path": null
+        }
+      },
+      "name": "Web Archive",
+      "value": "bafybeigptlspcqixymsqvajeslp4xzyrpry73ffne5z45tm3cfmydgl2ua"
+    },
+    {
+      "records": {
+        "openTimestamps": {
+          "sha256": "37f3459de786b543881627818cefab3606b4a043d0b7f748176df27341eba19d",
+          "block": "768134"
+        },
+        "numbersProtocol": {
+          "tx": "0x9f58a82f5b6f3a5523c7ae05a51e644700afa1fc540e917c8400328e38c25bf3"
+        },
+        "numbersProtocolAvalanche": {
+          "tx": "0x9684cb5b3b69e96fff669b9b7b0a6aea85a2ac503a2c7621494692d7bedcab39"
+        },
+        "iscn": {
+          "iscnId": "iscn://likecoin-chain/XjicDJVgF-i74Rt8p57a9aWeSwn65E-nDSh_ndnHuQk/1",
+          "tx": "8868698FD252FAB52C18DEB515507A9792924B3CFC10ED60E208A582FAF804FD"
+        },
+        "ipfs": {
+          "cid": "bafkreifnjr2ukvzbeh2dc4ubkqvvvxbqmal3kngzshixbvr7eiyywui2ky"
+        },
+        "filecoin": {
+          "pieceCid": "baga6ea4seaqfhl32tiwydchf45m5vjxlfszk2xk6budmsnlhpi3ooeqmivfsoiy"
+        },
+        "storj": {
+          "path": "jug7otopdwlv4iqekuql47ddchfa/2022-bijeljina-investigation-captions/ad4c7545572121f4317281542b5adc306017b534d991d170d63f22318b511a56.encrypted"
+        }
+      },
+      "name": "Caption",
+      "value": "bafkreifnjr2ukvzbeh2dc4ubkqvvvxbqmal3kngzshixbvr7eiyywui2ky"
+    }
+  ]
+}

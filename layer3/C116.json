@@ -1,0 +1,156 @@
+{
+  "description": "Authenticated web archive of The Wayback Machine (Internet Archive) crawl of FK Lakta\u0161i website homepage as published in October 2022. Captured on November 14, 2022. Redacted and Cropped / Registered (4 protocols) / Preserved (1 protocol) / Verified (2 attestations).",
+  "assetCid": "bafybeig5qoq6gggg7hnipsq3awj2fnzpmijzten6ll6armi5filiyzgt3y",
+  "caption": {
+    "captionText": "In October 2022, the website of soccer team FK Lakta\u0161i displayed an edited version of a Haviv photo labeled (in Bosnian) \"Offensive on Bijeljina.\"",
+    "originalUrl": null
+  },
+  "chainsOfTrust": [
+    {
+      "Rolling Stone": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-root-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-bijeljina-investigation.cert.pem"
+        }
+      ],
+      "Starling Lab": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-root-ca.cert.pem"
+        },
+        {
+          "name": "Intermediate Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-intermediate-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Starling Lab",
+          "file": "starling-lab-bijeljina-investigation.cert.pem"
+        }
+      ]
+    }
+  ],
+  "assetDetails": {
+    "dimensions": "1200 x 1257",
+    "format": "image/png"
+  },
+  "c2pa": {
+    "assetFile": "C116.png",
+    "manifestFile": "C116-manifest.json"
+  },
+  "captureDate": "2022-11-13T17:18:00.000Z",
+  "capturedBy": "Webrecorder - ArchiveWeb.page Express / Authenticated Web Archive",
+  "location": "Los Angeles, CA, United States",
+  "registrationRecords": {
+    "openTimestamps": {
+      "sha256": "314fb7ec42576f97bc89014da4a36607f3abbb0a14143c46273030c983538903",
+      "block": "767727"
+    },
+    "numbersProtocol": {
+      "tx": "0xa03327c3e152e36728b7133d39fb2a588e2c043b5e4289333f57538bcb81fb62"
+    },
+    "numbersProtocolAvalanche": {
+      "tx": "0x767f44a4f5bfec317e67b7805525b8c718b51d5a7135188baa85764b7b1e9455"
+    },
+    "iscn": {
+      "iscnId": "iscn://likecoin-chain/YbW0Uo5brCw_HEslIm2zikxWOq_oAaNp_KPySRE7I5A/1",
+      "tx": "C84DBE063B93017172BEA48EF582A1530105DB67ADE8CE3CDBC4A60EB69EEA44"
+    }
+  },
+  "storageRecords": {
+    "ipfs": {
+      "cid": null
+    },
+    "filecoin": {
+      "pieceCid": "baga6ea4seaqfhl32tiwydchf45m5vjxlfszk2xk6budmsnlhpi3ooeqmivfsoiy"
+    },
+    "storj": {
+      "path": null
+    }
+  },
+  "verifiedBy": [
+    {
+      "name": "C2PA Claim 1: Authenticated web archive and screenshot created on 11/14/2022",
+      "value": "Starling Lab Bijeljina Investigation",
+      "file": "starling-lab-bijeljina-investigation.cert.pem"
+    },
+    {
+      "name": "C2PA Claim 2: Redact faces, names/handles, and text with Adobe Photoshop",
+      "value": "Adobe Photoshop",
+      "file": "adobe-photoshop.cert.pem"
+    },
+    {
+      "name": "C2PA Claim 3: Crop and Resize with Adobe Photoshop",
+      "value": "Adobe Photoshop",
+      "file": "adobe-photoshop.cert.pem"
+    }
+  ],
+  "attestations": [
+    {
+      "records": {
+        "openTimestamps": {
+          "sha256": "4e131503db4c6e23e9ea262bb9f84e7a8dbaeb2194d98d8f21060843f97dd520",
+          "block": "767727"
+        },
+        "numbersProtocol": {
+          "tx": "0x890718336c77a8fd9a73cf6e3972acc5ed6f76ff7341dae2ce10863282f83af1"
+        },
+        "numbersProtocolAvalanche": {
+          "tx": "0x154fba9f7f2c91d844d018f63bc4ad2b576f4ac4fa6be66fd2572dd8aa1c1cc8"
+        },
+        "iscn": {
+          "iscnId": "iscn://likecoin-chain/R-oyxFFj2XACckaMlgOpcR4ziBtO24DIbPOfYYnmCC4/1",
+          "tx": "9EA6BB2A442BE9541F2C08D8B557D0AF443A27E88542425B8F6B96D546429DAC"
+        },
+        "ipfs": {
+          "cid": null
+        },
+        "filecoin": {
+          "pieceCid": "baga6ea4seaqpiffpyptzhgi4dqajreaptszblhncs33jbcanbkezodtrj6z2ena"
+        },
+        "storj": {
+          "path": null
+        }
+      },
+      "name": "Web Archive",
+      "value": "bafybeigtdg7fnvj22klu7io2ncdmvihnqgqka5wceqxaeyylugorjwr5ei"
+    },
+    {
+      "records": {
+        "openTimestamps": {
+          "sha256": "6bdaa2ddcd5e2543c0bbd0db2db75bf8f1f5365ef2fddcf5a1c5dc88037c49f9",
+          "block": "768134"
+        },
+        "numbersProtocol": {
+          "tx": "0x8a6a1e1b4e6b2baf687add4f75f86a4fb5396d0338a1f0c0d39b82b0ebbdb551"
+        },
+        "numbersProtocolAvalanche": {
+          "tx": "0xa4214304c6b77a4830d367e5cf3232d26642dd9e6e48a23df6a772393c730cb7"
+        },
+        "iscn": {
+          "iscnId": "iscn://likecoin-chain/giWEODgCWfSvSv_RNatdFpEbrcQbYPDgXKeS4YFqQpA/1",
+          "tx": "D8F45C90C4F31664BA3BB67E4366C035686D335CC198AD2FBE46604931F4D7ED"
+        },
+        "ipfs": {
+          "cid": "bafkreigzterjmptath3aache4wd7wjozcnokhvjh54gvlle3xrcyv5bysq"
+        },
+        "filecoin": {
+          "pieceCid": "baga6ea4seaqfhl32tiwydchf45m5vjxlfszk2xk6budmsnlhpi3ooeqmivfsoiy"
+        },
+        "storj": {
+          "path": "jug7otopdwlv4iqekuql47ddchfa/2022-bijeljina-investigation-captions/d99922963e6099f60008e4e587fb25d9135ca3d527ef0d55ac9bbc458af43894.encrypted"
+        }
+      },
+      "name": "Caption",
+      "value": "bafkreigzterjmptath3aache4wd7wjozcnokhvjh54gvlle3xrcyv5bysq"
+    }
+  ]
+}

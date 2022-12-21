@@ -1,0 +1,151 @@
+{
+  "description": "Authenticated web archive of a Facebook post by Jugoslav Simi\u0107 on October 29, 2014, features an undated image with Svetozar Pejovi\u0107 (a.k.a. \"Peja\"). Captured on October 31, 2022. Cropped / Registered (4 protocols) / Preserved (1 protocol) / Verified (2 attestations).",
+  "assetCid": "bafybeiabtlk25mkj34cz6wdturtb6qdjxmevl7t2j72ye3gbkefwj77utu",
+  "caption": {
+    "captionText": "A Facebook account under the name of Jugoslav Simi\u0107 posted an image with Svetozar Pejovi\u0107 (a.k.a. \"Peja\") in front of a Night Wolves logo.",
+    "originalUrl": null
+  },
+  "chainsOfTrust": [
+    {
+      "Rolling Stone": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-root-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Rolling Stone",
+          "file": "rolling-stone-bijeljina-investigation.cert.pem"
+        }
+      ],
+      "Starling Lab": [
+        {
+          "name": "Root Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-root-ca.cert.pem"
+        },
+        {
+          "name": "Intermediate Certificate Authority",
+          "value": "Starling Lab",
+          "file": "starling-lab-intermediate-ca.cert.pem"
+        },
+        {
+          "name": "Signing Certificate",
+          "value": "Starling Lab",
+          "file": "starling-lab-bijeljina-investigation.cert.pem"
+        }
+      ]
+    }
+  ],
+  "assetDetails": {
+    "dimensions": "986 x 906",
+    "format": "image/png"
+  },
+  "c2pa": {
+    "assetFile": "C081.png",
+    "manifestFile": "C081-manifest.json"
+  },
+  "captureDate": "2022-10-31T08:00:00.000Z",
+  "capturedBy": "Webrecorder - ArchiveWeb.page / Authenticated Web Archive",
+  "location": "Los Angeles, CA, United States",
+  "registrationRecords": {
+    "openTimestamps": {
+      "sha256": "86e42d5bcdf213d259c835582a38c041b873053691c794874832e4a8aac41099",
+      "block": "767727"
+    },
+    "numbersProtocol": {
+      "tx": "0x2ba0081e308715c747cd152400d71f9a381fd505de4259c4f2229041bdf9a034"
+    },
+    "numbersProtocolAvalanche": {
+      "tx": "0x19909440e6ba573e844278727ab1360ecf716e23fa875353ae859d03bbf2e468"
+    },
+    "iscn": {
+      "iscnId": "iscn://likecoin-chain/PtN3qm3Mf77pbiHZX9Azi-NmnY4-cxDRsvkiBFqei9U/1",
+      "tx": "98031DF3988E08808FA13078C24E1CD29EE39B20405C1FB003E5B46CFC4EE670"
+    }
+  },
+  "storageRecords": {
+    "ipfs": {
+      "cid": null
+    },
+    "filecoin": {
+      "pieceCid": "baga6ea4seaqfhl32tiwydchf45m5vjxlfszk2xk6budmsnlhpi3ooeqmivfsoiy"
+    },
+    "storj": {
+      "path": null
+    }
+  },
+  "verifiedBy": [
+    {
+      "name": "C2PA Claim 1: Authenticated web archive and screenshot created on 10/31/2022",
+      "value": "Starling Lab Bijeljina Investigation",
+      "file": "starling-lab-bijeljina-investigation.cert.pem"
+    },
+    {
+      "name": "C2PA Claim 2: Crop and Resize with Adobe Photoshop",
+      "value": "Adobe Photoshop",
+      "file": "adobe-photoshop.cert.pem"
+    }
+  ],
+  "attestations": [
+    {
+      "records": {
+        "openTimestamps": {
+          "sha256": "b692cf5b5009f4b309f047d8220cd1cd6fe1cd252324c7dba50c65d2b44a4db5",
+          "block": "767727"
+        },
+        "numbersProtocol": {
+          "tx": "0xa103caf0f102f878487efdead185c7c628dd82551b22fde5504405da29266920"
+        },
+        "numbersProtocolAvalanche": {
+          "tx": "0xb59c113d41601a06a09ddf1bed122d5a016549da543bc881700c65d748a9a596"
+        },
+        "iscn": {
+          "iscnId": "iscn://likecoin-chain/I6Y5eiPnSu7wU8fQIWN6GxwUPjBftEB3qhAXLJrYFAk/1",
+          "tx": "96CC2F1486C2DF2394277D4DFEC6D0FD613A8A31CCF5A9E88D419BF7A498533B"
+        },
+        "ipfs": {
+          "cid": null
+        },
+        "filecoin": {
+          "pieceCid": "baga6ea4seaqnnts5zk47oxigys5eyo3szuug3e4o3vpmiq22p2rwm2gxttn7gei"
+        },
+        "storj": {
+          "path": null
+        }
+      },
+      "name": "Web Archive",
+      "value": "bafybeigptlspcqixymsqvajeslp4xzyrpry73ffne5z45tm3cfmydgl2ua"
+    },
+    {
+      "records": {
+        "openTimestamps": {
+          "sha256": "63f12f197c23f79198e7c463713f4197742fe7b4023b829de56c521159a22df5",
+          "block": "768134"
+        },
+        "numbersProtocol": {
+          "tx": "0x76ff283b656ef632ce34d982ba5bf2e5d401bcf3b49043977e42866543781dfb"
+        },
+        "numbersProtocolAvalanche": {
+          "tx": "0x4ba1f1c231d7927dc001a78e7e05390128e845d96ee3905c4256db19d5e63068"
+        },
+        "iscn": {
+          "iscnId": "iscn://likecoin-chain/VqvrADsGY7DBdH8xchcEWmqT3O7POIWN7jUjWDZOmGU/1",
+          "tx": "030EF82092DD4728295AFDDBEC427E15645372E462FB9723F14A6B7D4C1CC54A"
+        },
+        "ipfs": {
+          "cid": "bafkreibzweel7ybix7e5jgpidqwayvackjifenycfb76723qzmqfkez6am"
+        },
+        "filecoin": {
+          "pieceCid": "baga6ea4seaqfhl32tiwydchf45m5vjxlfszk2xk6budmsnlhpi3ooeqmivfsoiy"
+        },
+        "storj": {
+          "path": "jug7otopdwlv4iqekuql47ddchfa/2022-bijeljina-investigation-captions/39b108bfe028bfc9d499e81c2c0c54025250523702287fefeb70cb2055133e03.encrypted"
+        }
+      },
+      "name": "Caption",
+      "value": "bafkreibzweel7ybix7e5jgpidqwayvackjifenycfb76723qzmqfkez6am"
+    }
+  ]
+}
