@@ -474,7 +474,6 @@ def _generate_layer3_out_from_src(archive_manifests_caption, asset_info_ext):
                     if info_ext.get("c2paManifest1"): count += 1
                     if info_ext.get("c2paManifest2"): count += 1
                     if info_ext.get("c2paManifest3"): count += 1
-                    print(f"{source_id}: registrations added: {count}")
                     print(f"{source_id}: c2pa claims added: {len(layer3['verifiedBy'])} (expected: {count})")
 
                     # Insert attestation assets information
