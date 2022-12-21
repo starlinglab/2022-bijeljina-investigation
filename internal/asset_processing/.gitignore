@@ -1,6 +1,5 @@
 .env
 *.key.pem
-asset_info_ext.json
 
 **/in/archives/*
 **/in/archive_manifests/*
