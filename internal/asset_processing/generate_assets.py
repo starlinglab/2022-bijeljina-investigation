@@ -36,6 +36,8 @@ p_in_archives = os.path.join(p_in, "archives")
 p_in_archive_manifests = os.path.join(p_in, "archive_manifests")
 p_in_archives_related = os.path.join(p_in, "archives_related")
 p_in_archive_manifests_related = os.path.join(p_in, "archive_manifests_related")
+p_in_archives_caption = os.path.join(p_in, "archives_caption")
+p_in_archive_manifests_caption = os.path.join(p_in, "archive_manifests_caption")
 p_in_c2pa_thumbs = os.path.join(p_in, "c2pa_thumbs")
 p_in_zk_redacted = os.path.join(p_in, "zk_redacted")
 p_in_c2pa_publish = os.path.join(p_in, "c2pa_publish")
@@ -357,30 +359,36 @@ def _generate_c2pa_out_from_src(archive_manifests, archive_manifests_related, as
                 else:
                     raise Exception("Missing thumbnail for image that requires redaction")
 
-def _generate_layer3_out_from_src(archive_manifests, archive_manifests_related, asset_info_ext):
-    # Generate layer3 for assets in path_c2pa_1_src
-    for filename in os.listdir(path_c2pa_1_src):
+def _generate_layer3_out_from_src(archive_manifests_caption, asset_info_ext):
+    # Generate layer3 for assets in p_in_c2pa_publish
+    for filename in os.listdir(p_in_c2pa_publish):
         if filename.endswith(".jpg") or filename.endswith(".png"):
             source_id = os.path.basename(filename).split(".")[0]
+            info_ext = asset_info_ext.get(source_id)
+            print(f"{source_id}: processing archive [ description={info_ext.get('description')} ]")
+
             ext = os.path.basename(filename).split(".")[1]
-
-            path_asset_img = os.path.join(path_c2pa_1_src, f"{source_id}.{ext}")
-            path_asset_info = os.path.join(path_c2pa_1_src, f"{source_id}.json")
+            path_publish_img = os.path.join(p_in_c2pa_publish, f"{source_id}.{ext}")
+            path_asset_info = os.path.join(p_out_c2pa_1_src, f"{source_id}.json")
             with open(path_asset_info, "r") as f:
-                asset_info = json.load(f)
-                with open(path_layer3_template, "r") as layer3_template:
+                info = json.load(f)
+                with open(p_layer3_template, "r") as layer3_template:
+                    m = _get_index_by_label(info, "org.starlinglab.integrity")
+                    
                     # Select archive manifest of main asset
-                    m = _get_index_by_label(asset_info, "org.starlinglab.integrity")
-                    n = [i for i, o in enumerate(asset_info["assertions"][m]["data"]["starling:archives"]) if o["sourceId"]["key"] == "data_id" and o["sourceId"]["value"] == source_id][0]
-                    asset_archive_manifest = asset_info["assertions"][m]["data"]["starling:archives"][n] # TODO: get this from file
-                    # print(asset_archive_manifest)
-                    info_ext = asset_info_ext.get(source_id)
+                    n = [i for i, o in enumerate(info["assertions"][m]["data"]["starling:archives"]) if o["sourceId"]["key"] == "data_id" and o["sourceId"]["value"] == source_id][0]
+                    asset_archive_manifest = info["assertions"][m]["data"]["starling:archives"][n]
 
-                    # TODO: Get image information
-                    with Image.open(path_asset_img) as asset_img:
-                        w, h = asset_img.size
+                    # Select archive manifest of related asset
+                    related_archive_manifest = None
+                    if info["assertions"][m]["data"]["starling:archivesRelated"]:
+                        related_archive_manifest = info["assertions"][m]["data"]["starling:archivesRelated"][0]
+
+                    # Get image information
+                    with Image.open(path_publish_img) as img:
+                        w, h = img.size
                         asset_dimensions = f"{w} x {h}"
-                        asset_format = asset_img.get_format_mimetype()
+                        asset_format = img.get_format_mimetype()
 
                     # Insert main asset information
                     layer3 = json.load(layer3_template)
@@ -389,8 +397,8 @@ def _generate_layer3_out_from_src(archive_manifests, archive_manifests_related, 
                     layer3["caption"]["captionText"] = info_ext.get("captionText")
                     layer3["caption"]["originalUrl"] = info_ext.get("originalUrl")
 
-                    layer3["assetDetails"]["dimensions"] = asset_dimensions # TODO
-                    layer3["assetDetails"]["format"] = asset_format # TODO
+                    layer3["assetDetails"]["dimensions"] = asset_dimensions
+                    layer3["assetDetails"]["format"] = asset_format
                     layer3["c2pa"]["assetFile"] = f"{source_id}.{ext}"
                     layer3["c2pa"]["manifestFile"] = f"{source_id}-manifest.json"
 
@@ -413,10 +421,23 @@ def _generate_layer3_out_from_src(archive_manifests, archive_manifests_related, 
                     layer3["registrationRecords"]["iscn"]["iscnId"] = registration_records["iscn"]["iscnId"]
                     layer3["registrationRecords"]["iscn"]["tx"] = registration_records["iscn"]["txHash"]
 
+                    count = 0
+                    if layer3["registrationRecords"]["openTimestamps"]["block"]: count += 1
+                    if layer3["registrationRecords"]["numbersProtocol"]["tx"]: count += 1
+                    if layer3["registrationRecords"]["numbersProtocolAvalanche"]["tx"]: count += 1
+                    if layer3["registrationRecords"]["iscn"]["iscnId"]: count += 1
+                    print(f"{source_id}: registrations added: {count}")
+
                     # Insert storage records
                     layer3["storageRecords"]["ipfs"]["cid"] = info_ext.get("ipfsCid")
                     layer3["storageRecords"]["filecoin"]["pieceCid"] = info_ext.get("filecoinPieceCid")
                     layer3["storageRecords"]["storj"]["path"] = info_ext.get("storjPath")
+
+                    count = 0
+                    if layer3["storageRecords"]["ipfs"]["cid"]: count += 1
+                    if layer3["storageRecords"]["filecoin"]["pieceCid"]: count += 1
+                    if layer3["storageRecords"]["storj"]["path"]: count += 1
+                    print(f"{source_id}: preservations added: {count}")
 
                     # Insert c2pa manifests
                     layer3["verifiedBy"] = []
@@ -428,7 +449,7 @@ def _generate_layer3_out_from_src(archive_manifests, archive_manifests_related, 
                         }
                         layer3["verifiedBy"].append(c2pa_1)
                     if info_ext.get("c2paManifest2"):
-                        if info_ext.get("c2paManifest2") == "ZK":
+                        if info_ext.get("redaction") == "ZK":
                             c2pa_2 = {
                                 "name": info_ext.get("c2paManifest2"),
                                 "value": "Starling Lab Bijeljina Investigation",
@@ -449,13 +470,123 @@ def _generate_layer3_out_from_src(archive_manifests, archive_manifests_related, 
                         }
                         layer3["verifiedBy"].append(c2pa_3)
 
-                    # TODO: Insert attestation assets information
-                    layer3["attestations"] = []
-                    # layer3["attestations"].append(attestation)
+                    count = 0
+                    if info_ext.get("c2paManifest1"): count += 1
+                    if info_ext.get("c2paManifest2"): count += 1
+                    if info_ext.get("c2paManifest3"): count += 1
+                    print(f"{source_id}: registrations added: {count}")
+                    print(f"{source_id}: c2pa claims added: {len(layer3['verifiedBy'])} (expected: {count})")
 
-                    # print(json.dumps(layer3, indent=2))
-                    with open(os.path.join(path_layer3_out, f"{source_id}.json"), "w") as man:
+                    # Insert attestation assets information
+                    layer3["attestations"] = []
+
+                    # Attestation: Web Archive or ProofMode Archive
+                    if related_archive_manifest:
+                        attestation_archive = {
+                            "records": {
+                                "openTimestamps": { "sha256": None, "block": None },
+                                "numbersProtocol": { "tx": None },
+                                "numbersProtocolAvalanche": { "tx": None },
+                                "iscn": { "iscnId": None, "tx": None },
+                                "ipfs": { "cid": None },
+                                "filecoin": { "pieceCid": None },
+                                "storj": { "path": None }
+                            }
+                        }
+
+                        related_archive_type = None
+                        c = info_ext.get("claimGenerator")
+                        if c == "ProofMode_by_Guardian_Project":
+                            related_archive_type = "ProofMode Archive"
+                        elif c.endswith("Webrecorder"):
+                            related_archive_type = "Web Archive"
+                        else:
+                            raise Exception(f"Unknown related archive type (c={c})")
+                        attestation_archive["name"] = related_archive_type
+                        attestation_archive["value"] = related_archive_manifest["archiveEncrypted"]["cid"]
+
+                        # Insert registration records
+                        registration_records = related_archive_manifest["registrationRecords"]
+                        attestation_archive["records"]["openTimestamps"]["sha256"] = registration_records["openTimestamps"]["sha256"]
+                        attestation_archive["records"]["openTimestamps"]["block"] = registration_records["openTimestamps"]["block"]
+                        attestation_archive["records"]["numbersProtocol"]["tx"] = registration_records["numbersProtocol"]["numbersTxHash"]
+                        attestation_archive["records"]["numbersProtocolAvalanche"]["tx"] = registration_records["numbersProtocol"]["avalancheTxHash"]
+                        attestation_archive["records"]["iscn"]["iscnId"] = registration_records["iscn"]["iscnId"]
+                        attestation_archive["records"]["iscn"]["tx"] = registration_records["iscn"]["txHash"]
+
+                        # Insert storage records
+                        attestation_archive["records"]["filecoin"]["pieceCid"] = info_ext.get("relatedFilecoinPieceCid")
+
+                        # Append attestation
+                        layer3["attestations"].append(attestation_archive)
+
+                    # Attestation: Redaction: Zero Knowledge Proof
+                    if info_ext.get("redaction") == "ZK":
+                        attestation_zk = {
+                            "records": {
+                                "openTimestamps": { "sha256": None, "block": None },
+                                "numbersProtocol": { "tx": None },
+                                "numbersProtocolAvalanche": { "tx": None },
+                                "iscn": { "iscnId": None, "tx": None },
+                                "ipfs": { "cid": None },
+                                "filecoin": { "pieceCid": None },
+                                "storj": { "path": None }
+                            }
+                        }
+                        attestation_zk["name"] = "Redaction: Zero Knowledge Proof"
+                        attestation_zk["value"] = info_ext.get("zkProofCid")
+
+                        # Insert storage records
+                        attestation_zk["records"]["ipfs"]["cid"] = info_ext.get("zkProofCid")
+
+                        # Append attestation
+                        layer3["attestations"].append(attestation_zk)
+
+                    # Attestation: Caption
+                    attestation_caption = {
+                        "records": {
+                            "openTimestamps": { "sha256": None, "block": None },
+                            "numbersProtocol": { "tx": None },
+                            "numbersProtocolAvalanche": { "tx": None },
+                            "iscn": { "iscnId": None, "tx": None },
+                            "ipfs": { "cid": None },
+                            "filecoin": { "pieceCid": None },
+                            "storj": { "path": None }
+                        }
+                    }
+
+                    # Get authenticity data from archive manifest and archive of caption
+                    caption_manifest = _fill_opentimestamps(archive_manifests_caption.get_manifest(f"{source_id}.txt"), p_in_archives_caption)
+                    attestation_caption["name"] = "Caption"
+                    attestation_caption["value"] = caption_manifest["archiveEncrypted"]["cid"]
+
+                    # Insert registration records
+                    registration_records = caption_manifest["registrationRecords"]
+                    attestation_caption["records"]["openTimestamps"]["sha256"] = registration_records["openTimestamps"]["sha256"]
+                    attestation_caption["records"]["openTimestamps"]["block"] = registration_records["openTimestamps"]["block"]
+                    attestation_caption["records"]["numbersProtocol"]["tx"] = registration_records["numbersProtocol"]["numbersTxHash"]
+                    attestation_caption["records"]["numbersProtocolAvalanche"]["tx"] = registration_records["numbersProtocol"]["avalancheTxHash"]
+                    attestation_caption["records"]["iscn"]["iscnId"] = registration_records["iscn"]["iscnId"]
+                    attestation_caption["records"]["iscn"]["tx"] = registration_records["iscn"]["txHash"]
+
+                    # Insert storage records
+                    attestation_caption["records"]["ipfs"]["cid"] = info_ext.get("captionIpfsCid")
+                    attestation_caption["records"]["filecoin"]["pieceCid"] = info_ext.get("captionFilecoinPieceCid")
+                    attestation_caption["records"]["storj"]["path"] = info_ext.get("captionStorjPath")
+
+                    # Append attestation
+                    layer3["attestations"].append(attestation_caption)
+
+                    print(f"{source_id}: attestations added: {len(layer3['attestations'])}")
+
+                    # Output layer3 json
+                    with open(os.path.join(p_out_layer3_out, f"{source_id}.json"), "w") as man:
                         json.dump(layer3, man)
+
+                    # Output c2pa manifest chain of final image
+                    path_out_c2pa_man = os.path.join(p_out_layer3_out, f"{source_id}-manifest.json")
+                    with open(path_out_c2pa_man, "w") as f:
+                        p = subprocess.run([f"{p_c2patool}", f"{path_publish_img}", "--detailed"], stdout=f)
 
 
 ###################
@@ -465,6 +596,7 @@ def _generate_layer3_out_from_src(archive_manifests, archive_manifests_related, 
 # Index archive manifests from path_archive_manifests
 archive_manifests = ArchiveManifests(p_in_archive_manifests)
 archive_manifests_related = ArchiveManifests(p_in_archive_manifests_related)
+archive_manifests_caption = ArchiveManifests(p_in_archive_manifests_caption)
 
 with open(p_asset_info_ext, "r") as f:
     asset_info_ext = json.load(f)["assetInfoExt"]
@@ -472,6 +604,6 @@ with open(p_asset_info_ext, "r") as f:
         if  sys.argv[1] == "c2pa":
             _generate_c2pa_out_from_src(archive_manifests, archive_manifests_related, asset_info_ext)
         if sys.argv[1] == "layer3":
-            _generate_layer3_out_from_src(archive_manifests, archive_manifests_related, asset_info_ext)
+            _generate_layer3_out_from_src(archive_manifests_caption, asset_info_ext)
     else:
         print("Specify option: [ c2pa layer3 ]")

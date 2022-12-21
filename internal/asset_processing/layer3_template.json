@@ -144,6 +144,43 @@
       }
     },
     {
+      "name": "Redaction: Zero Knowledge Proof",
+      "value": "{{ cidRedaction }}",
+      "records":
+      {
+        "openTimestamps":
+        {
+          "sha256": null,
+          "block": null
+        },
+        "numbersProtocol":
+        {
+          "tx": null
+        },
+        "numbersProtocolAvalanche":
+        {
+          "tx": null
+        },
+        "iscn":
+        {
+          "iscnId": null,
+          "tx": null
+        },
+        "ipfs":
+        {
+          "cid": "{{ ipfsCidRedaction }}"
+        },
+        "filecoin":
+        {
+          "pieceCid": null
+        },
+        "storj":
+        {
+          "path": null
+        }
+      }
+    },
+    {
       "name": "Caption",
       "value": "{{ cidCaption }}",
       "records":
@@ -177,43 +214,6 @@
         "storj":
         {
           "path": "{{ storjPathCaption }}"
-        }
-      }
-    },
-    {
-      "name": "Redaction: Zero Knowledge Proof",
-      "value": "{{ cidRedaction }}",
-      "records":
-      {
-        "openTimestamps":
-        {
-          "sha256": "{{ otsSha256Redaction }}",
-          "block": "{{ otsBlockRedaction }}"
-        },
-        "numbersProtocol":
-        {
-          "tx": "{{ numbersTxRedaction }}"
-        },
-        "numbersProtocolAvalanche":
-        {
-          "tx": "{{ avaxTxRedaction }}"
-        },
-        "iscn":
-        {
-          "iscnId": "{{ iscnIdRedaction }}",
-          "tx": "{{ iscnTxRedaction }}"
-        },
-        "ipfs":
-        {
-          "cid": "{{ ipfsCidRedaction }}"
-        },
-        "filecoin":
-        {
-          "pieceCid": "{{ filecoinPieceCidRedaction }}"
-        },
-        "storj":
-        {
-          "path": "{{ storjPathRedaction }}"
         }
       }
     }
